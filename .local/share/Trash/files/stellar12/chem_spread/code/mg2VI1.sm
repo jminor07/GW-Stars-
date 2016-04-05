@@ -1,0 +1,40 @@
+! Mg2 versus V-I fron the abundance distribution function (narrow option) and empirical data
+erase
+
+limits 1.7 2.8 0.15 0.35
+expand 1.3
+box
+xlabel V-I (\AA)
+ylabel Mg2 (\AA)
+
+data adlbars.data
+lines 2 0
+read { V_w94 4 I_w94 6 }
+set VI = V_w94 - I_w94
+
+data abdist.data
+lines 2 0
+read { age 1 width 2 mg2 15 }
+
+!Empirical data
+data mg2VI.data
+lines 4 15
+read { Mg2 1 vi 5 }
+
+ptype 20 3
+ctype magenta
+points vi Mg2
+
+
+! trick to make the older age points look bigger
+set evector = age/5
+expand evector
+ptype 20 0
+ctype white
+points VI mg2
+
+ptype 3 3
+ctype yellow
+points VI mg2
+
+ctype white

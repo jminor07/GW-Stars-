@@ -1,0 +1,6 @@
+erase
+data simple.dat
+read { f 3 a 4 }
+limits f a
+box
+histogram f a

@@ -1,0 +1,90 @@
+#( [Fe/H], Y, Age[Gyr]) =   -0.530   0.242   1.0000000
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =   -0.530   0.242   1.9953001
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =   -0.530   0.242   5.0118999
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =   -0.530   0.242  10.0000000
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =   -0.530   0.242  17.7828007
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =    0.000   0.274   1.0000000
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =    0.000   0.274   1.9953001
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =    0.000   0.274   5.0118999
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =    0.000   0.274  10.0000000
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =    0.000   0.274  17.7828007
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =    0.370   0.336   1.0000000
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =    0.370   0.336   1.9953001
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =    0.370   0.336   5.0118999
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =    0.370   0.336  10.0000000
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom
+#( [Fe/H], Y, Age[Gyr]) =    0.370   0.336  17.7828007
+# Columns 07-15 W&L 2011 empirical
+# Columns 16-20 ugriz transformed from wl11
+# Columns 21-25 V&C BVRI
+# Columns 26-30 C&V Stromgren
+# W   mass       log L    log Te       dN        V_th    U_wl11  B_wl11  V_wl11  R_wl11  I_wl11  J_wl11  H_wl11  K_wl11  U-B      B-V    V-R     V-I      J-K      H-K   V-K     u_tran  g_tran  r_tran  i_tran  z_tran  B-V     V-R     V-I     BC_V    V_vc    b-y     m1      c1      BC_v    v_strom

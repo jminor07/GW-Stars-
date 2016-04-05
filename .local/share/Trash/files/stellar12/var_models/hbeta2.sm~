@@ -1,0 +1,315 @@
+! H beta versus Fe4668
+erase
+
+limits 0 10 0 3
+expand 1.3
+box
+
+xlabel C_24668 (\AA)
+ylabel H\beta (\AA)
+
+
+
+relocate 1.5 12.5
+ptype 4 0
+expand 3.0
+dot
+relocate 1.5 13
+ptype 4 0 
+expand 1.0001
+dot
+relocate 1.55 12.5
+putlabel 6 300 km s^{-1}
+relocate 1.55 13
+putlabel 6 100 km s^{-1}
+angle 35
+relocate 2.5 23
+putlabel 6 [M/H] = 0.25
+relocate 1.65 19.9
+angle 55
+putlabel 4 [M/H] = -0.25
+angle 0
+
+
+!Connor's data
+
+data pad11/Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+ctype red
+
+lines 2 6
+read { Mg2 15 VI 16 }
+ctype red
+connect VI Mg2
+
+lines 7 11
+read { Mg2 15 VI 16 }
+ctype red
+connect VI Mg2
+
+lines 12 16
+read { Mg2 15 VI 16 }
+ctype red
+connect VI Mg2
+
+data pad94/Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+ctype blue
+
+lines 2 6 
+read { Mg2 15 VI 16 }
+ctype blue
+connect VI Mg2
+
+lines 7 11
+read { Mg2 15 VI 16 }
+ctype blue
+connect VI Mg2
+
+lines 12 16 
+read { Mg2 15 VI 16 }
+ctype blue
+connect VI Mg2
+
+lines 17 21 
+read { Mg2 15 VI 16 }
+ctype blue 
+connect VI Mg2
+
+data dotter4new2/Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+ctype green
+
+lines 2 6
+read { Mg2 15 VI 16 }
+ctype green 
+connect VI Mg2
+
+lines 7 11
+read { Mg2 15 VI 16 }
+ctype green 
+connect VI Mg2
+
+lines 12 16 
+read { Mg2 15 VI 16 }
+ctype green 
+connect VI Mg2
+
+data basti5new/Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+ctype white
+
+lines 2 5
+read { Mg2 15 VI 16 }
+ctype white
+connect VI Mg2
+
+lines 6 9
+read { Mg2 15 VI 16 }
+ctype white
+connect VI Mg2
+
+lines 10 13
+read { Mg2 15 VI 16 }
+ctype white
+connect VI Mg2
+
+
+data van0/Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+ctype yellow
+
+lines 2 3
+read { Mg2 15 VI 16 }
+ctype yellow
+connect VI Mg2
+
+lines 4 8
+read { Mg2 15 VI 16 }
+ctype yellow
+connect VI Mg2
+
+lines 9 13
+read { Mg2 15 VI 16 }
+ctype yellow
+connect VI Mg2
+
+data pad11/virgodata.out
+lines 2 0
+read{ Mg2 5 VI 3 error2 4 }
+ctype cyan
+
+lines 2 12 
+read { Mg2 5 VI 3 error2 4 }
+ctype cyan
+errorbar VI Mg2 error2 1
+errorbar VI Mg2 error2 3
+
+
+
+
+
+
+
+! Sanchez-Blazquez
+data temp.plot
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 fe52e 94 fe53e 95 cahke 119 } 
+set fe = 0.5* (fe52 + fe53)
+set fee = 0.35*(fe53e + fe52e)
+set efactor = vd/100
+expand efactor
+
+ctype cyan
+ptype 20 0
+points c24668 hbeta
+expand 0
+!errorbar fe cahk cahke 2
+!errorbar fe cahk cahke 4
+!errorbar fe cahk fee 1
+!errorbar fe cahk fee 3
+
+! Jed's galaxies
+data indexm.txt
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 fe52e 94 fe53e 95 cahke 119 } 
+set fe = 0.5* (fe52 + fe53)
+set fee = 0.35*(fe53e + fe52e)
+set efactor = vd/100
+expand efactor
+
+ctype red
+ptype 4 0
+points c24668 hbeta
+expand 0
+!errorbar fe cahk cahke 2
+!errorbar fe cahk cahke 4
+!errorbar fe cahk fee 1
+!errorbar fe cahk fee 3
+
+! Trager
+data Coma.plot
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 fe52e 94 fe53e 95 cahke 119 } 
+set fe = 0.5* (fe52 + fe53)
+set fee = 0.35*(fe53e + fe52e)
+set efactor = vd/100
+expand efactor
+
+ctype blue
+ptype 20 3
+points c24668 hbeta
+expand 0
+!errorbar fe cahk cahke 2
+!errorbar fe cahk cahke 4
+!errorbar fe cahk fee 1
+!errorbar fe cahk fee 3
+
+! Sloan
+data tmeasure.out
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 fe52e 94 fe53e 95 cahke 119 } 
+set fe = 0.5* (fe52 + fe53)
+set fee = 0.35*(fe53e + fe52e)
+set efactor = vd/100
+expand efactor
+
+ctype green
+ptype 6 2
+points c24668 hbeta
+expand 0
+!errorbar fe cahk cahke 2
+!errorbar fe cahk cahke 4
+!errorbar fe cahk fee 1
+!errorbar fe cahk fee 3
+
+
+ctype default
+
+! model grid
+data cormodels.new
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+ptype 4 3
+angle 45
+expand 3.1
+ctype magenta
+points c24668 hbeta
+angle 0
+
+
+lines 25 32
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+lines 35 42
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+lines 45 52
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+
+! model grid
+data cormodels.sort
+lines 1 3
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+lines 6 8
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+lines 11 13
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+lines 16 18
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+lines 21 23
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+lines 36 38
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+lines 45 47
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+lines 54 56
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect c24668 hbeta
+
+! Abundance distribution function
+data chem.out
+lines 2 0
+read { age 1 width 2 shift 3 c24668 11 hbeta 12 }
+
+! trick to make the older age points look bigger
+set evector = age/5
+expand evector
+ptype 20 0
+
+set c24668 = c24668 - 0.003
+set hbeta = hbeta - (-0.325)
+ctype white
+ptype 5 3
+points c24668 hbeta if (width == 1)
+ctype blue
+points c24668 hbeta if (width == 2)
+ctype red
+points c24668 hbeta if (width == 3)
+ctype green
+points c24668 hbeta if (width == 4)
+
+
+ctype white
+
+
+

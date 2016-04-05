@@ -1,0 +1,51 @@
+#!/bin/bash
+
+set -x
+
+echo "Cleaning fort* files"
+/bin/rm -f fort.* 
+
+echo "Running ATLAS9 to produce a model atmosphere to match the sun."
+./atlas9.sun.bash kapp00p00.ros p00p00bigvt2.bdf ap00t5777g44377k1odfnew.dat t05777_g+4.43_p00at9.mod 5777 +4.438 abundances_sun.txt
+
+echo "Running ATLAS9 to produce a model atmosphere to match Procyon."
+./atlas9.pro.bash kapp00p00.ros p00p00bigvt2.bdf ap00t5777g44377k1odfnew.dat t06550_g+4.00_p00at9.mod 6550 +4.00 abundances_pro.txt
+
+echo "Running ATLAS9 to produce a model atmosphere to match HD 73634."
+./atlas9.A6.bash kapp00p00.ros p00p00bigvt2.bdf ap00t5777g44377k1odfnew.dat t07600_g+3.5_p00at9.mod 7600 +3.5 abundances_A6.txt
+
+echo "Running ATLAS9 to produce a model atmosphere to match HD 46462."
+./atlas9.B9.bash kapp00p00.ros p00p00bigvt2.bdf ap00t5777g44377k1odfnew.dat t13000_g+3.5_p00at9.mod 13000 +3.5 abundances_B9.txt
+
+echo "Running ATLAS9 to produce a model atmosphere to match HD 89587."
+./atlas9.B9.bash kapp00p00.ros p00p00bigvt2.bdf ap00t5777g44377k1odfnew.dat t14000_g+3.5_p00at9.mod 14000 +3.5 abundances_B3.txt
+
+echo "Test if model 1 converged."
+./ifconv.pl t05777_g+4.43_p00at9.mod.log
+echo "Test if model 2 converged."
+./ifconv.pl t06550_g+4.0_p00at9.mod.log
+echo "Test if model 3 converged."
+./ifconv.pl t7600_g+3.5_p00at9.mod.log
+echo "Test if model 4 converged."
+./ifconv.pl t14000_g+3.5_p00at9.mod.log
+
+#cp -f in.sun in
+#echo "1. Run SYNTHE to produce solar spectrum."
+#./synthe.sun.csh
+
+#cp -f in6550 in
+#echo "2. Run SYNTHE to produce Procyon spectrum."
+#./synthe.pro.csh
+
+cp -f in7600 in
+echo "3. Run SYNTHE to produce HD 73634 spectrum."
+./synthe.A6.csh
+
+#cp -f in13000 in
+#echo "4. Run SYNTHE to produce HD 46462 spectrum."
+#./synthe.B9.csh
+
+#cp -f in14000 in
+#echo "5. Run SYNTHE to produce HD 89587 spectrum."
+#./synthe.B3.csh
+

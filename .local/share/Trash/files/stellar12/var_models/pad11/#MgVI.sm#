@@ -1,0 +1,22 @@
+erase
+data Lbar.out
+lines 2 0
+read { Mg2 15 VI 16}
+
+limits VI Mg2
+box
+connect VI Mg2
+
+xlabel Vbar-Ibar
+ylabel Mg2
+
+lines 2 16 
+read { Mg2 15 VI 16}
+ctype blue
+connect VI Mg2
+
+
+
+
+
+

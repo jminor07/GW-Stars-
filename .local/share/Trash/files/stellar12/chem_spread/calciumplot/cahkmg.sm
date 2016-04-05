@@ -1,0 +1,152 @@
+! version for CaHK vs Mg b
+erase
+
+limits 2.0 5.5 11.5 25
+expand 1.3
+box
+xlabel Mg b (\AA)
+ylabel CaHK (\AA)
+relocate 2.2 24
+label (a.)
+relocate 2.45 12.5
+ptype 4 0
+expand 3.0
+dot
+relocate 2.45 13
+ptype 4 0 
+expand 1.0001
+dot
+relocate 2.55 12.5
+putlabel 6 300 km s^{-1}
+relocate 2.55 13
+putlabel 6 100 km s^{-1}
+relocate 4.1 24
+putlabel 6 [M/H] = 0.5
+relocate 3 22
+angle 35
+putlabel 5 [M/H]=0
+angle 0
+
+! Sanchez-Blazquez
+data temp.plot
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 mgbe 93 fe52e 94 fe53e 95 cahke 119 } 
+set fe = 0.5* (fe52 + fe53)
+set fee = 0.35*(fe53e + fe52e)
+set efactor = vd/100
+expand efactor
+
+ctype cyan
+ptype 20 0
+points mgb cahk
+expand 0
+errorbar mgb cahk cahke 2
+errorbar mgb cahk cahke 4
+errorbar mgb cahk mgbe 1
+errorbar mgb cahk mgbe 3
+
+
+! Jed's galaxies
+data indexm.txt
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 mgbe 93 fe52e 94 fe53e 95 cahke 119 } 
+set fe = 0.5* (fe52 + fe53)
+set fee = 0.35*(fe53e + fe52e)
+set efactor = vd/100
+expand efactor
+
+ctype red
+ptype 4 0
+points mgb cahk
+expand 0
+errorbar mgb cahk cahke 2
+errorbar mgb cahk cahke 4
+errorbar mgb cahk mgbe 1
+errorbar mgb cahk mgbe 3
+
+! Trager
+data Coma.plot
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 mgbe 93 fe52e 94 fe53e 95 cahke 119 } 
+set fe = 0.5* (fe52 + fe53)
+set fee = 0.35*(fe53e + fe52e)
+set efactor = vd/100
+expand efactor
+
+ctype blue
+ptype 20 3
+points mgb cahk
+expand 0
+errorbar mgb cahk cahke 2
+errorbar mgb cahk cahke 4
+errorbar mgb cahk mgbe 1
+errorbar mgb cahk mgbe 3
+
+! Sloan
+data tmeasure.out
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 mgbe 93 fe52e 94 fe53e 95 cahke 119 } 
+set fe = 0.5* (fe52 + fe53)
+set fee = 0.35*(fe53e + fe52e)
+set efactor = vd/100
+expand efactor
+
+ctype green
+ptype 6 2
+points mgb cahk
+expand 0
+errorbar mgb cahk cahke 2
+errorbar mgb cahk cahke 4
+errorbar mgb cahk mgbe 1
+errorbar mgb cahk mgbe 3
+
+
+ctype default
+
+! model grid
+data cormodels.new
+lines 25 32
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+lines 35 42
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+lines 45 52
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+
+! model grid
+data cormodels.sort
+lines 1 3
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+lines 6 8
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+lines 11 13
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+lines 16 18
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+lines 21 23
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+lines 36 38
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+lines 45 47
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+lines 54 56
+read { vd 1 mgb 14 fe52 15 fe53 16 cahk 40 } 
+set fe = 0.5* (fe52 + fe53)
+connect mgb cahk
+
+ctype default

@@ -1,0 +1,20 @@
+! Wavelength versus Flux from the abundance distribution function
+erase
+
+limits 0 10 1 3
+expand 1.3
+box
+xlabel Wavelength (\AA)
+ylabel Flux (\AA)
+
+! Abundance distribution function
+data hspectrum.out
+read { wavelength 1 flux 2 }
+ctype white
+ptype 5 3
+points wavelength flux
+expand 0
+
+ctype white
+
+

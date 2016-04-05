@@ -1,0 +1,31 @@
+Migration script called on 2011-10-14 11:25:51.253368
+
+======= Migration to 3.2.0 =======
+
+ + Migration for unity mutter.
+   Current app list is: ['ubiquity-gtkui.desktop', 'nautilus-home.desktop', 'firefox.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-impress.desktop', 'ubuntu-software-center.desktop', 'ubuntuone-installer.desktop', 'gnome-control-center.desktop']
+   Candidates are: []
+ + Migration for netbook-launcher favorites.
+   Current app list is: ['ubiquity-gtkui.desktop', 'nautilus-home.desktop', 'firefox.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-impress.desktop', 'ubuntu-software-center.desktop', 'ubuntuone-installer.desktop', 'gnome-control-center.desktop']
+   Candidates are: []
+ + Migration for gnome-panel items.
+   Current app list is: ['ubiquity-gtkui.desktop', 'nautilus-home.desktop', 'firefox.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-impress.desktop', 'ubuntu-software-center.desktop', 'ubuntuone-installer.desktop', 'gnome-control-center.desktop']
+   Candidates are: ['browser_launcher_screen0', 'menu_bar_screen0', 'object_0']
+    == /home/student/.gnome2/panel2.d/default/launchers/firefox.desktop: doesn't exist
+    == /usr/share/applications/gnome-terminal.desktop: exists
+    Similar Cairo-Dock -like desktop file name with system desktop file
+    Coherent exec key found with system desktop file
+    /usr/share/applications/gnome-terminal.desktop: real entry is gnome-terminal.desktop
+    --- adding gnome-terminal.desktop as not in app_list
+ + Migration for desktop items in /home/student/Desktop.
+   Current app list is: ['ubiquity-gtkui.desktop', 'nautilus-home.desktop', 'firefox.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-impress.desktop', 'ubuntu-software-center.desktop', 'ubuntuone-installer.desktop', 'gnome-control-center.desktop', 'gnome-terminal.desktop']
+   Candidates are: []
+======= Migration to 3.2.10 =======
+
+ + Migration for awn favorites.
+   Current app list is: ['ubiquity-gtkui.desktop', 'nautilus-home.desktop', 'firefox.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'libreoffice-impress.desktop', 'ubuntu-software-center.desktop', 'ubuntuone-installer.desktop', 'gnome-control-center.desktop', 'gnome-terminal.desktop']
+   Candidates are: []
+ + Can't migrate Cairo-Dock as /home/student/.config/cairo-dock/current_theme/launchers doesn't exist
+Migration script ended successfully
+
+

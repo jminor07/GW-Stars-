@@ -1,0 +1,21 @@
+! Wavelength versus Flux from the abundance distribution function
+erase
+
+data hspec.out
+read { wavelength 1 flux 2 }
+
+limits 2500 10500 1 200
+box
+ctype green
+ptype 5 3
+smooth flux flux2 33
+connect wavelength flux2
+ctype red
+lweight 50
+expand 0
+
+xlabel Wavelength (\AA)
+ylabel Flux (\AA)
+
+ctype white
+

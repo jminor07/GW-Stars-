@@ -1,0 +1,15 @@
+erase
+
+data spdata.out
+lines 1 5
+read { vd0 1  f460 9 beta0 10 }
+lines 6 0
+read { vd 1  f46 9 beta 10 }
+
+
+window 1 2 1 2
+limits vd beta
+box
+points vd beta
+connect vd0 beta0
+

@@ -1,0 +1,110 @@
+erase
+cype default
+
+data pad11/everything.out
+lines 2 0
+read { H_beta 9 C2_4668 8 }
+
+limits H_beta C2_4668
+box
+
+xlabel C2 4668
+ylabel H beta
+
+lines 2 6
+read { H_beta 9 C2_4668 8 }
+ctype red 
+connect H_beta C2_4668
+
+lines 7 11
+read { H_beta 9 C2_4668 8 }
+cytpe red
+connect H_beta C2_4668
+
+lines 12 16
+read { H_beta 9 C2_4668 8 }
+ctype red
+connect H_beta C2_4668 
+
+data pad94/everything.out
+lines 2 0
+read { H_beta 9 C2_4668 8 }
+
+lines 2 6
+read { H_beta 9 C2_4668 8 }
+ctype blue
+connet H_beta C2_4668 
+
+lines 7 11
+read { H_beta 9 C2_4668 8 }
+ctype blue
+connect H_beta C2_4668 
+
+lines 12 16 
+read { H_beta 9 C2_4668 8 }
+cytpe blue
+connect H_beta C2_4668
+
+lines 17 21 
+read { H_beta 9 C2_4668 8 }
+ctype blue
+connect H_beta C2_4668 
+
+data dotter4new2/everything.out
+lines 2 0
+read { H_beta 9 C2_4668 8 }
+
+lines 2 6
+read { H_beta 9 C2_4668 8 }
+ctype green
+connect H_beta C2_4668 
+
+lines 7 11
+read { H_beta 9 C2_4668 8 }
+ctype green 
+connect H_beta C2_4668 
+
+lines 12 16
+read { H_beta 9 C2_4668 8 }
+ctype green 
+connect H_beta C2_4668
+
+data basti5new/everything.out
+lines 2 0
+read {H_beta 9 C2_4668 8 }
+
+lines 2 5
+read { H_beta 9 C2_4668 8 }
+ctype white
+conncet H_beta C2_4668
+
+lines 6 9
+read { H_beta 9 C2_4668 8 }
+ctype white
+connect H_beta C2_4668 
+
+lines 10 13 
+read { H_beta 9 C2_4668 8 }
+ctype white
+connect H_beta C2_4668
+
+data van0/everything.out
+lines 2 0
+read { H_beta 9 C2_4668 8 }
+
+lines 2 3
+read { H_beta 9 C2_4668 8 }
+ctype yellow
+connect H_beta C2_4668
+
+lines 4 8
+read { H_beta 9 C2_4668 8 }
+ctype yellow
+connect H_beta C2_4668
+
+lines 9 13
+read { H_beta 9 C2_4668 8 }
+ctype yellow
+connect H_beta C2_4668
+
+

@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<!--RAW FILE-->
+<head>
+<base href="http://adsabs.harvard.edu/abs/2004AJ....128.2826W" />
+<link rel="canonical" content="http://adsabs.harvard.edu/abs/2004AJ....128.2826W" />
+<meta name="robots" content="noarchive" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<TITLE>Balmer and Metal Absorption Feature Gradients in M32</TITLE>
+<meta name="citation_language" content="en" />
+<meta name="citation_doi" content="10.1086/426359" />
+<meta name="citation_abstract_html_url" content="http://adsabs.harvard.edu/abs/2004AJ....128.2826W" />
+<meta name="citation_title" content="Balmer and Metal Absorption Feature Gradients in M32" />
+<meta name="citation_authors" content="Worthey, Guy" />
+<meta name="citation_keywords" content="Galaxies: Abundances, Galaxies: Elliptical and Lenticular, cD, Galaxies: Fundamental Parameters, Galaxies: Individual: Messier Number: M32, Galaxies: Stellar Content" />
+<meta name="citation_issn" content="0004-6256" />
+<meta name="citation_date" content="12/2004" />
+<meta name="citation_journal_title" content="The Astronomical Journal" />
+<meta name="citation_volume" content="128" />
+<meta name="citation_firstpage" content="2826" />
+<meta name="citation_lastpage" content="2837" />
+<link title="schema(PRISM)" rel="schema.prism" href="http://prismstandard.org/namespaces/1.2/basic/" />
+<meta name="prism.publicationName" content="The Astronomical Journal" />
+<meta name="prism.issn" content="0004-6256" />
+<meta name="prism.volume" content="128" />
+<meta name="prism.startingPage" content="2826" />
+<meta name="prism.endingPage" content="2837" />
+<link title="schema(DC)" rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
+<meta name="dc.language" content="en" />
+<meta name="dc.identifier" content="doi:10.1086/426359" />
+<meta name="dc.date" content="2004-12" />
+<meta name="dc.source" content="The Astronomical Journal, Volume 128, Issue 6, pp. 2826-2837." />
+<meta name="dc.title" content="Balmer and Metal Absorption Feature Gradients in M32" />
+<meta name="dc.creator" content="Worthey, Guy" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<SCRIPT language="JavaScript" type="text/javascript">
+<!-- Begin
+function mkemail(parts) {
+    var sep = ".";
+    var str = arguments[0];
+    for ( var i = 1 ; i < arguments.length ; i++ ) {
+        if ( arguments[i] == "" ) {
+            sep = String.fromCharCode(29+35) ;
+           continue ;
+        } else {
+            str = str.concat ( sep ) ;
+            str = str.concat ( arguments[i] ) ;
+            sep = ".";
+        }
+    }
+    return(str);
+}
+var toggle = 0 ;
+function t(){
+if ( toggle == 0 ) {
+setStyleByClass("span","a","backgroundColor","#ffffff");
+setStyleByClass("div","h","backgroundColor","#ffffff");
+setStyleByClass("div","h","opacity","0");
+setStyleByClass("div","h","filter","alpha(opacity=0)");
+setStyleByClass("span","b","backgroundColor","#ffffff");
+setStyleByClass("div","i","backgroundColor","#ffffff");
+setStyleByClass("div","i","opacity","0");
+setStyleByClass("div","i","filter","alpha(opacity=0)");
+setStyleByClass("span","c","backgroundColor","#ffffff");
+setStyleByClass("div","j","backgroundColor","#ffffff");
+setStyleByClass("div","j","opacity","0");
+setStyleByClass("div","j","filter","alpha(opacity=0)");
+setStyleByClass("span","d","backgroundColor","#ffffff");
+setStyleByClass("div","k","backgroundColor","#ffffff");
+setStyleByClass("div","k","opacity","0");
+setStyleByClass("div","k","filter","alpha(opacity=0)");
+setStyleByClass("span","e","backgroundColor","#ffffff");
+setStyleByClass("div","l","backgroundColor","#ffffff");
+setStyleByClass("div","l","opacity","0");
+setStyleByClass("div","l","filter","alpha(opacity=0)");
+setStyleByClass("span","f","backgroundColor","#ffffff");
+setStyleByClass("div","m","backgroundColor","#ffffff");
+setStyleByClass("div","m","opacity","0");
+setStyleByClass("div","m","filter","alpha(opacity=0)");
+setStyleByClass("span","g","backgroundColor","#ffffff");
+setStyleByClass("div","n","backgroundColor","#ffffff");
+setStyleByClass("div","n","opacity","0");
+setStyleByClass("div","n","filter","alpha(opacity=0)");
+toggle = 1 ;
+} else {
+setStyleByClass("span","a","backgroundColor","#ffff88");
+setStyleByClass("div","h","backgroundColor","#ffff00");
+setStyleByClass("div","h","opacity","0.3");
+setStyleByClass("div","h","filter","alpha(opacity=30)");
+setStyleByClass("span","b","backgroundColor","#ccccff");
+setStyleByClass("div","i","backgroundColor","#3333ff");
+setStyleByClass("div","i","opacity","0.3");
+setStyleByClass("div","i","filter","alpha(opacity=30)");
+setStyleByClass("span","c","backgroundColor","#ffcccc");
+setStyleByClass("div","j","backgroundColor","#ff3333");
+setStyleByClass("div","j","opacity","0.3");
+setStyleByClass("div","j","filter","alpha(opacity=30)");
+setStyleByClass("span","d","backgroundColor","#bbffff");
+setStyleByClass("div","k","backgroundColor","#00ffff");
+setStyleByClass("div","k","opacity","0.3");
+setStyleByClass("div","k","filter","alpha(opacity=30)");
+setStyleByClass("span","e","backgroundColor","#ffdd77");
+setStyleByClass("div","l","backgroundColor","#ff6600");
+setStyleByClass("div","l","opacity","0.3");
+setStyleByClass("div","l","filter","alpha(opacity=30)");
+setStyleByClass("span","f","backgroundColor","#ccffaa");
+setStyleByClass("div","m","backgroundColor","#33ff00");
+setStyleByClass("div","m","opacity","0.3");
+setStyleByClass("div","m","filter","alpha(opacity=30)");
+setStyleByClass("span","g","backgroundColor","#ffccff");
+setStyleByClass("div","n","backgroundColor","#ff00ff");
+setStyleByClass("div","n","opacity","0.3");
+setStyleByClass("div","n","filter","alpha(opacity=30)");
+toggle = 0 ;
+}
+}
+var ie = (document.all) ? true : false;
+
+function setStyleByClass(t,c,p,v){
+	var elements;
+	if(t == '*') {
+		elements = (ie) ? document.all : document.getElementsByTagName('*');
+	} else {
+		elements = document.getElementsByTagName(t);
+	}
+	for (var i = 0; i < elements.length; i++)
+    {
+		var node = elements.item(i);
+		for(var j = 0; j < node.attributes.length; j++)
+		{
+			if(node.attributes.item(j).nodeName == 'class')
+			{
+				if(node.attributes.item(j).nodeValue == c)
+				{
+				eval('node.style.' + p + " = '" +v + "'");
+				}
+			}
+		}
+	}
+}
+//  End -->
+</SCRIPT>
+<style>.a{background-color: #ffff88}</style>
+<style>.h{background-color: #ffff00}</style>
+<style>.b{background-color: #ccccff}</style>
+<style>.i{background-color: #3333ff}</style>
+<style>.c{background-color: #ffcccc}</style>
+<style>.j{background-color: #ff3333}</style>
+<style>.d{background-color: #bbffff}</style>
+<style>.k{background-color: #00ffff}</style>
+<style>.e{background-color: #ffdd77}</style>
+<style>.l{background-color: #ff6600}</style>
+<style>.f{background-color: #ccffaa}</style>
+<style>.m{background-color: #33ff00}</style>
+<style>.g{background-color: #ffccff}</style>
+<style>.n{background-color: #ff00ff}</style>
+<style type="text/css">
+a:link {color: #0000ff}
+a.oa:link {color: #00a000}
+a:visited {color: #4000a0}
+a.oa:visited {color: #006666}
+a:hover {color: #ff0000}
+a.oa:hover {color: #cc33cc}
+</style>
+</head>
+<body bgcolor="#ffffff"  text="#000000" link="#0000ff" alink="#ff0000" vlink="#4000a0">
+<div align="right" style="font-size:84%;padding-bottom:4px"><a href="http://adsabs.harvard.edu/cgi-bin/nph-manage_account?man_cmd=login&amp;man_url=http://adsabs.harvard.edu/abs/2004AJ....128.2826W">Sign on</a></div>
+<p><h3><A HREF="http://www.adsabs.harvard.edu/">SAO/NASA ADS</a> <a href="http://adsabs.harvard.edu/abstract_service.html">Astronomy Abstract Service</A></h3>
+<hr>
+<p>
+<dl>
+<dt><table width="100%"><tr><td align="left"><strong>&#183; <a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?return_req=no_params&amp;arxiv_sel=ALL&amp;db_key=AST&amp;text=New%20data%20sources%20are%20used%20to%20assess%20Lick/IDS%20feature%20strength%20gradients%0ainside%20the%20half-light%20radius%20R%3cSUB%3ee%3c/SUB%3e%20of%20the%20compact%20Local%20Group%0aelliptical%20galaxy%20M32.%20A%20Hubble%20Space%20Telescope%20%28HST%29%20STIS%20spectrum%0aseemed%20to%20indicate%20ionized%20gas%20and%20a%20very%20young%20central%20stellar%0apopulation.%20In%20fact,%20this%20conclusion%20is%20entirely%20spurious%20because%20of%0aincomplete%20removal%20of%20ion%20hits.%20More%20robust%20ground-based%20spectra%20taken%0aat%20the%20MDM%20Observatory%20are,%20in%20contrast,%20the%20most%20accurate%20measurements%0aof%20Lick/IDS%20indices%20yet%20obtained%20for%20M32.%20All%20but%20a%20few%20%28of%2024%20measured%29%0aindices%20show%20a%20statistically%20significant%20gradient.%20The%20CN%20indices%20show%20a%0amaximum%20at%204%22%20radius,%20dropping%20off%20both%20toward%20the%20nucleus%20and%20away%20from%0ait.%20At%202%22%20radius%20there%20is%20a%20discontinuity%20in%20the%20surface%20brightness%0aprofile,%20but%20this%20feature%20is%20not%20reflected%20in%20any%20spectral%20feature.%0aComparing%20with%20models,%20the%20index%20gradients%20indicate%20a%20mean%20age%20and%0aabundance%20gradient%20in%20the%20sense%20that%20the%20nucleus%20is%20a%20factor%20of%202.5%0ayounger%20and%20a%20factor%20of%200.3%20dex%20more%20metal-rich%20than%20at%201R%3cSUB%3ee%3c/SUB%3e.%0aThis%20conclusion%20is%20only%20weakly%20dependent%20on%20which%20index%20combinations%20are%0aused%20and%20is%20robust%20to%20high%20accuracy.%20Stars%20near%20the%20M32%20nucleus%20have%20a%0amean%20age%20and%20heavy%20element%20abundance%20%5bM/H%5d%20of%20%284.7%20Gyr,%20%2b0.02%29,%20judging%0afrom%20models%20by%20Worthey%20with%20variable%20abundance%20ratios.%20This%20result%20has%0avery%20small%20formal%20random%20errors,%20although,%20of%20course,%20there%20is%0asignificant%20age-metallicity%20degeneracy%20along%20an%20%28age,%20abundance%29%20line%0asegment%20from%20%285.0%20Gyr,%200.00%29%20to%20%284.5%20Gyr,%20%2b0.05%29.%20An%20abundance%20pattern%0aof%20%5bC/M%5d%3d%2b0.077%20%28carbon%20abundance%20affects%20CN,%20C%3cSUB%3e2%3c/SUB%3e4668,%20and%20the%0abluer%20Balmer%20features%29,%20%5bN/M%5d%3d-0.13,%20%5bMg/M%5d%3d-0.18,%20%5bFe/M%5d%7e0.0,%20and%0a%5bNa/M%5d%3d%2b0.12%20is%20required%20to%20fit%20the%20feature%20data,%20with%20a%20fitting%0aprecision%20of%20about%200.01%20dex%20%28with%20two%20caveats%3a%20the%20%5bFe/M%5d%20guess%20has%0aabout%20twice%20this%20precision%20because%20of%20the%20relative%20insensitivity%20of%20the%0aFe5335%20feature%20to%20iron,%20and%20the%20%5bNa/M%5d%20value%20may%20be%20falsely%20amplified%0abecause%20of%20interstellar%20absorption%29.%20Model%20uncertainties%20make%20the%0aaccuracies%20of%20these%20values%20at%20least%20twice%20the%20magnitude%20of%20the%0aprecision.%20Forcing%20scaled-solar%20abundances%20does%20not%20change%20the%20age%20very%0amuch,%20but%20it%20increases%20the%20rms%20goodness%20of%20model-data%20fit%20by%20a%20factor%20of%0a3%20and%20broadens%20the%20allowed%20range%20of%20age%20to%20%2b/-1%20Gyr.%20The%20abundance%0aratios%20do%20not%20show%20strong%20trends%20with%20radius,%20except%20for%20the%20nuclear%0aweakening%20of%20CN%20%28measuring%20mainly%20N%29%20mentioned%20above,%20which%20needs%0areconfirming%20with%20better%20data.%20The%20overall%20abundance%20pattern%20contrasts%0awith%20larger%20elliptical%20galaxies,%20in%20which%20all%20measurable%20lighter%0aelements%20are%20enhanced%20relative%20to%20iron%20and%20calcium.%20Nucleosynthetic%0atheory%20does%20not%20provide%20a%20ready%20explanation%20for%20these%20mixtures.%0a+Galaxies%3a%20Abundances,%20Galaxies%3a%20Elliptical%20and%20Lenticular,%20cD,%20Galaxies%3a%20Fundamental%20Parameters,%20Galaxies%3a%20Individual%3a%20Messier%20Number%3a%20M32,%20Galaxies%3a%20Stellar%20Content+&amp;title=Balmer%20and%20Metal%20Absorption%20Feature%20Gradients%20in%20M32">Find Similar Abstracts</a> (with <a href="#feedback">default settings below</a>)</strong></td>
+<td align="right"><button onclick="t();">Toggle Highlighting</button></td>
+</tr></table>
+<dt><strong>· <a class="oa" href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2004AJ....128.2826W&amp;link_type=EJOURNAL&amp;db_key=AST&amp;high=">Electronic Refereed Journal Article (HTML)</a></strong>
+<dt><strong>· <a class="oa" href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2004AJ....128.2826W&amp;link_type=ARTICLE&amp;db_key=AST&amp;high=">Full Refereed Journal Article (PDF/Postscript)</a></strong>
+<dt><strong>· <a class="oa" href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2004AJ....128.2826W&amp;link_type=PREPRINT&amp;db_key=AST">arXiv e-print</strong></a> (arXiv:astro-ph/0411094)
+<dt><strong>· <a  href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2004AJ....128.2826W&amp;link_type=DATA&amp;db_key=AST&amp;high=">On-line Data</a></strong>
+<dt><strong>· <a  href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2004AJ....128.2826W&amp;link_type=REFERENCES&amp;db_key=AST&amp;high=">References in the article</a></strong>
+<dt><strong>· <a href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2004AJ....128.2826W&amp;link_type=CITATIONS&amp;db_key=AST">Citations to the Article (29)</strong></a> (<a href="http://adsabs.harvard.edu/cgi-bin/nph-ref_history?refs=CITATIONS&amp;bibcode=2004AJ....128.2826W">Citation History</a>)
+<dt><strong>· <a  href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2004AJ....128.2826W&amp;link_type=REFCIT&amp;db_key=AST&amp;high=">Refereed Citations to the Article</a></strong>
+<dt><strong>· <a href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2004AJ....128.2826W&amp;link_type=SIMBAD&amp;db_key=AST">SIMBAD Objects (2)</a></strong>
+<dt><strong>· <a href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2004AJ....128.2826W&amp;link_type=NED&amp;db_key=AST">NED Objects (1)</a></strong>
+<dt><strong>· <a href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2004AJ....128.2826W&amp;link_type=AR&amp;db_key=AST">Also-Read Articles</a></strong> (<a href="http://adsabs.harvard.edu/cgi-bin/nph-ref_history?refs=AR&amp;bibcode=2004AJ....128.2826W">Reads History</a>)
+<dt>&#183;
+<dt><strong>&#183; <a href="http://www.microsofttranslator.com/BV.aspx?from=en&amp;a=http://adsabs.harvard.edu/abs/2004AJ....128.2826W">Translate This Page</a></strong>
+
+</dl>
+<table>
+<tr><td nowrap valign="top" align="left"><b>Title:</b></td><td><br></td><td align="left" valign="top">Balmer and Metal Absorption Feature Gradients in <span class="a">M32</span></td></tr>
+<tr><td nowrap valign="top" align="left"><b>Authors:</b></td><td><br></td><td align="left" valign="top"><a href="http://adsabs.harvard.edu/cgi-bin/author_form?author=Worthey,+G&amp;fullauthor=Worthey,%20Guy&amp;charset=UTF-8&amp;db_key=AST">Worthey, Guy</a></td></tr>
+<tr><td nowrap valign="top" align="left"><b>Affiliation:</b></td><td><br></td><td align="left" valign="top">AA(Program in Astronomy, Washington State University, Pullman, WA 99164-2814)</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Publication:</b></td><td><br></td><td align="left" valign="top">The Astronomical Journal, Volume 128, Issue 6, pp. 2826-2837. (<A href="http://iopscience.iop.org/1538-3881">AJ Homepage</a>)</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Publication Date:</b></td><td><br></td><td align="left" valign="top">12/2004</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Origin:</b></td><td><br></td><td align="left" valign="top"><a href="http://www.journals.uchicago.edu/">UCP</a></td></tr>
+<tr><td nowrap valign="top" align="left"><b>Astronomy Keywords:</b></td><td><br></td><td align="left" valign="top">Galaxies: Abundances, Galaxies: Elliptical and Lenticular, cD, Galaxies: Fundamental Parameters, Galaxies: Individual: Messier Number: <span class="a">M32</span>, Galaxies: Stellar Content</td></tr>
+<tr><td nowrap valign="top" align="left"><b>DOI:</b></td><td><br></td><td align="left" valign="top"><A href="http://dx.doi.org/10.1086/426359">10.1086/426359</a></td></tr>
+<tr><td nowrap valign="top" align="left"><b>Bibliographic Code:</b></td><td><br></td><td align="left" valign="top"><A href="http://adsabs.harvard.edu/abs/2004AJ....128.2826W">2004AJ....128.2826W</a></td></tr>
+</table>
+<h3 align="center">                               Abstract</h3>
+New data sources are used to assess Lick/IDS feature strength gradients
+inside the half-light radius R<SUB>e</SUB> of the compact Local Group
+elliptical galaxy <span class="a">M32</span>. A Hubble Space Telescope (HST) STIS spectrum
+seemed to indicate ionized gas and a very young central stellar
+population. In fact, this conclusion is entirely spurious because of
+incomplete removal of ion hits. More robust ground-based spectra taken
+at the MDM Observatory are, in contrast, the most accurate measurements
+of Lick/IDS indices yet obtained for <span class="a">M32</span>. All but a few (of 24 measured)
+indices show a statistically significant gradient. The CN indices show a
+maximum at 4" radius, dropping off both toward the nucleus and away from
+it. At 2" radius there is a discontinuity in the surface brightness
+profile, but this feature is not reflected in any spectral feature.
+Comparing with models, the index gradients indicate a mean age and
+abundance gradient in the sense that the nucleus is a factor of 2.5
+younger and a factor of 0.3 dex more metal-rich than at 1R<SUB>e</SUB>.
+This conclusion is only weakly dependent on which index combinations are
+used and is robust to high accuracy. Stars near the <span class="a">M32</span> nucleus have a
+mean age and heavy element abundance [M/H] of (4.7 Gyr, +0.02), judging
+from models by Worthey with variable abundance ratios. This result has
+very small formal random errors, although, of course, there is
+significant age-metallicity degeneracy along an (age, abundance) line
+segment from (5.0 Gyr, 0.00) to (4.5 Gyr, +0.05). An abundance pattern
+of [C/M]=+0.077 (carbon abundance affects CN, C<SUB>2</SUB>4668, and the
+bluer Balmer features), [N/M]=-0.13, [Mg/M]=-0.18, [Fe/M]~0.0, and
+[Na/M]=+0.12 is required to fit the feature data, with a fitting
+precision of about 0.01 dex (with two caveats: the [Fe/M] guess has
+about twice this precision because of the relative insensitivity of the
+Fe5335 feature to iron, and the [Na/M] value may be falsely amplified
+because of interstellar absorption). Model uncertainties make the
+accuracies of these values at least twice the magnitude of the
+precision. Forcing scaled-solar abundances does not change the age very
+much, but it increases the rms goodness of model-data fit by a factor of
+3 and broadens the allowed range of age to +/-1 Gyr. The abundance
+ratios do not show strong trends with radius, except for the nuclear
+weakening of CN (measuring mainly N) mentioned above, which needs
+reconfirming with better data. The overall abundance pattern contrasts
+with larger elliptical galaxies, in which all measurable lighter
+elements are enhanced relative to iron and calcium. Nucleosynthetic
+theory does not provide a ready explanation for these mixtures.
+<hr>
+<table width=100%><tr><td align="left"><b><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2004AJ....128.2826W&amp;data_type=BIBTEX&amp;db_key=AST&amp;nocookieset=1">Bibtex entry for this abstract</a></b>&nbsp;&nbsp;&nbsp;<b><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?bibcode=2004AJ....128.2826W&amp;data_type=Custom&amp;format=%5c%5cbibitem%5b%25%5c2m%25%28y%29%5d%25%7bR%7d%20%25%5c5.3l%20%25%5cY,%25%5cj,%25%5cV,%25%5cp%5cn&amp;return_fmt=LONG&amp;db_key=AST&amp;nocookieset=1">Preferred format for this abstract</a></b> (see <a href="http://adsabs.harvard.edu/cgi-bin/pref_set">Preferences</a>)</td>
+<td align="right"><button onclick="t();">Toggle Highlighting</button></td>
+</tr></table>
+<hr>
+<form method="POST" action="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect"><a name="private"></a>
+<input type="hidden" name="bibcode" value="2004AJ....128.2826W">
+
+<input type="submit" name="library" value=" Add this article to private library ">&nbsp;&nbsp;&nbsp;<input type="submit" name="library" value=" Remove this article from private library "><br>
+</form>
+<hr>
+<form method="POST" action="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect"><a name="feedback"></a>
+<h3>Find Similar Abstracts:</h3>
+
+<input type="hidden" name="return_req" value="no_params">
+<table>
+<tr><td>Use:</td><td>      <input type="checkbox" name="use_auth" value="YES"></td><td>  Authors</td></tr>
+<tr><td></td><td>          <input type="checkbox" checked name="use_title" value="YES"></td><td>  Title</td></tr>
+<tr><td></td><td>          <input type="checkbox" checked name="use_kwds" value="YES"></td><td>  Keywords (in text query field)</td></tr>
+<tr><td></td><td>          <input type="checkbox" checked name="use_text" value="YES"></td><td>  Abstract Text</td></tr>
+
+<tr><td>Return:</td><td>   <input type="radio" checked name="return_req" value="feedback"></td><td>  Query Results</td><td>   Return <input name="nr_to_return" size="5" value="100">&nbsp;&nbsp;&nbsp;items starting with number <input name="start_nr" size="5" value="1"></td></tr>
+<tr><td></td><td>          <input type="radio" name="return_req" value="form"></td><td>  Query Form</td></tr>
+
+<tr><td>Database:</td><td> <input type="checkbox" checked name="db_key" value="AST"></td><td>  Astronomy</td></tr>
+<tr><td></td><td>          <input type="checkbox"  name="db_key" value="PHY"></td><td>  Physics</td></tr>
+<tr><td></td><td>          <input type="checkbox"  name="db_key" value="PRE"></td><td>  arXiv e-prints</td></tr>
+
+</table>
+
+<input type="hidden" name="arxiv_sel" value="ALL">
+<input type="hidden" name="bib_dbkey" value="AST">
+<input type="submit" name="selfeedback" value="      Send Query     ">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="      Reset      ">
+<input type="hidden" name="bibcode" value="2004AJ....128.2826W">
+</form>
+<br><hr><br>
+</body>
+</html>

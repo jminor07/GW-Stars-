@@ -1,0 +1,73 @@
+! Mg2 versus V-I fron the Padova 2011 model  and empirical data
+erase
+
+ctype default
+limits 1.7 2.8 0.15 0.4
+expand 1.3
+box
+xlabel \bar V-\bar I (\AA)
+ylabel Mg2 (\AA)
+
+data padlbars.out
+lines 2 0
+read { V_w94 4 I_w94 6 }
+set VI = V_w94 - I_w94
+
+data pad200.out
+lines 2 0
+read { age 1 width 2 mg2 15 }
+
+!Empirical data
+data mg2VI.data
+lines 4 15
+read { Mg2 1 vi 5 }
+
+ptype 20 3
+ctype magenta
+points vi Mg2
+
+
+! trick to make the older age points look bigger
+set evector = age/5
+expand evector
+ptype 20 0
+ctype white
+points VI mg2
+
+ptype 3 3
+ctype magenta
+points VI mg2 if (width == 1)
+ctype blue
+points VI mg2 if (width == 2)
+ctype red
+points VI mg2 if (width == 3)
+ctype green
+points VI mg2 if (width == 4)
+ctype cyan
+points VI mg2 if (width == 5)
+
+! some data id labels
+expand 0.9
+ctype magenta
+relocate 2.5 0.22
+label width 1
+ctype blue
+relocate 2.5 0.21
+label width 2
+ctype red
+relocate 2.5 0.20
+label width 3
+ctype green
+relocate 2.5 0.19
+label width 4
+ctype cyan
+relocate 2.5 0.18
+label width 5
+ctype magenta
+relocate 1.8 0.16
+label Ages 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+relocate 1.8 0.155
+ctype magenta
+label [M/H] = -2, -1.5, -1, -0.5, -0.25, 0, 0.25, 0.5
+
+ctype  default

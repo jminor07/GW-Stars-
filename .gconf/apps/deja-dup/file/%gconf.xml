@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="uuid" mtime="1346354022" type="string">
+		<stringvalue>dc26f377-9c98-4122-9a83-603a797af6a4</stringvalue>
+	</entry>
+	<entry name="short_name" mtime="1346354022" type="string">
+		<stringvalue>Fantom2TB</stringvalue>
+	</entry>
+	<entry name="name" mtime="1346354022" type="string">
+		<stringvalue>2.0 TB Hard Disk: Fantom2TB</stringvalue>
+	</entry>
+	<entry name="icon" mtime="1346354022" type="string">
+		<stringvalue>. GThemedIcon drive-harddisk-usb drive-harddisk drive</stringvalue>
+	</entry>
+	<entry name="type" mtime="1346354022" type="string">
+		<stringvalue>volume</stringvalue>
+	</entry>
+</gconf>

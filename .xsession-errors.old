@@ -1,0 +1,144 @@
+/usr/sbin/lightdm-session: 26: /home/student/.profile: source: not found
+openConnection: connect: No such file or directory
+cannot connect to brltty at :0
+
+(gsettings-data-convert:2783): GLib-GIO-WARNING **: g_settings_set_value: value for key 'visual-bell-type' in schema 'org.gnome.desktop.wm.preferences' is outside of valid range
+
+(gsettings-data-convert:2783): GLib-GIO-WARNING **: g_settings_set_value: value for key 'visual-bell-type' in schema 'org.gnome.desktop.wm.preferences' is outside of valid range
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'show-desktop' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'panel-main-menu' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'panel-run-dialog' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'toggle-maximized' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'maximize' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'toggle-shaded' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'minimize' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-workspace-left' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-workspace-right' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-workspace-up' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-workspace-down' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-corner-nw' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-corner-ne' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-corner-sw' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-corner-se' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-side-n' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-side-s' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-side-e' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+
+(gsettings-data-convert:2783): GLib-GIO-CRITICAL **: g_settings_set_value: key 'move-to-side-w' in 'org.gnome.desktop.wm.keybindings' expects type 'as', but a GVariant of type 's' was given
+Backend     : gconf
+Integration : true
+Profile     : unity
+Adding plugins
+Initializing core options...done
+Initializing composite options...done
+** Message: applet now removed from the notification area
+Initializing opengl options...done
+Initializing decor options...done
+Initializing snap options...done
+Initializing grid options...done
+** Message: using fallback from indicator to GtkStatusIcon
+Initializing gnomecompat options...done
+Initializing resize options...done
+Initializing vpswitch options...done
+Initializing place options...done
+Initializing mousepoll options...done
+I/O warning : failed to load external entity "/home/student/.compiz/session/101b296d19ddf7b68e134635393820501500000027200036"
+Initializing session options...done
+Initializing move options...done
+Initializing unitymtgrabhandles options...done
+Initializing wall options...done
+Initializing animation options...done
+Initializing fade options...done
+Initializing workarounds options...done
+compiz (expo) - Warn: failed to bind image to texture
+Initializing expo options...done
+Initializing scale options...done
+Initializing ezoom options...done
+
+(compiz:2803): GConf-CRITICAL **: gconf_client_add_dir: assertion `gconf_valid_key (dirname, NULL)' failed
+Initializing unityshell options...done
+Setting Update "main_menu_key"
+Setting Update "run_key"
+** Message: moving back from GtkStatusIcon to indicator
+
+(gnome-settings-daemon:2785): GLib-CRITICAL **: g_variant_get_int32: assertion `g_variant_is_of_type (value, G_VARIANT_TYPE_INT32)' failed
+WARNING:root:timeout reached, exiting
+compiz (decor) - Warn: failed to bind pixmap to texture
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+
+(nautilus:2814): GLib-GObject-WARNING **: instance of invalid non-instantiatable type `<invalid>'
+
+(nautilus:2814): GLib-GObject-CRITICAL **: g_signal_handler_disconnect: assertion `G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(nautilus:2814): GLib-GObject-WARNING **: instance of invalid non-instantiatable type `(null)'
+
+(nautilus:2814): GLib-GObject-CRITICAL **: g_signal_handler_disconnect: assertion `G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(gnome-settings-daemon:2785): color-plugin-WARNING **: failed to set screen _ICC_PROFILE: Failed to open file '/var/lib/lightdm/.local/share/icc/edid-a99a351d3701a20a119936d9b9972e07.icc': Permission denied
+
+(gnome-settings-daemon:2785): color-plugin-WARNING **: failed to set screen _ICC_PROFILE: Failed to open file '/var/lib/lightdm/.local/share/icc/edid-a99a351d3701a20a119936d9b9972e07.icc': Permission denied
+
+(gnome-settings-daemon:2785): color-plugin-WARNING **: failed to set screen _ICC_PROFILE: Failed to open file '/var/lib/lightdm/.local/share/icc/edid-a99a351d3701a20a119936d9b9972e07.icc': Permission denied
+
+(gnome-settings-daemon:2785): color-plugin-WARNING **: failed to set screen _ICC_PROFILE: Failed to open file '/var/lib/lightdm/.local/share/icc/edid-a99a351d3701a20a119936d9b9972e07.icc': Permission denied
+
+(gnome-settings-daemon:2785): color-plugin-WARNING **: failed to set screen _ICC_PROFILE: Failed to open file '/var/lib/lightdm/.local/share/icc/edid-a99a351d3701a20a119936d9b9972e07.icc': Permission denied
+
+(gnome-settings-daemon:2785): color-plugin-WARNING **: Done switch to new account, reload devices
+
+(gnome-settings-daemon:2785): color-plugin-WARNING **: failed to set screen _ICC_PROFILE: Failed to open file '/var/lib/lightdm/.local/share/icc/edid-a99a351d3701a20a119936d9b9972e07.icc': Permission denied
+
+(gnome-settings-daemon:2785): color-plugin-WARNING **: Done switch to new account, reload devices
+
+(gnome-settings-daemon:2785): Gdk-WARNING **: gnome-settings-daemon: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+** Message: PID 2811 (we are 2811) sent signal 15, shutting down...
+
+(nautilus:2814): Gdk-WARNING **: nautilus: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+gtk-window-decorator: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.
+
+(gdu-notification-daemon:2972): Gdk-WARNING **: gdu-notification-daemon: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(gnome-screensaver:2993): Gdk-WARNING **: gnome-screensaver: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(telepathy-indicator:2976): Gdk-WARNING **: telepathy-indicator: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(nm-applet:2811): libappindicator-WARNING **: Unable to send signal for NewStatus: The connection is closed
+
+(evolution-alarm-notify:3062): Gdk-WARNING **: evolution-alarm-notify: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(update-notifier:3166): Gdk-WARNING **: update-notifier: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(deja-dup-monitor:3241): GVFS-RemoteVolumeMonitor-WARNING **: Owner :1.27 of volume monitor org.gtk.Private.GduVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(deja-dup-monitor:3241): GVFS-RemoteVolumeMonitor-WARNING **: Owner :1.29 of volume monitor org.gtk.Private.GPhoto2VolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(deja-dup-monitor:3241): GVFS-RemoteVolumeMonitor-WARNING **: Owner :1.30 of volume monitor org.gtk.Private.AfcVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+** (zeitgeist-datahub:2992): WARNING **: zeitgeist-datahub.vala:227: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!

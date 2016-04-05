@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="description goes here" />
+    <meta name="keywords" content="keywords,goes,here" />
+    <meta name="author" content="Your Name" />
+    <meta name="generator" content="webgen - http://webgen.rubyforge.org" />
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <link rel="stylesheet" type="text/css" href="css/webgen.css" />
+    <!--[if IE 6]>
+        <link rel="stylesheet" href="browserfix.css" type="text/css" />
+        <![endif]-->
+    <title>how to use MESA star</title>
+  </head>
+
+  <body>
+    <div id="sidebar">
+      <h1>MESA</h1>
+      <h2>Modules for Experiments<br>in Stellar Astrophysics</h2>
+
+      <div id="menu">
+        <div class="webgen-menu-vert webgen-menu"><ul><li ><a href="index.html">MESA home</a></li><li ><a href="getting_started.html">getting started</a></li><li class="webgen-menu-item-selected"><span>how to use MESA star</span></li><li ><a href="mailing_lists.html">mailing lists</a></li><li ><a href="logo.html">mesa logo</a></li></ul></div>
+      </div>
+
+      <ul>
+        MESA Council
+        <li><a href="http://www.kitp.ucsb.edu/~paxton/">Bill Paxton</a></li>
+        <li><a href="http://www.kitp.ucsb.edu/~bildsten/">Lars Bildsten</a></li>
+        <li><a href="http://www.stsci.edu/~dotter/">Aaron Dotter</a></li>
+        <li><a href="http://www.astro.uvic.ca/~fherwig/">Falk Herwig</a></li>
+        <li><a href="http://cococubed.com/">Frank Timmes</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <p><img src="images/mesa_logo2_100pt.png" style="border:0px" >
+</A>
+<br clear=all></p>
+
+
+	<h2>how to use <span class="caps">MESA</span> star<br>
+a basic guide to get you started</h2>
+
+
+	<p><br><b>Contents</b><br>
+Appetizer<br>
+Introduction<br>
+<a href="#part1">1.</a>  Setting up the parameters for a run&#8212;the &#8216;inlist&#8217; file<br>
+<a href="#part2">2.</a>  Changing parameters during a run&#8212;stopping and restarting<br>
+<a href="#part3">3.</a>  Using the standard logs and profiles<br>
+<a href="#part4">4.</a>  The &#8220;test suite&#8221; as a source of examples<br>
+<a href="#part5">5.</a>  Adding your own columns to the standard logs and profiles<br>
+<a href="#part6">6.</a>  Using Tioga to create <span class="caps">MESA</span> star pdf plots<br>
+<a href="#part7">7.</a>  Using PGstar for on-screen plots and movies<br>
+<a href="#part8">8.</a>  Adding your own code to control <span class="caps">MESA</span> star<br>
+<a href="#part9">9.</a>  A few hints<br></p>
+
+
+	<p><br>
+If you haven&#8217;t already done it, please stop now and join the 
+<a href="https://lists.sourceforge.net/lists/listinfo/MESA-users"><span class="caps">MESA</span>-users</a>
+mailing-list.
+<br>
+Once you&#8217;ve joined, post your questions to the list.<br>
+And once you&#8217;ve learned a bit, please do your share of replying to posts on the list.<br></p>
+
+
+	<p><span class="caps">BTW</span>: MESA is written using advanced features of modern Fortran which make it very different from Fortran 77 codes you might have previously seen (or written!).
+If you are not already familiar with the new and wonderful things that have been added, there are good resources available on the web&#8212;here&#8217;s one: <a href="http://en.wikipedia.org/wiki/Fortran_95_language_features">Fortran 95 language features</a>.</p>
+
+
+<br>
+	<h3>Appetizer</h3>
+
+
+	<p>You can consider this to be an optional &#8220;pre-introduction&#8221; to stimulate your appetite for <span class="caps">MESA</span> star.
+It is step-by-step instructions to give you hands-on experience for one simple case before
+reading the details that follow below.</p>
+
+
+Assuming that you have successfully installed <span class="caps">MESA</span>, connect to the directory &#8220;star/test&#8221; and 
+open the file &#8216;inlist_first_thing_to_try&#8217;.
+It has the parameters to control our example run.  For star to find it, you need to edit
+the file called &#8216;inlist&#8217; in star/test and change the file names you find there to &#8216;inlist_first_thing_to_try&#8217;.
+It should look like this: 
+<blockquote>
+&#38;star_job
+<blockquote>
+      read_extra_star_job_inlist1=.true.<br>
+      extra_star_job_inlist1_name=&#8217;inlist_first_thing_to_try&#8217;<br>
+</blockquote>
+/ ! end of star_job namelist<br><br>
+&#38;controls
+<blockquote>
+      read_extra_controls_inlist1=.true.<br>
+      extra_controls_inlist1_name=&#8217;inlist_first_thing_to_try&#8217;<br>
+</blockquote>
+/ ! end of controls namelist<br><br>
+&#38;pgstar
+<blockquote>
+      read_extra_pgstar_inlist1=.true.<br>
+      extra_pgstar_inlist1_name=&#8217;inlist_first_thing_to_try&#8217;<br>
+</blockquote>
+/ ! end of pgstar namelist<br>
+</blockquote>
+
+	<p><span class="caps">WARNING</span>: you&#8217;ll probably need to fix the quotes if you cut-and-paste these lines.  Fortran doesn&#8217;t like fancy quotes, so if the browser used anything other than the simple quote you get by hitting the key between semicolon and return, you&#8217;ll need to replace them.</p>
+
+
+After saving the newly edited inlist, do
+<blockquote>
+./rn
+</blockquote>
+
+This should run for about 60 steps before stopping with the following message:
+<blockquote>
+stop because have dropped below central lower limit for h1
+</blockquote>
+
+	<p>Go back to the editor look at inlist_first_thing_to_try.  Search for &#8216;xa_central_lower_limit&#8217;.
+You&#8217;ll find that the limit is set to 0.5 which is why the run stopped.  Edit the line to
+change the limit to 0.2 and then save the file.</p>
+
+
+We don&#8217;t need to start over from the beginning with the new limit on central h1; we can restart using a saved photo.
+If you scroll back in the terminal output from the run, you should find this:
+<blockquote>
+save profile <span class="caps">LOGS</span>/log6.data     50<br>
+save photos/x050
+</blockquote>
+
+So now we can restart using the photo x050.
+<blockquote>
+./re x050
+</blockquote>
+
+	<p>This resumes the run from model 50, but this time with a different limit because
+you&#8217;ve edited the inlist.  The new limit will cause the run to stop when the central
+hydrogen drops below 0.2, which happens at about model 100 or so.</p>
+
+
+	<p>If you look in the <span class="caps">LOGS</span> directory you&#8217;ll find the files that were written during the run.
+Open the file star.log.  It has a line for each step (including the steps that were redone
+by the restart).  The log-.data files have information about particular models.</p>
+
+
+We are almost done, but before stopping, let&#8217;s save a model as a text file that can be
+used as a starting model at some later time.  Edit inlist_first_thing_to_try and uncomment
+the line that says
+<blockquote>
+save_model_number = 93
+</blockquote>
+
+After saving the inlist, do
+<blockquote>
+./re x090
+</blockquote>
+
+Let it run until it gets to model 93 and reports that it has &#8220;saved to test.mod&#8221;.  Then interrupt the run (CTRL-c works).
+Edit inlist_first_thing_to_try to recomment the &#8220;save_model_number&#8221; line and uncomment the line that says
+<blockquote>
+load_saved_model = .true.
+</blockquote>
+
+Save the edits and do
+<blockquote>
+./rn
+</blockquote>
+
+	<p>You should begin a new run that uses test.mod as its starting model.</p>
+
+
+	<p>Congratulations&#8212;you are now an experienced user of <span class="caps">MESA</span> star!
+But it would still be a good idea to keep on reading.</p>
+
+
+<br><a name="intro"></a>
+	<h3>Introduction</h3>
+
+
+	<p>Every module in <span class="caps">MESA</span> is a library, and <span class="caps">MESA</span> star is no exception;
+the job of the <span class="caps">MESA</span> star module is to advance the state of a
+stellar model by a single step, and then suggest a new time increment
+for the next step.  Basically, that&#8217;s all it does.</p>
+
+
+	<p>But I assume that you&#8217;re like me and want to have a program that
+invokes the library routines to do multi-step stellar evolution.  
+Such a program lives in the mesa/star/test directory and is created 
+along with the rest of the <span class="caps">MESA</span> star tests and utilities.</p>
+
+
+	<p>The sources are in test/src/run_star.f if you&#8217;d like to see how it works.</p>
+
+
+	<p>One of the first things run_star does is read control parameters 
+from the file named &#8216;inlist&#8217; in star/test.  For many users, it won&#8217;t be 
+necessary to change any fortran code; you&#8217;ll probably be able to do what 
+you want just by editing the inlist file in your favorite text editor.</p>
+
+
+	<p>The next few sections discuss the inlist file and explain how you can use 
+it to setup a run and to change things as the run progresses.  
+Once you&#8217;ve got the parameters set so that the evolution is working
+as you like, you&#8217;ll want to get detailed data and make pretty plots.
+There&#8217;s a section covering the standard logs and profiles that are
+created by <span class="caps">MESA</span> star&#8212;they should be adequate for many tasks.  But for
+more advanced applications, you&#8217;ll need to know how to add your own
+code to do things during a run such as modify controls or save
+special log information.  The final section of this guide discusses
+how you can do that (it&#8217;s not too hard&#8212;really!).</p>
+
+
+<br><a name="part0"></a>
+	<h3>Create a work directory for your current project</h3>
+
+
+	<p>Before getting into the details of running <span class="caps">MESA</span> star, I suggest that
+you create a separate working directory rather than doing things in
+the star/test directory.  The easiest way to set this up is to
+copy the star/work directory.  You can put the copy anywhere you&#8217;d like and
+give it any name you&#8217;d like.</p>
+
+
+	<p>It doesn&#8217;t need to be part of the <span class="caps">MESA</span> directory;
+you&#8217;ll provide a pathname to <span class="caps">MESA</span> as part of the setup.  In fact,
+I suggest you keep your working directories separate from your <span class="caps">MESA</span> directory.
+That will minimize the pain if someday you need to do a fresh checkout
+of <span class="caps">MESA</span>&#8212;or if you decide to keep an old version of <span class="caps">MESA</span> in addition
+to a new one.</p>
+
+
+	<p>Look at the work/README file for 
+instructions about setting up your work directory.  
+You might decide to have separate ones for
+various projects&#8212;that&#8217;s a convenient way to organize things if like most
+of us you&#8217;re doing several things at once.</p>
+
+
+<br><a name="part1"></a>
+	<h3>1. setting up the parameters for a run&#8212;the &#8216;inlist&#8217; file</h3>
+
+
+	<p>The inlist file contains several &#8220;namelists&#8221;.  A namelist is the fortran95 way 
+of setting up a parameter file.  Each definition in a namelist is of the form</p>
+
+
+<blockquote>
+name = value ! comment
+</blockquote>
+
+	<p>Each name must be declared as a control in the program, but you don&#8217;t need 
+to include all of the controls in the list, and the order of the list 
+doesn&#8217;t matter.  Blank lines and comment lines can be freely included 
+in the list.  Blanks at the start of a line containing a name-value pair 
+are okay too so you can indent things to make them more readable.</p>
+
+
+	<p>All of the controls are given reasonable default values at initialization, 
+so you only need to set the ones that you actually want to change.
+If you don&#8217;t want to change a control, but you do want to keep in the list,
+simply comment out the line using a leading &#8217;!&#8217; in standard f95 notation.</p>
+
+
+	<p>Fortran supports structured values in namelists (arrays and derived types),
+but for simplicity, we only use scalar types (integers, doubles, logicals, 
+and strings).  Values are given using the usual fortran syntax.</p>
+
+
+	<h4>the &#8216;star_job&#8217; namelist</h4>
+
+
+	<p>The first of the namelists in the inlist file contains control parameters for
+the run_star program, and the second has controls for the <span class="caps">MESA</span> star routines.</p>
+
+
+	<p>For a complete list of the available star_job parameters with default values,
+look through mesa/star/public/run_star_defaults.dek.</p>
+
+
+	<p>The run_star parameters are in the namelist that begins with the line:</p>
+
+
+<blockquote>
+&#38;star_job
+</blockquote>
+
+Note: the information here is for illustration only&#8212;for the &#8220;truth&#8221;, see 
+<blockquote>
+mesa/star/public/run_star_defaults.dek.
+</blockquote>
+<br>
+
+	<p><b>job</b>: The &#8216;job&#8217; parameter should be set to 1, meaning that you are doing a standard
+stellar evolution run.  The other values are for various special tasks.</p>
+
+
+	<p><b>save_model_number</b> and <b>save_model_filename</b>:  If &#8216;save_model_number&#8217; is nonzero,
+then when the evolution model number is equal to the value of save_model_number,
+information about the current state of the run is written to the file named
+by the string value of save_model_filename.  The data is written in text form
+and can be saved for use with future versions of <span class="caps">MESA</span>.  You can use the
+saved model as a starting model for a new run by using load_saved_model.</p>
+
+
+	<p><b>load_saved_model</b> and <b>saved_model_name</b>:  If &#8216;load_saved_model&#8217; is true, then 
+the run begins by reading the information in the file named by the string
+value of &#8216;saved_model_name&#8217;.  The default value of &#8216;load_saved_model&#8217; is false,
+meaning that the initial model will be created in some other manner, with
+the starting mass and metallicity determined by parameters in the &#8216;controls&#8217;
+namelist described below.</p>
+
+
+	<p>If &#8216;load_saved_model&#8217; is false, the default behavior of the code is to create a <span class="caps">ZAMS</span> 
+starting model by interpolating in mass and metallicity from a fairly large set of pre-built models.
+You can find these models in the star/starting_models directory.  However, there
+may be times when you&#8217;d like to have a pre-main-sequence model or take a short-cut to
+some more advanced stage of evolution.  The following flags provide several such options.</p>
+
+
+	<p><b>create_pre_main_sequence_model</b> and <b>pre_ms_t_c</b>:  If &#8216;create_pre_main_sequence_model&#8217;
+is true, then run_star will ask <span class="caps">MESA</span> star to
+create a pre-main sequence starting model with the given initial center temperature.
+If &#8216;pre_ms_T_c&#8217; is unspecified, the default value of 0 will cause the system
+to pick an appropriate starting center temperature.  The luminosity of the
+model will come from gravitational contraction at a uniform rate per gram
+choosen by the system to make the core of the pre-main sequence star convective.</p>
+
+
+	<p>After the initial model has been loaded, you can make various changes to it before starting the evolution.
+Here are some of the more common things you might want to do.</p>
+
+
+	<p><b>change_net</b> and <b>new_net_num</b>:  If &#8216;change_net&#8217; is true, then the nuclear burning
+network for the model will be changed to the net specified by &#8216;new_net_num&#8217;.
+The inlist file contains several options for nets; for more details, see <span class="caps">MESA</span>/net.</p>
+
+
+	<p><b>change_y</b> and <b>new_y</b>: changes only the abundances of hydrogen and helium to give the requested 
+helium abundance while leaving metallicity unchanged.</p>
+
+
+	<p><b>change_z</b> and <b>new_z</b>: changes the abundances of metals while keeping the relative ratios of
+hydrogen and helium the same at each point.</p>
+
+
+	<p><b>set_v_flag</b> and <b>new_v_flag</b>:  These controls let you determine whether or not
+a velocity variable is included in the evolution.  If v_flag is false, the
+code does the usual quasi-hydrostatic evolution.  If v_flag is true, each
+point gets a velocity variable and the momentum equation gets an added term
+for acceleration giving hydrodynamic evolution.  If the &#8216;set_v_flag&#8217; control
+is true, then v_flag is set to the value of the &#8216;new_v_flag&#8217; parameter.</p>
+
+
+	<h4>the &#8216;controls&#8217; namelist</h4>
+
+
+	<p>The second namelist in the inlist file is for <span class="caps">MESA</span> star and the modules that it calls.
+There are lots of parameters!  But to get started, you only need a few of them.</p>
+
+
+The controls are divided into the following sections:
+<blockquote>
+starting specifications<br>
+controls for output<br>
+when to stop<br>
+output of photos, logs, and profiles<br>
+mixing parameters<br>
+atmosphere<br>
+mass gain or loss<br>
+composition of accreted material<br>
+mesh adjustment<br>
+nuclear reactions<br>
+element diffusion<br>
+opacity<br>
+newton solver<br>
+timesteps<br>
+miscellaneous<br>
+</blockquote>
+<br>
+
+Here are a few details to give you the idea.
+Note: the information here is for illustration only&#8212;for the &#8220;truth&#8221;, see 
+<blockquote>
+mesa/star/public/star_defaults.dek.
+</blockquote>
+<br>
+
+	<p><b>initial_mass</b>: in Msun units.  If you&#8217;re running with create_pre_main_sequence set true,
+then you can try anything you&#8217;d like for initial_mass; it might work or it might not.
+Try it and see.  If your&#8217;re running with that flag set false, then the system will
+try to create a <span class="caps">ZAMS</span> model from pre-built models.  The lowest mass for prebuilt models
+is currently 0.085 Msun, but you can probably get away with somewhat smaller values
+for initial_mass.  At the high mass end, the current upper limit is around 25 Msun or so.
+If you request a <span class="caps">ZAMS</span> initial_mass that&#8217;s larger than the system thinks it can deal with,
+it will give you an error message and stop.  If you want to do a mass that the system
+rejects because of limits in it&#8217;s pre-built <span class="caps">ZAMS</span> models, you can always set the 
+create_pre_main_sequence flag true and try to create a starting model that way.</p>
+
+
+	<p><b>initial_z</b>: this can be any value from 0 to 0.04 when you are creating a pre-main sequence model.
+However, if you are loading a zams model, then initial_z must match one of the prebuilt values.
+Look in the &#8216;data/star_data/zams_models&#8217; directory to see what prebuilt zams Z&#8217;s are available.</p>
+
+
+	<p>You may also want to change the default settings for how often output is produced.</p>
+
+
+	<p><b>log_cnt</b>:  The code will output log information when mod(model_number, log_cnt) = 0.
+Each log entry is a summary of state of the model that can be used to track the 
+history of the evolution.</p>
+
+
+	<p><b>profile_interval</b>:  &#8216;profiles&#8217; are text format records of structure of a particular model.
+The code will save the model profile info if this many models have elapsed since the 
+last profile. Profiles are automatically saved at &#8220;key&#8221; events such as helium break-even.
+When a profile is saved, the terminal output will include a line such as 
+&#8216;save profile for model number:  1105&#8217;.</p>
+
+
+	<p><b>max_num_profile_models</b>:  This limits the number of profiles that will be kept for a run.
+I added this control after one of my over-night runs filled my disc with profiles!</p>
+
+
+	<p><b>log_directory</b>:  This is where the logs and profiles are written.  There is more information
+about the contents of this directory in a later section of this guide.</p>
+
+
+<br><a name="part2"></a>
+	<h3>2. changing parameters during a run&#8212;stopping and restarting</h3>
+
+
+	<p>You are not limited to using the same parameter settings for an entire run.  You can stop
+the run, edit the inlist file, and restart with new settings.  For use with debugging,
+this stop-restart mechanism has been carefully constructed so that if you restart from
+an intermediate state without changing any controls, you&#8217;ll get exactly the same results.
+For that to work, the saved information must be complete, and that means there&#8217;s a lot of it.
+To make this run fast, the restart information is dumped in binary format.  Even then,
+saving the information is a nontrivial overhead, so you want to control how often it happens.</p>
+
+
+	<p>Also, it should be emphasized that the photos are not intended for long-term storage of
+models&#8212;the &#8216;save_model_number&#8217; scheme described above is meant for that purpose.
+Instead the photos are intended for use during one specific run.  In particular, when
+you update to a new version of <span class="caps">MESA</span> star, you should expect your existing photo files
+to become obsolete.  If you have a lengthy run in progress when you want to update <span class="caps">MESA</span>,
+then you should do &#8216;save_model_number&#8217; to save state before starting the update, and then 
+do &#8216;load_saved_model&#8217; to resume the evolution after you have done the update.</p>
+
+
+	<p><b>photostep</b> and <b>photo_directory</b>:  The value of &#8216;photostep&#8217; determines how often the restart 
+files are written, and the value of &#8216;photo_directory&#8217; determines where they are written.
+If photostep is greater than 0 and mod(model_number, photostep)==0,  a restart photo is saved.
+To prevent overflowing the disc with a huge number of photos, the code uses only the last
+3 digits of the model number in creating a file name&#8212;except when the last 3 digits are &#8216;000&#8217;,
+in which case the entire model number is used for the file name.  So, for example, if photostep
+is 10, then model 1040 will be saved as &#8216;x040&#8217; while model 1000 will be saved as &#8216;1000&#8217;.
+The terminal output includes lines such as &#8216;save photos/x040&#8217;.</p>
+
+
+	<p>When the system starts up, it looks for a file called &#8216;restart_photo&#8217; in the current directory.
+If it finds that file, it assumes that it is a restart snapshot and reads the binary data
+to prepare for restarting the evolution run.  There are scripts called &#8216;rn&#8217; and &#8216;re&#8217; in the
+star/test directory that make this scheme easy to use.  The &#8216;rn&#8217; script is used to start a run.
+It deletes any restart_photo file before starting the evolution program.  The &#8216;re&#8217; script
+is used to do a restart.  It takes a command line argument that is the name of a snapshot file
+in the test/photos directory and copies that file to &#8216;restart_photo&#8217; before starting the
+evolution program.</p>
+
+
+	<p>Most controls can be changed during a run using this scheme.  For example, you can use
+&#8216;change_net&#8217;, &#8216;change_Y&#8217;, &#8216;change_Z&#8217;, &#8216;set_v_flag&#8217;, or &#8216;relax_mass&#8217; from the star_job
+namelist.  We&#8217;ve covered the others above&#8212;here&#8217;s what relax_mass does.</p>
+
+
+	<p><b>relax_mass</b> and <b>new_mass</b>: perhaps you&#8217;d like to simulate an extreme mass loss
+event such as a common envelope phase on the <span class="caps">RGB</span>.  Stop the run when you have a restart
+photo for the time when you&#8217;d like to remove the mass.  Set &#8216;relax_mass&#8217; to true, and 
+set &#8216;new_mass&#8217; to the desired new star mass in Msun units.  The system cannot adjust
+to a large change in mass all at once; it needs to do lots of little mass losses spread
+over many timesteps.  This is done &#8220;on the side&#8221; as a separate evolution run that is
+not recorded in the log files.  When the requested new mass is reached, the normal evolution
+run resumes.</p>
+
+
+	<p>Note that like many things in stellar evolution, sometimes this process works 
+and sometimes it doesn&#8217;t.  If it fails, you might be doing too much too fast; try
+a smaller mass change and see if that works.  You should also make sure that you aren&#8217;t
+trying to remove mass down into a burning region.  For example, if you want to remove most
+of an envelope that is on top of a burning shell, you&#8217;ll need to do it in stages.  Remove
+mass down to a location that is well above the burning; for example, down to logT = 6 or so should work.
+Then let that model run for several steps such that the temperature gradient can adjust
+and the burning region can retreat to a deeper level in the remaining envelope.  Then
+repeat the process, again only removing mass down to the new, deeper, burning region.</p>
+
+
+	<p>Of course you can also change things in the controls namelist.  For instance, you might want
+to change the frequency of saving profiles or restart photos.  Or you might change the maximum
+timestep or turn accretion or winds on or off.  At any point in a run, you can even switch the
+nuclear reaction net along with the set of isotopes or add/remove velocity variables at each 
+point.  Basically, any parameter or operation that is available at the start of a run can be 
+used during a run as well.  Give it a try!</p>
+
+
+<br><a name="part3"></a>
+	<h3>3. Using the standard logs and profiles</h3>
+
+
+	<p>Recall that logs and profiles are written to the directory named by the value of the
+<span class="caps">LOG</span>_DIRECTORY parameter.  The default for this is &#8216;LOGS&#8217;, so unless you change things, 
+that&#8217;s where you&#8217;ll find standard files.</p>
+
+
+	<p>The history for the run is saved, one line per logged model, in the file &#8216;star.log&#8217;.  
+The frequency of log entries in star.log is set by the value of the <span class="caps">LOG</span>_CNT parameter 
+described above.  The first line of star.log has column numbers, the second line
+has column names, and the following lines have the corresponding values.  In case of
+a backup or a restart, lines are not removed from the star.log; instead new values are
+simply appended to the end of the file.  As a result the model_numbers are not guaranteed
+to be monotonically increasing in the log.  The code that uses the log must bear the burden 
+of removing lines that have been made obsolete by subsequent restarts or backups.  This
+can most easily be done by storing the data into arrays as it is read using the model_number
+as the array index.  That way you&#8217;ll automatically discard obsolete values by overwriting
+them with the newer ones that appear later in the log file.</p>
+
+
+	<p>The set of data written to the log is determined by a control file that is read at startup.
+The file is specified by the log_columns_file entry in your inlist.  The default version of this file
+lives in mesa/data/star_data/log_columns.list&#8212;it describes the full list of the available
+options.</p>
+
+
+	<p>While star.log holds the history of the run, one line at a time, the profiles contain
+detailed information about a selected set of models, one model per file.  The total number
+of retained profiles is set by the <span class="caps">MAX</span>_NUM_PROFILE_MODELS control parameter.  Which
+model profiles are currently saved is listed in the profiles.index file.  For each profile,
+there is a line in profiles.index giving the model number, its priority, and its
+log file number.  Priority level 2 is for models saved because of some special event
+in the evolution such as the onset of helium burning.  Priority level 1 is for models
+saved because the number of models since the most recent profile has reached the
+currently setting of the <span class="caps">PROFILE</span>_INTERVAL parameter.  The log file number is an
+integer from 1 to <span class="caps">MAX</span>_NUM_PROFILE_MODELS.  The name of the profile log file is determined
+by the log number.  For example, if the log file number is 15, the profile data will
+be found in the file named &#8216;log15.data&#8217;.</p>
+
+
+	<p>Each profile includes both a set of global properties of the star, such as its age, and
+a large set of properties for each point in the model of the star given one line per
+point.  In each case, the lines of data are preceeded by a line with column numbers
+and a line with column names.</p>
+
+
+	<p>The set of data written to the profile is determined by a control file that is read at startup.
+The file is specified by the profile_columns_file entry in your inlist.  The default version of this file
+lives in mesa/data/star_data/profile_columns.list&#8212;it describes the available
+options.</p>
+
+
+<br><a name="part4"></a>
+	<h3>4. The &#8220;test suite&#8221; as a source of examples</h3>
+
+
+	<p>You will find a wide range of sample cases in the <span class="caps">MESA</span> star &#8220;test_suite&#8221;.
+For example, &#8220;test_suite/high_mass&#8221; is set to run a 100 Msun star
+until the central hydrogen mass fraction has dropped to 0.5.   
+It starts by creating a pre-main-sequence model of 100 Msun with Z=0.02,
+and then it &#8220;relaxes&#8221; Z down to 1e-5 before starting the evolution.
+When I checked last, it took under 200 steps to reach a central X of 0.5,
+and the run took a few minutes.  To try it yourself,</p>
+
+
+	<p>cd star/test_suite/high_mass<br>
+./mk<br>
+./rn</p>
+
+
+	<p>You can do the same with any of the test_suite cases. And you might
+want to copy an inlist from the test suite to one of your working directories to use as a starting
+point for a project of your own.  The <span class="caps">README</span> in test_suite has a list 
+of the tests with a few words of explanation for each.</p>
+
+
+<br><a name="part5"></a>
+	<h3>5. Adding your own columns to the standard logs and profiles</h3>
+
+
+	<p>What do you do if your project requires keep logs of certain items that are
+not included in the options in the log_columns.list?  Here&#8217;s a quick sketch:</p>
+
+
+<blockquote>
+
+	<p>open your work directory copy of src/run_star_extras.f<br></p>
+
+
+	<p>you should find this line: include &#8216;standard_run_star_extras.dek&#8217;<br></p>
+
+
+replace that line by the contents of the file standard_run_star_extras.dek<br>
+(it can be found in mesa/include).<br>
+</blockquote>
+
+	<p>for star.log columns:</p>
+
+
+<blockquote>
+edit how_many_extra_log_columns to return how many you want to add.<br>
+
+edit data_for_extra_log_columns to return the names and values.<br>
+</blockquote>
+
+	<p>similarly, for profile columns:</p>
+
+
+<blockquote>
+edit how_many_extra_profile_columns to return how many you want to add.<br>
+
+edit data_for_extra_profile_columns to return the names and values.<br>
+</blockquote>
+
+	<p>Now do ./mk in your work directory to compile your changes.
+Do a test run to check that the new columns are working.</p>
+
+
+<br><a name="part6"></a>
+	<h3>6. using Tioga to create <span class="caps">MESA</span> star pdf plots</h3>
+
+
+	<p>Since I make lots of plots for stellar evolution, I&#8217;ve spent a significant amount
+of time and effort on creating plotting scripts.  As you may know, I&#8217;ve even created
+a new plotting program called Tioga because I wasn&#8217;t satisfied with the available alternatives.
+More information can be found at my <a href="http://www.kitp.ucsb.edu/~paxton/tioga.html">tioga webpage</a>
+including a <a href="http://www.kitp.ucsb.edu/~paxton/tioga_doc/classes/Tioga/Tutorial.html">tutorial</a>.
+Here&#8217;s a paragraph describing the system:</p>
+
+
+<blockquote>
+Tioga is for creating figures and plots with high quality text and graphics in <span class="caps">PDF</span> format. 
+Text is processed directly by TeX (not an emulation), and the graphics covers a broad range 
+of <span class="caps">PDF</span> features including images, curves, clipping, and transparency.
+</blockquote>
+
+	<p>In <span class="caps">MESA</span> star/test you&#8217;ll find directories called &#8216;star_history&#8217; and &#8216;star_profile&#8217; that
+contain the Tioga plotting scripts that I&#8217;ve written for use with the star logs and profiles.
+There are separate top-level scripts in each directory.  For example, in star_profile there
+are scripts to show the profile plots by grid point, by mass, by logP, by radius, or by log(xm).
+Similarly, in star_history there are scripts to show the log history plots by model number,
+by age, or by log(years before present).  The scripts that actually do the work of creating
+plots can be found in the &#8216;lib&#8217; directories in star_history and star_profile.</p>
+
+
+	<p>If you are happy with your current non-Tioga plotting tools, by all means keep using them.
+But if you&#8217;d like to try using Tioga for your stellar evolution plots, you&#8217;re welcome to give
+my scripts a try.</p>
+
+
+<br><a name="part7"></a>
+	<h3>7. Using PGstar for on-screen plots and movies</h3>
+
+
+	<p>Watching lots of numbers fly by in the terminal window can provide some
+idea of how a run is going, but it is much better (and much more fun)
+to have windows with plots that change at each step.   To make this possible
+with current technology,
+we need to give up the elegance of Tioga&#8217;s TeX and <span class="caps">PDF</span> model in order to get 
+low-overhead and speed on both linux and Mac platforms.  Consequently, PGstar is built on 
+<span class="caps">PGPLOT</span> for creating plots using XWindows for on-screen plots and
+<span class="caps">PNG</span> for frames of movies to animate those plots.</p>
+
+
+	<p>In order to use PGstar, you need to have installed <span class="caps">PGPLOT</span>, XWindows, and a few libraries that they need.
+See the makefile_header in mesa/utils for details.   You&#8217;ll also find pgplot.tar.bz2 in mesa/utils in case
+you need to install <span class="caps">PGPLOT</span> (thanks to Tim Pearson of CalTech for creating <span class="caps">PGPLOT</span> and giving us
+permission to distribute it with <span class="caps">MESA</span>).</p>
+
+
+	<p>The controls for PGstar are in another namefile that goes in your inlists.
+The full set of options are given in the file pgstar_defaults.dek in star/public.</p>
+
+
+	<p>Here&#8217;s an example of the &#8220;summary&#8221; window during a run for a 1Msun star.  The panels on the
+left show the history at the surface (log L vs. log Teff) and the center (log Central Temperature
+vs. log Central Density).  On the right are panels show profiles of temperature, density, nuclear
+burning, element abundances, energy transfer gradients, and entropy.  At the bottom right
+there is a list of numeric values showing the current situation.   All of this is updated
+on the screen at each step of the mesa/star run.  It is a wonderful way to see what is going on.
+I highly recommend using it!
+<img src="images/main_00510.png"></p>
+
+
+	<p>The &#8220;Temperature Density Profile&#8221; gives a good overview of the internal state of the star
+including convection and burning.
+<img src="images/trho_profile_00516.png"></p>
+
+
+	<p>Here are samples of some of the other kinds of plots in PGstar.  
+You can select the xaxis by editing the inlist&#8212;choices are mass, grid,
+radius, logR, logP, and log of exterior mass.   The following plots use logP for x.</p>
+
+
+	<p><img src="images/power_00510.png">
+<img src="images/abund_00512.png">
+<img src="images/conv_00512.png">
+<img src="images/cntr_00515.png">
+<img src="images/surf_00516.png"></p>
+
+
+	<p>For the &#8216;profile&#8217; plot, you can select the axes from a wide set of options (the same
+set as available for profile logs).  The following example shows log opacity
+and adiabatic gradient as functions of logP.</p>
+
+
+	<p><img src="images/profile_00509.png"></p>
+
+
+	<p>To make movies, instruct PGstar to save &#8220;png&#8221; files during the run.  Then later
+construct a movie from the png files using one of the programs that do that sort
+of thing.  For example, Ehsan Moravveji recommends this free package on the mac:
+<a href="http://macscripter.net/viewtopic.php?id=25547">macscripter</a>.</p>
+
+
+<br><a name="part8"></a>
+	<h3>8. Adding your own code to control <span class="caps">MESA</span> star</h3>
+
+
+	<p>Before discussing the details of how to add code, let&#8217;s briefly discuss the <span class="caps">API</span> for <span class="caps">MESA</span> star.
+The procedural interface is found in the file star/public/star_lib.f.  The run_star module
+calls routines defined here, so you can use it as an example of how it goes.  For many
+situations, you won&#8217;t actually need to call any of these routines; it will be enough to
+inspect the data and perhaps modify control parameters.  The data for a star lives in
+a derived type called &#8220;star_info&#8221; that is defined in public/star_def.f.  You refer to
+the star either using an integer &#8220;id&#8221; or a pointer to an instance of the star_info type,
+which is consistently named &#8220;s&#8221; in the code.  There are 2 main sections to the star_info:
+the data defined in star_data.dek should be read-only for your code, while the controls
+defined in star_controls.dek can be modified at any time during a run.  For example,
+if for some reason you want to limit the timestep after the luminosity reaches a certain
+value, you might do something like this:</p>
+
+
+<blockquote>
+if (s% log_luminosity &gt; 3) &#38;<br>&nbsp;&nbsp;&nbsp;s% max_timestep = 1d6*secyer ! limit dt to 1 Myr
+</blockquote>
+
+	<p>So now that you have an idea of the <span class="caps">API</span> available, where should your new code go?</p>
+
+
+	<p>The easiest way to add things is to edit the routines in your 
+private working directory copy of run_star_extras.f (in work/src).  The
+default version of run_star_extras simply includes the file star/public/standard_run_star_extras.dek
+(btw: &#8216;dek&#8217; is ancient for &#8216;deck&#8217; as in &#8216;card deck&#8217;&#8212;ask some old person what that means).
+Replace the &#8220;include&#8221; line in your run_star_extras by the code from the standard_run_star_extras
+so you can edit your copy.  The routines in run_star_extras are called from the &#8216;do_run_star&#8217;
+routine in star/test/src/run_star.f.  From those routines, you have access to the star data structures and the star_lib routines.  Your code can check the state of the model at the end of each step and
+change controls or save files or whatever else it want to do before the start of the new step.</p>
+
+
+	<h4>svn updates</h4>
+
+
+	<p>If you decide to add your own code, remember that you&#8217;ll need to patch things whenever you
+update the <span class="caps">MESA</span> sources.  If you&#8217;ve edited run_star.f, svn update will let you know by a 
+line like the following:</p>
+
+
+<blockquote>
+C    star/test/src/run_star.f
+</blockquote>
+
+	<p>The &#8216;C&#8217; means that there&#8217;s a conflict between your copy of run_star.f and the version in
+the <span class="caps">MESA</span> distribution.  If you then look at your star/test/src directory, you&#8217;ll find 3
+verions of run_star: run_star.f, run_star.f.mine, and run_star.f.rxxx, where &#8216;xxx&#8217; is 
+the revision number of the update.  As you might guess, run_star.f.mine is your copy,
+and run_star.f.rxxx is the <span class="caps">MESA</span> version.  In the file run_star.f you&#8217;ll find the conflicts
+marked with lines such as &#8221;&lt;&lt;&lt;&lt;&lt;&lt;&lt; .mine&#8221; and &#8221;&gt;&gt;&gt;&gt;&gt;&gt;&gt; .rxxx&#8221;.  If you forget to fix things,
+the compiler will choke on these extra lines to remind you.  If you are making major
+changes, you might want to put them in a separate file and just modify run_star by
+adding a call to your routine.</p>
+
+
+	<h4>working directories</h4>
+
+
+	<p>You may have noticed the little stub module in the file run_star_extras.f; the check_model_extras
+function that you find there doesn&#8217;t do anything in the default version of the file.
+It is called from the check_model routine in run_star, but immediately returns.
+In your working directory, you&#8217;ll also find a copy of run_star_extras.f, and it is
+this copy that is compiled and loaded to create your working version of star.
+So the recommended way to add code is to do things in your working version of check_model_extras.
+That way you can easily have different code extensions for different projects and
+maintain a clean separation between the standard run_star code in star/test and your
+extra additions.</p>
+
+
+<br><a name="part9"></a>
+	<h3>9. A few hints</h3>
+
+
+	<p>It is an unfortunate truth that you often have to tune the inlist control parameters to fit
+the particular task you are attempting.  How much time and effort that will require can vary from
+none when you are using a proven recipe from &#8220;off the shelf&#8221;, to painfully long if you are
+being a pioneer and trying something that hasn&#8217;t been done before.</p>
+
+
+	<p>Here are a few hints based on my experience.</p>
+
+
+	<p>Sometimes a failure to converge is simply caused by &#8220;grid starvation&#8221;.  
+Try giving the code more points to work with by decreasing the value of &#8220;mesh_delta_coeff&#8221; 
+and restarting from a step before the convergence problems started.</p>
+
+
+	<p>Use all the visualization tools you have available to get an idea of what&#8217;s going on.
+PGstar is a good start, but I also look at details using the Tioga scripts that are
+included with the release.</p>
+
+
+	<p>Post a message to mesa-users describing the problem.  Perhaps someone else can give you
+some useful information&#8212;or at least some sympathy.</p>
+
+
+	<p>If you can&#8217;t find a recipe that works for your problem, try a different problem.</p>
+
+
+	<p>Okay&#8212;enough doom and gloom.  Sometimes things work great, and you&#8217;d like to see if you
+can make them even better by improving the speed.  
+You will of course need to check that the important results aren&#8217;t impacted.  
+Here are a few things to try if you are feeling adventurous:</p>
+
+
+<blockquote>
+
+	<p>reduce mesh size by increasing the value of mesh_delta_coeff<br></p>
+
+
+	<p>allow convergence with a single iteration by setting newton_itermin = 1<br></p>
+
+
+	<p>don&#8217;t remesh at every step&#8212;try setting remesh_cnt = 2 or more<br></p>
+
+
+	<p>try doing the opposite of everything I just suggested<br></p>
+
+
+</blockquote>
+
+	<p>Finally, remember what Peter Eggleton told me when I was first getting started and asked him why something I was trying failed to converge.   Peter patiently explained that with stellar evolution the only surprise is when the code does converge!  And of course he&#8217;s right.  Each step requires a root find for a highly non-linear relation involving anywhere from a few thousand to several 100&#8217;s of thousands of variables.   It makes me tired just to think about it.</p>
+
+
+	<p>Let me close by emphasizing the importance of visualization.  I strongly recommend using PGstar or something like it to make 
+on-screen plots as the run progresses.  And remember that it takes time to learn how to &#8220;play&#8221; the code&#8212;you&#8217;ll get better at it with experience.</p>
+
+      <BR><HR>
+      <p>
+<!-- GoStats Simple HTML Based Code -->
+<a target="_blank" title="web traffic stats" href="http://gostats.com"><img
+src="http://monster.gostats.com/bin/count/a_401562/t_5/i_1/counter.png"
+style="border-width:0" alt="web traffic stats" /></a>
+<!-- End GoStats Simple HTML Based Code -->
+          <a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=180046&amp;type=1" 
+					  width="88" height="31" border="0" alt="SourceForge.net Logo" /></a>
+					  
+          <a href="http://webgen.rubyforge.org"><img src="images/webgen-generated-by.png" alt="Generated by webgen"/></a> 
+          
+          
+					website design by<br><a href="http://andreasviklund.com">Andreas Viklund</a>
+					</p>
+    </div>
+  </body>
+</html>

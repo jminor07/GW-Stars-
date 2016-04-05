@@ -1,0 +1,911 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript">
+	var JiffyParams = { jsStart: (new Date()).getTime()};
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+<meta name="robots" content="noarchive,nofollow" />
+
+
+
+
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/" /><meta name="dc.Title" content="The Evolved Red Stellar Content of M32" /><meta name="dc.Creator" content=" T. J. Davidge " /><meta name="dc.Description" content="ABSTRACT Near‐infrared images obtained with the Canada‐France‐Hawaii Telescope (CFHT) Adaptive Optics Bonnette (AOB) are used to investigate the stellar content of the Local Group compact elliptical galaxy M32. Observations of a field 2 \documentclass{aastex} \usepackage{amsbsy} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{bm} \usepackage{mathrsfs} \usepackage{pifont} \usepackage{stmaryrd} \usepackage{textcomp} \usepackage{portland,xspace} \usepackage{amsmath,amsxtra} \usepackage[OT2,OT1]{fontenc} \newcommand\cyr{ \renewcommand\rmdefault{wncyr} \renewcommand\sfdefault{wncyss} \renewcommand\encodingdefault{OT2} \normalfont \selectfont} \DeclareTextFontCommand{\textcyr}{\cyr} \pagestyle{empty} \DeclareMathSizes{10}{9}{7}{6} \begin{document} \landscape $\farcm$\end{document} 3 from the galaxy center reveal a large population of asymptotic giant branch (AGB) stars, and comparisons with models indicate that these objects have an age \documentclass{aastex} \usepackage{amsbsy} \usepackage{amsfonts} \us..." /><meta name="dc.Publisher" content=" The University of Chicago Press " /><meta name="dc.Date" scheme="WTN8601" content="Dec 23, 2010" /><meta name="dc.Type" content="research-article" /><meta name="dc.Format" content="text/HTML" /><meta name="dc.Identifier" scheme="doi" content="10.1086/316618" /><meta name="dc.Identifier" scheme="msid" content="PASP200144" /><meta name="dc.Identifier" scheme="ads" content="2000PASP..112.1177D" /><meta name="dc.Source" content="http://dx.doi.org/10.1086/316618" /><meta name="dc.Language" content="en" /><meta name="dc.Coverage" content="world" />
+
+
+
+
+
+<meta name="MSSmartTagsPreventParsing" content="true"/>
+
+<title>JSTOR: Publications of the Astronomical Society of the Pacific, Vol. 112, No. 775 (September 2000), pp. 1177-1187</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" media="screen" href="/jawrcss/N998134903/bundles/jstor.css" />
+
+<link href="/templates/jsp/_jstor/css/print.css" media="print" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/jawr/1299508627/bundles/layoutBundle.js" ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var tAndCAccepted = false;
+</script>
+
+
+
+
+<!-- placeholder id=null, description=Branding CSS --><style type="text/css">.leftRail {background: #337e93;}</style>
+</head>
+<body>
+<script type="text/javascript">
+	Jiffy.mark("startBody");
+</script>
+
+
+
+
+
+
+
+ 
+
+
+
+<div class="page liquid  fullText">
+	<div class="head globalContainer">
+      <div id="ufo">
+      <h1 class="ufo">JSTOR</h1>
+	  </div>
+      <div id="skipNav"><a href="#mainContent" class="ufo">Skip to Main Content</a></div>
+	
+
+
+
+
+
+
+    <ul id="globalNav" class="menu global">
+	<li><a id="home" href="/" title="JSTOR: Home">JSTOR Home</a></li>
+        <li class="search hasDropDown"><a href="/action/showAdvancedSearch" id="search">Search</a>
+		<ul>
+          <li><a href="/action/showAdvancedSearch">Advanced Search</a></li>
+          <li><a href="/action/showArticleLocator">Citation Locator</a></li>
+            </ul>
+        </li>
+        <li class=" hasDropDown"><a href="/action/showJournals" id="browse">Browse</a>
+		<ul>
+          <li><a href="/action/showJournals">by Discipline</a></li>
+          <li><a href="/action/showJournals?browseType=title">by Title</a></li>
+          <li><a href="/action/showJournals?browseType=publisherInstance">by Publisher</a></li>
+            </ul>
+        </li>
+        <li class="hasDropDown"><a href="/action/myJstorSettings" id="myjstor">MyJSTOR</a>
+		<ul>
+			<li><a href="/action/myJstorSettings">Manage Account</a></li>
+			
+         	<li><a href="/action/showRegistrationUpdate?myJstor=true">Profile</a></li>
+			
+          	
+           
+            </ul>
+        </li>
+        
+    </ul>
+
+	</div>
+
+	<div class="body jstor">
+		<div class="rightCol myYahoo">
+		  <div id="rrSkipNav"><a href="#mainContent" class="ufo">Skip to Main Content</a></div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="login">
+   <div id="logo"><a href="/" title="JSTOR: Home"><img src="/templates/jsp/_jstor/images/jstor_logo.jpg" height="60" width="47" alt="Jstor" /></a></div>
+   <ul class="menu support">
+	<li>
+	
+    
+        <a href="https://www.jstor.org/action/showLogin?redirectUri=%2Fstable%2F10.1086%2F316618">Login</a>
+        
+ 
+</li>
+    <li><a href="http://about.jstor.org/support-training/help">Help</a></li>
+    <li><a href="/action/showContactUSMain">Contact Us</a></li>
+    <li><a href="http://about.jstor.org">About</a></li>
+   </ul>
+<div class="welcome">
+  
+      <!--Add conditional statement if there are items in cart-->
+       
+    
+  </div>
+
+   </div>
+          <div class="subContent">
+          <div class="smTxt">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <p>Your access to JSTOR provided by Washington State University, Spokane</p>
+
+
+
+
+
+
+
+
+
+</div>
+          
+
+
+
+
+
+
+
+
+
+
+          
+	<div id="linkingContainer">
+		
+
+
+  
+    
+	
+    <div class="mod rail">
+    <div class="inner">
+	  	<div class="hd">
+	  		<h2 class="h6">JSTOR</h2>
+	  	</div>
+	  	<div class="bd">
+	  	<ul class="relatedLinks">
+	  		
+		  	<li>
+				<a href="/stable/info/10.1086/316618?seq=1&type=ref#infoRef">References</a>
+			</li>
+			
+			
+			<li>
+				<a href="/stable/info/10.1086/316618?seq=1&type=cite#infoCiting">1 Item Cites this Item</a>
+			</li>
+			
+			
+			<li>
+                <a href="/action/doBasicSearch?Search=Search&Query=au:&quot;T. J. Davidge&quot;&wc=on">Items by   T. J. Davidge</a>
+			</li>
+			
+			
+	  	</ul>
+		</div>
+	</div>
+    </div>
+    
+	
+	
+	  	    <div class="mod rail">
+    <div class="inner">
+	  	<div class="hd">
+			<h2 class="h6">Google Scholar</h2>
+		</div>
+		<div class="bd">
+		<ul class="relatedLinks">
+			
+				<li>
+					<a href="http://scholar.google.com/scholar?ie=utf-8&q=related:http://www.jstor.org/stable/10.1086/316618">Related Items</a>
+				</li>
+				<li>
+					<a href="http://scholar.google.com/scholar?ie=utf-8&q=link:http://www.jstor.org/stable/10.1086/316618">Items Citing this Item</a>
+				</li>
+			
+			
+			<li>
+				<a href="http://scholar.google.com/scholar?ie=utf-8&q=&quot;author:T. J. Davidge&quot;">Items by   T. J. Davidge</a>
+			</li>
+			
+			
+		</ul>
+		</div>
+        </div>
+        </div>
+	 
+
+		
+			
+
+
+
+
+
+
+
+
+
+<div class="mod rail">
+	<div class="inner">
+		<div class="hd">
+			<h2 class="h6">Journal Tracking</h2>
+		</div>
+		<div class="bd">
+			
+				<ul>
+					<li>
+					  <a href="/action/doUpdateAlertSettings?action=addJournal&amp;redirectUri=%2Fstable%2F10.1086%2F316618&amp;journalCode=publastrsocipaci">Receive updates by email (eTOC)</a>
+					</li>
+					<li><a href="http://www.jstor.org/action/showFeed?ui=0&amp;mi=fjs6arx&amp;ai=1gow&amp;jc=publastrsocipaci&amp;type=etoc&amp;feed=rss">RSS feed</a></li>
+				</ul>
+			
+		</div>
+	</div>
+</div>
+
+		
+	</div>
+		
+	
+
+
+ <!-- placeholder id=null, description=AD2 -->
+ 
+  
+	
+
+
+
+
+  <div class="mod rail">
+    <div class="inner">
+      <div class="hd">
+        <h2 class="h6">Rights and Permissions</h2>
+      </div>
+      <div class="bd">
+      	<ul>
+        	
+        		<li><a class="cccLogo" href="/servlet/linkout?type=rightslink&amp;url=%3Fauthor%3DT.%25C2%25A0J.%25C2%25A0Davidge%26contentID%3D10.1086%252F316618%26endPage%3D1187%26issueNum%3D775%26numPages%3D11%26orderBeanReset%3Dtrue%26publication%3Dpasp%26publicationDate%3D09%252F01%252F2000%26publisherName%3DUCHP%26startPage%3D1177%26title%3DThe%2BEvolved%2BRed%2BStellar%2BContent%2Bof%2BM32%26volumeNum%3D112">
+        		    <!-- when ucal or ucpress, display Rights Link link text-->
+                    <!-- otherwise use generic text, display Rights Connect link text -->
+        		    
+                            Request Permissions
+					    
+                </a></li>
+        	
+            <li><a href="/page/info/about/policies/terms.jsp">JSTOR Terms And Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+	
+
+
+
+
+
+<!-- custom editable area for journal -->
+
+
+
+
+
+    <div class="mod rail">
+	    <div class="inner">
+		  	<div class="hd">
+		  		<h2 class="h6">&#160;IMPORTANT LINKS
+<br /></h2>
+		  	</div>
+		  	<div class="bd">
+		  		<p><a href="/page/journal/publastrsocipaci/forAuthor.html">Submit a Manuscript</a> 
+<br />
+<br />
+<a href="/userimages/ContentEditor/1294171613606/PASPPubAgree.pdf">Publication Agreement</a> (PDF) 
+<br />
+<br />
+ <a href="/userimages/ContentEditor/1291003604936/OrderFormPASP2009.pdf">Page Charges</a> (PDF) 
+<br />
+<br />
+ <a href="/userimages/ContentEditor/1290109707760/copy_and_perms.pdf">Author&#8217;s Permission Guidelines</a> (PDF) 
+<br />
+<br />
+ <a title="This link opens in a new window" class="newWindow" href="http://www.astrosociety.org/membership.html">ASP Membership</a><img class="externalIcon" src="/templates/jsp/_jstor/images/externalLink.png" alt="" /> 
+<br />
+<br />
+ <a title="This link opens in a new window" class="newWindow" href="http://cdsweb.u-strasbg.fr/PASP.html">Index of Abstracts</a><img alt="" class="externalIcon" src="/templates/jsp/_jstor/images/externalLink.png" /> 
+<br />
+<br />
+ <a href="/page/journal/publastrsocipaci/confhighindex.html">Conference Highlights Index</a> 
+<br />
+<br />
+ <a href="/page/journal/publastrsocipaci/reviews.html">Review Paper Indices</a> 
+<br />
+<br />
+ <a href="/userimages/ContentEditor/1294672787522/PASPrecform.pdf">Library Recommendation Form</a> (PDF) 
+<br />
+<br /></p>
+			</div>
+		</div>
+  </div>
+
+
+          </div>
+        </div>
+ 
+        <div id="mainContent" class="main">
+        <div class="leftRail">
+        <div class="mainInner">
+            <!-- placeholder id=null, description=Banner Message -->
+                   
+        <div class="banner">
+          
+
+
+
+
+
+<div id="headerPubLogo">
+	
+			<a href="http://www.jstor.org/action/showPublisher?publisherCode=ucpress"><img src="/userimages/43800/banner" alt="The University of Chicago Press"/></a>
+		
+</div>
+
+
+          
+
+
+
+<form action="/action/doBasicSearch" id="globalSearch" method="get"><div id="navSearchContainer">
+    <label for="quickSearchBox">Search</label>
+    
+      <select id="QSFSearchFilter" name="filter">
+
+        <option value="iid:10.1086/pasp.2000.112.issue-775">This Issue</option>
+
+        <option value="jid:10.2307/j50000776">This Title</option>
+
+        <option value="">All Titles</option>
+
+      </select>
+
+	  for
+    
+    <input id="quickSearchBox" class="text" type="text" name="Query" maxlength="200" size="20" />
+    <input type="image" name="Search" src="/templates/jsp/_jstor/images/search_button.gif" alt="Submit Search" />
+    <input type="hidden" name="wc" value="on" />
+  </div></form>
+
+        </div>
+   
+          
+
+
+
+
+
+
+
+
+
+
+<div class="articleTop">
+    <div class="size3of4 unit">
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+<!-- breadcrumbs.jsp -->
+<ul class="breadcrumbs inline">
+
+    <li><a href='/action/showPublication?journalCode=publastrsocipaci'  title='Publications of the Astronomical Society of the Pacific'>Publications of the Astronomical Society...</a> &nbsp; &gt; &nbsp;</li>
+
+    <li><a href='/stable/10.1086/pasp.2000.112.issue-775'  title='Publications of the Astronomical Society of the Pacific, Vol. 112, No. 775, September 2000'>Vol. 112, No. 775, September 2...</a> &nbsp; &gt; &nbsp;</li>
+
+    <li>The Evolved Red Stel...</li>
+
+</ul>
+</div>
+	<div class="lastUnit txtR container">
+    	
+
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="clear">Publications of the Astronomical Society of the Pacific  
+  
+  <span class="headerReset">
+    <a href="/action/showPublicationInfo?journalCode=publastrsocipaci" id="showPublicationInfo" target="_blank">Publication Info</a>
+  </span>
+  
+  </h2>
+
+
+
+
+<div id="journalInfoOverlay" style='display:none'>
+	
+
+
+
+
+
+
+
+
+
+<!--** The text for popup is separate from layout to populate the JS overlay with only text **-->
+<div>
+        <h2>Publications of the Astronomical Society of the Pacific</h2>
+        
+                <div class="coverage">Coverage: 1889-2011 (Vols. 1-123)</div>
+                
+                
+                        <div class="wall">Moving Wall: 5 years</div>
+                    
+                <div class="disc">JSTOR Discipline(s):
+                    
+                        <a href="/action/showJournals#380817576">Astronomy</a>
+                    
+                </div>
+                <div class="collection">JSTOR Collection(s): <a href="/action/showJournals?browseType=collectionInfoPage&amp;selectCollection=asx">Arts &amp; Sciences X Collection</a></div>
+                <div class="pubString">Published by: <a href="http://www.jstor.org/action/showPublisher?publisherCode=ucpress">The University of Chicago Press</a> on behalf of the <a href="http://www.jstor.org/action/showPublisher?publisherCode=astrosocpac">Astronomical Society of the Pacific</a></div>
+                
+                <div class="issn">ISSN: 00046280</div>
+                
+                
+                <div class="eissn">E-ISSN: 15383873</div>
+                
+
+                
+
+
+
+
+<!-- journalDescription for publastrsocipaci -->
+
+
+<div id="journalDesc">
+<h3 class="sectionHeader">Journal Description</h3>
+<i>Publications of the Astronomical Society of the Pacific</i>, the technical journal of the Astronomical Society of the Pacific (ASP), has been published regularly since 1889, as part of the ASP&#8217;s mission to advance the science of astronomy and disseminate astronomical information. The journal provides an outlet for astronomical results of a scientific nature and serves to keep readers in touch with current astronomical research. It contains refereed research and
+<br />
+instrumentation papers, invited reviews, and dissertation summaries.
+</div>
+
+
+            
+</div>
+</div>
+
+<div class="infoBox" >
+<div class="clear cite">
+        
+          <div class="articleImage">
+
+
+
+
+
+
+
+
+
+
+<!-- articleJournalCover.jsp -->
+
+  <a href="/action/showPublication?journalCode=publastrsocipaci">
+    <img id="journalCover" src="/literatum/publisher/jstor/journals/covergifs/publastrsocipaci/cover.gif" alt="" />
+  </a>
+
+
+
+
+
+
+<div class="marketingLinks">
+
+	<div class="subscribe">
+		
+			  <a href="/action/showSubscribeInfo?journalCode=publastrsocipaci" id="showSubscribeInfo" target="_blank"> Subscribe or Renew</a>
+			
+	</div>
+	
+	
+
+<div id="subscribeInfoOverlay" class="hide">
+	
+
+
+
+
+
+<!--** The text for popup is separate from layout to populate the JS overlay with only text **-->
+<div>
+      
+      		<p>
+       		
+					 		 For individual subscriptions, please contact the  <a href="https://subfill.uchicago.edu/JournalPUBS/WebForm2.aspx?webpub=pasp">The University of Chicago Press</a>
+					 			 . 
+				
+           </p>
+           <p>
+           		          	 	For information about institutional access to this title, please visit the 	          	 
+          	 	<a href="http://about.jstor.org/participate-jstor/subscribe">Institutional Subscriptions</a>
+           		           		page.           	
+           </p>
+      
+</div>
+</div>
+
+
+
+</div>
+
+</div>
+        
+        <div class="mainCite" id="journalInfo">
+        	<ul class="menu pageMenu"><li class="first"><a href="/page/journal/publastrsocipaci/about.html">About Journal</a></li>
+<li><a href="/action/showNews?journalCode=publastrsocipaci">News & Announcements</a></li>
+<li><a href="/page/journal/publastrsocipaci/forAuthor.html">For Authors</a></li>
+<li><a href="/page/journal/publastrsocipaci/relatedInfo.html">Related Information</a></li>
+</ul>
+        	<div class="unit clear size2of3">
+        	
+
+
+
+
+
+
+
+
+<!-- articleCitation.jsp -->
+
+        <!--<div class="hd title">journal title should go here </div>-->
+        <div class="bd">
+        
+        		<div class="pubString">Published by: <a href="http://www.jstor.org/action/showPublisher?publisherCode=ucpress">The University of Chicago Press</a> on behalf of the <a href="http://www.jstor.org/action/showPublisher?publisherCode=astrosocpac">Astronomical Society of the Pacific</a></div>
+        	
+         <div class="doi">Article DOI: 10.1086/316618</div>
+        <div class="stable">Stable URL: http://www.jstor.org/stable/10.1086/316618</div>
+        </div>
+
+<div class="hide" id="fullCitationForOverlay">
+
+
+
+
+
+
+<div class="mainCite"><div class="hd title">The Evolved Red Stellar Content of M32</div>
+			
+        <div class="bd">
+        <div class="rw"><?xml version="1.0" encoding="UTF-8"?></div>
+        
+           <div class="author">
+             T. J. Davidge
+           </div>
+        
+        <div class="srcInfo">
+        	<cite>Publications of the Astronomical Society of the Pacific</cite>
+        	
+	               <!-- Formatting requires these tags be mashed together -->               
+	               ,
+	               Vol. 112, No. 775  (September 2000), pp. 1177-1187
+	            
+         </div>
+         <div class="pubString">
+         
+         
+        		Published by: <a href="http://www.jstor.org/action/showPublisher?publisherCode=ucpress">The University of Chicago Press</a> on behalf of the <a href="http://www.jstor.org/action/showPublisher?publisherCode=astrosocpac">Astronomical Society of the Pacific</a>
+        	
+        </div>
+         <div class="doi">Article DOI: 10.1086/316618</div>
+        <div class="stable">Article Stable URL: http://www.jstor.org/stable/10.1086/316618</div>
+        </div></div>
+</div>
+
+            
+
+
+
+<div id="journalLinks">
+
+<ul class="simpleList">
+    <li><a href="/stable/10.1086/662113">Latest Issue</a></li>
+    <li><a href="/action/showPublication?journalCode=publastrsocipaci">All Issues</a></li>
+</ul>
+<ul class="simpleList">
+    
+    
+       <li><a href="/stable/publastrsocipaci.ahead-of-print">Ahead of Print</a></li>
+     
+ </ul>
+
+ <ul class="simpleList">
+      
+        <li><a href="/action/showMostCitedArticles?journalCode=publastrsocipaci">Most Cited</a></li>
+      
+     
+     	
+     			<li> <a href="/action/showMostAccessedArticles?journalCode=publastrsocipaci">Most Accessed</a></li>
+     		        
+      
+</ul>
+</div>
+          </div>
+          <div class="lastUnit">
+            
+
+
+
+
+
+
+
+
+
+
+<ul class="toolsList">
+    
+        
+            <li><a class="pdflink" target="_blank" id="pdf" href="/stable/pdfplus/10.1086/316618.pdf">View PDF</a></li>
+        
+    
+    <!-- redirectUri: /stable/10.1086/316618
+    	encoded redirectUri: %2Fstable%2F10.1086%2F316618 -->
+    <li>
+      <a href="/action/viewCitation?doi=10.1086%2F316618" id="viewCitation" target="_blank">View Citation</a>
+    </li>
+    <li><a href="/action/emailCitations?from=true&amp;singleCitation=true&amp;suffix=10.1086%2F316618" id="email">Email Citation</a></li>
+    <li><a href="/action/exportSingleCitation?singleCitation=true&amp;suffix=10.1086%2F316618" id="export">Export Citation</a></li>
+    <li><a href="/personalize/addFavoriteArticle?jid=10.1086%2F316618&amp;redirectUri=%2Fstable%2F10.1086%2F316618" id="favorites">Save Citation</a></li>
+    <li><a href="/action/addCitationAlert?redirectUri=%2Fstable%2F10.1086%2F316618&amp;doi=10.1086%2F316618" id="trackCitations">Track Citation</a></li>
+    
+    
+</ul>
+          </div>
+		</div>
+</div>
+
+</div>
+ <div class="clear txtR">
+ 	
+
+
+
+
+
+
+
+
+<div id="issueNav" class="lastUnit">
+   
+          <span class="previous"> <a href="/stable/full/10.1086/316614?seq=1">&laquo; &nbsp;Previous Item</a></span>
+       
+   &nbsp;|&nbsp;
+   
+          <span class="next"><a href="/stable/full/10.1086/316619?seq=1">Next Item&nbsp; &raquo;</a></span>
+       
+</div>
+
+ </div>
+</div>
+    <div class="mod article">
+      <div class="inner">
+        <div class="hd">
+        	<ul class="menu pageMenu"><li class="hasDropDown "><a class="active" href="/stable/full/10.1086/316618">Full Text</a><ul><li xmlns:xje="java:com.atypon.publish.util.xml.XslJavaExtension" class="contentLabel"><a href="/stable/full/10.1086/316618#h1">1. INTRODUCTION</a></li><li xmlns:xje="java:com.atypon.publish.util.xml.XslJavaExtension" class="contentLabel"><a href="/stable/full/10.1086/316618#h2">2. OBSERVATIONS, REDUCTIONS,...</a></li><li xmlns:xje="java:com.atypon.publish.util.xml.XslJavaExtension" class="contentLabel"><a href="/stable/full/10.1086/316618#h3">3. RESULTS</a></li><li xmlns:xje="java:com.atypon.publish.util.xml.XslJavaExtension" class="contentLabel"><a href="/stable/full/10.1086/316618#h8">4. SUMMARY AND DISCUSSION</a></li><li xmlns:xje="java:com.atypon.publish.util.xml.XslJavaExtension"><a href="/stable/full/10.1086/316618#h9">REFERENCES</a></li></ul></li><li><a href="/stable/info/10.1086/316618">Summary</a></li><li><a href="/stable/media/10.1086/316618">Media</a></li></ul>
+        </div>
+        <div class="bd ">
+        
+        
+              <div class="articleBody articleType_research-article clear"><!-- abstract content --><h2 class="articleTitle" id="articleTitle">The Evolved Red Stellar Content of M32</h2><span class="articleBody_author"><div class="authors">T. J. Davidge<a href="#fn1" class="ref-type-fn" id="rid_fn1">1</a>  <p class="aff">Canadian Gemini Office, Herzberg Institute of Astrophysics, National Research Council of Canada, 5071 West Saanich Road, Victoria, BC V8X 4M6, Canada; <a class="emailLink" href="mailto:tim.davidge@hia.nrc.ca">tim.davidge@hia.nrc.ca</a></p></div></span><div class="articleBody_abstract"> <h3>ABSTRACT</h3> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="articleBody_abstractText">Near‐infrared images obtained with the Canada‐France‐Hawaii Telescope (CFHT) Adaptive Optics Bonnette (AOB) are used to investigate the stellar content of the Local Group compact elliptical galaxy M32. Observations of a field 2<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00001.gif" alt="" /></span> 3 from the galaxy center reveal a large population of asymptotic giant branch (AGB) stars, and comparisons with models indicate that these objects have an age <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00002.gif" alt="" /></span> . The AGB population is very homogeneous, with <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00003.gif" alt="" /></span>  dex and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00004.gif" alt="" /></span>  dex. The reddest AGB stars have <i>J</i>−<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00005.gif" alt="" /></span> , and it is suggested that the very red stars seen in earlier, less deep, surveys are the result of large photometric errors. The bolometric AGB luminosity function (LF) of this field is in excellent agreement with that of the Galactic bulge. Based on the integrated brightness of AGB stars brighter than the red giant branch tip, which occurs at <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00006.gif" alt="" /></span> , it is concluded that intermediate‐age stars account for roughly 25% of the total <i>K</i> light and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00007.gif" alt="" /></span>  of the total mass in this field.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="articleBody_abstractText">A field close to the center of M32 was also observed. The brightest stars within a few arcseconds of the nucleus have <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00008.gif" alt="" /></span> , and the density of these objects is consistent with that predicted from the outer regions of the galaxy after scaling according to surface brightness. Moreover, the <i>K</i> luminosity function (LF) of bright sources between 20<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00009.gif" alt="" /></span> </sup> and 30<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00010.gif" alt="" /></span> </sup> of the nucleus is well matched by the LF of the outer regions of the galaxy after accounting for differences in surface brightness and correcting for the effects of crowding. It is concluded that the relative size of the intermediate‐age component with respect to other populations does not change with radius over much of the galaxy. However, the integrated <i>J−K</i> color and 2.3 μm CO index change with radius within a few tenths of an arcsecond of the galaxy center, indicating that, contrary to what might be inferred from observations at visible wavelengths, the integrated photometric properties of the central regions of M32 differ from those of the surrounding galaxy.</p> </div><p class="articleBody_submissionDate"><span class="string-date">Received 2000 April 19; accepted 2000 May 8</span></p><!-- /abstract content --><!-- fulltext content --><div id="sc1" class="NLM_sec NLM_sec_level_1">  <h3 id="h1" class="size4of5 unit">1. INTRODUCTION</h3><div class="jqShow size1of5">   </div> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The Local Group compact elliptical galaxy M32 has long been recognized as an important stepping‐stone for interpreting the stellar content of more distant galaxies. The structural characteristics of M32 appear to be related to more massive classical ellipticals (e.g., Kormendy <a href="#rf45" class="ref-type-bibr" id="rid_rf45">1985</a>). Nevertheless, M32 is also the closest example of a class of compact elliptical galaxies that are junior partners in hierarchal systems (Prugniel, Nieto, &amp; Simien <a href="#rf56" class="ref-type-bibr" id="rid_rf56">1987</a>), suggesting that the high central concentration may be the result of tidal interactions (e.g., Faber <a href="#rf33" class="ref-type-bibr" id="rid_rf33">1973</a>). On the other hand, Nieto &amp; Prugniel (<a href="#rf50" class="ref-type-bibr" id="rid_rf50">1987</a>) find that the separation between M31 and M32 decays at a rate of 2–3 kpc Gyr<sup>−1</sup>. As a result, the interactions between M31 and M32 were likely less intense in the past, and Nieto &amp; Prugniel (<a href="#rf50" class="ref-type-bibr">1987</a>) conclude that the structural characteristics and mass of M32 have not changed dramatically with time. While it is a matter of debate whether or not M32 and classical ellipticals share a common evolutionary heritage, it is clear that there is little hope of understanding the stellar contents of more distant galaxies if we cannot understand the stellar content of a nearby, resolved system like M32.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">M32 has been the target of numerous spectroscopic investigations, and these have detected signatures of a relatively blue main‐sequence turnoff (O’Connell <a href="#rf51" class="ref-type-bibr" id="rid_rf51">1980</a>; Rose <a href="#rf58" class="ref-type-bibr" id="rid_rf58">1985</a>) and an extended asymptotic giant branch (AGB) (Davidge <a href="#rf16" class="ref-type-bibr" id="rid_rf16">1990</a>), both of which are indicative of an intermediate‐age population. M32 also has a very red ultraviolet/visible color when compared with other elliptical galaxies (Burstein et al. <a href="#rf7" class="ref-type-bibr" id="rid_rf7">1988</a>), and this can be explained if a large intermediate‐age population is present (e.g., Ohl et al. <a href="#rf53" class="ref-type-bibr" id="rid_rf53">1998</a>; Yi et al. <a href="#rf67" class="ref-type-bibr" id="rid_rf67">1999</a>).</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">During the past decade there has been increased emphasis on studies of the resolved stellar content of M32. Imaging of the outer regions of M32 at visible wavelengths failed to detect an extended AGB (Freedman <a href="#rf34" class="ref-type-bibr" id="rid_rf34">1989</a>; Davidge &amp; Jones <a href="#rf25" class="ref-type-bibr" id="rid_rf25">1992</a>; Grillmair et al. <a href="#rf39" class="ref-type-bibr" id="rid_rf39">1996</a>). This is not unexpected, as the visible light from highly evolved metal‐rich giants is affected by line blanketing (Bica, Barbuy, &amp; Ortolani <a href="#rf4" class="ref-type-bibr" id="rid_rf4">1991</a>), with the result that metal‐rich AGB‐tip stars can be significantly fainter at visible wavelengths than less evolved metal‐poor stars. The effects of line blanketing are greatly reduced at wavelengths longward of 1 μm (e.g., Davidge &amp; Simons <a href="#rf27" class="ref-type-bibr" id="rid_rf27">1994</a>), and infrared imaging surveys have discovered AGB stars as bright as <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00011.gif" alt="" /></span>  in M32 (Freedman <a href="#rf35" class="ref-type-bibr" id="rid_rf35">1992</a>; Elston &amp; Silva <a href="#rf31" class="ref-type-bibr" id="rid_rf31">1992</a>), which are much more luminous than AGB stars in Galactic globular clusters.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The outer regions of M32 contain stars spanning a range of metallicities (Freedman <a href="#rf34" class="ref-type-bibr">1989</a>; Davidge &amp; Jones <a href="#rf25" class="ref-type-bibr">1992</a>), with the peak of the metallicity distribution function (MDF) occurring between [Fe/H<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00012.gif" alt="" /></span>  and −0.3 (Grillmair et al. <a href="#rf39" class="ref-type-bibr">1996</a>). The MDF of M32 at intermediate radii cannot be fit with a simple one‐zone enrichment model (Grillmair et al. <a href="#rf39" class="ref-type-bibr">1996</a>), suggesting a complex chemical enrichment history, possibly like that proposed for the massive elliptical galaxy NGC 5128 by Harris, Harris, &amp; Poole (<a href="#rf41" class="ref-type-bibr" id="rid_rf41">1999</a>). Long‐slit spectra (Cohen <a href="#rf14" class="ref-type-bibr" id="rid_rf14">1979</a>; Davidge, de Robertis, &amp; Yee <a href="#rf24" class="ref-type-bibr" id="rid_rf24">1990</a>; Davidge <a href="#rf17" class="ref-type-bibr" id="rid_rf17">1991</a>; Hardy et al. <a href="#rf40" class="ref-type-bibr" id="rid_rf40">1994</a>) and the spatial distribution of resolved and unresolved UV sources (Brown et al. <a href="#rf6" class="ref-type-bibr" id="rid_rf6">1998</a>) indicate that population gradients are present, with mean metallicity being one of the parameters that likely changes with radius. While the central regions of M32 contain strong‐lined stars that originate from a very metal rich component (Rose <a href="#rf59" class="ref-type-bibr" id="rid_rf59">1994</a>), only a modest population of UV‐bright sources, which are thought to have evolved from the extreme horizontal branch of a very metal rich population, have been detected in M32, and Brown et al. (<a href="#rf6" class="ref-type-bibr">1998</a>) conclude that the progenitors of these objects account for only 0.5% of all main‐sequence stars.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">In the present study, high angular resolution near‐infrared images of two fields, sampling different regions of the galaxy, are used to investigate the evolved red stellar content of M32. In addition to probing highly evolved stars, observations at infrared wavelengths also provide important information for decoupling the effects of age and metallicity in integrated light measurements (Davidge <a href="#rf17" class="ref-type-bibr">1991</a>). Finally, the contrast between the reddest, most evolved, stars and the relatively blue, unresolved, body of the galaxy is enhanced in the infrared with respect to the visible, making it easier to resolve evolved stars in crowded fields.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The observations, the data reduction procedures, and the photometric measurements are discussed in <a href="#sc2" class="ref-type-sec" id="rid_sc2">§ 2</a>. The stellar contents of the two fields are investigated in <a href="#sc3" class="ref-type-sec" id="rid_sc3">§ 3</a>, and it is demonstrated that the density of the brightest AGB stars scales with surface brightness at distances in excess of a few arcseconds from the nucleus, indicating that the relative size of the intermediate‐age component measured with respect to the rest of the galaxy is constant over a large range of radii. However, within 1<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00013.gif" alt="" /></span> </sup> of the nucleus the integrated near‐infrared broadband colors and the 2.3 μm CO index vary with radius. A brief summary and discussion of the results follows in <a href="#sc4" class="ref-type-sec" id="rid_sc4">§ 4</a>.</p> </div><div id="sc2" class="NLM_sec NLM_sec_level_1">  <h3 id="h2" class="size4of5 unit">2. OBSERVATIONS, REDUCTIONS, AND PHOTOMETRIC MEASUREMENTS</h3><div class="jqShow size1of5">   </div> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The data were recorded with the Canada‐France‐Hawaii Telescope (CFHT) Adaptive Optics Bonnette (AOB) and KIR imager on the nights of UT 1998 September 6 and 7. The AOB has been described by Rigaut et al. (<a href="#rf57" class="ref-type-bibr" id="rid_rf57">1998</a>). The detector in KIR is a <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00014.gif" alt="" /></span>  Hg:Cd:Te array with 0<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00015.gif" alt="" /></span> 034 pixels, so that the imaged field is <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00016.gif" alt="" /></span> .</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">A field that included the nucleus of M32 (the “inner” field) was observed through <i>J</i>, <i>H</i>, <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00017.gif" alt="" /></span> , 2.2 μm continuum, and 2.3 μm CO filters. The galaxy nucleus, which was used as the reference source for AO compensation, was offset 10<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00018.gif" alt="" /></span> </sup> from the field center so that the minor axis of M32 could be sampled out to a distance of 40<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00019.gif" alt="" /></span> </sup>. A complete observing sequence for each filter consisted of five co‐added exposures recorded at four dither positions, which were offset in a 0<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00020.gif" alt="" /></span> <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00021.gif" alt="" /></span> <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00022.gif" alt="" /></span> 5 square pattern. The total exposure times were 1200 s in each of <i>J</i>, <i>H</i>, and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00023.gif" alt="" /></span> , 1800 s in the 2.2 μm continuum filter, and 2400 s in CO. The seeing conditions were mediocre when these data were recorded, and the delivered image quality is 0<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00024.gif" alt="" /></span> 4 FWHM.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Deep <i>J</i>, <i>H</i>, and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00025.gif" alt="" /></span>  images, with 1200 s total exposure times per filter, were also recorded of a field 2<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00026.gif" alt="" /></span> 3 from the nucleus (the “outer” field) centered on the star GSC 02801−02082, which was used as the reference source for AO compensation. This field is slightly offset from the minor axis of the galaxy, and the data were recorded using the observing sequence described for the inner field. The seeing conditions were very good, and the delivered image quality is 0<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00027.gif" alt="" /></span> 20 FWHM in <i>J</i> and 0<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00028.gif" alt="" /></span> 15 in <i>H</i> and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00029.gif" alt="" /></span> .</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The data were reduced using the procedure described by Davidge &amp; Courteau (<a href="#rf23" class="ref-type-bibr" id="rid_rf23">1999</a>), which consists of the following steps: (1) subtraction of dark frames, (2) division by dome flats, (3) subtraction of a DC sky level from each image, and (4) subtraction of fringe and thermal emission patterns, using calibration frames that were constructed from blank sky fields. The images for each field were then aligned and median‐combined on a filter‐by‐filter basis. The final <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00030.gif" alt="" /></span>  images of these fields are shown in Figures <a href="/action/showPopup?citid=citart1&amp;id=fg1&amp;doi=10.1086%2F316618" title="Fig. 1." target="_blank" rel="overlay-d1185e551">1</a> and <a href="/action/showPopup?citid=citart1&amp;id=fg2&amp;doi=10.1086%2F316618" title="Fig. 2." target="_blank" rel="overlay-d1185e554">2</a>.<div class="NLM_fig-group"><div class="thumbnailContainer" id="fg1"><a href="/action/showPopup?citid=citart1&amp;id=fg1&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e557" title="Fig. 1."><div class="thumbnail"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/small/fg1.gif" alt="Figure thumbnail" class="thumb" /><div class="sizeInKb">(570 KB)</div></div></a></div><div class="caption"><p class="first last"><span class="captionLabel">Fig. 1.— </span>The M32 inner field, as imaged with the CFHT AOB+KIR in <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00031.gif" alt="" /></span> . North is at the top, and east is to the left. The image covers <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00032.gif" alt="" /></span> , and the galaxy nucleus is in the lower right‐hand corner. The unresolved background of the galaxy has been subtracted using the procedure described by Davidge et al. (<a href="#rf26" class="ref-type-bibr" id="rid_rf26">1991</a>).</p> <p><a href="/action/showPopup?citid=citart1&amp;id=fg1&amp;doi=10.1086%2F316618" target="_blank">Open New Window</a></p></div></div><div class="NLM_fig-group"><div class="thumbnailContainer" id="fg2"><a href="/action/showPopup?citid=citart1&amp;id=fg2&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e586" title="Fig. 2."><div class="thumbnail"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/small/fg2.gif" alt="Figure thumbnail" class="thumb" /><div class="sizeInKb">(492 KB)</div></div></a></div><div class="caption"><p class="first last"><span class="captionLabel">Fig. 2.— </span>The M32 outer field, as imaged with the CFHT AOB+KIR in <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00033.gif" alt="" /></span> . North is at the top, and east is to the left. The image dimensions are roughly <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00034.gif" alt="" /></span> . The bright source in the field center is the star GSC 02801−02082.</p> <p><a href="/action/showPopup?citid=citart1&amp;id=fg2&amp;doi=10.1086%2F316618" target="_blank">Open New Window</a></p></div></div></p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Stellar brightnesses were measured with the point‐spread function (PSF) fitting program ALLSTAR (Stetson &amp; Harris <a href="#rf63" class="ref-type-bibr" id="rid_rf63">1988</a>), using PSFs and target lists generated with DAOPHOT (Stetson <a href="#rf62" class="ref-type-bibr" id="rid_rf62">1987</a>). A single PSF was constructed for each field+filter combination. The use of a single reference star for AO compensation produces a variable PSF (anisoplanaticism), and this is a source of photometric errors if a single PSF is adopted for the entire field. However, studies of globular clusters conducted with the CFHT AOB demonstrate that the photometric uncertainties introduced by PSF variations amount to only a few percent over the KIR field (Davidge &amp; Courteau <a href="#rf23" class="ref-type-bibr">1999</a>; Davidge <a href="#rf20" class="ref-type-bibr" id="rid_rf20">2000a</a>), and an examination of the PSF‐fitting residuals in the inner and outer field M32 data indicate that PSF variations do not introduce uncertainties of more than a few percent. The modest scatter in the M32 outer field CMDs (<a href="#sc3" class="ref-type-sec">§ 3</a>) is further evidence that PSF variations do not seriously affect the current photometry.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The photometric calibration was defined using standard stars from Casali &amp; Hawarden (<a href="#rf12" class="ref-type-bibr" id="rid_rf12">1992</a>) and Elias et al. (<a href="#rf30" class="ref-type-bibr" id="rid_rf30">1982</a>), which were observed throughout the three‐night run. The unresolved body of M32 creates a nonuniform background in the inner field that complicates efforts to measure stellar brightness, and this was removed using the iterative procedure described by Davidge, Le Fevre, &amp; Clark (<a href="#rf26" class="ref-type-bibr">1991</a>).</p> </div><div id="sc3" class="NLM_sec NLM_sec_level_1">  <h3 id="h3" class="size4of5 unit">3. RESULTS</h3><div class="jqShow size1of5">   </div> <div id="sc3.1" class="NLM_sec NLM_sec_level_2">  <p class="articleSubHeading" id="h4">3.1. The Outer Field</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The (<i>K</i>, <i>H−K</i>) and (<i>K</i>, <i>J−K</i>) CMDs of the M32 outer field are shown in <a href="/action/showPopup?citid=citart1&amp;id=fg3&amp;doi=10.1086%2F316618" title="Fig. 3." target="_blank" rel="overlay-d1185e677">Figure 3</a>. The red giant branch (RGB) and upper portions of the AGB are clearly evident in these data: the onset of the former causes a slight broadening in the color distribution when <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00035.gif" alt="" /></span> , while the latter extends from <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00036.gif" alt="" /></span>  to <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00037.gif" alt="" /></span>  and has a scatter of ±0.05 mag in <i>H−K</i> and <i>J−K</i>. There is also a 0.2 mag gap in the CMDs near <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00038.gif" alt="" /></span> .<div class="NLM_fig-group"><div class="thumbnailContainer" id="fg3"><a href="/action/showPopup?citid=citart1&amp;id=fg3&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e708" title="Fig. 3."><div class="thumbnail"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/small/fg3.gif" alt="Figure thumbnail" class="thumb" /><div class="sizeInKb">(101 KB)</div></div></a></div><div class="caption"><p class="first last"><span class="captionLabel">Fig. 3.— </span>The (<i>K</i>, <i>H−K</i>) and (<i>K</i>, <i>J−K</i>) CMDs of the outer field. The RGB tip occurs at <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00039.gif" alt="" /></span> , and stars brighter than this are evolving on the AGB. Data with <i>K</i> and <i>J−K</i> measurements from Table 1 of Freedman (<a href="#rf35" class="ref-type-bibr">1992</a>) are plotted as open squares in the right‐hand panel.</p> <p><a href="/action/showPopup?citid=citart1&amp;id=fg3&amp;doi=10.1086%2F316618" target="_blank">Open New Window</a></p></div></div></p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Data from Table 1 of Freedman (<a href="#rf35" class="ref-type-bibr">1992</a>) are compared with the current observations in the right‐hand panel of <a href="/action/showPopup?citid=citart1&amp;id=fg3&amp;doi=10.1086%2F316618" title="Fig. 3." target="_blank" rel="overlay-d1185e757">Figure 3</a>. Freedman observed an area 4 times larger than the AOB field, and so it is not surprising that she detected sources that are brighter than those in the present data set. The CMDs constructed from the AOB data have less scatter than the Freedman observations and extend 1–1.5 mag fainter in <i>K</i>. The ridgeline of the Freedman observations, which can be traced by identifying the colors with the highest concentration of data points, is located near the left‐hand side of her data distribution and matches the locus of the AOB data. A gap in the CMD immediately above the RGB tip is also evident in the Freedman data.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Freedman suggested that the objects in her data set with <i>J</i>−<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00040.gif" alt="" /></span>  are carbon stars. Stars with this color are not seen in the current data set, even though a significant number would have been expected based on the Freedman observations. While stars with <i>J</i>−<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00041.gif" alt="" /></span>  are present in the Elston &amp; Silva (<a href="#rf31" class="ref-type-bibr">1992</a>) (<i>K</i>, <i>J−K</i>) CMD, the relative number of these objects with respect to bluer stars is much smaller than in the Freedman (<a href="#rf35" class="ref-type-bibr">1992</a>) data set. Freedman (<a href="#rf35" class="ref-type-bibr">1992</a>) notes that some stars in her study have large photometric uncertainties, which may be as great as 0.5 mag in <i>J−H</i> and 0.2 mag in <i>H−K</i>. We speculate that the reddest stars in her sample are objects with large photometric errors.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The <i>K</i> luminosity function (LF) of the outer field is plotted in <a href="/action/showPopup?citid=citart1&amp;id=fg4&amp;doi=10.1086%2F316618" title="Fig. 4." target="_blank" rel="overlay-d1185e810">Figure 4</a>. Artificial star experiments indicate that incompleteness and photometric errors become significant when <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00042.gif" alt="" /></span> , and so only data brighter than this are shown in <a href="/action/showPopup?citid=citart1&amp;id=fg4&amp;doi=10.1086%2F316618" title="Fig. 4." target="_blank" rel="overlay-d1185e818">Figure 4</a>. The dashed line shows a power law that was fit to the LF between <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00043.gif" alt="" /></span>  and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00044.gif" alt="" /></span>  using the method of least squares. The fitted power law has an exponent <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00045.gif" alt="" /></span> , which is near the low end of what is seen in the Galactic bulge (e.g., Davidge <a href="#rf21" class="ref-type-bibr" id="rid_rf21">2000b</a>). When <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00046.gif" alt="" /></span> , the LF consistently falls below the extrapolated power‐law fit, indicating that the RGB tip produces a significant discontinuity in the <i>K</i> LF, even though models predict that the brightness of the RGB tip is sensitive to age and metallicity near 2 μm (see below).<div class="NLM_fig-group"><div class="thumbnailContainer" id="fg4"><a href="/action/showPopup?citid=citart1&amp;id=fg4&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e848" title="Fig. 4."><div class="thumbnail"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/small/fg4.gif" alt="Figure thumbnail" class="thumb" /><div class="sizeInKb">(62 KB)</div></div></a></div><div class="caption"><p class="first last"><span class="captionLabel">Fig. 4.— </span>The <i>K</i> LF of the outer field. <i>n</i><sub>05</sub> is the number of stars per 0.5 mag interval arcsec<sup>−2</sup>. Incompleteness and photometric errors become significant when <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00047.gif" alt="" /></span> , and so data fainter than this are not shown. The dashed line is a power law that was fit to the LF entries with <i>K</i> between 18 and 19.5. The discontinuity near <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00048.gif" alt="" /></span>  in the lower panel is due to the RGB tip.</p> <p><a href="/action/showPopup?citid=citart1&amp;id=fg4&amp;doi=10.1086%2F316618" target="_blank">Open New Window</a></p></div></div></p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The bolometric LF of stars in the outer field, calculated using the bolometric corrections for field giants shown in Figure 1<i>b</i> of Frogel &amp; Whitford (<a href="#rf38" class="ref-type-bibr" id="rid_rf38">1987</a>), is plotted in <a href="/action/showPopup?citid=citart1&amp;id=fg5&amp;doi=10.1086%2F316618" title="Fig. 5." target="_blank" rel="overlay-d1185e899">Figure 5</a>. A distance modulus of <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00049.gif" alt="" /></span>  has been adopted, based on an RGB‐tip brightness of <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00050.gif" alt="" /></span>  for M32 (Davidge &amp; Jones <a href="#rf25" class="ref-type-bibr">1992</a>), which is 0.1 mag brighter than that in M31 (Davidge <a href="#rf18" class="ref-type-bibr" id="rid_rf18">1993</a>), for which <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00051.gif" alt="" /></span>  (van den Bergh <a href="#rf64" class="ref-type-bibr" id="rid_rf64">2000</a>). The data have also been corrected for a foreground reddening of <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00052.gif" alt="" /></span> −<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00053.gif" alt="" /></span>  (Burstein &amp; Heiles <a href="#rf8" class="ref-type-bibr" id="rid_rf8">1984</a>).<div class="NLM_fig-group"><div class="thumbnailContainer" id="fg5"><a href="/action/showPopup?citid=citart1&amp;id=fg5&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e941" title="Fig. 5."><div class="thumbnail"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/small/fg5.gif" alt="Figure thumbnail" class="thumb" /><div class="sizeInKb">(80 KB)</div></div></a></div><div class="caption"><p class="first last"><span class="captionLabel">Fig. 5.— </span>The bolometric LF of stars in the outer field. <i>n</i><sub>05</sub> is the number of stars per 0.5 mag interval arcsec<sup>−2</sup>. Bolometric corrections were computed from <i>J−K</i> colors using the field giant calibration of Frogel &amp; Whitford (<a href="#rf38" class="ref-type-bibr">1987</a>). A distance modulus of 24.3 has been adopted for M32, and the data have been corrected for a foreground reddening of <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00054.gif" alt="" /></span> −<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00055.gif" alt="" /></span>  (Burstein &amp; Heiles <a href="#rf8" class="ref-type-bibr">1984</a>). The dashed line in the lower panel is the LF of giants in the inner bulge of the Galaxy derived by Davidge (<a href="#rf19" class="ref-type-bibr" id="rid_rf19">1998</a>) and scaled to match the number of stars with <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00056.gif" alt="" /></span>  in the M32 outer field.</p> <p><a href="/action/showPopup?citid=citart1&amp;id=fg5&amp;doi=10.1086%2F316618" target="_blank">Open New Window</a></p></div></div></p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The most luminous stars in the M32 outer field have <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00057.gif" alt="" /></span> , which is comparable to what is seen in Baade’s window (e.g., Frogel &amp; Whitford <a href="#rf38" class="ref-type-bibr">1987</a>). The dashed line in <a href="/action/showPopup?citid=citart1&amp;id=fg5&amp;doi=10.1086%2F316618" title="Fig. 5." target="_blank" rel="overlay-d1185e1004">Figure 5</a> is the LF of inner bulge giants measured by Davidge (<a href="#rf19" class="ref-type-bibr">1998</a>), which has been scaled to match the number of stars in the M32 field with <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00058.gif" alt="" /></span> . There is excellent agreement between the bulge and M32 LFs.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The brightnesses of the AGB tip and RGB tip from the <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00059.gif" alt="" /></span>  (<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00060.gif" alt="" /></span> ), <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00061.gif" alt="" /></span>  (<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00062.gif" alt="" /></span> ), and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00063.gif" alt="" /></span>  (<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00064.gif" alt="" /></span> ) Bertelli et al. (<a href="#rf1" class="ref-type-bibr" id="rid_rf1">1994</a>) models are compared with the observations in <a href="/action/showPopup?citid=citart1&amp;id=fg6&amp;doi=10.1086%2F316618" title="Fig. 6." target="_blank" rel="overlay-d1185e1052">Figure 6</a>. <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00065.gif" alt="" /></span>  was computed from the <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00066.gif" alt="" /></span>  and <i>V−K</i> entries in Tables 8, 9, and 11 of Bertelli et al. (<a href="#rf1" class="ref-type-bibr">1994</a>), while <i>J−K</i> colors were calculated using the field giant color relations listed in Table 3 of Bessell &amp; Brett (<a href="#rf2" class="ref-type-bibr" id="rid_rf2">1988</a>).<div class="NLM_fig-group"><div class="thumbnailContainer" id="fg6"><a href="/action/showPopup?citid=citart1&amp;id=fg6&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e1078" title="Fig. 6."><div class="thumbnail"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/small/fg6.gif" alt="Figure thumbnail" class="thumb" /><div class="sizeInKb">(104 KB)</div></div></a></div><div class="caption"><p class="first last"><span class="captionLabel">Fig. 6.— </span>The (<i>K</i>, <i>J−K</i>) CMD of the outer field, compared with the AGB‐tip and RGB‐tip models for <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00067.gif" alt="" /></span> , <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00068.gif" alt="" /></span> , and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00069.gif" alt="" /></span>  from Bertelli et al. (<a href="#rf1" class="ref-type-bibr">1994</a>). Models for four ages are shown. The solid lines connect the various points for each evolutionary phase, while the dashed lines connect the RGB‐tip and AGB‐tip values at each metallicity. The open squares show stars with <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00070.gif" alt="" /></span>  from Table 1 of Freedman (<a href="#rf35" class="ref-type-bibr">1992</a>).</p> <p><a href="/action/showPopup?citid=citart1&amp;id=fg6&amp;doi=10.1086%2F316618" target="_blank">Open New Window</a></p></div></div></p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The model sequences in <a href="/action/showPopup?citid=citart1&amp;id=fg6&amp;doi=10.1086%2F316618" title="Fig. 6." target="_blank" rel="overlay-d1185e1130">Figure 6</a> consistently fall to the right of the outer field observations, although the significance of this result is low as a result of uncertainties in, for example, the mixing length and the adopted relation between <i>V−K</i> and <i>J−K</i>. If the distance to M32 has been overestimated, then the agreement along the color axis will improve slightly. While there are uncertainties in the color calibration, the relative model‐to‐model color variations are likely reliable, and the scatter on the upper AGB is consistent with a dispersion of ±0.3 dex in [M/H] or ±0.1 dex in age.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Comparisons between models and observations that are based on brightness are more reliable than those that rely on color. The inner field observations suggest that the AGB tip occurs near <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00071.gif" alt="" /></span>  in M32 (<a href="#sc3.2" class="ref-type-sec" id="rid_sc3.2">§ 3.2</a>), which is consistent with the brightest stars detected in the Freedman (<a href="#rf35" class="ref-type-bibr">1992</a>) and Elston &amp; Silva (<a href="#rf31" class="ref-type-bibr">1992</a>) data sets, and corresponds to <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00072.gif" alt="" /></span>  if <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00073.gif" alt="" /></span> . It is evident from <a href="/action/showPopup?citid=citart1&amp;id=fg6&amp;doi=10.1086%2F316618" title="Fig. 6." target="_blank" rel="overlay-d1185e1167">Figure 6</a> that models with <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00074.gif" alt="" /></span>  are required to match the AGB‐tip brightness. Caution should be exercised when attempting to derive absolute ages from a highly evolved state such as the AGB tip, and the age limits inferred from <a href="/action/showPopup?citid=citart1&amp;id=fg6&amp;doi=10.1086%2F316618" title="Fig. 6." target="_blank" rel="overlay-d1185e1175">Figure 6</a> are uncomfortably close to those defined by the visible spectrum of M32, which indicate that the galaxy does not contain a large population with <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00075.gif" alt="" /></span>  (Bica, Alloin, &amp; Schmidt <a href="#rf3" class="ref-type-bibr" id="rid_rf3">1990</a>).</p> </div> <div id="sc3.2" class="NLM_sec NLM_sec_level_2">  <p class="articleSubHeading" id="h5">3.2. The Circumnuclear Region</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">In this section the stellar content in the inner M32 field is compared with that in the outer field. Mean age and/or metallicity may change rapidly with radius near the center of M32, and so the inner field was divided into three regions, sampling distinct stellar density regimes centered on the nucleus. The radial limits and the mean surface brightnesses of these regions are listed in <a href="/action/showPopup?citid=citart1&amp;id=tb1&amp;doi=10.1086%2F316618" title="TABLE 1" target="_blank" rel="overlay-d1185e1199">Table 1</a>. The effects of crowding in region 1 are extreme, and the stellar content in this area will be investigated using integrated colors in <a href="#sc3.3" class="ref-type-sec" id="rid_sc3.3">§ 3.3</a>.<div class="table-wrap" id="tb1"><div class="thumbnailContainer"><a href="/action/showPopup?citid=citart1&amp;id=tb1&amp;doi=10.1086%2F316618" title="TABLE 1" target="_blank" rel="overlay-d1185e1205"><div class="thumbnail"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/small/tb1.gif" alt="TABLE 1" /></div></a></div><div class="caption"><span class="short-legend"><span class="captionLabel">TABLE 1 </span>Radii and Surface Brightnesses of Regions 1, 2, and 3</span><p><a href="/action/showPopup?citid=citart1&amp;id=tb1&amp;doi=10.1086%2F316618" target="_blank">Open New Window</a></p></div></div></p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The <i>K</i> LFs of regions 2 and 3 are shown in <a href="/action/showPopup?citid=citart1&amp;id=fg7&amp;doi=10.1086%2F316618" title="Fig. 7." target="_blank" rel="overlay-d1185e1315">Figure 7</a>. The lower stellar density in region 3 means that the brightness in <i>K</i> where incompleteness becomes significant, estimated from the point at which number counts in the LFs decline, is 0.5–1.0 mag fainter in region 3 than in region 2.<div class="NLM_fig-group"><div class="thumbnailContainer" id="fg7"><a href="/action/showPopup?citid=citart1&amp;id=fg7&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e1321" title="Fig. 7."><div class="thumbnail"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/small/fg7.gif" alt="Figure thumbnail" class="thumb" /><div class="sizeInKb">(63 KB)</div></div></a></div><div class="caption"><p class="first last"><span class="captionLabel">Fig. 7.— </span>The <i>K</i> LFs of sources in regions 2 and 3. <i>n</i><sub>05</sub> is the number of sources per 0.5 mag interval arcsec<sup>−2</sup>, and the error bars show the <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00077.gif" alt="" /></span>  uncertainties predicted from counting statistics. The dashed line shows the outer field LF scaled to match the stellar density in regions 2 and 3 using surface brightness measurements from Kent (<a href="#rf43" class="ref-type-bibr">1987</a>). The outer field LFs shown in this figure have been adjusted for the effects of crowding expected in regions 2 and 3 using the procedure described in the text.</p> <p><a href="/action/showPopup?citid=citart1&amp;id=fg7&amp;doi=10.1086%2F316618" target="_blank">Open New Window</a></p></div></div></p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Many of the sources detected in regions 2 and 3 are not individual stars but blends of two or more moderately faint objects. The effects of blending become less severe with increasing brightness, and the densities of stars with <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00078.gif" alt="" /></span>  are sufficiently low that the sources with <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00079.gif" alt="" /></span>  in regions 2 and 3 are likely individual stars. This can be checked by comparing the densities of <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00080.gif" alt="" /></span>  stars in the Freedman (<a href="#rf35" class="ref-type-bibr">1992</a>) and Elston &amp; Silva (<a href="#rf31" class="ref-type-bibr">1992</a>) data sets with those in regions 2 and 3 after correcting for differences in surface brightness.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The observed densities of <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00081.gif" alt="" /></span>  stars in the inner field are <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00082.gif" alt="" /></span>  arcmin<sup>−2</sup> (region 2) and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00083.gif" alt="" /></span>  arcmin<sup>−2</sup> (region 3). Freedman (<a href="#rf35" class="ref-type-bibr">1992</a>) detected four stars with <i>K</i> between 15.75 and 15.25 in a 1.11 arcmin<sup>2</sup> area 2<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00084.gif" alt="" /></span> </sup> south of the M32 nucleus, where the surface brightness is <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00085.gif" alt="" /></span>  mag arcmin<sup>−2</sup> (Kent <a href="#rf43" class="ref-type-bibr">1987</a>). If the spatial distribution of <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00086.gif" alt="" /></span>  stars follows the integrated light profile of the galaxy, then the densities of these objects in the circumnuclear region should be <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00087.gif" alt="" /></span>  arcmin<sup>−2</sup> (region 2) and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00088.gif" alt="" /></span>  arcmin<sup>−2</sup> (region 3). Elston &amp; Silva (<a href="#rf31" class="ref-type-bibr">1992</a>) detected 10 stars with <i>K</i> between 15.25 and 15.75 in a 16 arcmin<sup>2</sup> field 3<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00089.gif" alt="" /></span> </sup> east of the nucleus, where the surface brightness is <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00090.gif" alt="" /></span>  mag arcmin<sup>−2</sup>. The densities of <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00091.gif" alt="" /></span>  stars predicted from these data is <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00092.gif" alt="" /></span>  arcmin<sup>−2</sup> (region 2) and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00093.gif" alt="" /></span>  arcmin<sup>−2</sup> (region 3). The bright star densities predicted for regions 2 and 3 from the Freedman and Elston &amp; Silva studies agree within the estimated uncertainties, and the unweighted means are <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00094.gif" alt="" /></span>  (region 2) and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00095.gif" alt="" /></span>  (region 3). Thus, the observed densities of bright red stars in regions 2 and 3 differ from the densities inferred from the outer regions of M32 at less than the <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00096.gif" alt="" /></span>  level.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The calculations described above indicate that the brightest red stars have a spatial distribution that follows the surface brightness profile of the galaxy to within a few arcseconds of the nucleus. These comparisons can be extended to fainter stars by scaling the outer field LF to match the surface brightnesses in regions 2 and 3. The effects of crowding are significant among all but the brightest sources in regions 2 and 3, and statistical crowding corrections appropriate for each region were applied to the outer field LF after calculating the probability that two stars in a given brightness interval occur in the same resolution element, the diameter of which equals the FWHM of the PSF, and thus produce a blended image that would be counted in the next brightest LF bin.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The outer field LF, scaled and corrected for crowding based on the stellar densities in regions 2 and 3, is shown as a dashed line in <a href="/action/showPopup?citid=citart1&amp;id=fg7&amp;doi=10.1086%2F316618" title="Fig. 7." target="_blank" rel="overlay-d1185e1523">Figure 7</a>. While the agreement with the region 3 LF is excellent when <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00097.gif" alt="" /></span> , the comparison with the region 2 LF is inconclusive, as incompleteness becomes significant in region 2 when <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00098.gif" alt="" /></span> . The data thus indicate that at distances in excess of 20<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00099.gif" alt="" /></span> </sup> from the center of M32, which is the inner radius of region 3, the evolved red stellar content scales with <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00100.gif" alt="" /></span> . Therefore, the intermediate‐age population is not more centrally concentrated than other populations at distances in excess of 20<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00101.gif" alt="" /></span> </sup> from the nucleus. While the density of <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00102.gif" alt="" /></span>  stars suggests that this may also be the case for radii as small as 5<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00103.gif" alt="" /></span> </sup>, which is the inner radius of region 2, this cannot be verified with fainter stars until data with better image quality are obtained.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Although M32 contains a metallicity gradient (e.g., Hardy et al. <a href="#rf40" class="ref-type-bibr">1994</a>), this will not have a major impact on the comparisons discussed above, as the radial changes in mean metallicity are modest. If <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00104.gif" alt="" /></span>  and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00105.gif" alt="" /></span>  (Hardy et al. <a href="#rf40" class="ref-type-bibr">1994</a>), then the difference in indices between the outer field and region 3 (<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00106.gif" alt="" /></span> ) is <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00107.gif" alt="" /></span>  and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00108.gif" alt="" /></span> , while between the outer field and region 2 (<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00109.gif" alt="" /></span> ) <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00110.gif" alt="" /></span>  and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00111.gif" alt="" /></span> . These correspond to <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00112.gif" alt="" /></span>  dex (region 3) and <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00113.gif" alt="" /></span>  dex (region 2) with respect to the outer field according to the solar metallicity models of Worthey (<a href="#rf66" class="ref-type-bibr" id="rid_rf66">1994</a>).</p> </div> <div id="sc3.3" class="NLM_sec NLM_sec_level_2">  <p class="articleSubHeading" id="h7">3.3. The Nucleus of M32</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The radial behavior of <i>J−H</i>, <i>J−K</i>, and CO near the center of M32 is investigated in <a href="/action/showPopup?citid=citart1&amp;id=fg8&amp;doi=10.1086%2F316618" title="Fig. 8." target="_blank" rel="overlay-d1185e1648">Figure 8</a>, where radial averages of these quantities in 0<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00114.gif" alt="" /></span> 4 annuli are plotted. <i>J−K</i> becomes bluer when <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00115.gif" alt="" /></span> , while the CO index becomes larger. Given that <i>J−H</i> does not change markedly with radius, it appears that the color gradients are driven primarily by changes in the spectral energy distribution (SED) at wavelengths longward of ≥2 μm. The colors in <a href="/action/showPopup?citid=citart1&amp;id=fg8&amp;doi=10.1086%2F316618" title="Fig. 8." target="_blank" rel="overlay-d1185e1668">Figure 8</a> are insensitive to uncertainties in sky brightness, which was measured in the upper left‐hand corner of <a href="/action/showPopup?citid=citart1&amp;id=fg2&amp;doi=10.1086%2F316618" title="Fig. 2." target="_blank" rel="overlay-d1185e1671">Figure 2</a>, because they are restricted to the high surface brightness central regions of the galaxy.<div class="NLM_fig-group"><div class="thumbnailContainer" id="fg8"><a href="/action/showPopup?citid=citart1&amp;id=fg8&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e1674" title="Fig. 8."><div class="thumbnail"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/small/fg8.gif" alt="Figure thumbnail" class="thumb" /><div class="sizeInKb">(71 KB)</div></div></a></div><div class="caption"><p class="first last"><span class="captionLabel">Fig. 8.— </span>The radial behavior of <i>J−H</i>, <i>J−K</i>, and CO near the center of M32. The points plotted in this figure are azimuthal averages in 0<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00116.gif" alt="" /></span> 4 wide annuli.</p> <p><a href="/action/showPopup?citid=citart1&amp;id=fg8&amp;doi=10.1086%2F316618" target="_blank">Open New Window</a></p></div></div></p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Peletier (<a href="#rf54" class="ref-type-bibr" id="rid_rf54">1993</a>) used images with an angular resolution of 1<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00117.gif" alt="" /></span> 5 FWHM to investigate near‐infrared color gradients in M32. The data in Table 2 of Peletier (<a href="#rf54" class="ref-type-bibr">1993</a>) indicate that within the central few arcseconds of M32 there is a clear tendency for <i>J−K</i> to weaken with decreasing radius and for CO to strengthen, in qualitative agreement with the trends in <a href="/action/showPopup?citid=citart1&amp;id=fg8&amp;doi=10.1086%2F316618" title="Fig. 8." target="_blank" rel="overlay-d1185e1718">Figure 8</a>.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Several studies have measured the visible and UV colors near the center of M32. Michard &amp; Nieto (<a href="#rf48" class="ref-type-bibr" id="rid_rf48">1991</a>) examined data with 0<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00118.gif" alt="" /></span> 7–0<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00119.gif" alt="" /></span> 9 resolution and concluded that <i>B−R</i> and <i>U−B</i> do not vary with radius near the nucleus of M32. However, the measurements listed in Table 2 of Peletier (<a href="#rf54" class="ref-type-bibr">1993</a>) indicate that <i>U−R</i> and <i>B−R</i> may redden toward smaller radii. Lauer et al. (<a href="#rf46" class="ref-type-bibr" id="rid_rf46">1998</a>) examined images recorded with WFPC2 and concluded that <i>V−I</i> does not change with radius, while <i>U−V</i> may redden with decreasing radius. Ohl et al. (<a href="#rf53" class="ref-type-bibr">1998</a>) find that the color of M32 in the far‐ultraviolet becomes significantly redder toward smaller radii, although this trend is defined with measurements at distances in excess of 2<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00120.gif" alt="" /></span> </sup> from the center and so may not be related to changes in stellar content near the nucleus. The published data indicate that visible and near‐infrared colors do not change dramatically with radius in M32 when <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00121.gif" alt="" /></span> , and none of the studies detects a central bluing in the UV and visible portions of the spectrum. When combined with the results in <a href="/action/showPopup?citid=citart1&amp;id=fg8&amp;doi=10.1086%2F316618" title="Fig. 8." target="_blank" rel="overlay-d1185e1777">Figure 8</a>, the published data suggest that the SED of M32 undergoes complex changes close to the nucleus, becoming bluer with decreasing radius longward of 2 μm, not changing with radius at visible wavelengths, and possibly becoming redder with decreasing radius shortward of 0.4 μm.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The (<i>J−H</i>, <i>H−K</i>) and (CO, <i>J−K</i>) diagrams, shown in <a href="/action/showPopup?citid=citart1&amp;id=fg9&amp;doi=10.1086%2F316618" title="Fig. 9." target="_blank" rel="overlay-d1185e1792">Figure 9</a>, provide a means of probing the SED near the nucleus of M32. When <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00122.gif" alt="" /></span> , the near‐infrared SED is similar to that of star clusters in the Magellanic Clouds. However, at smaller radii the M32 data depart from an SED appropriate for star clusters, in the sense that while <i>J−H</i> remains at a value appropriate for stellar systems, <i>H−K</i> decreases by more than 0.1 mag. When <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00123.gif" alt="" /></span> <sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00124.gif" alt="" /></span> </sup>, <i>J−K</i> decreases toward smaller radii, while the CO index increases.<div class="NLM_fig-group"><div class="thumbnailContainer" id="fg9"><a href="/action/showPopup?citid=citart1&amp;id=fg9&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e1820" title="Fig. 9."><div class="thumbnail"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/small/fg9.gif" alt="Figure thumbnail" class="thumb" /><div class="sizeInKb">(78 KB)</div></div></a></div><div class="caption"><p class="first last"><span class="captionLabel">Fig. 9.— </span>The (<i>J−H</i>, <i>H−K</i>) and (CO, <i>J−K</i>) diagrams constructed from the data plotted in <a href="/action/showPopup?citid=citart1&amp;id=fg8&amp;doi=10.1086%2F316618" title="Fig. 8." target="_blank" rel="overlay-d1185e1838">Fig. 8</a>. Points at 0<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00125.gif" alt="" /></span> 2 and 1<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00126.gif" alt="" /></span> 4 from the nucleus are labeled. The open squares are observations of clusters in the Magellanic Clouds from Persson et al. (<a href="#rf55" class="ref-type-bibr" id="rid_rf55">1983</a>), and the M32 data depart from the cluster sequence when <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00127.gif" alt="" /></span> <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00128.gif" alt="" /></span> 0.</p> <p><a href="/action/showPopup?citid=citart1&amp;id=fg9&amp;doi=10.1086%2F316618" target="_blank">Open New Window</a></p></div></div></p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The large nuclear CO index of M32 is not easily explained. Mobasher &amp; James (<a href="#rf49" class="ref-type-bibr" id="rid_rf49">1996</a>) and James &amp; Mobasher (<a href="#rf42" class="ref-type-bibr" id="rid_rf42">1999</a>) measured the strength of 2.3 μm CO absorption in a moderately large number of elliptical galaxies. These data were recorded through 2<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00129.gif" alt="" /></span> 4 wide slits and hence are not dominated by light from the galaxy nuclei; nevertheless, these data still provide insight into the CO index of composite metal‐rich systems. After transforming the spectroscopic CO measurements into the photometric CO system using the relation defined by Doyon, Joseph, &amp; Wright (<a href="#rf28" class="ref-type-bibr" id="rid_rf28">1994</a>), it is concluded that <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00130.gif" alt="" /></span> , compared with <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00131.gif" alt="" /></span>  near the nucleus of M32. The only other stellar system having a published CO index with a spatial resolution comparable to the M32 observations is the Galactic center, which would have <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00132.gif" alt="" /></span>  if viewed at a distance of 1 Mpc (Davidge <a href="#rf22" class="ref-type-bibr" id="rid_rf22">2000c</a>).</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Luminous red giants in the vicinity of Sgr A and red supergiants in the Galaxy and the Magellanic Clouds have CO indices comparable to the nucleus of M32 (Elias, Frogel, &amp; Humphreys <a href="#rf29" class="ref-type-bibr" id="rid_rf29">1985</a>; Kenyon <a href="#rf44" class="ref-type-bibr" id="rid_rf44">1988</a>; Davidge <a href="#rf19" class="ref-type-bibr">1998</a>). However, these stars have <i>J</i>−<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00133.gif" alt="" /></span>  and hence do not provide suitable templates for the nucleus of M32. Therefore, it appears that the near‐infrared SED of the M32 nucleus differs from that of benchmark systems such as nearby bright giants, star clusters, and the central few arcseconds of elliptical galaxies.</p> </div> </div><div id="sc4" class="NLM_sec NLM_sec_level_1">  <h3 id="h8" class="size4of5 unit">4. SUMMARY AND DISCUSSION</h3><div class="jqShow size1of5">   </div> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Near‐infrared images have been used to investigate the stellar content of the Local Group compact elliptical galaxy M32. AGB stars as bright as <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00134.gif" alt="" /></span> , which were detected in earlier infrared studies of the outer regions of the galaxy, are also found near the center of the galaxy. The number density of these objects increases toward smaller radii, indicating that they are actual members of M32, and not luminous AGB stars in the outer disk of M31. Hence, these data confirm the presence of the intermediate‐age population predicted by spectroscopic investigations. The bright AGB stars in the outer regions of M32 have <i>J</i>−<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00135.gif" alt="" /></span> , and it is suggested that the very red objects detected by Freedman (<a href="#rf35" class="ref-type-bibr">1992</a>) have large photometric errors.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The <i>K</i> LF of the brightest AGB stars scales with integrated surface brightness to within 20<sup><span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00136.gif" alt="" /></span> </sup> of the galaxy center, suggesting that the relative frequency of bright AGB stars, as measured with respect to fainter stars, does not change over most of the galaxy. This does not rule out the presence of a subtle (±1 Gyr) age gradient in M32, since the brightness of the AGB tip changes slowly with age in all but the youngest intermediate‐age populations. The UV portion of the spectrum is very age sensitive during intermediate epochs (Yi et al. <a href="#rf67" class="ref-type-bibr">1999</a>), and an age gradient, in the sense that younger stars occur at smaller radii, provides one explanation for the UV color of M32 increasing with decreasing radius (O’Connell et al. <a href="#rf52" class="ref-type-bibr" id="rid_rf52">1992</a>).</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The data presented in this paper indicate that the near‐infrared SED changes within a few tenths of an arcsecond of the center of M32 and that the center of the galaxy has colors that differ from those of star clusters and the main bodies of elliptical galaxies. The central properties of M32 are peculiar in other ways. For example, the ratio of central X‐ray flux to mass is the smallest of any known supermassive black hole, suggesting that the central object may be fuel starved or is not an efficient accretor (Loewenstein et al. <a href="#rf47" class="ref-type-bibr" id="rid_rf47">1998</a>). In addition, the gravitational field from the central object influences the central arcsecond of M32 (van der Marel <a href="#rf65" class="ref-type-bibr" id="rid_rf65">1999</a>), so variations in stellar content and/or morphology might be expected to occur in this area. However, the core of M32 lacks conspicuous structure at UV (Cole et al. <a href="#rf15" class="ref-type-bibr" id="rid_rf15">1998</a>) and visible (Lauer et al. <a href="#rf46" class="ref-type-bibr">1998</a>) wavelengths. M32 also lacks a centrally concentrated blue population, and this is puzzling since stellar interactions in the dense nuclear regions might be expected to produce a large number of blue stragglers (Lauer et al. <a href="#rf46" class="ref-type-bibr">1998</a>). The changes in near‐infrared photometric properties detected in the current study occur on an angular scale that is comparable to the region influenced by the central black hole (van der Marel <a href="#rf65" class="ref-type-bibr">1999</a>), suggesting a possible connection. The “stubborn refusal of M32 to reveal any departures from utter normalcy at small radii” noted by Lauer et al. (<a href="#rf46" class="ref-type-bibr">1998</a>, p. 2283) appears to break down when data spanning a broader range of wavelengths are considered.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The relative size of the intermediate‐age population with respect to the rest of the galaxy can be estimated from the integrated brightness of AGB stars brighter than the RGB tip. The integrated brightness of the outer field based on the Kent (<a href="#rf43" class="ref-type-bibr">1987</a>) surface brightness profile, assuming that <i>V</i>−<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00137.gif" alt="" /></span>  for a typical spheroidal galaxy (Kent <a href="#rf43" class="ref-type-bibr">1987</a>) and that <i>V</i>−<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00138.gif" alt="" /></span>  for M32 (Frogel et al. <a href="#rf37" class="ref-type-bibr" id="rid_rf37">1978</a>), is <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00139.gif" alt="" /></span> . For comparison, the integrated brightness of stars on the upper AGB is <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00140.gif" alt="" /></span> , so luminous AGB stars contribute 20% of the total light from the outer field in <i>K</i>.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Frogel, Mould, &amp; Blanco (<a href="#rf36" class="ref-type-bibr" id="rid_rf36">1990</a>) studied the near‐infrared photometric properties of AGB stars in a sample of SMC and LMC clusters, and 11 of these clusters (NGCs 411, 419, 1751, 1806, 1846, 1978, 2108, 2121, 2154, 2213, and 2231) have SWB types V, V–VI, and VI, indicating that they have ages of a few Gyr, and integrated <i>K</i> brightness measurements (Persson et al. <a href="#rf55" class="ref-type-bibr">1983</a>). The ratio of light in <i>K</i> from bright AGB stars to that of the entire cluster is a well‐defined quantity among these objects, with a mean value of <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00141.gif" alt="" /></span> . Therefore, if the intermediate‐age component in the M32 outer field has an age of a few Gyr, then this population accounts for roughly 25% of the total light in <i>K</i>. The <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00142.gif" alt="" /></span>  ratio in <i>K</i> of an intermediate‐age population that has a Salpeter initial mass function and an age of a few Gyr is one‐half to one‐third that of an old population (Buzzoni <a href="#rf9" class="ref-type-bibr" id="rid_rf9">1989</a>). If the main body of M32 is relatively old, then the intermediate‐age population in the outer field thus accounts for roughly 10% of the total mass, with an estimated uncertainty ±5%. For comparison, Bica et al. (<a href="#rf3" class="ref-type-bibr">1990</a>) predict that the central regions of M32 contain an intermediate‐age population that accounts for 15% of the mass. The good agreement between these two mass estimates, obtained using very different techniques in different parts of the galaxy, is further evidence that the intermediate‐age population in M32 is uniformly distributed throughout the galaxy, as expected based on the comparisons in <a href="#sc3.2" class="ref-type-sec">§ 3.2</a>.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The presence of an intermediate‐age population accounting for 10% of the galaxy mass indicates that M32 had a significant interstellar medium a few Gyr in the past. What was the source of the gas from which these stars formed? M31 is a nearby reservoir of star‐forming material, and there are signs that M32 has interacted recently (Cepa &amp; Beckman <a href="#rf13" class="ref-type-bibr" id="rid_rf13">1988</a>) with material in the disk of this galaxy (Byrd <a href="#rf10" class="ref-type-bibr" id="rid_rf10">1976</a>, <a href="#rf11" class="ref-type-bibr" id="rid_rf11">1978</a>; Sofue &amp; Kato <a href="#rf61" class="ref-type-bibr" id="rid_rf61">1981</a>). However, if M32 was able to cull large amounts of gas from M31 during intermediate epochs, then it must have been a special event, as subsequent passages through the disk of M31 have not produced noticeable bursts of star formation.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">Mass ejected from evolved stars is another source of an ISM. Sage, Welch, &amp; Mitchell (<a href="#rf60" class="ref-type-bibr" id="rid_rf60">1998</a>) estimate that stellar mass loss should have produced an ISM in M32 with mass <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00143.gif" alt="" /></span>  <i>M</i><sub>⊙</sub> since the last interaction with M31. This is consistent with the mass of H <span class="smallcaps">i</span> within the central 3 arcmin<sup>2</sup>, which Emerson (<a href="#rf32" class="ref-type-bibr" id="rid_rf32">1974</a>) measures to be ≤<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00144.gif" alt="" /></span>  <i>M</i><sub>⊙</sub>. However, based on the nondetection of CO (1–0) emission from M32, Sage et al. (<a href="#rf60" class="ref-type-bibr">1998</a>) conclude that the mass of H<sub>2</sub> is ≤<span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00145.gif" alt="" /></span>  <i>M</i><sub>⊙</sub> within the central 160 pc of the galaxy.</p> <p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="textIndent">The mean separation between M32 and M31 was significantly greater in the past (Nieto &amp; Prugniel <a href="#rf50" class="ref-type-bibr">1987</a>), and M32 could have built up a larger ISM from stellar mass loss during earlier epochs as a result of decreased tidal interactions with M31. If the bright AGB stars formed from gas that originated in M32, then these objects should be among the most metal rich in the galaxy, with metallicities within a factor of 2 of solar according to the Grillmair et al. (<a href="#rf39" class="ref-type-bibr">1996</a>) MDF. High‐quality visible and near‐infrared spectra can be obtained of the brightest AGB stars using instruments on 4 or 8 m telescopes, thereby providing a direct means of measuring the metallicities of these objects. If the AGB stars are found to be relatively metal poor, then a source of gas external to M32 would seem likely; for example, if star formation in M32 during intermediate epochs was fueled by the accretion of the high‐velocity clouds that have been interpreted as the remnants of the material from which the Local Group formed, then the AGB stars would have <span class="NLM_tex-math"><img src="/literatum/publisher/jstor/journals/content/publastrsocipaci/2000/pasp.2000.112.issue-775/316618/production/images/eqs/eq-00146.gif" alt="" /></span>  (Blitz et al. <a href="#rf5" class="ref-type-bibr" id="rid_rf5">1999</a>).</p> </div><div class="NLM_back"> <h3 id="h9" class="size4of5 unit">REFERENCES</h3><div class="jqShow size1of5">   </div><div class="indent refContainer"><ul class="citeList clear"><li id="rf1">Bertelli, G., Bressan, A., Chiosi, C.,  Fagotto, F., &amp; Nasi, E. 1994, A&amp;AS, 106, 275<div class="citationLinks"><a href="#rid_rf1">First citation in article</a></div></li><li id="rf2">Bessell,  M. S., &amp; Brett, J. M. 1988, PASP, 100, 1134<div class="citationLinks"><a href="#rid_rf2">First citation in article</a></div></li><li id="rf3">Bica, E., Alloin, D., &amp; Schmidt, A.  A. 1990, A&amp;A, 228, 23<div class="citationLinks"><a href="#rid_rf3">First citation in article</a></div></li><li id="rf4">Bica,  E., Barbuy, B., &amp; Ortolani, S. 1991, ApJ, 382, L15<div class="citationLinks"><a href="#rid_rf4">First citation in article</a></div></li><li id="rf5">Blitz,  L., Spergel, D. N., Teuben, P. J., Hartmann, D., &amp; Burton, W. B. 1999,  ApJ, 514, 818<div class="citationLinks"><a href="#rid_rf5">First citation in article</a></div></li><li id="rf6">Brown,  T. M., Ferguson, H. C., Stanford, S. A., &amp; Deharveng, J.‐M.  1998, ApJ, 504, 113<div class="citationLinks"><a href="#rid_rf6">First citation in article</a></div></li><li id="rf7">Burstein,  D., Bertola, F., Buson, L. M., Faber, S. M., &amp; Lauer,  T. R. 1988, ApJ, 328, 440<div class="citationLinks"><a href="#rid_rf7">First citation in article</a></div></li><li id="rf8">Burstein,  D., &amp; Heiles, C. 1984, ApJS, 54, 33<div class="citationLinks"><a href="#rid_rf8">First citation in article</a></div></li><li id="rf9">Buzzoni,  A. 1989, ApJS, 71, 817<div class="citationLinks"><a href="#rid_rf9">First citation in article</a></div></li><li id="rf10">Byrd,  G. G. 1976, ApJ, 208, 688<div class="citationLinks"><a href="#rid_rf10">First citation in article</a></div></li><li id="rf11">———.  1978, ApJ, 226, 70<div class="citationLinks"><a href="#rid_rf11">First citation in article</a></div></li><li id="rf12">Casali, M.,  &amp; Hawarden, T. 1992, JCMT‐UKIRT Newsl., 4, 33<div class="citationLinks"><a href="#rid_rf12">First citation in article</a></div></li><li id="rf13">Cepa, J., &amp; Beckman, J. E. 1988,  A&amp;A, 200, 21<div class="citationLinks"><a href="#rid_rf13">First citation in article</a></div></li><li id="rf14">Cohen,  J. G. 1979, ApJ, 228, 405<div class="citationLinks"><a href="#rid_rf14">First citation in article</a></div></li><li id="rf15">Cole,  A. A., et al. 1998, ApJ, 505, 230<div class="citationLinks"><a href="#rid_rf15">First citation in article</a></div></li><li id="rf16">Davidge,  T. J. 1990, AJ, 99, 561<div class="citationLinks"><a href="#rid_rf16">First citation in article</a></div></li><li id="rf17">———.  1991, AJ, 101, 884<div class="citationLinks"><a href="#rid_rf17">First citation in article</a></div></li><li id="rf18">———.  1993, ApJ, 409, 190<div class="citationLinks"><a href="#rid_rf18">First citation in article</a></div></li><li id="rf19">———.  1998, AJ, 115, 2374<div class="citationLinks"><a href="/action/showPopup?citid=citart1&amp;id=fg5&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e2449">First citation in article</a></div></li><li id="rf20">———.  2000a, ApJS, 126, 105<div class="citationLinks"><a href="#rid_rf20">First citation in article</a></div></li><li id="rf21">———.  2000b, AJ, submitted<div class="citationLinks"><a href="#rid_rf21">First citation in article</a></div></li><li id="rf22">———.  2000c, AJ, 119, 748<div class="citationLinks"><a href="#rid_rf22">First citation in article</a></div></li><li id="rf23">Davidge,  T. J., &amp; Courteau, S. 1999, AJ, 117, 1297<div class="citationLinks"><a href="#rid_rf23">First citation in article</a></div></li><li id="rf24">Davidge,  T. J., De Robertis, M. M., &amp; Yee, H. K. C. 1990, AJ, 100,  1143<div class="citationLinks"><a href="#rid_rf24">First citation in article</a></div></li><li id="rf25">Davidge,  T. J., &amp; Jones, J. H. 1992, AJ, 104, 1365<div class="citationLinks"><a href="#rid_rf25">First citation in article</a></div></li><li id="rf26">Davidge,  T. J., Le Fevre, O., &amp; Clark, C. C. 1991, ApJ, 370, 559<div class="citationLinks"><a href="/action/showPopup?citid=citart1&amp;id=fg1&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e2546">First citation in article</a></div></li><li id="rf27">Davidge,  T. J., &amp; Simons, D. A. 1994, AJ, 107, 240<div class="citationLinks"><a href="#rid_rf27">First citation in article</a></div></li><li id="rf28">Doyon,  R., Joseph, R. D., &amp; Wright, G. S. 1994, ApJ, 421, 101<div class="citationLinks"><a href="#rid_rf28">First citation in article</a></div></li><li id="rf29">Elias,  J. H., Frogel, J. A., &amp; Humphreys, R. M. 1985, ApJS, 57, 91<div class="citationLinks"><a href="#rid_rf29">First citation in article</a></div></li><li id="rf30">Elias,  J. H., Frogel, J. A., Matthews, K., &amp; Neugebauer, G. 1982, AJ, 87,  1029<div class="citationLinks"><a href="#rid_rf30">First citation in article</a></div></li><li id="rf31">Elston,  R., &amp; Silva, D. R. 1992, AJ, 104, 1360<div class="citationLinks"><a href="#rid_rf31">First citation in article</a></div></li><li id="rf32">Emerson,  D. T. 1974, MNRAS, 169, 607<div class="citationLinks"><a href="#rid_rf32">First citation in article</a></div></li><li id="rf33">Faber,  S. M. 1973, ApJ, 179, 423<div class="citationLinks"><a href="#rid_rf33">First citation in article</a></div></li><li id="rf34">Freedman,  W. L. 1989, AJ, 98, 1285<div class="citationLinks"><a href="#rid_rf34">First citation in article</a></div></li><li id="rf35">———. 1992, AJ, 104,  1349<div class="citationLinks"><a href="#rid_rf35">First citation in article</a></div></li><li id="rf36">Frogel,  J. A., Mould, J., &amp; Blanco, V. M. 1990, ApJ, 352, 96<div class="citationLinks"><a href="#rid_rf36">First citation in article</a></div></li><li id="rf37">Frogel,  J. A., Persson, S. E., Aaronson, M., &amp; Matthews, K. 1978, ApJ, 220,  75<div class="citationLinks"><a href="#rid_rf37">First citation in article</a></div></li><li id="rf38">Frogel,  J. A., &amp; Whitford, A. E. 1987, ApJ, 320, 199<div class="citationLinks"><a href="#rid_rf38">First citation in article</a></div></li><li id="rf39">Grillmair,  C. J., et al. 1996, AJ, 112, 1975<div class="citationLinks"><a href="#rid_rf39">First citation in article</a></div></li><li id="rf40">Hardy,  E., Couture, J., Couture, C., &amp; Joncas, G. 1994, AJ, 107,  195<div class="citationLinks"><a href="#rid_rf40">First citation in article</a></div></li><li id="rf41">Harris,  G. L., Harris, W. E., &amp; Poole, G. B. 1999, AJ, 117, 855<div class="citationLinks"><a href="#rid_rf41">First citation in article</a></div></li><li id="rf42">James,  P. A., &amp; Mobasher, B. 1999, MNRAS, 306, 199<div class="citationLinks"><a href="#rid_rf42">First citation in article</a></div></li><li id="rf43">Kent,  S. M. 1987, AJ, 94, 306<div class="citationLinks"><a href="/action/showPopup?citid=citart1&amp;id=tb1&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e2753">First citation in article</a></div></li><li id="rf44">Kenyon,  S. J. 1988, AJ, 96, 337<div class="citationLinks"><a href="#rid_rf44">First citation in article</a></div></li><li id="rf45">Kormendy,  J. 1985, ApJ, 295, 73<div class="citationLinks"><a href="#rid_rf45">First citation in article</a></div></li><li id="rf46">Lauer,  T. R., Faber, S. M., Ajhar, E. A., Grillmair, C. J., &amp; Scowen, P. A.  1998, AJ, 116, 2263<div class="citationLinks"><a href="#rid_rf46">First citation in article</a></div></li><li id="rf47">Loewenstein,  M., Hayashida, K., Toneri, T., &amp; Davis, D. S. 1998, ApJ, 497,  681<div class="citationLinks"><a href="#rid_rf47">First citation in article</a></div></li><li id="rf48">Michard, R., &amp; Nieto, J.‐L.  1991, A&amp;A, 243, L17<div class="citationLinks"><a href="#rid_rf48">First citation in article</a></div></li><li id="rf49">Mobasher,  B., &amp; James, P. A. 1996, MNRAS, 280, 895<div class="citationLinks"><a href="#rid_rf49">First citation in article</a></div></li><li id="rf50">Nieto, J.‐L., &amp; Prugniel, P.  1987, A&amp;A, 186, 30<div class="citationLinks"><a href="#rid_rf50">First citation in article</a></div></li><li id="rf51">O’Connell,  R. W. 1980, ApJ, 236, 430<div class="citationLinks"><a href="#rid_rf51">First citation in article</a></div></li><li id="rf52">O’Connell,  R. W., et al. 1992, ApJ, 395, L45<div class="citationLinks"><a href="#rid_rf52">First citation in article</a></div></li><li id="rf53">Ohl,  R. G., et al. 1998, ApJ, 505, L11<div class="citationLinks"><a href="#rid_rf53">First citation in article</a></div></li><li id="rf54">Peletier, R. F. 1993, A&amp;A, 271,  51<div class="citationLinks"><a href="#rid_rf54">First citation in article</a></div></li><li id="rf55">Persson,  S. E., Aaronson, M., Cohen, J. G., Frogel, J. A., &amp; Matthews, K. 1983,  ApJ, 266, 105<div class="citationLinks"><a href="/action/showPopup?citid=citart1&amp;id=fg9&amp;doi=10.1086%2F316618" target="_blank" rel="overlay-d1185e2899">First citation in article</a></div></li><li id="rf56">Prugniel, P., Nieto, J.‐L., &amp;  Simien, F. 1987, A&amp;A, 173, 49<div class="citationLinks"><a href="#rid_rf56">First citation in article</a></div></li><li id="rf57">Rigaut,  F., et al. 1998, PASP, 110, 152<div class="citationLinks"><a href="#rid_rf57">First citation in article</a></div></li><li id="rf58">Rose,  J. A. 1985, AJ, 90, 1927<div class="citationLinks"><a href="#rid_rf58">First citation in article</a></div></li><li id="rf59">———.  1994, AJ, 107, 206<div class="citationLinks"><a href="#rid_rf59">First citation in article</a></div></li><li id="rf60">Sage,  L. J., Welch, G. A., &amp; Mitchell, G. F. 1998, ApJ, 507, 726<div class="citationLinks"><a href="#rid_rf60">First citation in article</a></div></li><li id="rf61">Sofue,  Y., &amp; Kato, T. 1981, PASJ, 33, 449<div class="citationLinks"><a href="#rid_rf61">First citation in article</a></div></li><li id="rf62">Stetson,  P. B. 1987, PASP, 99, 191<div class="citationLinks"><a href="#rid_rf62">First citation in article</a></div></li><li id="rf63">Stetson,  P. B., &amp; Harris, W. E. 1988, AJ, 96, 909<div class="citationLinks"><a href="#rid_rf63">First citation in article</a></div></li><li id="rf64">van den  Bergh, S. 2000, The Galaxies of the Local Group (Cambridge: Cambridge  Univ. Press), 11<div class="citationLinks"><a href="#rid_rf64">First citation in article</a></div></li><li id="rf65">van  der Marel, R. P. 1999, AJ, 117, 744<div class="citationLinks"><a href="#rid_rf65">First citation in article</a></div></li><li id="rf66">Worthey,  G. 1994, ApJS, 95, 107<div class="citationLinks"><a href="#rid_rf66">First citation in article</a></div></li><li id="rf67">Yi,  S., et al. 1999, ApJ, 513, 128<div class="citationLinks"><a href="#rid_rf67">First citation in article</a></div></li></ul></div> </div><div class="indent refContainer"><ul class="citeList clear"><li id="fn1">  <p class="fn"><span class="label"><a href="/stable/full/10.1086/316618#rid_fn1" id="fn1">1</a> </span>Visiting Astronomer, Canada‐France‐Hawaii Telescope, which is operated by the National Research Council of Canada, the Centre National de la Recherche Scientifique, and the University of Hawaii.</p> </li></ul></div><div id="jqShowLayer" class="jqHide"><div class="sectionLinks"><div class="jqCloseLayer">close</div><ul class="jqList"><li><a href="#mainContent">Top of page</a></li><li class="contentLabel"><a href="#h1">1. INTRODUCTION</a></li><li class="contentLabel"><a href="#h2">2. OBSERVATIONS, REDUCTIONS,...</a></li><li class="contentLabel"><a href="#h3">3. RESULTS</a></li><li class="contentLabel"><a href="#h8">4. SUMMARY AND DISCUSSION</a></li><li><a href="#h9">REFERENCES</a></li></ul></div></div><div id="articleCopyright" class="clear">© 2000. The Astronomical Society of the Pacific. All rights reserved. Printed in U.S.A.</div><!-- /fulltext content --></div>
+              <div id="articleFoot">
+                  
+
+
+
+
+
+<!-- articleFoot.jsp -->
+
+
+    
+    <div id="funder">
+        
+    </div>
+
+
+              </div>
+            
+        </div>
+      </div>
+    </div>
+
+        </div>
+        </div>
+        </div>
+	</div>
+	<div class="foot">
+		
+
+
+
+<ul id="footerNav" class="menu support">
+	<li><a href="/">JSTOR Home</a></li>
+	<li><a href="http://about.jstor.org">About</a></li>
+	<li><a href="/action/showAdvancedSearch">Search</a></li>
+	<li><a href="/action/showJournals">Browse</a></li>
+	<li><a href="/page/info/about/policies/terms.jsp">Terms and Conditions</a></li>
+	<li><a href="/page/info/about/policies/privacy.jsp">Privacy Policy</a></li>
+	<li><a href="/page/info/about/policies/accessibility.jsp">Accessibility</a></li>
+	<li><a href="http://about.jstor.org/support-training/help">Help</a></li>
+	<li><a href="/action/showContactUSMain">Contact us</a></li>
+</ul>
+<div class="footer">
+JSTOR is part of ITHAKA, a not-for-profit organization helping the academic community use digital technologies to preserve the scholarly record and to advance research and teaching in sustainable ways.<br/>
+    
+
+
+&copy;2000-2011 ITHAKA. All Rights Reserved. JSTOR&reg;, the JSTOR logo, and ITHAKA&reg; are registered trademarks of ITHAKA.<br/>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <p>Your access to JSTOR provided by Washington State University, Spokane</p>
+
+
+
+
+
+
+
+
+
+
+ </div>
+	</div>
+</div>
+
+<!-- OPENTRACKER HTML START -->
+
+<script type="text/javascript" src="http://script.opentracker.net/?site=jstor.org"></script> 
+<!-- OPENTRACKER HTML END -->
+<!-- placeholder id=null, description=Site-wide Scripts --><!-- ABS Script -->
+<script type="text/javascript" src="/abs/main.js"></script>
+<script type="text/javascript">
+  jstor.feature.searchOverlay = true;
+
+// Crazy Egg
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/4927.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<!-- placeholder id=null, description=Per Page Scripts -->
+<!-- IMPORTANT! This jiffy script needs to be the last script on this page - as it measures load time. -->
+<script type="text/javascript">
+	Jiffy.measure("BodyTagTiming", "startBody");
+</script>
+</body>
+</html>

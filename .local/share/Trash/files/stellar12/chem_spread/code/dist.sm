@@ -1,0 +1,26 @@
+erase
+data dist.narrow
+lines 5 53
+read {Fe 2 Narrow 3}
+
+data dist.normal
+lines 5 53
+read {Fe 2 Normal 3}
+
+data dist.wide
+lines 5 53
+read {Fe 2 Wide 3}
+
+
+
+limits Fe Narrow
+box
+ctype red
+histogram Fe Narrow
+ctype default
+histogram Fe Normal
+ctype blue
+histogram Fe Wide
+ctype default
+xlabel Metalicity
+ylabel Abundance of stars

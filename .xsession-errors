@@ -1,0 +1,172 @@
+/usr/sbin/lightdm-session: 26: /home/student/.profile: source: not found
+openConnection: connect: No such file or directory
+cannot connect to brltty at :0
+Backend     : gconf
+Integration : true
+Profile     : unity
+Adding plugins
+Initializing core options...done
+Initializing composite options...done
+** Message: applet now removed from the notification area
+Initializing opengl options...done
+Initializing decor options...done
+Initializing snap options...done
+Initializing grid options...done
+Initializing gnomecompat options...done
+** Message: using fallback from indicator to GtkStatusIcon
+Initializing resize options...done
+Initializing vpswitch options...done
+Initializing place options...done
+Initializing mousepoll options...done
+I/O warning : failed to load external entity "/home/student/.compiz/session/10fbeda8e75ad18bca13463550403550200000022820036"
+Initializing session options...done
+Initializing move options...done
+Initializing unitymtgrabhandles options...done
+Initializing wall options...done
+Initializing animation options...done
+Initializing fade options...done
+Initializing workarounds options...done
+compiz (expo) - Warn: failed to bind image to texture
+Initializing expo options...done
+Initializing scale options...done
+Initializing ezoom options...done
+
+(compiz:2363): GConf-CRITICAL **: gconf_client_add_dir: assertion `gconf_valid_key (dirname, NULL)' failed
+Initializing unityshell options...done
+Setting Update "main_menu_key"
+Setting Update "run_key"
+** Message: moving back from GtkStatusIcon to indicator
+
+** (zeitgeist-datahub:2622): WARNING **: zeitgeist-datahub.vala:227: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!
+compiz (decor) - Warn: failed to bind pixmap to texture
+
+(gnome-settings-daemon:2352): color-plugin-WARNING **: failed to set screen _ICC_PROFILE: Failed to open file '/var/lib/lightdm/.local/share/icc/edid-a99a351d3701a20a119936d9b9972e07.icc': Permission denied
+
+(gnome-settings-daemon:2352): color-plugin-WARNING **: failed to connect to device: Failed to connect to missing device /org/freedesktop/ColorManager/devices/cups_deskjet_5600
+
+(gnome-settings-daemon:2352): color-plugin-WARNING **: failed to connect to device: Failed to connect to missing device /org/freedesktop/ColorManager/devices/cups_sharp
+
+(gnome-settings-daemon:2352): color-plugin-WARNING **: failed to connect to device: Failed to connect to missing device /org/freedesktop/ColorManager/devices/cups_Xerox_WorkCentre_24
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(gnome-settings-daemon:2352): GLib-CRITICAL **: g_variant_get_int32: assertion `g_variant_is_of_type (value, G_VARIANT_TYPE_INT32)' failed
+WARNING:root:timeout reached, exiting
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(gnome-settings-daemon:2352): GLib-CRITICAL **: g_variant_get_int32: assertion `g_variant_is_of_type (value, G_VARIANT_TYPE_INT32)' failed
+WARNING:root:timeout reached, exiting
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(evolution-alarm-notify:2684): evolution-alarm-notify-WARNING **: alarm.c:260: Requested removal of nonexistent alarm!
+
+(polkit-gnome-authentication-agent-1:2378): Gdk-WARNING **: polkit-gnome-authentication-agent-1: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(gnome-settings-daemon:2352): Gdk-WARNING **: gnome-settings-daemon: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(nm-applet:2384): GConf-WARNING **: Got Disconnected from DBus.
+
+
+(nm-applet:2384): Gdk-WARNING **: nm-applet: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(deja-dup-monitor:2745): GVFS-RemoteVolumeMonitor-WARNING **: Owner :1.28 of volume monitor org.gtk.Private.GduVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(deja-dup-monitor:2745): GVFS-RemoteVolumeMonitor-WARNING **: Owner :1.29 of volume monitor org.gtk.Private.GPhoto2VolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(deja-dup-monitor:2745): GVFS-RemoteVolumeMonitor-WARNING **: Owner :1.30 of volume monitor org.gtk.Private.AfcVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+
+(nautilus:2387): GVFS-RemoteVolumeMonitor-WARNING **: Owner :1.28 of volume monitor org.gtk.Private.GduVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+gtk-window-decorator: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.
+
+(gdu-notification-daemon:2528): Gdk-WARNING **: gdu-notification-daemon: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(gnome-screensaver:2625): Gdk-WARNING **: gnome-screensaver: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(telepathy-indicator:2537): Gdk-WARNING **: telepathy-indicator: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(evolution-alarm-notify:2684): Gdk-WARNING **: evolution-alarm-notify: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Terminated
+
+(update-notifier:2695): Gdk-WARNING **: update-notifier: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+

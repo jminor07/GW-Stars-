@@ -1,0 +1,30 @@
+! H beta versus Fe4668
+erase
+
+limits 0 10 1 3
+expand 1.3
+box
+xlabel C_24668 (\AA)
+ylabel H\beta (\AA)
+relocate 1.5 12.5
+
+! Abundance distribution function
+data newchem.out
+!lines 2 0
+read { age 1 width 2 shift 3 c24668 11 hbeta 12 }
+ctype white
+ptype 5 3
+points c24668 hbeta if (width == 1)
+set c24668 = c24668 - 0.003
+set hbeta = hbeta - (-0.325)
+ctype blue
+points c24668 hbeta if (width == 2)
+ctype red
+points c24668 hbeta if (width == 3)
+ctype green
+points c24668 hbeta if (width == 4)
+expand 0
+
+ctype white
+
+

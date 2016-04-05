@@ -1,0 +1,19 @@
+      program spshift
+
+      integer nvd,nind,ngal
+      parameter  ( nvd=5,nind=79,ngal=7)
+      character*12 fnam(nvd)
+      real  vd(nvd),
+
+
+      data fnam / 'tmeasure.000','tmeasure.100','tmeasure.200',
+     z            'tmeasure.300','tmeasure.400' /
+      data vd / 0.0, 100.0, 200.0, 300.0, 400.0 /
+
+      do i=1,nvd
+      end do
+
+
+
+      close
+      end

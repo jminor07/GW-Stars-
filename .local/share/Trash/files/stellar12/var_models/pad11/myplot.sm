@@ -1,0 +1,27 @@
+eerase
+!(clears screen)
+data Lbar.out
+lines 2 0
+!line to too the end
+read { mu 4 mb 5 mv 6 mi 8 mk 11 mg2 15 vbib 16 rbib 17   }
+
+limits mv mg2
+box
+points mv mg2
+
+xlabel V bar
+ylabel Mg 2
+
+lines 2 6
+read { mu 4 mb 5 mv 6 mi 8 mk 11 mg2 15 vbib 16 rbib 17   }
+ctype red
+connect mv mg2
+lines 7 11
+read { mu 4 mb 5 mv 6 mi 8 mk 11 mg2 15 vbib 16 rbib 17   }
+ctype blue
+connect mv mg2
+lines 12 16
+read { mu 4 mb 5 mv 6 mi 8 mk 11 mg2 15 vbib 16 rbib 17   }
+ctype yellow
+connect mv mg2
+ctype default

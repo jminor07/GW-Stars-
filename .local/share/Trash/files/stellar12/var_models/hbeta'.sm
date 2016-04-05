@@ -1,0 +1,36 @@
+! H beta versus Fe4668
+erase
+
+limits 1.8 3 0 1
+expand 1.3
+box
+
+xlabel C_24668 (\AA)
+ylabel H\beta (\AA)
+relocate 1.5 13
+ptype 4 0 
+expand 1.0001
+dot
+
+!Connor's data
+data Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+ptype 4 4
+ctype red
+points VI Mg2
+
+lines 2 6
+read { Mg2 15 VI 16 }
+connect VI Mg2
+lines 7 11
+read { Mg2 15 VI 16 }
+connect VI Mg2
+lines 12 16
+read { Mg2 15 VI 16 }
+ctype red
+connect VI Mg2
+
+ctype white
+
+

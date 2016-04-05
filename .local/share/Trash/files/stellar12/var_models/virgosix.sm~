@@ -1,0 +1,138 @@
+erase
+ctype default
+expand 1.1
+
+data pad11/Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+
+limits VI Mg2
+box
+
+
+xlabel Vbar-Ibar
+ylabel Mg2
+
+lines 2 6
+read { Mg2 15 VI 16 }
+ctype red
+connect VI Mg2
+
+lines 7 11
+read { Mg2 15 VI 16 }
+ctype red
+connect VI Mg2
+
+lines 12 16
+read { Mg2 15 VI 16 }
+ctype red
+connect VI Mg2
+
+
+
+data pad94/Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+
+lines 2 6
+read { Mg2 15 VI 16 }
+ctype blue
+connect VI Mg2
+
+lines 7 11
+read { Mg2 15 VI 16 }
+ctype blue
+connect VI Mg2
+
+lines 12 16
+read { Mg2 15 VI 16 }
+ctype blue
+connect VI Mg2
+
+lines 17 21
+read { Mg2 15 VI 16 }
+ctype blue
+connect VI Mg2
+
+
+data dotter4new2/Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+
+lines 2 6
+read { Mg2 15 VI 16 }
+ctype green
+connect  VI Mg2
+
+lines 7 11
+read { Mg2 15 VI 16 }
+ctype green 
+connect VI Mg2
+
+lines 12 16 
+read { Mg2 15 VI 16 }
+ctype green
+connect VI Mg2
+
+
+data basti5new/Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+
+lines 2 5
+read { Mg2 15 VI 16 }
+ctype white
+connect VI Mg2
+
+lines 6 9
+read { Mg2 15 VI 16 }
+ctype white
+connect VI Mg2
+
+lines 10 13
+read { Mg2 15 VI 16 }
+ctype white
+connect VI Mg2
+
+
+data van0/Lbar.out
+lines 2 0
+read { Mg2 15 VI 16 }
+
+lines 2 3
+read { Mg2 15 VI 16 }
+ctype yellow
+connect VI Mg2
+
+lines 4 8
+read { Mg2 15 VI 16 }
+ctype yellow
+connect VI Mg2
+ 
+lines 9 13
+read { Mg2 15 VI 16 }
+ctype yellow
+connect VI Mg2
+ 
+data pad11/virgodata.out
+lines 2 0
+read{ Mg2 5 VI 3 error2 4 }
+
+lines 2 12 
+read { Mg2 5 VI 3 error2 4 }
+ctype cyan
+
+errorbar VI Mg2 error2 1
+errorbar VI Mg2 error2 3
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+20305 [2012-02-13 15:31:28,722] - DEBUG - singleton - Checking for another running instance...
+20305 [2012-02-13 15:31:28,746] - INFO - zeitgeist.sql - Using database: /home/student/.local/share/zeitgeist/activity.sqlite
+20305 [2012-02-13 15:31:28,809] - DEBUG - zeitgeist.sql - Core schema is good. DB loaded in 62.8938674927ms
+20305 [2012-02-13 15:31:28,823] - DEBUG - zeitgeist.extension - Searching for system extensions in: /usr/share/zeitgeist/_zeitgeist/engine/extensions
+20305 [2012-02-13 15:31:28,823] - DEBUG - zeitgeist.extension - Searching for user extensions in: /home/student/.local/share/zeitgeist/extensions
+20305 [2012-02-13 15:31:28,844] - DEBUG - zeitgeist.extension - No extra extensions
+20305 [2012-02-13 15:31:28,844] - DEBUG - zeitgeist.extension - Found extensions: [<class '_zeitgeist.engine.extensions.storagemonitor.StorageMonitor'>, <class '_zeitgeist.engine.extensions.datasource_registry.DataSourceRegistry'>, <class '_zeitgeist.engine.extensions.fts.SearchEngineExtension'>, <class '_zeitgeist.engine.extensions.blacklist.Blacklist'>]
+20305 [2012-02-13 15:31:28,844] - DEBUG - zeitgeist.extension - Loading extension 'StorageMonitor'
+20305 [2012-02-13 15:31:28,863] - DEBUG - zeitgeist.storagemonitor - Setting storage medium dc26f377-9c98-4122-9a83-603a797af6a4 'Fantom2TB' as available
+20305 [2012-02-13 15:31:28,963] - DEBUG - zeitgeist.storagemonitor - Creating NetworkManager network monitor
+20305 [2012-02-13 15:31:28,968] - DEBUG - zeitgeist.storagemonitor - NetworkManager network state: 70
+20305 [2012-02-13 15:31:28,968] - DEBUG - zeitgeist.storagemonitor - Setting storage medium net 'Internet' as available
+20305 [2012-02-13 15:31:29,000] - DEBUG - zeitgeist.extension - Loading extension 'DataSourceRegistry'
+20305 [2012-02-13 15:31:29,013] - DEBUG - zeitgeist.datasource_registry - Loaded data-source data from /home/student/.local/share/zeitgeist/datasources.pickle
+20305 [2012-02-13 15:31:29,014] - DEBUG - zeitgeist.extension - Loading extension 'SearchEngineExtension'
+20305 [2012-02-13 15:31:29,014] - DEBUG - zeitgeist.fts - Opening full text index: /home/student/.local/share/zeitgeist/fts.index
+20305 [2012-02-13 15:31:29,115] - DEBUG - zeitgeist.extension - Loading extension 'Blacklist'
+20305 [2012-02-13 15:31:29,116] - DEBUG - zeitgeist.blacklist - No existing blacklist config found
+20305 [2012-02-13 15:31:29,117] - INFO - root - Trying to start the datahub
+20305 [2012-02-13 15:31:29,122] - DEBUG - root - Running datahub (/usr/bin/zeitgeist-datahub) with PID=20308
+20305 [2012-02-13 15:31:29,122] - INFO - root - Starting Zeitgeist service...

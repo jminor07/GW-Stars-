@@ -1,0 +1,28 @@
+erase
+data virgodata.out
+lines 2 0
+!read { Mg2 5 VI 3 }
+read { Mg2 5 VI 3 error2 4 }
+
+
+!limits VI Mg2
+limits 1 3 0 1
+box
+!connect VI Mg2
+points VI Mg2
+
+xlabel Vbar-Ibar
+ylabel Mg2
+
+lines 2 12
+!read { Mg2 5 VI 3 }
+read { Mg2 5 VI 3 error2 4 }
+!ctype red
+!connect VI Mg2
+
+errorbar VI Mg2 error2 1
+errorbar VI Mg2 error2 3
+
+
+
+

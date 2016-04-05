@@ -1,0 +1,67 @@
+pcoelho@pcoelho:~/kurucz_light/init_test$ ./run_tests.bash 
++ echo 'Clean stuff'
+Clean stuff
++ rm -f 'fort.*'
++ echo 'Run ATLAS9 to produce a model atmosphere.'
+Run ATLAS9 to produce a model atmosphere.
++ ./atlas9.bash kapp00p00.ros p00p00bigvt2.bdf ap00t5777g44377k1odfnew.dat t05000_g+3.5_m01p04.at9.mod 5000 +3.5 abundances_c14_p00p00.txt
+============= Starting computation of t05000_g+3.5_m01p04.at9.mod
+rosseland file  kapp00p00.ros
+odf  p00p00bigvt2.bdf
+initial model ap00t5777g44377k1odfnew.dat
+output  t05000_g+3.5_m01p04.at9.mod
+teff  5000
+logg  +3.5
+abundances  abundances_c14_p00p00.txt
+Qui Out 22 15:26:07 BRST 2015
+Qui Out 22 15:26:10 BRST 2015
++ echo 'Test if model converged.'
+Test if model converged.
++ ./ifconv.pl t05000_g+3.5_m01p04.at9.mod.log
+Checking convergence from file t05000_g+3.5_m01p04.at9.mod.log
+
+ wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww 
+ 
+The model is NOT CONVERGING 
+ 
+Max flux error 0.649 at layer 72 
+Where T =   9258.2  and Rosseland Depth is  1.000E+02  
+Max flux derivative error 33.192 at layer 1 
+Where T =   2992.2  and Rosseland Depth is  1.334E-07  
+ 
+Here follow the nonconverging layers... 
+ 
+LAYER TEMP    K_ROSS          ERR      DERIV 
+ 
+1   2992.2   1.334E-07       -0.002   -33.192 
++ echo 'Run SYNTHE to produce a spectrum.'
+Run SYNTHE to produce a spectrum.
++ ./synthe.csh
+i read the following parameters: 
+output: t05000_g+3.5_m01p04.spec
+model atmosphere: t05000_g+3.5_m01p04.at9.mod
+abundances: abundances_c14_p00p00.txt
+tio? notio
+Qui Out 22 15:26:10 BRST 2015
+initializing...
+rm: No match.
+number of lines in model atmosfere: 97
+Qui Out 22 15:26:11 BRST 2015
+xnfpelsyn...
+Qui Out 22 15:26:11 BRST 2015
+synbeg...
+Qui Out 22 15:26:11 BRST 2015
+rgfalllinesnew...
+Qui Out 22 15:26:12 BRST 2015
+rmolecasc...
+Qui Out 22 15:26:19 BRST 2015
+synthe...
+Qui Out 22 15:26:30 BRST 2015
+spectrv...
+Qui Out 22 15:26:48 BRST 2015
+broaden...
+Qui Out 22 15:26:49 BRST 2015
+convert to asc...
+done.
+Qui Out 22 15:26:50 BRST 2015
+pcoelho@pcoelho:~/kurucz_light/init_test$ 

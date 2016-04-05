@@ -1,0 +1,6 @@
+inp data.sm
+expand 1.1
+inp data.sm
+help box
+inp data.sm
+quit

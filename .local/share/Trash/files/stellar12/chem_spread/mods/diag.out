@@ -1,0 +1,521 @@
+     8.00000  -0.250000
+     9.00000  -0.250000
+    10.00000  -0.250000
+     11.0000  -0.250000
+     12.0000  -0.250000
+     13.0000  -0.250000
+     14.0000  -0.250000
+     15.0000  -0.250000
+     16.0000  -0.250000
+     17.0000  -0.250000
+     8.00000  0.
+     9.00000  0.
+    10.00000  0.
+     11.0000  0.
+     12.0000  0.
+     13.0000  0.
+     14.0000  0.
+     15.0000  0.
+     16.0000  0.
+     17.0000  0.
+     8.00000   0.250000
+     9.00000   0.250000
+    10.00000   0.250000
+     11.0000   0.250000
+     12.0000   0.250000
+     13.0000   0.250000
+     14.0000   0.250000
+     15.0000   0.250000
+     16.0000   0.250000
+     17.0000   0.250000
+ pops.input lists   30 populations to compute.
+  
+ MODEL  1: Z,Y,age =     9.50357E-03   0.253868    8.00000
+ RGB tip: mass lost=    5.04510E-03 Orig. Mass=     1.08008  V extinction:   0.
+  Te at point 90 =     4251.45
+ N_AGB for 4e4 yr lifetime:    0.205392
+  red, blue giants:     223.515    130.938
+ Synth spectrum written to smix.a00800z0950                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   2.008   0.194   2.543   1.207   2.941
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.207   0.906   0.549   1.158   2.071   2.941 from spectrum
+   1.207   0.906   0.549   1.158   2.071   2.941 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    700891.   0.700891
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  2: Z,Y,age =     9.50357E-03   0.253868    9.00000
+ RGB tip: mass lost=    5.54106E-03 Orig. Mass=     1.04943  V extinction:   0.
+  Te at point 90 =     4235.82
+ N_AGB for 4e4 yr lifetime:    0.184813
+  red, blue giants:     438.367    248.694
+ Synth spectrum written to smix.a00900z0950                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.931   0.201   2.589   1.246   2.983
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.246   0.922   0.558   1.177   2.104   2.983 from spectrum
+   1.246   0.922   0.558   1.177   2.104   2.983 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    698614.   0.698614
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  3: Z,Y,age =     9.50357E-03   0.253868   10.00000
+ RGB tip: mass lost=    5.96573E-03 Orig. Mass=     1.01877  V extinction:   0.
+  Te at point 90 =     4220.26
+ N_AGB for 4e4 yr lifetime:    0.169237
+  red, blue giants:     644.628    356.460
+ Synth spectrum written to smix.a01000z0950                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.858   0.207   2.637   1.287   3.029
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.287   0.938   0.566   1.197   2.140   3.029 from spectrum
+   1.287   0.938   0.566   1.197   2.140   3.029 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    696226.   0.696226
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  4: Z,Y,age =     9.50357E-03   0.253868    11.0000
+ RGB tip: mass lost=    6.16619E-03 Orig. Mass=    0.995090  V extinction:   0.
+  Te at point 90 =     4207.61
+ N_AGB for 4e4 yr lifetime:    0.154690
+  red, blue giants:     836.943    455.241
+ Synth spectrum written to smix.a01100z0950                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.808   0.211   2.664   1.309   3.054
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.309   0.946   0.571   1.208   2.160   3.054 from spectrum
+   1.309   0.946   0.571   1.208   2.160   3.054 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    694436.   0.694436
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  5: Z,Y,age =     9.50357E-03   0.253868    12.0000
+ RGB tip: mass lost=    6.24776E-03 Orig. Mass=    0.971406  V extinction:   0.
+  Te at point 90 =     4195.00
+ N_AGB for 4e4 yr lifetime:    0.143057
+  red, blue giants:     1015.41    543.800
+ Synth spectrum written to smix.a01200z0950                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.751   0.216   2.695   1.338   3.085
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.338   0.957   0.577   1.221   2.185   3.085 from spectrum
+   1.338   0.957   0.577   1.221   2.185   3.085 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    692588.   0.692588
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  6: Z,Y,age =     9.50357E-03   0.253868    13.0000
+ RGB tip: mass lost=    6.37901E-03 Orig. Mass=    0.950589  V extinction:   0.
+  Te at point 90 =     4183.67
+ N_AGB for 4e4 yr lifetime:    0.132694
+  red, blue giants:     1182.46    626.259
+ Synth spectrum written to smix.a01300z0950                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.709   0.220   2.720   1.360   3.110
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.360   0.964   0.581   1.231   2.204   3.110 from spectrum
+   1.360   0.964   0.581   1.231   2.204   3.110 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    690971.   0.690971
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  7: Z,Y,age =     9.50357E-03   0.253868    14.0000
+ RGB tip: mass lost=    6.56882E-03 Orig. Mass=    0.932168  V extinction:   0.
+  Te at point 90 =     4173.38
+ N_AGB for 4e4 yr lifetime:    0.123383
+  red, blue giants:     1339.92    703.336
+ Synth spectrum written to smix.a01400z0950                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.668   0.223   2.744   1.380   3.133
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.380   0.971   0.585   1.240   2.223   3.133 from spectrum
+   1.380   0.971   0.585   1.240   2.223   3.133 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    689575.   0.689575
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  8: Z,Y,age =     9.50357E-03   0.253868    15.0000
+ RGB tip: mass lost=    6.67449E-03 Orig. Mass=    0.914058  V extinction:   0.
+  Te at point 90 =     4163.30
+ N_AGB for 4e4 yr lifetime:    0.115468
+  red, blue giants:     1487.96    775.862
+ Synth spectrum written to smix.a01500z0950                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.629   0.226   2.762   1.399   3.155
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.399   0.978   0.589   1.249   2.240   3.155 from spectrum
+   1.399   0.978   0.589   1.249   2.240   3.155 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    688142.   0.688142
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  9: Z,Y,age =     9.50357E-03   0.253868    16.0000
+ RGB tip: mass lost=    6.80979E-03 Orig. Mass=    0.898706  V extinction:   0.
+  Te at point 90 =     4154.69
+ N_AGB for 4e4 yr lifetime:    0.107971
+  red, blue giants:     1628.17    844.246
+ Synth spectrum written to smix.a01600z0950                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.596   0.229   2.776   1.414   3.172
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.414   0.983   0.592   1.256   2.254   3.172 from spectrum
+   1.414   0.983   0.592   1.256   2.254   3.172 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    686956.   0.686956
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  10: Z,Y,age =     9.50357E-03   0.253868    17.0000
+ RGB tip: mass lost=    6.87008E-03 Orig. Mass=    0.883554  V extinction:   0.
+  Te at point 90 =     4146.34
+ N_AGB for 4e4 yr lifetime:     1.01460E-01
+  red, blue giants:     1760.51    909.102
+ Synth spectrum written to smix.a01700z0950                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.566   0.231   2.793   1.429   3.188
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.429   0.987   0.594   1.263   2.267   3.188 from spectrum
+   1.429   0.987   0.594   1.263   2.267   3.188 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    685819.   0.685819
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  11: Z,Y,age =     1.69000E-02   0.274000    8.00000
+ RGB tip: mass lost=    8.59321E-03 Orig. Mass=     1.12169  V extinction:   0.
+  Te at point 90 =     4106.99
+ N_AGB for 4e4 yr lifetime:    0.198439
+  red, blue giants:     1974.04    1025.20
+ Synth spectrum written to smix.a00800z1689                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.818   0.240   2.957   1.423   3.299
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.423   0.985   0.592   1.267   2.354   3.299 from spectrum
+   1.423   0.985   0.592   1.267   2.354   3.299 from adding mags
+   1.453   0.985   0.594   1.264   2.355   3.297 circular
+   1.452   0.945   0.587   1.277   2.382   3.266 delta2.dat 
+   1.496   0.987   0.618   1.314   2.309   3.249 Bertelli 
+   1.466   0.929   0.784   1.513   2.264   3.182 Charlot 
+  Original mass, mass in stars now, ratio  =    1000000.    704029.   0.704029
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  12: Z,Y,age =     1.69000E-02   0.274000    9.00000
+ RGB tip: mass lost=    8.91787E-03 Orig. Mass=     1.08945  V extinction:   0.
+  Te at point 90 =     4092.29
+ N_AGB for 4e4 yr lifetime:    0.179437
+  red, blue giants:     2166.66    1130.43
+ Synth spectrum written to smix.a00900z1689                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.763   0.244   2.976   1.448   3.332
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.448   0.994   0.596   1.277   2.381   3.332 from spectrum
+   1.448   0.994   0.596   1.277   2.381   3.332 from adding mags
+   1.480   0.994   0.598   1.275   2.382   3.331 circular
+   1.484   0.956   0.591   1.286   2.402   3.288 delta2.dat 
+   1.523   0.996   0.623   1.327   2.334   3.280 Bertelli 
+   1.484   0.934   0.790   1.527   2.284   3.206 Charlot 
+  Original mass, mass in stars now, ratio  =    1000000.    701620.   0.701620
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  13: Z,Y,age =     1.69000E-02   0.274000   10.00000
+ RGB tip: mass lost=    8.93747E-03 Orig. Mass=     1.05721  V extinction:   0.
+  Te at point 90 =     4077.66
+ N_AGB for 4e4 yr lifetime:    0.165127
+  red, blue giants:     2338.53    1223.59
+ Synth spectrum written to smix.a01000z1689                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.704   0.250   3.017   1.478   3.370
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.478   1.004   0.602   1.290   2.412   3.370 from spectrum
+   1.478   1.004   0.602   1.290   2.412   3.370 from adding mags
+   1.511   1.005   0.604   1.288   2.413   3.369 circular
+   1.521   0.969   0.597   1.296   2.422   3.313 delta2.dat 
+   1.554   1.007   0.629   1.341   2.363   3.317 Bertelli 
+   1.512   0.943   0.797   1.542   2.305   3.232 Charlot 
+  Original mass, mass in stars now, ratio  =    1000000.    699194.   0.699194
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  14: Z,Y,age =     1.69000E-02   0.274000    11.0000
+ RGB tip: mass lost=    9.59738E-03 Orig. Mass=     1.03274  V extinction:   0.
+  Te at point 90 =     4067.60
+ N_AGB for 4e4 yr lifetime:    0.151502
+  red, blue giants:     2501.13    1309.74
+ Synth spectrum written to smix.a01100z1689                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.653   0.254   3.044   1.507   3.410
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.507   1.014   0.607   1.303   2.443   3.410 from spectrum
+   1.507   1.014   0.607   1.303   2.443   3.410 from adding mags
+   1.541   1.015   0.610   1.301   2.445   3.408 circular
+   1.552   0.979   0.602   1.309   2.449   3.345 delta2.dat 
+   1.585   1.018   0.635   1.357   2.392   3.354 Bertelli 
+   1.545   0.953   0.806   1.560   2.331   3.263 Charlot 
+  Original mass, mass in stars now, ratio  =    1000000.    697337.   0.697337
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  15: Z,Y,age =     1.69000E-02   0.274000    12.0000
+ RGB tip: mass lost=    1.01302E-02 Orig. Mass=     1.00828  V extinction:   0.
+  Te at point 90 =     4057.56
+ N_AGB for 4e4 yr lifetime:    0.140635
+  red, blue giants:     2654.75    1390.32
+ Synth spectrum written to smix.a01200z1689                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.603   0.259   3.072   1.536   3.448
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.536   1.025   0.612   1.316   2.475   3.448 from spectrum
+   1.536   1.025   0.612   1.316   2.475   3.448 from adding mags
+   1.572   1.026   0.615   1.314   2.476   3.447 circular
+   1.583   0.990   0.608   1.322   2.476   3.378 delta2.dat 
+   1.617   1.028   0.641   1.372   2.422   3.391 Bertelli 
+   1.582   0.964   0.815   1.579   2.357   3.294 Charlot 
+  Original mass, mass in stars now, ratio  =    1000000.    695434.   0.695434
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  16: Z,Y,age =     1.69000E-02   0.274000    13.0000
+ RGB tip: mass lost=    1.05373E-02 Orig. Mass=    0.986343  V extinction:   0.
+  Te at point 90 =     4047.91
+ N_AGB for 4e4 yr lifetime:    0.131078
+  red, blue giants:     2799.72    1465.96
+ Synth spectrum written to smix.a01300z1689                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.558   0.263   3.103   1.563   3.481
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.563   1.033   0.617   1.326   2.501   3.481 from spectrum
+   1.563   1.033   0.617   1.326   2.501   3.481 from adding mags
+   1.598   1.034   0.620   1.325   2.503   3.479 circular
+   1.610   0.999   0.612   1.331   2.497   3.403 delta2.dat 
+   1.644   1.037   0.646   1.385   2.447   3.422 Bertelli 
+   1.614   0.973   0.823   1.596   2.378   3.320 Charlot 
+  Original mass, mass in stars now, ratio  =    1000000.    693773.   0.693773
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  17: Z,Y,age =     1.69000E-02   0.274000    14.0000
+ RGB tip: mass lost=    1.08170E-02 Orig. Mass=    0.966938  V extinction:   0.
+  Te at point 90 =     4038.64
+ N_AGB for 4e4 yr lifetime:    0.122466
+  red, blue giants:     2936.40    1537.17
+ Synth spectrum written to smix.a01400z1689                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.524   0.266   3.127   1.585   3.507
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.585   1.040   0.621   1.335   2.523   3.507 from spectrum
+   1.585   1.040   0.621   1.335   2.523   3.507 from adding mags
+   1.620   1.042   0.624   1.334   2.524   3.505 circular
+   1.633   1.006   0.616   1.339   2.514   3.425 delta2.dat 
+   1.668   1.045   0.650   1.395   2.467   3.447 Bertelli 
+   1.645   0.982   0.830   1.610   2.396   3.342 Charlot 
+  Original mass, mass in stars now, ratio  =    1000000.    692216.   0.692216
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  18: Z,Y,age =     1.69000E-02   0.274000    15.0000
+ RGB tip: mass lost=    1.09612E-02 Orig. Mass=    0.947533  V extinction:   0.
+  Te at point 90 =     4029.39
+ N_AGB for 4e4 yr lifetime:    0.115261
+  red, blue giants:     3064.95    1604.70
+ Synth spectrum written to smix.a01500z1689                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.483   0.270   3.146   1.608   3.532
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.608   1.048   0.625   1.343   2.544   3.532 from spectrum
+   1.608   1.048   0.625   1.343   2.544   3.532 from adding mags
+   1.643   1.049   0.628   1.342   2.545   3.530 circular
+   1.657   1.014   0.619   1.346   2.532   3.446 delta2.dat 
+   1.692   1.052   0.654   1.406   2.486   3.471 Bertelli 
+   1.672   0.990   0.838   1.624   2.414   3.362 Charlot 
+  Original mass, mass in stars now, ratio  =    1000000.    690739.   0.690739
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  19: Z,Y,age =     1.69000E-02   0.274000    16.0000
+ RGB tip: mass lost=    1.11652E-02 Orig. Mass=    0.931362  V extinction:   0.
+  Te at point 90 =     4021.69
+ N_AGB for 4e4 yr lifetime:    0.108301
+  red, blue giants:     3186.80    1666.21
+ Synth spectrum written to smix.a01600z1689                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.441   0.275   3.179   1.631   3.558
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.631   1.056   0.630   1.353   2.565   3.558 from spectrum
+   1.631   1.056   0.630   1.353   2.565   3.558 from adding mags
+   1.665   1.057   0.633   1.352   2.567   3.556 circular
+   1.683   1.023   0.624   1.356   2.551   3.468 delta2.dat 
+   1.716   1.060   0.660   1.417   2.506   3.495 Bertelli 
+   1.703   1.001   0.845   1.637   2.431   3.383 Charlot 
+  Original mass, mass in stars now, ratio  =    1000000.    689514.   0.689514
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  20: Z,Y,age =     1.69000E-02   0.274000    17.0000
+ RGB tip: mass lost=    1.12525E-02 Orig. Mass=    0.915192  V extinction:   0.
+  Te at point 90 =     4014.02
+ N_AGB for 4e4 yr lifetime:     1.02329E-01
+  red, blue giants:     3302.04    1724.92
+ Synth spectrum written to smix.a01700z1689                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.409   0.278   3.196   1.649   3.576
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.649   1.061   0.632   1.359   2.581   3.576 from spectrum
+   1.649   1.061   0.632   1.359   2.581   3.576 from adding mags
+   1.683   1.063   0.635   1.358   2.582   3.574 circular
+   1.702   1.029   0.627   1.361   2.563   3.483 delta2.dat 
+   1.734   1.066   0.663   1.425   2.521   3.513 Bertelli 
+   1.723   1.007   0.851   1.647   2.443   3.397 Charlot 
+  Original mass, mass in stars now, ratio  =    1000000.    688236.   0.688236
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  21: Z,Y,age =     3.00529E-02   0.309801    8.00000
+ RGB tip: mass lost=    1.38265E-02 Orig. Mass=     1.13808  V extinction:   0.
+  Te at point 90 =     3886.62
+ N_AGB for 4e4 yr lifetime:    0.169943
+  red, blue giants:     3449.66    1807.02
+ Synth spectrum written to smix.a00800z3005                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.578   0.290   3.345   1.730   3.721
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.730   1.067   0.628   1.350   2.706   3.721 from spectrum
+   1.730   1.067   0.628   1.350   2.706   3.721 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    705216.   0.705216
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  22: Z,Y,age =     3.00529E-02   0.309801    9.00000
+ RGB tip: mass lost=    1.51960E-02 Orig. Mass=     1.09752  V extinction:   0.
+  Te at point 90 =     3870.61
+ N_AGB for 4e4 yr lifetime:    0.155580
+  red, blue giants:     3589.77    1878.59
+ Synth spectrum written to smix.a00900z3005                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.489   0.301   3.409   1.798   3.806
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.798   1.090   0.641   1.381   2.778   3.806 from spectrum
+   1.798   1.090   0.641   1.381   2.778   3.806 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    702263.   0.702263
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  23: Z,Y,age =     3.00529E-02   0.309801   10.00000
+ RGB tip: mass lost=    1.61555E-02 Orig. Mass=     1.07049  V extinction:   0.
+  Te at point 90 =     3859.34
+ N_AGB for 4e4 yr lifetime:    0.140855
+  red, blue giants:     3719.40    1944.11
+ Synth spectrum written to smix.a01000z3005                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.444   0.306   3.445   1.831   3.844
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.831   1.099   0.646   1.391   2.809   3.844 from spectrum
+   1.831   1.099   0.646   1.391   2.809   3.844 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    700181.   0.700181
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  24: Z,Y,age =     3.00529E-02   0.309801    11.0000
+ RGB tip: mass lost=    1.67801E-02 Orig. Mass=     1.04345  V extinction:   0.
+  Te at point 90 =     3848.11
+ N_AGB for 4e4 yr lifetime:    0.129329
+  red, blue giants:     3838.50    2004.93
+ Synth spectrum written to smix.a01100z3005                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.403   0.310   3.475   1.864   3.880
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.864   1.108   0.650   1.400   2.839   3.880 from spectrum
+   1.864   1.108   0.650   1.400   2.839   3.880 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    698168.   0.698168
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  25: Z,Y,age =     3.00529E-02   0.309801    12.0000
+ RGB tip: mass lost=    1.70767E-02 Orig. Mass=     1.01642  V extinction:   0.
+  Te at point 90 =     3836.92
+ N_AGB for 4e4 yr lifetime:    0.120172
+  red, blue giants:     3947.00    2062.06
+ Synth spectrum written to smix.a01200z3005                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.357   0.315   3.510   1.896   3.912
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.896   1.117   0.654   1.408   2.867   3.912 from spectrum
+   1.896   1.117   0.654   1.408   2.867   3.912 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    696048.   0.696048
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  26: Z,Y,age =     3.00529E-02   0.309801    13.0000
+ RGB tip: mass lost=    1.80088E-02 Orig. Mass=    0.996849  V extinction:   0.
+  Te at point 90 =     3826.92
+ N_AGB for 4e4 yr lifetime:    0.110849
+  red, blue giants:     4049.24    2115.38
+ Synth spectrum written to smix.a01300z3005                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.322   0.319   3.532   1.922   3.943
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.922   1.124   0.658   1.417   2.893   3.943 from spectrum
+   1.922   1.124   0.658   1.417   2.893   3.943 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    694569.   0.694569
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  27: Z,Y,age =     3.00529E-02   0.309801    14.0000
+ RGB tip: mass lost=    1.87541E-02 Orig. Mass=    0.977281  V extinction:   0.
+  Te at point 90 =     3816.95
+ N_AGB for 4e4 yr lifetime:     1.03099E-01
+  red, blue giants:     4145.23    2165.56
+ Synth spectrum written to smix.a01400z3005                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.288   0.323   3.553   1.949   3.974
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.949   1.131   0.661   1.425   2.918   3.974 from spectrum
+   1.949   1.131   0.661   1.425   2.918   3.974 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    693076.   0.693076
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  28: Z,Y,age =     3.00529E-02   0.309801    15.0000
+ RGB tip: mass lost=    1.92484E-02 Orig. Mass=    0.957712  V extinction:   0.
+  Te at point 90 =     3807.01
+ N_AGB for 4e4 yr lifetime:     9.65888E-02
+  red, blue giants:     4235.03    2213.14
+ Synth spectrum written to smix.a01500z3005                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.254   0.328   3.588   1.976   4.001
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   1.976   1.138   0.665   1.432   2.942   4.001 from spectrum
+   1.976   1.138   0.665   1.432   2.942   4.001 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    691511.   0.691511
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  29: Z,Y,age =     3.00529E-02   0.309801    16.0000
+ RGB tip: mass lost=    2.02055E-02 Orig. Mass=    0.942678  V extinction:   0.
+  Te at point 90 =     3800.34
+ N_AGB for 4e4 yr lifetime:     9.00495E-02
+  red, blue giants:     4321.65    2255.92
+ Synth spectrum written to smix.a01600z3005                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.221   0.333   3.619   2.005   4.037
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   2.005   1.147   0.671   1.446   2.972   4.037 from spectrum
+   2.005   1.147   0.671   1.446   2.972   4.037 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    690371.   0.690371
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  
+  
+ MODEL  30: Z,Y,age =     3.00529E-02   0.309801    17.0000
+ RGB tip: mass lost=    2.10598E-02 Orig. Mass=    0.927645  V extinction:   0.
+  Te at point 90 =     3793.68
+ N_AGB for 4e4 yr lifetime:     8.44047E-02
+  red, blue giants:     4405.15    2296.67
+ Synth spectrum written to smix.a01700z3005                        
+  H beta    Mg 2  Fe5270     U-V     V-K
+   1.192   0.337   3.639   2.031   4.064
+     U-V     B-V    V-Rc    V-Ic     V-J     V-K
+   2.031   1.154   0.675   1.455   2.996   4.064 from spectrum
+   2.031   1.154   0.675   1.455   2.996   4.064 from adding mags
+  Original mass, mass in stars now, ratio  =    1000000.    689232.   0.689232
+ ERROR - FITS program did not run successfully
+ FITSIO status =  105: Error creating new FITS file  

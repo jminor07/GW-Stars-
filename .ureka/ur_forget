@@ -1,0 +1,20 @@
+#!/bin/sh
+
+
+version=1.5.1
+
+
+if [ "$UR_DIR" = "" ]
+then
+    echo "No Ureka installation is selected, nothing to do" >&2
+    exit 0
+else
+    forget=$UR_DIR/bin/ur-forget-real
+    if [ ! -e $forget ]
+    then
+        echo "ERROR - $forget does not exist" >&2
+        exit 1
+    else
+        $forget
+    fi
+fi

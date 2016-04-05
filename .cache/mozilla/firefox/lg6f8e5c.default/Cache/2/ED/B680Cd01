@@ -1,0 +1,1040 @@
+if(typeof Object.create!=="function"){Object.create=function(B){var A=function(C){};
+A.prototype=B;
+return new A()
+}
+}Function.prototype.method=function(A,B){if(!this.prototype[A]){this.prototype[A]=B;
+return this
+}};
+jQuery.string(String.prototype);
+jQuery.fn.exists=function(A){var B=jQuery(this);
+if(B.length>0){if(A){A.apply(B)
+}return true
+}else{return false
+}};
+var IOP=function(){var B=function(E){E=E||window.location;
+var D=document.createElement("a");
+D.href=E;
+return{source:E,protocol:D.protocol.replace(":",""),host:D.hostname,port:D.port,query:D.search,params:(function(){var H={},G=D.search.replace(/^\?/,"").split("&"),F=G.length,I=0,J;
+for(;
+I<F;
+I++){if(!G[I]){continue
+}J=G[I].split("=");
+H[J[0]]=J[1]
+}return H
+})(),file:(D.pathname.match(/\/([^\/?#]+)$/i)||[,""])[1],hash:D.hash.replace("#",""),path:D.pathname.replace(/^([^\/])/,"/$1"),relative:(D.href.match(/tps?:\/\/[^\/]+(.+)/)||[,""])[1],segments:D.pathname.replace(/^\//,"").split("/")}
+};
+var A=function(F,E){var D=jQuery.extend(F,E);
+return D.protocol+"://"+D.host+((D.port!=="0"&&D.port.length>0)?":"+D.port:"")+D.path+(D.query.length>0?(D.path.endsWith("?")||D.query.startsWith("?")?"":"?")+D.query:"")
+};
+var C=function(E,D){jQuery.pnotify({pnotify_title:E,pnotify_text:D})
+};
+return jQuery.extend(IOP,{parseURL:B,buildURL:A,notify:C})
+}();
+IOP.ajax=function(){var D=function(H){if(H===null){return function(){}
+}else{var I=jQuery(H).offset();
+var G=jQuery(H).height();
+var F=jQuery(H).width();
+jQuery(H).css({zoom:1,filter:"alpha(opacity=50)","-moz-opacity":"0.5","-khtml-opacity":"0.5",opacity:"0.5"});
+var E=jQuery("<div style='position: absolute; height: "+G+"px; width: "+F+"px; top: "+I.top+"px; left: "+I.left+"px; z-index: 1000;'><img src='/img/ajax-loader-small-circle.gif' width='16px' height='16px' style='position: absolute; top: "+(Math.floor(G/2)-8)+"px; left: "+(Math.floor(F/2)-8)+"px;'/></div>");
+E.appendTo("body");
+return function(){E.remove();
+jQuery(H).css({filter:"alpha(opacity=100)","-moz-opacity":"1","-khtml-opacity":"1",opacity:"1"})
+}
+}};
+var C=function(H){var E=jQuery.extend({location:"",params:{},cache:false,element:null,errorMsg:null,success:function(){},unique:true,dataType:"json"},H);
+var G=G||true;
+if(G){E.params._time=new Date().valueOf()
+}var F=D(E.element);
+jQuery.ajax({type:"GET",url:E.location,data:E.params,cache:E.cache,success:function(I,J){E.success(I);
+F()
+},error:function(I,K,J){F();
+if(E.errorMsg!==null){alert(E.errorMsg)
+}},dataType:E.dataType})
+};
+var A=function(G){var E=jQuery.extend({location:"",params:{},type:"POST",dataType:"text",contentType:"application/x-www-form-urlencoded",dataConvertor:function(H){return H
+},element:null,success:function(){},errorMsg:null},G);
+var F=D(E.element);
+jQuery.ajax({url:E.location,type:E.type,dataType:E.dataType,contentType:E.contentType,data:E.dataConvertor(E.params),success:function(H){E.success(H);
+F()
+},error:function(H,J,I){F();
+if(E.errorMsg!==null){alert(E.errorMsg)
+}}})
+};
+var B=function(E){return A(jQuery.extend({type:"POST",dataType:"json",contentType:"application/json; charset=utf-8",dataConvertor:function(F){return jQuery.toJSON(F)
+}},E))
+};
+return{get:C,post:A,postJson:B}
+}();
+IOP.admin=function(){var A=null;
+var B=parseInt($("#adminMenuBar").css("margin-top"));
+var D=parseInt($("#adminMenuBar").css("margin-left"));
+var C=parseInt($("#adminMenuBar").css("width"));
+$($("#adminMenuBar").hover(function(){if(A){clearTimeout(A);
+A=null
+}$(this).animate({marginTop:0,marginLeft:-300,width:600},"fast");
+$(this).find(".menuLinks").show();
+if($.browser.msie&&(jQuery.browser.version<6.9999)){$("#adminMenuBar").css("height","85px")
+}},function(){var E=$(this);
+A=setTimeout(function(){A=null;
+E.find(".menuLinks").hide();
+E.animate({marginTop:B,marginLeft:D,width:C},"slow")
+},1000);
+if($.browser.msie&&(jQuery.browser.version<6.9999)){$("#adminMenuBar").css("height","33px")
+}}))
+}();
+IOP.alerts=function(){return{}
+}();
+IOP.alerts.subscribeToTocAlert=function(){var A=function(C){var B=jQuery(this);
+var D=IOP.parseURL(B.attr("href")).params.journal;
+IOP.ajax.get({location:"/myiopscience/alerts/subscribe.json",params:{journal:D},element:B,errorMsg:"An error has occurred creating the alert.",success:function(E){B.unbind("click",A);
+B.replaceWith("<a href='/myiopscience/alerts' class='icon alert'>Edit this alert</a>");
+IOP.notify("Alert created","Your alert has been saved.")
+}});
+C.preventDefault()
+};
+jQuery(document).ready(function(){jQuery("a#subscribeToAlert").click(A)
+});
+return{handle:A}
+}();
+IOP.alerts.saveSearchAlert=function(){var C;
+var B;
+var D;
+var A=function(G){var F=function(H){if(H==1){C.removeClass("saveSearchLink").attr("href","/myiopscience/saved-searches").attr("title","Saved searches").text("Saved searches")
+}jQuery("#searchEntry"+H).replaceWith("<span class='icon saved-search'>Saved</span>")
+};
+var E=function(){D.removeClass("saveSearchAlertLink").attr("href","/myiopscience/alerts").attr("title","Search alerts").text("Search alerts")
+};
+return function(J){var I=jQuery(this);
+var H=IOP.parseURL(I.attr("href"));
+delete H.params.nonajax;
+IOP.ajax.get({location:H.path,params:H.params,element:I,errorMsg:"An error has occurred saving the search.",success:function(K){if(!G){F(H.params.searchIndex);
+IOP.notify("Saved search","Your search has been saved.")
+}else{E();
+F(H.params.searchIndex);
+IOP.notify("Saved search alert","Your alert has been saved.")
+}},dataType:"text"});
+J.preventDefault()
+}
+};
+jQuery(document).ready(function(){C=jQuery("a.saveSearchLink").livequery("click",A(false));
+D=jQuery("a.saveSearchAlertLink").livequery("click",A(true))
+});
+return{}
+}();
+IOP.articleCount=function(){var B="#formFilter";
+var J=".arrow";
+var N="/search";
+var O="/proquestcount";
+var M="/pwa/count";
+var D,L,A;
+submitted=false;
+var H=function(R,T){var S=jQuery(R);
+S.data("oldValue",S.val());
+S.val(T)
+};
+var C=function(R){var S=jQuery(R);
+S.val(S.data("oldValue"))
+};
+var K=function(R){var S=D.find("[name='fullsearch']:input");
+H(S,R);
+formData=D.serialize();
+C(S);
+return formData
+};
+var G=function(T,S,R){IOP.ajax.get({location:S+"&justCount=yes",element:R,success:function(U,V){T(U)
+}})
+};
+var E=function(T){var S=K(false);
+if(S!==A){var R=IOP.buildURL(IOP.parseURL(jQuery(".allArticlesCount").closest("a").attr("href")),{query:S});
+G(function(U){L.text(U)
+},R,L);
+A=S
+}};
+var Q=function(R){if(!submitted){D.stopTime();
+D.oneTime(800,function(){E(R)
+})
+}else{submitted=false
+}};
+var F=function(R){submitted=true;
+D.stopTime()
+};
+var P=function(){var R=function(T){var S=jQuery(this);
+G(function(U){S.parent().show();
+S.replaceWith(U.toString())
+},T)
+};
+jQuery(".allArticlesCount").exists(R.curry(jQuery(".allArticlesCount").closest("a").attr("href")));
+jQuery(".headerArticlesCount").exists(R.curry(jQuery(".headerArticlesCount").closest("a").attr("href")));
+jQuery(".proquestArticlesCount").exists(R.curry(O+IOP.parseURL(jQuery(".proquestArticlesCount").closest("a").attr("href")).query));
+jQuery(".pwaArticlesCount").exists(R.curry(M+IOP.parseURL(jQuery(".pwaArticlesCount").closest("a").attr("href")).query))
+};
+var I=function(){D.find("input:checkbox").livequery("click",Q);
+D.find("input:text").livequery("keyup",Q);
+D.find("select").livequery("change",Q);
+D.livequery("submit",F)
+};
+jQuery(document).ready(function(){D=jQuery(B);
+L=jQuery(J);
+I();
+P()
+});
+return{handler:E,delayHandler:Q,getCurrentCount:G}
+}();
+IOP.banners=function(){function B(){jQuery("#contentsBanner img[height=1][width=1]").css("visibility","hidden");
+jQuery("#contentsBanner img[height=1][width=1]").addClass("spacer")
+}function A(){jQuery("#tacticalBanners img[height=1][width=1]").css("visibility","hidden");
+jQuery("#tacticalBanners img[height=1][width=1]").addClass("spacer")
+}jQuery(document).ready(function(){if(jQuery("#contentsBanner").length){B()
+}if(jQuery("#tacticalBanners").length){A()
+}});
+return{}
+}();
+IOP.buttons=function(){var B=function(G){var D=jQuery(this).attr("id");
+var F="input#"+D+"Url";
+var C="select[name="+D+"Select]";
+var E=jQuery(F).val()+jQuery(C).val();
+window.location.href=E
+};
+var A=function(C){return confirm(jQuery(this).attr("data-message"))
+};
+jQuery(document).ready(function(){jQuery(".blueBox > input.button").livequery("click",B);
+jQuery("a.delete").livequery("click",A)
+});
+return{}
+}();
+IOP.checkboxes=function(){var B=false;
+var A=function(G){var C=jQuery(".checkall");
+var E=C.find("input:checkbox.doCheckAll");
+var D=C.find("a.doCheckAll");
+var F=C.find("input:checkbox:not(.doCheckAll)");
+B=!B;
+F.attr("checked",B);
+E.attr("checked",false);
+D.text(B?"Uncheck All":"Check All");
+G.preventDefault()
+};
+jQuery(document).ready(function(){var C=jQuery(".checkall");
+C.find("input:checkbox.doCheckAll").livequery("click",A);
+C.find("a.doCheckAll").livequery("click",A)
+});
+return{}
+}();
+IOP.contentFinder=function(){$(document).ready(function(){var A=$("form#contentFinderForm");
+$("form#contentFinderForm input[type='text']").each(function(){var C=$(this);
+var B=C.val();
+C.focus(function(){if(C.val()==B){C.val("")
+}});
+C.blur(function(){if(C.val()==""){C.val(B)
+}});
+A.submit(function(){if(C.val()==B){C.val("")
+}})
+})
+});
+return{}
+}();
+IOP.contentFinder.setupAutocompletes=function(){var A="/findcontent";
+var B=function(C,D){return{CF_JOURNAL:function(){return C.find("select#CF_JOURNAL").val()
+},CF_VOLUME:function(){return C.find("input#CF_VOLUME").val()
+},CF_ISSUE:function(){return C.find("input#CF_ISSUE").val()
+},CF_PAGE:function(){return C.find("input#CF_PAGE").val()
+},CF_LEVEL:function(){return D
+},CF_JUSTCOUNT:"true"}
+};
+return{}
+}();
+IOP.dialogs=function(){var D=50,I=25,F=0.18;
+var J=function(K){var L=K.parent();
+L.css("top",jQuery("html").scrollTop()+(jQuery(window).height()*F))
+};
+var A=function(K){K.find("input:visible:enabled:first").focus().select()
+};
+var G=function(O,P){var M;
+var K=O.attr("data-dialog-id");
+if(K&&typeof (K)=="string"){M=jQuery("#"+K)
+}if(!M||!M.exists()){M=O.next(".dialog_content")
+}if(!M.exists()){M=O.parents().next(".dialog_content")
+}dialog=M.clone(true);
+M.after(dialog);
+var N={},L=O.attr("close-text")?O.attr("close-text"):"Ok";
+N[L]=function(){dialog.dialog("close")
+};
+defaults={autoOpen:false,bgiframe:true,modal:true,resizable:false,width:parseFloat($(D).toPx()),height:parseFloat($(I).toPx()),title:O.attr("title"),buttons:dialog.hasClass("no_button")?{}:N};
+if(O.attr("data-width-em")){defaults=jQuery.extend(defaults,{width:B(O.attr("data-width-em"))})
+}if(O.attr("data-height-em")){defaults=jQuery.extend(defaults,{height:B(O.attr("data-height-em"))})
+}if(typeof P==="function"){defaults=jQuery.extend(defaults,P(dialog))
+}else{defaults=jQuery.extend(defaults,P)
+}if(M.exists()){dialog.dialog(defaults);
+dialog.dialog("open");
+J(dialog);
+A(dialog)
+}};
+var B=function(K){return parseFloat(jQuery(parseFloat(K)).toPx())
+};
+var C=function(K,L,M){G(K,L);
+M.preventDefault()
+};
+var E=function(L,K){jQuery.each(jQuery(L),function(N,O){var M=jQuery(O);
+M.addClass("dialogised");
+M.click(C.curry(M,K||{}))
+})
+};
+var H=function(){E("a.show_dialog:not(.dialogised)")
+};
+jQuery(document).ready(function(){E("a.show_dialog")
+});
+return{show:G,attach:E,attachAll:H}
+}();
+IOP.expandableList=function(){var A=function(D){var C=jQuery(this);
+var E=C.attr("id");
+var B=jQuery("div.expandableList."+E);
+if(B.css("display")==="none"){C.text("Top Three");
+jQuery(B).show()
+}else{C.text("More");
+jQuery(B).hide()
+}D.preventDefault()
+};
+jQuery(document).ready(function(){jQuery("a.expandableList").click(A)
+});
+return{handle:A}
+}();
+IOP.exportSearch=function(){var E="http://www.refworks.com/express/expressimport.asp";
+var A={vendor:"IOPscience",filter:"RIS Format"};
+var D="A problem occurred during Direct Export.  Please export using another format.";
+var C="iopexport_direx";
+var B=function(I,J){var L=I.attr("id");
+var K=L+"_refworks";
+var H=jQuery("#"+K);
+var G=jQuery("textarea[name=ImportData]",H);
+G.html(J);
+H.submit()
+};
+var F=function(I){var G=jQuery(this);
+var H=jQuery("select.exportFormatSelect",G);
+if(H.exists()){if(H.val()===C){IOP.ajax.get({location:G.attr("action")+"/directExport",params:G.serialize()+"&navsubmit=GoExport",dataType:"text",success:function(J){B(G,J)
+},errorMsg:D});
+I.preventDefault()
+}}};
+jQuery(document).ready(function(){jQuery("form.exportFormWidget select.exportFormatSelect").each(function(G){this.options.add(new Option("RefWorks (Direct Export)",C))
+});
+jQuery("form.exportFormWidget").livequery("submit",F)
+});
+return{}
+}();
+IOP.postTo=function(){var A=function(D){var C=jQuery(this);
+window.location.href=C.attr("href")+"&extended="+encodeURIComponent(window.getSelection());
+D.preventDefault()
+};
+var B=function(E){var D=jQuery(this);
+var C=open(D.attr("href"),"add","width=600, height=400, scrollbars, resizable");
+if(window.focus){C.focus()
+}E.preventDefault()
+};
+jQuery(document).ready(function(){jQuery("a.submitToBibsonomy").livequery("click",A);
+jQuery("a.submitToConnotea").livequery("click",B)
+});
+return{}
+}();
+IOP.headerSearches=function(){$(document).ready(function(){$("a#srchLinkQ").click(function(){$("div#hdrSearch").addClass("quick-show");
+$("div#hdrSearch").removeClass("find-con")
+});
+$("a#srchLinkF").click(function(){$("div#hdrSearch").addClass("find-con");
+$("div#hdrSearch").removeClass("quick-show")
+})
+});
+return{}
+}();
+IOP.iefixes=function(){jQuery(document).ready(function(){jQuery("button").livequery("click",function(D){var A=jQuery(this);
+var C=A.parents("form");
+var B=A.text();
+A.text("");
+C.append("<input name='navsubmit' type='hidden' value='"+A.attr("value")+"'/>");
+A.text(B);
+return true
+});
+jQuery("input:image, input:submit").livequery("click",function(C){var A=jQuery(this);
+var B=A.parents("form");
+B.append("<input name='navsubmit' type='hidden' value='"+A.attr("value")+"'/>");
+return true
+})
+})
+}();
+IOP.UI={dxfilter:false,debug:{enumerate:function(D,A){var E=new Array();
+var C=0;
+for(var B in D){E[C]=B+" : "+D[B]+"\n";
+C++
+}alert(E)
+},whatis:function(C){objectIs=new Array();
+objectIs.type=typeof (C);
+objectIs.id=C.attr("id");
+objectIs.classname=C.attr("class");
+objectIs.parentname=C.parent().attr("id");
+objectIs.siblingname=C.siblings().attr("id");
+objectIs.childname=C.children().attr("id");
+objectIs.hasCSS=C.style;
+objectIs.hasMethod=C.data();
+arrObj=new Array();
+var B=0;
+for(var A in objectIs){arrObj[B]=A+" : "+objectIs[A]+"\n";
+B++
+}alert(arrObj)
+},firebug:function(){IOP.UI.plugins.firebug();
+var B=document.createElement("a");
+B.setAttribute("href","javascript:(function(F,i,r,e,b,u,g,L,I,T,E){if(F.getElementById(b))return;E=F[i+'NS']&&F.documentElement.namespaceURI;E=E?F[i+'NS'](E,'script'):F[i]('script');E[r]('id',b);E[r]('src',I+g+T);E[r](b,u);(F[e]('head')[0]||F[e]('body')[0]).appendChild(E);E=new%20Image;E[r]('src',I+L);})(document,'createElement','setAttribute','getElementsByTagName','FirebugLite','4','firebug-lite.js','releases/lite/latest/skin/xp/sprite.png','https://getfirebug.com/','#startOpened');");
+var A=document.createElement("img");
+A.setAttribute("src","http://t1.gstatic.com/images?q=tbn:ANd9GcTBQwmdIp5dh6bCgN0u8kHbD1Y-C8nxzrznLXpqhNKnQDg8Rnzq");
+A.setAttribute("title","launch Firebug");
+A.setAttribute("alt","launch Firebug");
+A.style.position="absolute";
+A.style.position="fixed";
+A.style.right="50px";
+A.style.top="50px";
+A.style.border="1px solid #aaaaaa";
+B.appendChild(A);
+jQuery("body").append(B)
+}},plugins:{jQtools:function(){var B=document.createElement("script");
+B.setAttribute("type","text/javascript");
+B.setAttribute("src","js/plugins/jquery.tools.min.js");
+jQuery("head").append(B);
+var A=document.createElement("link");
+A.setAttribute("rel","stylesheet");
+A.setAttribute("type","text/css");
+A.setAttribute("href","js/plugins/jquery.tools.css");
+jQuery("head").append(A)
+},firebug:function(){var A=document.createElement("script");
+A.setAttribute("type","text/javascript");
+A.setAttribute("src","js/lib/firebug.js");
+jQuery("head").append(A)
+},loadall:function(){alert("A script on this page has requested the browser load ALL plugins.\nThis isn't a great idea.");
+this.jQtools();
+this.firebug()
+}},beautify:{mathjax:function(D){var A=jQuery(D);
+var B=jQuery("<div>");
+B.addClass("closebutton");
+B.click(function(){IOP.UI.beautify.destroytooltip();
+return(false)
+});
+var C=jQuery("<div>");
+C.attr("id","mjpopup").addClass("citationtooltip").css({position:"absolute",top:(A.offset().top+16)+"px",left:(A.offset().left+10)+"px"}).append(B).append('Equations can be rendered using MathJax (<a href="/info/page/articleevolution#mathjax">more information</a>).');
+jQuery("body").append(C)
+},destroytooltip:function(){jQuery("#mjpopup").remove()
+},init:function(){jQuery("a.mjbadge").mouseover(function(){IOP.UI.beautify.mathjax(this)
+})
+}},authors:{init:function(){jQuery("a.switchAuthorLists").click(function(A){jQuery("div#articleEvoContainer .authors").toggleClass("openable").toggleClass("opened");
+return(false)
+})
+}},accordion:{scrollable:function(){var A=jQuery("#hdr").height()+jQuery("#nav").height();
+jQuery(window).bind("load scroll touchmove",function(B){if(jQuery(document).scrollTop()>A){jQuery("#rightCol > .accordion").css({position:"fixed",top:15})
+}else{jQuery("#rightCol > .accordion").css({position:"relative",top:0})
+}})
+},tree:function(){jQuery("li > .accordion").hide();
+jQuery("li:has(.accordion)").addClass("openbutton");
+jQuery(".open").show();
+jQuery(".open").parent().removeClass("openbutton").addClass("closebutton");
+jQuery("li:has(.accordion)").click(function(){opentabs=jQuery(this).siblings(".closebutton").children(".accordion");
+opentabs.animate({height:"toggle"});
+opentabs.parent(".closebutton").removeClass("closebutton").addClass("openbutton");
+jQuery(this).children(".accordion").animate({height:"toggle"},{duration:600});
+jQuery(this).toggleClass("openbutton").toggleClass("closebutton");
+return(false)
+});
+jQuery("a").click(function(A){A.stopPropagation()
+})
+},init:function(){winheight=parseInt(jQuery(window).height());
+switch(true){case (winheight>1024):jQuery(".accordion > .accordion").css("maxHeight","750px");
+this.scrollable();
+break;
+case (winheight>=768&&winheight<=1024):jQuery(".accordion > .accordion").css("maxHeight","450px");
+this.scrollable();
+break;
+case (winheight<768):default:jQuery(".accordion > .accordion").css("maxHeight","200px");
+break
+}this.tree()
+}},displayequations:{images:function(){var A=jQuery("span.display-eqn");
+return jQuery("span.texImage>img",A).add(A.children("img"))
+},fix:function(){var A=this.images();
+if(A.length>0){if(typeof (A[0].naturalHeight)==="undefined"){A.css({width:"auto","max-width":"100%"})
+}else{A.each(function(C){if(this.clientWidth>this.naturalWidth){var B=jQuery(this);
+B.height(this.naturalHeight);
+B.width(this.naturalWidth)
+}})
+}}},fixie6:function(){var D=new Array();
+var C=new Array();
+var B=new Array();
+var A=this.images();
+A.each(function(E){D[E]=this.clientHeight;
+C[E]=this.clientWidth
+});
+A.width(1);
+A.each(function(F){var G=this;
+var H="";
+var E="";
+do{G=G.parentNode;
+if(typeof (G.id)=="string"){H=G.id
+}else{H=""
+}if(typeof (G.tagName)=="string"){E=G.tagName.toLowerCase()
+}else{E=""
+}}while(H!="contentCol"&&E!="td"&&E!="body"&&E!=""&&G.parentNode!=null);
+B[F]=G.clientWidth
+});
+A.each(function(G){var F=jQuery(this);
+var I=C[G];
+var E=D[G];
+var H=B[G];
+if(I>H){F.height(Math.round(E*H/I));
+F.width(H);
+if(IOP.UI.dxfilter){this.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+this.src+"', sizingMethod='scale')";
+this.src="/img/spacer.gif"
+}}else{F.height(E);
+F.width(I)
+}})
+}},tablescrollbars:{fixie6:function(){jQuery(".tableBox, .listBox").each(function(){var B=this.clientWidth;
+var A=jQuery(this).children("table:first").width();
+if(A<=B+10){this.style.overflowX="visible"
+}})
+}},referencetabs:{closeall:function(){jQuery(".sideTabContent").fadeOut(420);
+jQuery(".sideTab").removeClass("tabOver")
+},scrollable:function(){var A=jQuery("#hdr").height()+jQuery("#nav").height();
+jQuery(window).bind("load scroll touchmove",function(B){if(jQuery(document).scrollTop()>165){jQuery("#sideTabHolder").css({position:"fixed",top:15,marginTop:0})
+}else{jQuery("#sideTabHolder").css({position:"relative",top:180})
+}})
+},sethandler:function(){jQuery(".sideTab").click(function(){if(jQuery(this).siblings(".sideTabContent").css("display")=="none"){IOP.UI.referencetabs.closeall();
+jQuery(this).siblings(".sideTabContent").fadeIn(420);
+jQuery(this).addClass("tabOver");
+return(false)
+}else{IOP.UI.referencetabs.closeall();
+return(false)
+}});
+var A=jQuery(".sideTabContent");
+A.click(function(B){B.stopPropagation()
+});
+jQuery(".close",A).click(function(){IOP.UI.referencetabs.closeall();
+return false
+});
+jQuery("img",A).click(function(){IOP.UI.referencetabs.closeall()
+});
+jQuery("a.reflabel",A).click(function(){IOP.UI.referencetabs.closeall()
+});
+jQuery("a.allrefs",A).click(function(){IOP.UI.referencetabs.closeall()
+})
+},fixhover:function(){jQuery(".sideTab").hover(function(){jQuery(this).addClass("hover")
+},function(){jQuery(this).removeClass("hover")
+})
+},init:function(){jQuery("#sideTabBox").show();
+this.scrollable();
+jQuery(".sideTabContent > .close").css("cursor","pointer");
+this.sethandler()
+}},zoomimage:{draggableClass:"ui-draggable",defaultTitle:"Zoom controls loading, please wait.",inactiveTitle:"Click to drag or zoom with the mouse wheel.",activeTitle:"Click outside the image to cancel dragging and zooming with the mouse wheel.",fitimagetowindow:false,imageDims:{},closeall:function(){jQuery("."+IOP.UI.zoomimage.draggableClass).each(function(){var A=jQuery(this);
+A.css({cursor:"pointer"}).attr("title",IOP.UI.zoomimage.inactiveTitle).draggable("destroy");
+A.parent().unmousewheel()
+})
+},insertviewer:function(){jQuery(".studyimage").hide();
+jQuery(".zoomableimg").each(function(E){var F="zoomimage"+E;
+IOP.UI.zoomimage.imageDims[F]={count:0};
+var D=jQuery(this);
+var G=D.parent("a");
+var A=document.createElement("div");
+A.style.backgroundColor="#ededed";
+A.style.marginBottom="5px";
+A.style.padding="7px 12px";
+A.style.position="relative";
+A.style.textAlign="center";
+A.innerHTML='<a class="zoomIn icon">&nbsp;</a><a class="zoomOut icon">&nbsp;</a><a class="zoomFit">Reset</a>';
+G.after(A);
+var C=document.createElement("div");
+C.style.position="relative";
+C.style.overflow="hidden";
+var B=document.createElement("img");
+B.onload=function(){IOP.UI.zoomimage.initzoom(this)
+};
+B.setAttribute("id",F);
+B.setAttribute("title",IOP.UI.zoomimage.defaultTitle);
+B.setAttribute("src",D.attr("src"));
+C.appendChild(B);
+G.replaceWith(C)
+})
+},initzoom:function(G){if((typeof G.naturalWidth=="undefined"||G.naturalWidth==0)&&(typeof G.clientWidth=="undefined"||G.clientWidth==0)){if(IOP.UI.zoomimage.imageDims[G.id].count<15){IOP.UI.zoomimage.imageDims[G.id].count++;
+jQuery(G).oneTime(IOP.UI.zoomimage.imageDims[G.id].count*1000,"retry",function(){IOP.UI.zoomimage.initzoom(this)
+})
+}return(false)
+}var F=jQuery(G);
+var A=F.parent();
+var H=A.next();
+var E=H.children(".zoomIn");
+var I=H.children(".zoomOut");
+var J=H.children(".zoomFit");
+var B=H.width();
+var M=jQuery(window).height()-H.height()-30;
+var O=120;
+A.width(B);
+F.css("max-width","100%");
+var C=F.width();
+var N=F.height();
+if(C>B){N=Math.round(N*B/C);
+C=B
+}var P;
+if(N<O){P=O
+}else{if(IOP.UI.zoomimage.fitimagetowindow&&N>M){C=Math.round(C*M/N);
+N=M
+}P=N
+}A.height(P);
+var D=Math.round((B-C)/2);
+var K=Math.round((P-N)/2);
+IOP.UI.zoomimage.imageDims[F.attr("id")]={width:C,height:N,left:D,top:K,containerWidth:B,containerHeight:P,zoom:0};
+F.width(C).height(N).attr("title",IOP.UI.zoomimage.inactiveTitle).css({"max-width":"999999px",position:"relative",left:D+"px",top:K+"px",cursor:"pointer"}).click(function(){IOP.UI.zoomimage.enablezoom(jQuery(this));
+return(false)
+});
+F.parent().css({"text-align":"left"});
+if(IOP.UI.dxfilter){G.onload=null;
+G.runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+G.src+"', sizingMethod='scale')";
+G.src="/img/spacer.gif"
+}var L=F.add(H).add(E).add(I).add(J);
+IOP.UI.zoomimage.preventselection(L);
+E.click(function(){var Q=jQuery(this).parent().prev().children("img");
+IOP.UI.zoomimage.resize(Q,1);
+IOP.UI.zoomimage.enablezoom(Q);
+return(false)
+});
+I.click(function(){var Q=jQuery(this).parent().prev().children("img");
+IOP.UI.zoomimage.resize(Q,-1);
+IOP.UI.zoomimage.enablezoom(Q);
+return(false)
+});
+J.click(function(){var Q=jQuery(this).parent().prev().children("img");
+IOP.UI.zoomimage.resize(Q,0);
+IOP.UI.zoomimage.enablezoom(Q);
+return(false)
+})
+},preventselection:function(A){A.attr("unselectable","on").css({"-moz-user-select":"none","-khtml-user-select":"none","-webkit-user-select":"none","user-select":"none"}).bind("dragstart",function(B){return(false)
+})
+},enablezoom:function(A){if(!A.hasClass(IOP.UI.zoomimage.draggableClass)){A.attr("title",IOP.UI.zoomimage.activeTitle).css({cursor:"move"}).draggable({snapMode:"outer"});
+A.parent().mousewheel(function(B,C){IOP.UI.zoomimage.resize(jQuery("img",this),C);
+return(false)
+})
+}},resize:function(E,H){var F=IOP.UI.zoomimage.imageDims[E.attr("id")];
+var A,D,C;
+if(H==0){A=0;
+D=F.left;
+C=F.top
+}else{A=F.zoom+H;
+if(A<0){A=0
+}if(A>15){A=15
+}var G=Math.pow(1.2,A-F.zoom);
+D=IOP.UI.zoomimage.recalculateoffset(parseFloat(E.css("left")),F.containerWidth,G);
+C=IOP.UI.zoomimage.recalculateoffset(parseFloat(E.css("top")),F.containerHeight,G)
+}F.zoom=A;
+var B=Math.pow(1.2,A);
+E.width(F.width*B).height(F.height*B).css({left:D+"px",top:C+"px"})
+},recalculateoffset:function(C,B,E){var A=(B/2)-C;
+var D=(B/2)-(A*E);
+if(Math.abs(D)<0.000001){D=0
+}return D
+},init:function(){this.insertviewer()
+}},referencelinks:{createbindings:function(){var A=jQuery("a.reflabel");
+if(jQuery(A.get(0)).text()==""){A.text("\u2191")
+}A.bind("focus mouseover touchstart",function(){var C=jQuery(this);
+if(C.attr("href")=="javascript:void(0)"&&C.text()!=""){var D=IOP.UI.referencelinks.findreference(C);
+if(D.size()!=0){var B;
+if(jQuery(D).attr("name")){B=jQuery(D).attr("name")
+}else{B="fnref-"+IOP.UI.referencelinks.getlabelid(C);
+jQuery(D).attr("id",B);
+jQuery(D).attr("name",B)
+}C.attr("href","#"+B)
+}}})
+},findreference:function(C){var F=IOP.UI.referencelinks.getlabelid(C);
+var E=jQuery('a.cite[href="#'+F+'"]:first');
+if(E.size()==0){var B=/bib[0]*(\d+).*jQuery/.exec(F);
+if(B!=null){var A=parseInt(B[1]);
+jQuery("a.cite").each(function(){var G=jQuery(this).text().split(/[\u2010\u2012\u2013\u2014\u2015\u2043\u2053\u223c~-]/);
+var H=(G.length==2&&A>=parseInt(G[0])&&A<=parseInt(G[1]));
+if(H){E=jQuery(this)
+}return !H
+})
+}}if(E.size()==0){var D=C.parent().prev().prev().children("a.reflabel:first");
+if(D.size()!=0){E=IOP.UI.referencelinks.findreference(D)
+}}return E
+},getlabelid:function(A){var B=A.attr("id");
+if(B==null||B==""){B=A.attr("rel").substring(1)
+}return B
+},init:function(){IOP.UI.referencelinks.createbindings()
+}},citations:{createtooltip:function(D){var A=jQuery(D);
+var B=jQuery(A.attr("href")).parent();
+var C=jQuery("<div/>");
+C.attr("id","tooltip").addClass("citationtooltip").css({top:(A.offset().top+16)+"px",left:(A.offset().left+10)+"px"});
+IOP.UI.citations.updatetooltip(B,C);
+jQuery("body").append(C)
+},updatetooltip:function(F,J){J.empty();
+var B=jQuery("<div>");
+B.addClass("closebutton").click(function(){IOP.UI.citations.destroytooltip();
+return(false)
+});
+J.append(B);
+var K=jQuery("<a>");
+K.attr("href","#"+F.children("a:first").attr("id"));
+var D=F.children("a:first").text();
+if(D=="\u2191"){K.text("\u2193")
+}else{K.text(D)
+}J.append(K);
+J.append(" ");
+J.append(F.next().html());
+var C=F.next().next();
+while(C.size()!=0&&C.children("a:first").text()==""){J.append(jQuery("<br>"));
+J.append(C.next().html());
+C=C.next().next()
+}var E=F.prev().prev();
+while(E.size()!=0&&E.children("a:first").text()==""){E=E.prev().prev()
+}if(E.size()!=0||C.size()!=0){J.append(jQuery("<br>"))
+}if(E.size()!=0){var I=E.children("a:first").attr("id");
+var G=jQuery("<a>");
+G.addClass("tooltipPrev").attr("href","#"+I).html("Previous");
+G.click(function(){var L=jQuery(jQuery(this).attr("href")).parent();
+var M=jQuery("#tooltip");
+IOP.UI.citations.updatetooltip(L,M);
+return(false)
+});
+J.append(G);
+if(C.size()!=0){J.append(" ")
+}}if(C.size()!=0){var A=C.children("a:first").attr("id");
+var H=jQuery("<a>");
+H.addClass("tooltipNext").attr("href","#"+A);
+H.html("Next").click(function(){var L=jQuery(jQuery(this).attr("href")).parent();
+var M=jQuery("#tooltip");
+IOP.UI.citations.updatetooltip(L,M);
+return(false)
+});
+J.append(H)
+}},destroytooltip:function(){jQuery("#tooltip").remove()
+},init:function(){jQuery("a.cite").click(function(){IOP.UI.citations.destroytooltip();
+IOP.UI.citations.createtooltip(this);
+return(false)
+})
+}},messages:{touchevent:function(A,B){switch(A){case"twofinger":msg="Use two-finger-scrolling to drag and view more content.";
+break;
+case"fingerscroll":msg="Touch and drag in this box to scroll the content.";
+break;
+case"fingerzoom":msg="Touch with two fingers and pinch to zoom in.";
+break
+}msgelement=document.createElement("sub");
+msgelement.setAttribute("class","red");
+msgelement.innerHTML=msg;
+jQuery(B).append(msgelement)
+},iOS:function(){IOP.UI.messages.touchevent("twofinger","#fig .overflow-x");
+IOP.UI.messages.touchevent("twofinger","#references .sideTabBar")
+},android:function(){IOP.UI.messages.touchevent("fingerscroll","#fig .overflow-x");
+IOP.UI.messages.touchevent("fingerscroll","#references .sideTabBar")
+},blackberry:function(){IOP.UI.messages.touchevent("fingerscroll","#fig .overflow-x");
+IOP.UI.messages.touchevent("fingerscroll","#references .sideTabBar")
+}},desktop:{init:function(){var A=parseInt(jQuery.browser.version);
+if(jQuery.browser.msie&&A<6){return(false)
+}else{if(jQuery.browser.msie&&A==6){IOP.UI.dxfilter=true;
+jQuery("#sideTabBox").show();
+jQuery(".sideTabContent > .close").css("cursor","pointer");
+IOP.UI.referencetabs.sethandler();
+IOP.UI.referencetabs.fixhover();
+IOP.UI.referencelinks.init();
+IOP.UI.citations.init();
+IOP.UI.zoomimage.init();
+IOP.UI.displayequations.fixie6();
+IOP.UI.tablescrollbars.fixie6()
+}else{IOP.UI.accordion.init();
+IOP.UI.authors.init();
+IOP.UI.referencetabs.init();
+if(jQuery.browser.msie&&A<=8){IOP.UI.referencetabs.fixhover()
+}IOP.UI.referencelinks.init();
+IOP.UI.citations.init();
+IOP.UI.zoomimage.init();
+if(!jQuery.browser.opera){IOP.UI.displayequations.fix()
+}}}}},iOS:{init:function(){IOP.UI.accordion.init();
+jQuery(".accordion").css("max-height","");
+IOP.UI.authors.init();
+IOP.UI.referencetabs.init();
+IOP.UI.referencelinks.init();
+IOP.UI.citations.init();
+IOP.UI.messages.iOS()
+}},android:{init:function(){IOP.UI.accordion.init();
+IOP.UI.authors.init();
+jQuery("#sideTabBox").show();
+jQuery("#sideTabHolder").css("position","absolute");
+jQuery(".sideTabContent > .close").css("cursor","pointer");
+IOP.UI.referencetabs.sethandler();
+IOP.UI.referencelinks.init();
+IOP.UI.citations.init();
+IOP.UI.zoomimage.init();
+IOP.UI.messages.android()
+}},blackberry:{init:function(){IOP.UI.accordion.init();
+IOP.UI.authors.init();
+IOP.UI.referencetabs.init();
+IOP.UI.referencelinks.init();
+IOP.UI.citations.init();
+IOP.UI.zoomimage.init();
+IOP.UI.messages.blackberry()
+}},symbian:{init:function(){}}};
+jQuery(document).click(function(){IOP.UI.beautify.destroytooltip();
+IOP.UI.referencetabs.closeall();
+IOP.UI.citations.destroytooltip();
+IOP.UI.zoomimage.closeall();
+jQuery("simple_overlay .close").click()
+});
+jQuery(document).ready(function(){var A=navigator.userAgent.toLowerCase();
+switch(true){case (A.indexOf("iphone")!=-1||A.indexOf("ipad")!=-1||A.indexOf("ipod")!=-1||A.indexOf("android")!=-1||A.indexOf("series60")!=-1||A.indexOf("symbian")!=-1||A.indexOf("blackberry")!=-1||jQuery.browser.msie):if(window.location.href.indexOf("iopsci9")!=-1||window.location.href.indexOf("kmj.iopscience")!=-1){IOP.UI.debug.firebug()
+}break
+}var A=navigator.userAgent.toLowerCase();
+switch(true){case (A.indexOf("iphone")!=-1||A.indexOf("ipad")!=-1||A.indexOf("ipod")!=-1):IOP.UI.iOS.init();
+break;
+case (A.indexOf("android")!=-1):IOP.UI.android.init();
+break;
+case (A.indexOf("series60")!=-1||A.indexOf("symbian")!=-1):IOP.UI.symbian.init();
+break;
+case (A.indexOf("blackberry")!=-1):IOP.UI.blackberry.init();
+break;
+default:IOP.UI.desktop.init();
+break
+}IOP.UI.beautify.init()
+});
+IOP.login=function(){var A=function(C){var B=jQuery(this);
+var E=jQuery("#login");
+if(E.exists()){var D=decodeURIComponent(IOP.parseURL(B.attr("href")).params["return"]);
+IOP.dialogs.show(E,function(G){var F=G.find("input:hidden[name='return']");
+F.attr("value",D)
+});
+C.preventDefault()
+}};
+jQuery(document).ready(function(){loginSaveSearchLink=jQuery("a.loginRequired").livequery("click",A)
+});
+return{}
+}();
+document.onkeydown=function(D){var D=window.event||D;
+var C=D.keyCode;
+if(C!=null&&C==39){var A=document.getElementById("nextArticle");
+if(A!=null){document.location.href=A.href
+}}if(C!=null&&C==37){var B=document.getElementById("previousArticle");
+if(B!=null){document.location.href=B.href
+}}};
+IOP.quicksearch=function(){jQuery(document).ready(function(){jQuery("form.quickSearchForm").submit(function(){var A=jQuery.trim(jQuery(this).find("input.textfield").val());
+if(A.length===0){alert("You have not entered a valid search term, \nplease enter a search term and try again");
+return false
+}return true
+})
+});
+return{}
+}();
+IOP.redirect=function(){jQuery(document).ready(function(){var A=jQuery("div.ejs-redirect");
+if(A!==0){IOP.dialogs.show(A)
+}});
+return{}
+}();
+IOP.reveals=function(){var A="openable",D="opened",E="ajax";
+var B=function(H,F,G,J){var I=jQuery(this);
+var K=I.nextAll(H+":first");
+if(K.css("display")==="none"){K.show();
+I.text(F);
+I.removeClass(A);
+I.addClass(D)
+}else{K.hide();
+I.text(G);
+I.removeClass(D);
+I.addClass(A)
+}J.preventDefault()
+};
+var C=function(I){var H=jQuery(this);
+var G=H.closest(".pwaExtract");
+var F=G.find(".articleSummary");
+var K=G.find(".articleDetail");
+if(H.hasClass(E)){var J=IOP.parseURL(H.attr("href")).params.openExtract;
+IOP.ajax.get({location:"/pwa/summary.json",params:{id:J},element:H,errorMsg:"An error has occurred retrieving the summary.",success:function(L){F.hide();
+K.append($(L.summary).prepend("<strong>Summary:&nbsp;</strong>").append("&nbsp;&nbsp;").append(K.find(".openPwaExtract"))).slideDown();
+H.removeClass(E)
+}})
+}else{if(K.css("display")==="none"){F.hide();
+K.slideDown()
+}else{K.slideUp(function(){F.show()
+})
+}}return(false)
+};
+jQuery(document).ready(function(){jQuery("a.openExtract").livequery("click",B.curry(".articleDetail","Hide extract","View extract"));
+jQuery("a.openAffiliations").bind("click",B.curry(".affiliationDetail","Hide affiliations","Show affiliations"));
+jQuery("a.openPwaExtract").bind("click",C)
+});
+return{handle:B}
+}();
+IOP.searchTabs=function(){var B=function(G,F,H){var I=jQuery(G);
+if(I.exists()){IOP.ajax.get({location:F,params:{justcount:"yes"},success:function(J,K){I.html(H(J))
+}})
+}};
+var D=function(I){var G=jQuery(this);
+var F=G.closest("li").find("input.filterCheckbox");
+var H=jQuery("input.filterCheckbox");
+H.attr("checked",false);
+F.attr("checked",true);
+jQuery("form#formFilter").submit();
+I.preventDefault()
+};
+var E=function(H){var G=jQuery(this);
+var I=G.attr("id");
+var F=jQuery("ul.additionalFilters."+I);
+if(F.css("display")==="none"){F.show();
+G.removeClass("openable");
+G.addClass("opened")
+}else{F.hide();
+G.removeClass("opened");
+G.addClass("openable")
+}H.preventDefault()
+};
+var C=function(G){var I=jQuery(this);
+var H=I.attr("data-bucket");
+var F=I.attr("data-page");
+IOP.ajax.postJson({location:"/search-filter-more"+IOP.parseURL().query,params:{method:"getMoreForFilter",params:[H,F]},element:I,errorMsg:"Error retrieving more values.",success:function(K){var J=I.parent().prev();
+jQuery.each(K.bucketArray,function(){var L=J.clone();
+var O=L.find("input.filterCheckbox");
+O.attr("value",this.title);
+O.removeAttr("checked");
+var N=L.find("a.filterLink");
+N.attr("title",this.title);
+N.html(this.name);
+var M=jQuery("<span></span>").append(N).append("&nbsp;("+this.value+")");
+L.empty().append(O).append(M);
+J.after(L)
+});
+if(K.containsMore==="true"){I.attr("data-page",K.pageNumber+1)
+}else{I.hide()
+}}});
+G.preventDefault()
+};
+var A=function(){jQuery("a.filterLink").livequery("click",D);
+jQuery("ul.additionalFilters").hide();
+jQuery("a.showFilters").livequery("click",E);
+jQuery("a.moreFilters").livequery("click",C)
+};
+jQuery(document).ready(function(){B("a#eprints, .eprintsCount","/eprintcount/",function(F){jQuery("a#eprints").html("e-prints <span>("+F+")</span>");
+jQuery(".eprintsCount").html(F).parent().show()
+});
+B("a#cws, cwsCount","/cwscount/",function(F){jQuery("a#cws").html("News and analysis <span>("+F+")</span>");
+jQuery(".cwsCount").html(F).parent().show()
+});
+A()
+});
+return{}
+}();
+IOP.selects=function(){var A=function(B){jQuery(this).closest("form").submit()
+};
+jQuery(document).ready(function(){jQuery("select.autosubmit").livequery("change",A)
+});
+return{}
+}();
+IOP.tabs=function(){var B=function(I){var G=jQuery(this);
+var D=G.parent();
+var H=D.children("a").index(G);
+var F=G.siblings("a");
+var E=D.siblings("div.tabContent").eq(H);
+var C=E.siblings("div.tabContent");
+F.removeClass("on");
+G.addClass("on");
+C.hide();
+E.show();
+I.preventDefault()
+};
+var A=function(G){var E=jQuery(this);
+var D=E.attr("data-extra-text");
+var F=E.attr("data-extra-title");
+var C=E.attr("href")+"&ajax=true";
+if(D!==undefined){C+="&title="+D
+}if(F!==undefined){C+="&text="+F
+}jQuery("div.box1.tabContent").empty();
+IOP.ajax.get({location:C,dataType:"text",element:E,errorMsg:"An error has occurred loading the results.",success:function(H){jQuery("div.tabs.ajax > div.selectors > a").removeClass("on");
+jQuery("div.box1.tabContent").replaceWith(H);
+E.addClass("on");
+IOP.dialogs.attachAll()
+}});
+G.preventDefault()
+};
+jQuery(document).ready(function(){jQuery("div.tabs.javascripted > div.selectors > a").livequery("click",B);
+jQuery("div.tabs.ajax > div.selectors > a").livequery("click",A)
+});
+return{handle:B}
+}();
+IOP.tag=function(){var C=function(D){jQuery("input.article-tags").autoGrowInput({comfortZone:50,minWidth:150,maxWidth:600}).trigger("keyup");
+D.preventDefault()
+};
+var A=function(G){var H=jQuery(this);
+var L=H.text();
+var D=H.parents("div:first").find("input.article-tags");
+var I=D.val().trim().split(" ");
+var E=false;
+var J;
+var K=L.toLowerCase();
+if(I[0].trim()==""){I.splice(0,1)
+}for(J=0;
+J<I.length;
+J++){if(I[J].toLowerCase()==K){I.splice(J,1);
+E=true;
+J-=1
+}}if(!E){I.push(L)
+}var F=I.join(" ");
+jQuery(D).val(F);
+G.preventDefault()
+};
+var B=function(F){var D=jQuery(this);
+var E=D.serialize();
+IOP.ajax.post({location:D.attr("action"),params:E,element:D.closest("div"),success:function(H,I){D.closest(".dialog_content").dialog("close");
+var G=jQuery("#"+D.attr("id")).closest(".dialog_content");
+G.find("input.article-tags").attr("value",D.find("input.article-tags").attr("value"));
+IOP.notify("Tags updated")
+}});
+F.preventDefault()
+};
+jQuery(document).ready(function(){});
+return{}
+}();
+IOP.toolTip=function(F){var E=function(H){return F(H).fadeOut(1500,function(){F(this).remove()
+})
+};
+var G=function(H){return F(H).stop(true,false).fadeTo("fast",1)
+};
+var D=function(K,I,H,J){var L=I();
+if(L){H(K,J,L)
+}};
+var B=function(M,L,O){var H=0,N=-20,K,J,I=F("#popup");
+I.remove();
+I=F("<div id='popup'>#{tip}</div>".interpolate({tip:O}));
+I.appendTo("body");
+I.hover(G.curry(I),E.curry(I));
+K=Math.min(L.pageX+H,F(document).width()-I.width());
+J=(L.pageY-N);
+I.css("top",J+"px").css("left",K+"px").fadeIn("fast")
+};
+var C=function(L,K,M){var J,I,H=F("#toolbar");
+H.remove();
+H=F("<div id='toolbar'>#{tip}</div>".interpolate({tip:M}));
+H.appendTo("body");
+H.hover(G.curry(H),E.curry(H));
+J=L.offset().left+L.width()-H.width();
+I=L.offset().top;
+if(L.position().top>=0){H.css("top",I+"px").css("left",J+"px").css("z-index",999999).fadeIn("fast")
+}};
+var A=function(I,H,L,K){var J=F(L);
+J.hover(D.curry(J,K,I),E.curry(H))
+};
+return{createToolTip:A.curry(B,"#popup"),createToolBar:A.curry(C,"#toolbar")}
+}(jQuery);
+IOP.video=function(){var A=function(I){var M="http://"+window.location.host;
+var J=$("a[class='icon pdf']");
+if(J){var N=J.attr("href");
+if(N){var D=IOP.parseURL(M+N);
+var C=D.path;
+var L=C.indexOf("/videoViewed/pdf/");
+if(L==-1){D.path=C.replace("/pdf/","/videoViewed/pdf/");
+var F=IOP.buildURL(D);
+J.attr("href",F)
+}}}var E=$("a[class='icon html']");
+if(E){var K=E.attr("href");
+if(K){var G=IOP.parseURL(M+K);
+var B=G.path;
+if(B.indexOf("/videoViewed/fulltext")==-1){G.path=B.replace("/fulltext","/videoViewed/fulltext");
+var H=IOP.buildURL(G);
+E.attr("href",H)
+}}}IOP.ajax.get({location:"/videoview.json"})
+};
+jQuery(document).ready(function(){$("a#videoDownload").text("Download this video");
+$("div#videoPlayer").css("display","block")
+});
+return{handle:A}
+}();

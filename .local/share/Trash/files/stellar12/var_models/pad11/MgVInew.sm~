@@ -1,0 +1,6 @@
+erase
+data virgodata.out
+lines 2 0
+read { Mg2 5 VI 3 }
+
+limits VI Mg2

@@ -1,0 +1,313 @@
+Input page for DIAG, 
+which computes fluxes, colors and indices for a single-burst population
+-----------------------------------------------------------------------
+0  Number of characters in default dir filename     18
+1  Z                                                0.0005344
+2  Y                                                0.234
+3  Age in Gyr                                       15.0
+1  IMF (salpeter or miller-scalo)                   salpeter
+4  IMF parameter (Salpeter is 2.35)                 2.35
+5  extinction multiplicative tuning factor          0.00
+6  lobotomize stars cooler than log Te =            0.00
+7  HB lifetime multiplicative fudge factor          1.05
+8  HB log L additive fudge factor (dex)             0.00
+9  Spectra for synthetic colors (0=lo,1=hi,2=coe)   0.00
+10 Lobotomize stars brighter than (<0 to disable)   -2.7
+11 EAGB  LF slope phi = 10^(F*log L)                -.60
+12 TPAGB LF slope phi = 10^(F*log L)                -.60
+13 EAGB  lifetime multiplicative fudge factor       1.0
+14 TPAGB lifetime multiplicative fudge factor       1.0
+15 Global log g  additive fudge factor              0.00
+16 Global log Te additive fudge factor              0.00
+17 Z solar                                          0.0169
+18 Y solar                                          0.274
+19 Y primordial                                     0.228
+20 Powerlaw IMF lower mass limit (0.209?)           0.1
+21 Powerlaw IMF upper mass limit                    100.0
+22 Total mass of initial population in Mo           1.0e6
+23 Multiplicative factor for mass-loss              0.20
+24 HB additive log Te fudge                         0.0
+25 Star remnants (M/L) (0=100%, 1=0%, 2=Weidemann)  2.0
+26 HB: (1, 5, 10) = (clump, extended, blue)         1.0
+27 PAGB: (0,1,2) = (none,low-mass,high-mass)        0.0
+28 PAGB lifetime multiplicative fudge factor        1.0
+29 Ev: 0=VdBg 2=Pad94 3,4=Dttr 5=BASTI 6=Pad11      6.0
+30 Change HB morph automatically? 0=no 1=yes        1.0
+31 Y scaling (0 1 2 3)=(2.7, 6+flat, min, max)      0.0
+32 Stellar Redshift (for SBF k-corrections)         0.000
+33 Use 0.01-resolution fluxes? (0-no, 1-yes)        0.0
+34 [Alpha/Fe] for Dottergrid (-0.2,0.0,0.2)         0.0
+2  Output detailed index-contributions?     no
+3  Output file for this                     detail.out
+4  Type of mass-loss (niew. or riemers)     niew
+5  Horizontal Branch data file              /one/color/hb.dat
+6  Asymptotic Giant Branch data file        /one/color/eagb.input
+7  Root directory for everything            /usr/a/theory/mods
+8  Test fitting function                    no 
+9  Just say "KBBSW" (no flux1.f any more)   KBBSW
+10 Output Hess diagrams to a file?          yes
+11 Filename for this file:                  hess.out
+12 2-character abundance code for Dotter    ss
+01 [blank] 0.0
+02 [C/Fe]  0.0
+03 [N/Fe]  0.0
+04 [0/Fe]  0.0
+05 [Na/Fe] 0.0
+06 [Mg/Fe] 0.0
+07 [Al/Fe] 0.0
+08 [Si/Fe] 0.0
+09 [S/Fe]  0.0
+10 [K/Fe]  0.0
+11 [Ca/Fe] 0.0
+12 [Sc/Fe] 0.0
+13 [Ti/Fe] 0.0
+14 [V/Fe]  0.0
+15 [Cr/Fe] 0.0
+16 [Mn/Fe] 0.0
+17 [Fe/Fe] 0.0
+18 [Co/Fe] 0.0
+19 [Ni/Fe] 0.0
+20 [Cu/Fe] 0.0
+21 [Zn/Fe] 0.0
+22 [Sr/Fe] 0.0
+23 [Ba/Fe] 0.0
+24 [Eu/Fe] 0.0
+25 [Cl/Fe] 0.0
+
+!!!!!!!!!!!!!!!!!!!!!!!! ISOCHRONE LIST !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Number of isochrone files:                  20
+List of filenames of isochrones (assumed W-isochrone of 110 pts)
+(with order of columns: mass, log L, log Te)
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0001y20
+Z                            0.0001
+Y                            0.20
+N ages                       7
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  6.0  8.0 10.0 12.0 14.0 16.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0001y30
+Z                            0.0001
+Y                            0.30
+N ages                       7
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  6.0  8.0 10.0 12.0 14.0 16.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0003y20
+Z                            0.0003
+Y                            0.20
+N ages                       7
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  6.0  8.0 10.0 12.0 14.0 16.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0003y30
+Z                            0.0003
+Y                            0.30
+N ages                       7
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  6.0  8.0 10.0 12.0 14.0 16.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0010y20
+Z                            0.001
+Y                            0.20
+N ages                       7
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  6.0  8.0 10.0 12.0 14.0 16.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0010y30
+Z                            0.001
+Y                            0.30
+N ages                       7
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  6.0  8.0 10.0 12.0 14.0 16.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0030y20
+Z                            0.003
+Y                            0.20
+N ages                       7
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  6.0  8.0 10.0 12.0 14.0 16.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0030y30
+Z                            0.003
+Y                            0.30
+N ages                       7
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  6.0  8.0 10.0 12.0 14.0 16.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0060y20
+Z                            0.006
+Y                            0.20
+N ages                       7
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  6.0  8.0 10.0 12.0 14.0 16.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0060y30
+Z                            0.006
+Y                            0.30
+N ages                       7
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  6.0  8.0 10.0 12.0 14.0 16.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0100y25
+Z                            0.01
+Y                            0.25
+N ages                       15
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  0.8  1.0 1.25  1.5  2.0  2.5  3.0  4.0  5.0  6.0  8.0 10.0 12.5 15.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0100y35
+Z                            0.01
+Y                            0.35
+N ages                       15
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  0.8  1.0 1.25  1.5  2.0  2.5  3.0  4.0  5.0  6.0  8.0 10.0 12.5 15.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0169y25
+Z                            0.0169
+Y                            0.25
+N ages                       15
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  0.8  1.0 1.25  1.5  2.0  2.5  3.0  4.0  5.0  6.0  8.0 10.0 12.5 15.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0169y35
+Z                            0.0169
+Y                            0.35
+N ages                       15
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  0.8  1.0 1.25  1.5  2.0  2.5  3.0  4.0  5.0  6.0  8.0 10.0 12.5 15.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0300y25
+Z                            0.03
+Y                            0.25
+N ages                       14
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  0.8  1.0 1.25  1.5  2.0  2.5  3.0  4.0  5.0  6.0  9.0 12.0 15.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0300y35
+Z                            0.03
+Y                            0.35
+N ages                       14
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  0.8  1.0 1.25  1.5  2.0  2.5  3.0  4.0  5.0  6.0  9.0 12.0 15.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0600y25
+Z                            0.06
+Y                            0.25
+N ages                       14
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  0.8  1.0 1.25  1.5  2.0  2.5  3.0  4.0  5.0  6.0  9.0 12.0 15.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z0600y35
+Z                            0.06
+Y                            0.35
+N ages                       14
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  0.8  1.0 1.25  1.5  2.0  2.5  3.0  4.0  5.0  6.0  9.0 12.0 15.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z1000y25
+Z                            0.1
+Y                            0.25
+N ages                       14
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  0.8  1.0 1.25  1.5  2.0  2.5  3.0  4.0  5.0  6.0  9.0 12.0 15.0 18.0
+--------------------------------------------------------------------
+filename                     /usr/a/theory/mods/wiso/w.z1000y35
+Z                            0.1
+Y                            0.35
+N ages                       14
+N header lines               5
+N lines between each age     5
+Ages contained in file (in Gyr) (in line below in 5-space fields)
+  0.8  1.0 1.25  1.5  2.0  2.5  3.0  4.0  5.0  6.0  9.0 12.0 15.0 18.0
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

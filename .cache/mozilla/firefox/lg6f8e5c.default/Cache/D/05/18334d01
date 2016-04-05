@@ -1,0 +1,1561 @@
+/*++++++++++++++
+.IDENTIFICATION viz2.js
+.LANGUAGE       JavaScript
+.AUTHOR         Francois Ochsenbein [CDS]
+.ENVIRONMENT    VizieR
+.VERSION  1.0   01-May-2001
+.VERSION  1.1   12-May-2001: Keep lists of opened windows.
+.VERSION  1.3   12-Apr-2002; VOTable output
+.VERSION  1.4   07-Oct-2002: LAYER Addition
+.VERSION  1.5   20-Nov-1902: VOPlot -- PROBLEM IE which UNESCAPES the java!!
+.VERSION  1.6   09-Jul-2003: envURLbase envURLhost
+.VERSION  1.7   31-Mar-2004: buf in clearFields
+.VERSION  1.8   02-May-2007: Use a test argument in aW
+.VERSION  1.9   21-Oct-2007: GoogleSky + .. (changeOutput modes)
+.VERSION  2.0   02-Oct-2008: showFlag
+.VERSION  2.1   20-Apr-2010: showFlag accepts functions.
+.COMMENTS       All JavaScript Routines used by VizieR
+---------------*/
+
+/*===========================================================================
+                Definitions
+ *===========================================================================*/
+function getenvurlpath() {
+  var urlbase = document.location.pathname;
+  var expression = /^(.*\/)[^\/]*$/;
+  expression.exec(urlbase);
+  urlbase = RegExp.$1
+  return urlbase;
+}
+
+
+  Xdig = new String; Xdig = "0123456789ABCDEF";
+  vMozilla=new Number;
+  argColors=new String;argColors="";
+  orgAction=new String;orgAction="";//orgAction=form.a;
+  // Keep the List of Windows 
+  wName=new Array();  wList = new Array();
+  envVOPlot=new String; envVOPlot="/viz-bin/Echo";
+  allClicks=new Number(0) ;
+//  envURLbase=new String; envURLbase="/viz-bin/";
+  envURLhost=new String; envURLhost="";
+
+/*===========================================================================
+                Generic JavaScript utilities
+ *===========================================================================*/
+
+function ns3el(form, name) {        // For Netscape3 which has no hash array ? 
+  var n = form.elements.length;
+  var o = form.elements; // Netscape 3 doesn't work with form['-source']
+  for (var i=0; i<n; i++) { if (o[i].name == name) return(o[i])}
+  // alert('No such element: ' + name); // Apparently, doesn' work...
+  return(0)
+}
+
+// Clear 1 element in form
+function clearField(ob, el,func) { 
+  var o=ob; if (el) o = ob.form[el] ;
+  var found=0;
+  if (o.type == 'text' || o.type == 'hidden') { o.value = "";found=1; }
+  if (o.type == 'checkbox') { o.checked = false ; found=true; }
+  if (o.type == 'select-multiple') { o.selectedIndex = -1 ; found=true; }
+  if (o.type == 'select-one') { o.selectedIndex = -1 ; found=true; }
+  if (o.type == 'reset') found=true;
+  if (o.type == 'button') found=true;
+  if (o.type == 'submit') found=true;
+  if (o.name.search('//')==0 && o.type == 'radio') found=true;
+  if (!found)  alert("Can't clear field: " + o.name) ;
+  if (func) func.call();
+}
+
+// Set a value in Form (hidden or text)
+function setValue(ob,name,value){
+  var o = ns3el(ob.form, name);
+  o.value = value;
+}
+// Set the vMozilla value
+function setMozilla(v) {
+  // alert("setMozilla(" + v + ")");
+  vMozilla = v
+}
+
+// Verify at least one button of a series is pushed
+function checkPushed(ob, name) {
+  var form = ob.form; var n = form.elements.length; var i = 0 ;
+  var o = form.elements; // Netscape 3 doesn't work with form['-source']
+  for (var i=0; i<n; i++) {
+    if (o[i].name != name) continue;
+    if ((o[i].type != 'checkbox') && (o[i].type != 'radio')) continue;
+    if (o[i].checked) return(true);
+  }
+  return(false);
+}
+
+// Choose the radio button to set
+function setRadio(form, name, value) {
+  var n = form.elements.length;  var o = form.elements;  var r = 0;
+  for (var i=0; i<n; i++) {
+    if (o[i].name == name) { 
+      o[i].checked = (o[i].value == value);       
+      r += o[i].checked;
+    }
+  }
+  //if (r != 1) alert('Sum of ' + name + ' radio buttons = ' + r);
+  return(0)
+}
+
+// Set the element in a list
+function setOption(o, value) {
+  var n = o.options.length;
+  var i = 0;
+  for (i=0; i<n; i++) {
+    if (o.options[i].text.indexOf(value) >= 0) { o.selectedIndex=i; break; }
+  }
+  if (i>=n) alert('Could not setOption(' + name + ') to ' + value)
+  return(0)
+}
+
+// Clear elements of form which name starts by a text
+// Name equates text when arguments ends with a =
+// Special case, if name_start is "*", all non-ASU fields are cleared
+function clearFields(ob, name_start) {
+  var form = ob.form; if (!form) form = ob;
+  var n = form.elements.length; var i ; var text; 
+  var cmp = "";                // In case of comparison
+  i= name_start.indexOf("=");
+  if (i>0) cmp = name_start.substr(0, i);
+  for (i = 0 ; i < form.length; i++) {
+    text = form.elements[i].name ;
+    if (name_start == "*") {
+      if ((text.charAt(0) != "-") && (form.elements[i].type == "text"))
+           { clearField(form.elements[i]) }
+    } 
+    else if (cmp != "") {
+        if (cmp == text) clearField(form.elements[i]);
+    }
+    else {
+      if (text.indexOf(name_start) == 0) { clearField(form.elements[i]) }
+    }
+  }
+}
+
+/*===========================================================================
+                Popup windows: Help, References, Notes ...
+                        Window name = aName[_[width_x]height]
+ *===========================================================================*/
+
+function full_escape(text) {                // + sometimes NOT converted ???
+  var i, tmp;
+  tmp = escape(text);
+  while (tmp.indexOf('+') >= 0) {
+     i = tmp.indexOf('+');
+     tmp = tmp.substr(0,i) + "%2b" + tmp.substr(i+1);
+  }
+  return(tmp);
+}
+
+function aW(name,url,a1,a2,a3) {        // Generic Popup Window name_XxY_attr
+  var fullURL;
+  var n = wName.length ; var wn = name ;
+  var tmp, w, i, x, y ;
+  var a = 'scrollbars,resizable,toolbar=0,location=0,status=0,menubar=0';
+  /* Must compute the fully Qualified URL */
+  if (url.indexOf('://') >= 0) { fullURL = url }        // Already complete
+  else { if (url.substr(0,1) == '/') { fullURL = envURLhost + url }
+  else { fullURL = getenvurlpath() + url }}
+  i = fullURL.indexOf('//*&'); 
+  if (i>=0) {        // Already translated
+    // alert("fullURL=" + fullURL);
+    tmp = fullURL.substr(i);
+    fullURL = fullURL.substr(0,i);
+    while (tmp.indexOf('&')>=0) {
+      i = tmp.indexOf('&');
+      fullURL = fullURL + full_escape(tmp.substr(0,i)) + '&';
+      tmp = tmp.substr(i+1);
+    }
+    fullURL = fullURL + full_escape(tmp);
+  }
+  if (a1) fullURL = fullURL + "?" + full_escape(a1);
+  if (a2) fullURL = fullURL + "&" + full_escape(a2);
+  if (a3) fullURL = fullURL + "&" + full_escape(a3);
+  x = 640; y = 320;                        // Default dimensions
+  i = name.indexOf('_'); 
+  if (i >= 0) {                 // e.g. MyWindow_500x500
+      wn = name.substr(0, i);
+      tmp = name.substr(i+1);
+      i = tmp.indexOf('_') ;        // Maybe attributes ? 
+      if (i>=0) { a = tmp.substr(i+1); tmp = tmp.substr(0, i) }
+      i = tmp.indexOf('x') ;
+      if (i >= 0) { x =  Number(tmp.substr(0, i)); y = Number(tmp.substr(i+1)) }
+      else { y = Number(tmp) }
+  }
+  if (wn == "") { wn = "W" + wName.length; i = n }
+  else for (i=0; i<n; i++) { 
+      if (wName[i] != wn) continue ;
+      w = wList[i]; 
+      if (w.closed) w = 0; 
+      break ;
+  }
+  // alert("aw(" + name + ")\ny=" + y + "\nwn=" + wn);
+  if (w) {        // Window already exists !
+    // alert("Window exists from wn=" + wn + "\nname=" + w.name);
+    //*Can't change in Firebird! if ((y > 100) && (y <= 640)) w.innerHeight = y;
+    //*Can't change in Firebird! if ((x > 100) && (x <= 640)) w.innerWidth  = x;
+    w = window.open(fullURL, wn) ;
+  }
+  else {         // New window -- create it 
+    tmp= a + ',height=' + y + ',width=' + x ;
+    w = window.open(fullURL, wn, tmp) ;
+    wName[i] = wn; wList[i] = w ;
+  }
+  w.focus();
+}
+
+function vHelp(q) {
+  //var w = aW('wHelp', 'vizHelp?'+argColors+q) ;
+  var w = aW('wHelp', '/vizier/vizHelp/'+q) ;
+}
+
+
+function vRef(q) {        // Problem IE which unescapes!!!
+  //var w = aW('wRefs', '/viz-bin/VizieR?-6N&-out.form=H0&'+argColors+q);
+  var w = aW('wRefs', 'VizieR?-6N&-out.form=H0&'+q);
+}
+
+function Note(catid,notid) {
+  var w = aW('wNote', 'VizieR-n?-source=METAnot&catid='+catid+'&notid='+notid
+    +'&-out=text') ;
+}
+
+function Unit(u) {
+  var w = aW('wUnit', '/viz-bin/Unit/w?-n&'+full_escape(u)) ;
+}
+
+function UCD(u) {
+  var w = aW('wUCD', 'VizieR-n?-source=METAfam&famid='+u) ;
+}
+
+function UCD1p(u) {
+  var deco = "-6n&-out.form=H0+N&-source=METAucd&-out=name,explain&";
+  var cond = "ucdid=" + (u&1023); u >>= 10; u &= 0x3fffff;
+  while (u!=0) { cond = cond + "," + (u&1023); u >>= 10; }
+  var w = aW("wUCD", "VizieR?" + deco + cond) ;
+}
+
+function vNote(q) {
+  //alert('VizieR?-6N&-out.form=H0&'+argColors+q);
+  //var w = aW('wNote', 'VizieR?-6N&-out.form=H0&'+argColors+q) ;
+  var w = aW('wNote', 'VizieR?-6N&-out.form=H0&'+q) ;
+}
+
+// From a table + value, give the components making up the flags.
+// If 10 values or more: edit only non-zero flags
+function edX2(n) {        // Edit number 2<<n
+  var res = ""; var v = n;
+  for (v=n; v >= 4; v -= 4) res = res + "0";
+  res =  Xdig.charAt(1<<v) + res;
+  return(res);
+}
+function edX(n) {        // Hexadecimal edition
+  if (n==0) return("0");
+  var res = ""; 
+  for (var v=n; v!=0; v=v>>>4) res = Xdig.charAt(v&0xf) + res;
+  return(res);
+}
+function showFlag(tab, value) {
+  //if (value == 0) return;
+  var s = typeof(value) == 'string' ? true : false ;
+  var x = tab.length>=8 ? true : false;        // Defaut hexa edition
+  var a = x; // Edit all values
+  if (tab.edit) { x = tab.edit.indexOf("x")>=0; a = tab.edit.indexOf("0")>=0; }
+  var n = tab.name ? tab.name : "" ;
+  var t = tab.title ? tab.title : "Meaning of " + n + " flags" ;
+  var o = tab.options ? tab.options : 
+      "width=640,height=320,toolbar=no,scrollbars=yes,resizable=yes";
+  var w = open("", n == "" ? "_blank" : n, o);
+  w.document.write("<TITLE>" + t + "</TITLE>");
+  w.document.write("<BODY bgcolor='#ededff'>\n");
+  w.document.write("" + n + " Flag <font color='blue'>");
+  if (s)      w.document.write("0x<b>" + value + "</b></font>");
+  else if (x) w.document.write("0x<b>" + edX(value) + "</b></font> (" 
+              + value + ")");
+  else        w.document.write("<b>" + value + "</b></font>");
+  w.document.write(" means:\n");
+  w.document.write("<TABLE border=1 bgcolor='white' CELLPADDING=5>");
+  var v, i,m, bg, fg, text;
+  v = s ? value.length : value;
+  for (i=0; (i<tab.length)||(v!=0); i++) {
+    var tr = false;
+    m = 1<<i; bg="";
+    if (typeof(tab[i]) == 'function') text = tab[i](value);
+    else text = tab[i] ? tab[i] : "Unexplained flag??";
+    if (s) { // get hexadigit
+      v = value.length-1-(i>>2); // index of hexadigit
+      if (v>=0) v = (Xdig.indexOf(value.charAt(v))) >> (i&3);
+      else v = 0;
+      if (v<0) v=0; // e.g. blank or x
+    }
+    if ((v&1)!=0) {
+      tr = true;
+      bg = tab[i] ? "" : "bgcolor='#ffe0e0'" ;
+      fg = tab[i] ? "" : "<font color='red'>";
+      w.document.write("<tr " + bg + "><td align='right'>");
+      if (a)   w.document.write("<font color='blue'>");
+      if (x|s) w.document.write("0x<b>" + edX2(i) + "</b>");
+      else     w.document.write("<b>" + m  + "</b>")
+      if (a)   w.document.write("</font>");
+    }
+    else if (!a) ;
+    else if (tab[i]) {
+      tr = true;
+      bg = "bgcolor='#ededff'" ;
+      fg = "<font color='#b0b0b0'>";
+      w.document.write("<tr " + bg + "><td align='right'>");
+      if (x|s) w.document.write("0x" + edX2(i));
+      else     w.document.write("" + m);
+    }
+    if (tr) {
+      w.document.write("</td><td>" + fg + text);
+      if (fg != "") w.document.write("</font>");
+      w.document.write("</td></tr>\n");
+    }
+    v = v>>>1;
+  }
+  w.document.write("</TABLE></BODY>");
+  w.document.close();
+  w.focus();
+}
+
+/*===========================================================================
+   VizieR to portal
+  
+   note: create a form v2pform when cdsportal is choosen.
+         functions changes the submit action.
+
+         For other choices, the form (if it exists) is deleted.
+  ===========================================================================*/
+var v2pform=null;
+var v2porigform=null;
+
+function v2p_reset(form){
+    if (!document.getElementById) return ;
+
+    if (v2pform!=null) {
+        v2pform.parentNode.removeChild(v2pform);
+        v2pform=null;
+
+        var l=document.getElementsByTagName("input");
+        for (i=0;i<l.length; i++){
+            if (l[i].type=="submit") {
+                if (l[i].className) {
+                    // get action from class attribute
+                    var action=l[i].className.match(/\/\*.*\*\//);
+                    if (action) {
+                        if( action[0] ) action=action[0]; // match return array for firefox, string for IE
+                        action=action.replace(/\(.*\)/,"");
+                        l[i].onclick=setViz;
+                        l[i].className=l[i].className.replace(/\/\*.*\*\//,"");
+                    }
+                }
+                else l[i].onclick=null;
+            }
+            else if (l[i].type=="button" && l[i].value.toLowerCase()=='submit') {
+                if (l[i].className) {
+                    // get action from class attribute
+                    var action=l[i].className.match(/\/\*.*\*\//);
+                    if (action) {
+                        if( action[0] ) action=action[0]; // match return array for firefox, string for IE
+                        action=action.replace(/\(.*\)/,"");
+                        l[i].onclick=setViz;
+                        l[i].className=l[i].className.replace(/\/\*.*\*\//,"");
+                    }
+                }
+                else l[i].onclick=null;
+            }
+        }
+        return ;
+    }
+}
+
+function v2p_currentGETURL(){
+    var url=new Array;
+    if( !document.getElementById ) return "";
+
+    var l=document.getElementsByTagName("input");
+    var i;
+    url[0]="";url[1]="";
+
+    for(i=0;i<l.length;i++){
+        if (!l[i].value || !l[i].name)  continue;
+        if (l[i].value=="") continue;
+        if (l[i].form.name != "form0") continue;
+
+        if (l[i].type=='hidden') {
+            if (l[i].name=="-nav") continue;
+            if( l[i].name!="//CDSportal" ) {
+                if (url[0]!="") {url[0]=url[0]+"&";url[1]=url[1]+"&";}
+                url[0]=url[0]+l[i].name+"="+encodeURIComponent(l[i].value);
+                if(l[i].name=='-to') url[1]=url[1]+l[i].name+"=3";
+                else url[1]=url[1]+l[i].name+"="+encodeURIComponent(l[i].value);
+            }
+        }
+
+        else if (l[i].type=='text') {
+            if (url[0]!="") {url[0]=url[0]+"&";url[1]=url[1]+"&";}
+            url[0]=url[0]+l[i].name+"="+encodeURIComponent(l[i].value);
+            url[1]=url[1]+l[i].name+"="+encodeURIComponent(l[i].value);
+        }
+
+        else if (l[i].type=='checkbox' || l[i].type=='radio') {
+            if (l[i].checked==true) {
+                if (l[i].name=="-out") continue;
+                if (url[0]!="") {url[0]=url[0]+"&";url[1]=url[1]+"&";}
+                url[0]=url[0]+l[i].name+"="+encodeURIComponent(l[i].value);
+                url[1]=url[1]+l[i].name+"="+encodeURIComponent(l[i].value);
+            }
+        }
+    }
+
+    /* get in select */
+    l=document.getElementsByTagName("select");
+    for(i=0;i<l.length;i++){
+        if (l[i].form.name != "form0") continue;
+        if (l[i].name!='-out.form'){
+          var v=  l[i].value;
+          if (v=="" && l[i].selectedIndex>-1) { /* IE*/ v=l[i].options[l[i].selectedIndex].text;}
+          if (url[0]!="") {url[0]=url[0]+"&";url[1]=url[1]+"&";}
+          url[0]=url[0]+l[i].name+"="+encodeURIComponent(v);
+          url[1]=url[1]+l[i].name+"="+encodeURIComponent(v);
+        }
+    }
+
+    var crturl=window.location+"";
+    crturl=crturl.replace(/\?.*/,"");
+    url[0]=crturl+"?"+url[0];
+    url[1]=crturl+"?"+url[1];
+    return url;
+}
+
+function v2p_create_hidden(form,name,value){
+    var elt= document.createElement("input");
+    elt.type="hidden";
+    //elt.type="text";
+    elt.name=name;
+    elt.value=value;
+    form.appendChild(elt);
+}
+
+function v2p_init(form){
+    if( !document.getElementById ) { 
+        alert("not available with current browser"); return ; }
+
+    // create new form
+    v2porigform=form;
+    v2pform=document.createElement("form");
+    if( document.getElementById("CDScore") )
+        document.getElementById("CDScore").appendChild(v2pform);
+
+    // change the action buttons
+    var l=document.getElementsByTagName("input");
+    var i;
+    for(i=0;i<l.length; i++){
+        if( l[i].type=="submit") {
+            if( l[i].getAttribute("onClick") )  {
+                // save action in class attribute
+                if( l[i].className ) l[i].className="/*"+l[i].getAttribute("onClick")+"*/ "+l[i].className; 
+                else l[i].className="/*"+l[i].getAttribute("onClick")+"*/";
+            }
+            l[i].onclick=v2p_GO;
+        }
+        else if (l[i].type=="button" && l[i].value.toLowerCase()=='submit'){
+            // save action in class attribute
+            if( l[i].className ) l[i].className="/*"+l[i].getAttribute("onClick")+"*/ "+l[i].className; 
+            else l[i].className="/*"+l[i].getAttribute("onClick")+"*/";
+            l[i].onclick=v2p_GO;
+        }
+    }
+}
+
+
+function v2p_GO(){ 
+    if( !document.getElementById ) return false;
+
+    // not runing with list
+    var l=document.getElementsByName("-file");
+    for (var i=0;i<l.length;i++)
+            if (l[i].value!="" && l[i].value!="."){
+            alert("list is not running with CDSportal: "+l[i].value);
+        return false;
+    }
+
+    var form=v2porigform;
+    var l=document.getElementsByName("//CDSportal");
+    if (l.length<1) return
+    o=l[0];
+
+    v2pform.action=o.value ;
+    v2pform.method='get';
+
+    // destroy if exist 
+    var elt=ns3el(v2pform,'destURL');
+    if( elt!=0 ) elt.parentNode.removeChild(elt);
+    elt=ns3el(v2pform,'requestURL');
+    if( elt!=0 ) elt.parentNode.removeChild(elt);
+    elt=ns3el(v2pform,'catalogue');
+    if( elt!=0 ) elt.parentNode.removeChild(elt);
+    elt=ns3el(v2pform,'target');
+    if( elt!=0 ) elt.parentNode.removeChild(elt);
+
+    var value="";
+    var url = v2p_currentGETURL();
+    
+    // get catalogue
+    var l=document.getElementsByName("-source");
+    var i,max;
+    if( l.length<10 ) max=l.length
+    for(i=0;i<max;i++){
+        if( l[i].value.length<100 )
+            value=value+" "+l[i].value; 
+    }
+    value=value.replace(/^ */,"");
+    v2p_create_hidden(v2pform,"catalogue", encodeURI(value));
+ 
+    // get target
+    value=""
+    l=document.getElementsByName("-c");
+    if( l.length<10 ) max=l.length
+    for(i=0;i<max;i++){
+        if( l[i].value.length<100 )
+            value=value+" "+l[i].value; 
+    }
+    value=value.replace(/^ */,"");
+    v2p_create_hidden(v2pform,"target", encodeURI(value));
+
+    // get url into votable
+    value=url[0].replace(/VizieR.*\?/,"votable?");
+    //v2p_create_hidden(v2pform,"requestURL", encodeURI(value));
+    v2p_create_hidden(v2pform,"requestURL", value);
+
+    // get origin/destination
+    //v2p_create_hidden(v2pform,"destURL", encodeURI(url[1]));
+    v2p_create_hidden(v2pform,"destURL", url[1]);
+
+    //return false;
+    v2pform.submit(); return false ; 
+}
+
+// init and GO
+function v2p_link() {
+    var f=$("form[name='form0']");
+    if (f.length>0) {
+        v2p_init(f.eq(0).context),
+        v2p_GO();
+    }
+}
+
+/*===========================================================================
+                Change the Action to execute
+ *===========================================================================*/
+/* return the VizieR form
+ * ie: the first of the list which have no name 
+ */
+function selectForm(name) {
+    var forms=window.document.forms;
+    if (!name) return forms[0];
+
+    var i;
+    for (i=0;i<forms.length;i++) {
+        if (forms[i].name==name) return forms[i];
+    }
+    return forms[0];
+}
+
+// Change action to what's defined by orgAction, and EXECUTE
+function setViz() { 
+  var form=selectForm("form0");
+  if (orgAction.length>0) { form.action = orgAction; }
+  // The Selection starting by '//' has no use
+  clearFields(form, "//");
+  form.submit() ;
+}
+
+function findDataSubmit(e){
+    var tmpname=executeinhiddenform("VizieR-4",null,1);// do not execute
+    var tmpform=$("form[name='"+tmpname+"']");
+    tmpform.append($("<input name='-4c' value='"+e.value+"' type='hidden'>"));
+    setTimeout(executetemporaryform,10);
+    return false;
+}
+
+// Change the Action from what's selected in o = Select Option
+function changeOutput(o) {
+  if ((o.type != "select-one") && (o.type != "radio")) return ;
+  //if (!o.type) o = o[0]; 
+  var form = o.form;
+  var option_selected = o.options[o.selectedIndex].text ; 
+  var a = "";
+  // Save the Original Action
+  if (orgAction.length == 0) { 
+      //alert("Set orgAction=" + a); 
+      orgAction = form.action;
+  }
+
+  v2p_reset(form);
+
+  var i = orgAction.lastIndexOf('/'); a = orgAction.substring(0,i+1);
+  if (option_selected.indexOf('XML') >= 0) {
+    setRadio(form, '-oc.form', 'dec');  // Added 2007-10-21
+    if (option_selected.indexOf('VOTable') >= 0) {
+      a = a + 'votable' ;
+      if (option_selected.indexOf('DTD') >= 0) a = a + '/-dtd'; 
+      if (option_selected.indexOf('bin') >= 0) a = a + '/-b64'; 
+      form.action = a ;
+    }
+    else {
+      if (option_selected.indexOf('XML + CSV') >= 0) {
+        form.action = a + 'votable/-tsv';
+      }
+      else form.action = a + 'votable/-csv' ;        // a + 'asu_xml';
+    }
+  }
+  else if(option_selected.indexOf('VOTable') >= 0) {
+    setRadio(form, '-oc.form', 'dec');                 // Added 2007-10-21
+    a = a + 'votable' ;
+    if (option_selected.indexOf('bin') >= 0) a = a + '/-b64';
+    //if (option_selected.indexOf('CSV') >= 0) a = a + '/-tsv';
+    form.action = a ;
+  }
+
+  else if (option_selected.indexOf('SkyC') >= 0) { 
+    form.action = a + 'asu-acl';      
+    setRadio(form, '-oc.form', 'dec');  
+  }
+  else if (option_selected.indexOf('VOPlot') >= 0) {
+    form.action = envVOPlot;
+    form.method = "get";
+    setRadio(form, '-oc.form', 'dec');  
+  }
+  else if (option_selected.indexOf('FIT') >= 0) {
+    setRadio(form, '-oc.form', 'dec');                 // Added 2007-10-21
+    if (option_selected.indexOf('(binary)') >= 0) form.action = a + 'asu-binfits';
+    else form.action = a + 'asu-fits';
+  }
+  else if (option_selected.indexOf('-Separated-') >= 0) {
+    setRadio(form, '-oc.form', 'dec');                 // Added 2007-10-21
+    form.action = a + 'asu-tsv'; 
+  }
+
+  // Google sky
+  else if ( option_selected.indexOf('KMZ') >=0 ) {
+    if (ns3el(form, "-oc.form") == 0) // Mod. 2007-10-21
+        alert("GoogleSky needs coordinates!");
+    else {
+        form.action ='kmz4GoogleSky';
+        setRadio(form, '-oc.form', 'dec');
+    }
+  }
+
+  // text/plain
+  else if ( option_selected.indexOf('text/plain') >=0 ) {
+    form.action = a + 'asu-txt';
+  }
+
+  // CDS portal
+  else if ( option_selected.indexOf('CDS portal') >=0 ) {
+    v2p_init(form);
+  }
+
+  else if (option_selected.indexOf('Echo') >= 0) form.action = a + 'Echo'; 
+  else if (form.action.indexOf('VizieR') < 0)  form.action = a + 'VizieR'; 
+  else if (orgAction.length>0) {
+      form.action = orgAction;
+  }
+}
+
+// Execute one of the options of the menu
+function execOutput(obj, value) {
+  var form = obj.form;
+  var o = ns3el(form, "-out.form") ;
+  setOption(o, value);        // Choose the element in menu
+  changeOutput(o);        // Change the action, method
+  form.submit();
+}
+
+// Change to a GET method (for bookmarking), and EXECUTE
+function changeMode() {
+  var form=selectForm("form0");
+  var method;
+  if (form.method.toUpperCase()=="GET") method="POST";
+  else method="GET";
+
+  var f=$(form).find("input[name='-bmark']");
+  if (f.length>0) f.val(method);
+  else $(form).append($("<input name='-bmark' value='GET' type='hidden'>"));
+
+  if (method=="GET")  alert("Bookmark page is on (GET)");
+  else  alert("Bookmark page is OFF (POST)");
+  
+  form.method=method;
+  execute_changeMode();
+}
+
+function execute_changeMode(local) {
+  var form = $("form[name='form0']");
+  var f = form.find("input[name='-file']");
+  var c = form.find("input[name='-c']");
+  var hist = form.find("input[name='-nav']");
+  if (hist.length>0) hist.val(hist.val().replace(/HTTPPRM:.*$/,"HTTPPRM:"));
+
+
+  if (f.length>0 && c.length>0) {
+      if (f.val() == '-c' && c.val() != "") {
+          alert("No file name can be bookmarked, sorry...") ;
+          return
+      }
+  }
+  var o = form.find("input[name='-this']");
+  var d = form.find("input[name='-to']");
+  if (o.length>0 && d.length>0) d.val(o.val());d.val(d.val()+'b');
+  if (local != null) {
+    if (form0.action.search("\/local\/")<0)
+      form0.action = form0.action.replace('/viz-bin/','/local/viz-bin/');
+    else form0.action = form0.action.replace('/local/','/');
+  }
+  $(form).submit() ;
+}
+
+// Submit Only when at least One Box is Checked
+function execIfChecked(ob, name, msg){
+  var form = ob.form;
+  if (checkPushed(ob, name)) form.submit() ;
+  else alert(msg);
+}
+
+// Submit from a CheckBox, and set the 'to' argument
+function execCheck1(ob, phase){
+  if (stopIfFileInput(ob.form)) return;
+  if (phase>0) setValue(ob, '-to', phase);
+  ob.form.submit();
+}
+
+function stopIfFileInput(f){
+  var form=$(f);
+  var lf=form.find("input[type$='file']");
+  if (lf.length>0){ alert("Unavailable when a file is uploaded"); return true;}
+  return false;
+}
+
+// Check the box of the Table/Catalog Button, and Execute
+/* OBSOLETE replaced by tableButton
+function execSource(ob,ph) { 
+  var form = ob.form;
+  var val = ob.value; var i=val.indexOf(' '); if(i>0) val=val.substr(0,i);
+  var n = form.elements.length; var c = 0 ;
+  var allCats = (val.indexOf('search ') >= 0) && (val.indexOf(' catalog') >= 0);
+  if (allCats) {
+      c = 1;                // This will empty the names of all catalogues.
+      ph = "4c";        // This will force searching all catalogues
+  }
+  var o = form.elements; // Netscape 3 doesn't work with form['-source']
+  for (i=0; i<n; i++) { 
+    if (o[i].name == '-out') {                // Remove -out (always) if allCats asked
+        o[i].checked = false;
+        continue;
+        //if (!allCats) continue ;
+    }
+    else if (o[i].name != '-source') continue;
+    if (o[i].type == 'checkbox') {o[i].checked = (o[i].value == val); c++}
+    else if (o[i].type == 'text' || o[i].type == 'hidden') {
+        if (c==0) o[i].value = val; else o[i].value = '';c++;
+    }
+  }
+  if (ph) {         // Has to execute a specific Phase, e.g. '3' '4'
+    o = ns3el(form,'-to'); 
+    if (o) { 
+      val=ph; 
+      if(o.value.length > 1) val = val + o.value.substr(1); o.value = val;
+    }
+  }
+  form.submit() ;
+}*/
+
+function tableButton(ob){
+  var s,i,cbox=$("form[name='form0'] input[name='-source'][type='checkbox']");
+  if (cbox.length>0) {
+    s=ob.value.replace(/ +/,"");
+    //cbox.attr("checked","");
+    cbox.removeAttr("checked");
+    for(i=0;i<cbox.length;i++){
+      if (cbox.eq(i).val()==s) cbox.eq(i).attr("checked","checked");
+    }
+    queryCats(ob,null);
+  }
+  else{ // page3
+    var tmpname=executeinhiddenform("VizieR-3","-source,-to",1);// do not execute
+    var tmpform=$("form[name='"+tmpname+"']");
+    tmpform.append($("<input name='-source' value='"+ob.value+"'>"));
+    setTimeout(executetemporaryform,10);
+  }
+}
+/*===========================================================================
+                Special Javascript Actions
+ *===========================================================================*/
+
+// Check or Reset the 'ALL' boxes 
+function allBoxes(all_box, boxes) { 
+  allClicks++ ;
+  var form = all_box.form ;
+  var n = form.elements.length; var o = form.elements ;
+  var nom = all_box.name ; var i;
+  //var stat = all_box.checked ;
+  var stat=false;
+  if (all_box.checked) stat=true;
+
+  var c = form ; if (all_box.name) c = form[all_box.name]; 
+  for (i=0; i<n; i++) { 
+    if (o[i].type == 'checkbox' && o[i].name == nom) {
+      o[i].checked = stat? stat :"";//o[i].defaultChecked; 
+    }
+  }
+  if (boxes) {
+    nom = boxes ; 
+    for (i=0; i<n; i++) {
+      if (o[i].type == 'checkbox' && o[i].name == nom){
+        o[i].checked = stat? stat :"" ;//o[i].defaultChecked; 
+      }
+    }
+  }
+}
+
+function unselectBox(all_box,boxe) {
+   var form=all_box.form;
+   var n = form.elements.length; var o = form.elements ;
+   var i;
+   for (i=0; i<n; i++) {
+     if (o[i].type == 'checkbox' && o[i].name == boxe) {
+       o[i].checked = '';
+       allClicks=0;
+     }
+   }
+}
+
+// The Form Adaptation
+function execAdapt(name, val, msg) { 
+  if (msg) { alert(msg); return }
+  //var form = window.document.forms[0] ;
+  var form=selectForm("form0");
+  if (stopIfFileInput(form)) return;
+  var field=ns3el(form, name); var a = form.action ;
+  var i = a.lastIndexOf('/'); a = a.substring(0,i+1);
+  form.action = a + 'VizieR'; // Only HTML presentation of AdaptForm!
+  field.name = '!-3;' + field.name + '=' + val + ';//'; 
+  if ((name == '-file') && (val != '.')) form.action = form.action + '#aLIST';
+  form.submit();
+}
+
+/*===========================================================================
+                LAYER additions
+ *===========================================================================*/
+
+//var vers = navigator.appVersion;
+var nver = navigator.appVersion.substring(0,4);
+var isNS = (navigator.appName.indexOf("Netscape") !=-1);
+var x,y;
+var laycolor = "#ffffe0";        // Default = LightYellow
+// Change the layer color
+function set_laycolor(color) { laycolor = color }
+// Addition of text in a layer
+function lay(text){
+  var t = "<table border='1' cellpadding='3' cellspacing='0' bgcolor='" + 
+       laycolor + "'>" + "<tr><td>";
+  // alert("[layconv="+layconv+"]: " + text);
+  //if (o.options[i].text.indexOf(value) >= 0) { o.selectedIndex=i; break; }
+  //text = text.replace(/\\</g, "&lt;"); //---> Sans le \ ca pose probleme
+  //text = text.replace(/\>/,"&gt;"); 
+  t = t + text.replace(/&apos;/g, "'");
+  t = t + "</td></tr></table>";
+  // alert("[layconv="+layconv+"]: " + t);
+  if ((isNS) && (nver<5)) {
+    df = document.xplain;
+    df.document.write(t);
+    df.document.close();
+    df.left=(x-50)+"px";
+    df.top =(y+10)+"px"; //document.xplain.top=y+10;
+  } else {
+    df = document.getElementById('xplain');
+    df.innerHTML=t;
+    df.style.background=laycolor; // "rgb(255,255,224)"
+    df.style.left=(x-50)+"px";
+    df.style.top=(y+10)+"px";
+  }
+}
+function laz(){        // Out of layer
+  if ((isNS) && (nver<5)) { document.xplain.top=-50; }
+  else {
+    df = document.getElementById('xplain');
+    df.innerHTML="";
+  }
+}
+function handlerMM(e){
+  x = (isNS) ? e.pageX : event.clientX + document.body.scrollLeft;
+  y = (isNS) ? e.pageY : event.clientY + document.body.scrollTop;
+}
+if (isNS&&(nver<5)){ document.captureEvents(Event.MOUSEMOVE); }
+// Install the event handler
+document.onmousemove = handlerMM;
+if((isNS)&&(nver<5)) {
+document.write("<LAYER name=\"xplain\" visibility=\"show\" left=\"25\" top=\"-50\" z-index=\"99\"><br></LAYER>") ;
+} else {
+document.write("<DIV ID=\"xplain\" style=\"position:absolute; visibility:show; left:25px; top:-50px; z-index:2\"><br></DIV>") ;
+}
+
+// execute a media:  (see vizier.def for definitions)
+// (latex tag in database)  =>  (html code)
+// \vExec,vFile,vGraph      =>  <input type='hidden' value='command_to execute' name='\\media_type_catid'>
+// \vAlert                  =>  <input type='hidden' value='text' name='\\media_alert_catid'>
+// \catContent (or \vizContent in database) => <a href='execmedia()'>
+// Others latex flag:
+// \mediatype : type of media
+// \vizcat    : the VizieR catalog name (set by vizier pgm)
+// \useMedia  : (when there are more than one media (ex:J/A+A/426/81) for a given cat)
+//
+// Howto:
+// \catContent print the tag (associated to a catalog) with a javascript code.
+// The js code display an alert if \vAlert exist for the given catalog
+// Else if \vExec,vFile or Vgrap exists the given code is executed
+// Else open in a new window the result catalog with option -out=*Mime(...)
+//
+// Note: by default the \catContent tag exute all code given by \vExec,vGraph or vFile.
+//       You can limit this action with tag \useMedia(type)
+//
+//       Ex: \useMedia(filter)\vExec{....}
+//       If you use \useMedia, all next tags (\vExec,vGraph and vFile) will not be executed
+//
+// Note: if there are more than one media for a given catalog (ex:2262),
+//       you have to use \useMedia !
+function execmedia(media,id) {
+return; /* obsolete*/
+  if (!document.getElementById) return ;
+  if (id<0) return ;
+  var e=document.getElementsByName("//media_alert_"+id);
+  if (e && e.length>0) { alert(e[0].value); return; }
+  e=document.getElementsByName("//media_"+media+"_"+id);
+  if (e && e.length>0) {
+    if (e.length>1) {
+      var i,str,max;
+      max=e.length;
+      if (max>10) {
+        max=10;
+        alert("(trunc to ) "+max+ " tab(s) will be opened by the media "+media+" (catalog "+id+")");
+      }
+      else alert(max+ " tab(s) will be opened by the media "+media+" (catalog "+id+")");
+      for (i=0;i<max;i++) window.open(e[i].value);
+      return ; 
+    }
+    else window.open(e[0].value) ;
+    return;
+  }
+  window.open("VizieR-4?-out=*&-out=*Mime("+media+")&-smedia="+id);
+}
+
+
+function resubmit(form){
+  var e,f;
+  e=ns3el(form,"-to");
+  if (e) {
+      f=ns3el(form,"-this");
+      e.value=f.value;
+      form.action="VizieR"+f.value.replace(/[a-z]$/,"");
+  }
+  form.submit();
+}
+
+function upequinox(e) {
+  var p=$("#upequinox");
+  if (!p) return;
+  if (e) p.html(e.value);
+  else {
+    var n=$("select[name$='-c.eq']");
+    if (n.length==0) return;
+    p.html(n[0].options[n[0].selectedIndex].text);
+  }
+}
+
+//==============================================================================
+//PAGE3 - use JQuery
+function outupdate() {
+    var out=$("input[name='-out.all']");
+    out.attr("checked",false);
+}
+
+function setannotation(url,name,catid,records){
+  var i,id=name,catname=catid,len=1;
+  while (id.search(/[\/\.\+]/)>0) id=id.replace(/[\/\.\+]/,"_");
+  while (catid.search(/[\/\.\+]/)>0) catid=catid.replace(/[\/\.\+]/,"_");
+  var lnot=$("div .a_"+catid);
+  lnot.each(function(i){
+        var isacat=0;
+        if (lnot.eq(i).attr("id")=="annot_"+catid){isacat=1}
+        if (lnot.eq(i).attr("id")=="annot_") return;
+
+        var href=lnot.eq(i).find("a");
+        var title="";
+        if (href.length>0) {
+          title=href.eq(href.length-1).attr('title');
+          if (href.eq(0).html().search(/ annotation.s./)!=-1) {
+            len=href.eq(0).html().replace(/ .*/,""); len=+len+1;
+          }
+        }
+        var trecords=srecords="";
+        if (records){
+          var e=$("input[name='-this']");
+          trecords=" (on "+records+" specific record(s))"
+          if (e.length>0){
+            e=e.eq(0).val();
+            if (e<0) e=e*(-1);
+            if (e==3) srecords=" (on "+records+" specific record(s))";
+          }
+        }
+
+        var html="<a href='"+url+encodeURIComponent(encodeURIComponent(catname))+"' title='"+len+" annotation(s) posted"+trecords+"'>"+len+" annotation(s)"+srecords+"</a>";
+        if (isacat==0) html+=" - <a href='"+url+encodeURIComponent(encodeURIComponent(name))+"/new' title='"+title+"'>"+"post</a>";
+        lnot.eq(i).html(html);
+  });
+}
+
+function divAnnotation(annotation) {
+/*console.debug("print annotation");*/
+    var hour,min,sec,month,day;
+    var d=new Date(annotation.creationDate);
+    var html="<div class='annot'><div class='title'>Posted by "+annotation.username;
+    hour=d.getHours(); if (hour<10) hour="0"+hour;
+    min=d.getMinutes(); if (min<10) min="0"+min;
+    sec=d.getSeconds(); if (sec<10) sec="0"+sec;
+    month=d.getMonth(); if (month<10) month="0"+month;
+    day=d.getDate(); if (day<10) day="0"+day;
+    html+=" ("+(d.getYear()+1900)+"/"+month+"/"+day+" "+hour+":"+min+":"+sec+")";
+    html+="<div class='right'>["+annotation.element+"]</div></div>"+annotation.parsedText+"</div>";
+    return html;
+}
+
+function getannotation(o){
+  if (!o.annotations) alert("bad object");
+  if (!o.annotations.length) return;
+  var annot=$("#annotations");
+  annot.removeClass("hidden");
+  var catid=o.requestedCatalogue;
+ 
+  // get the url
+  var i,url=annot.find("span");
+  if (url.length==0) {a.html("Unknow url to join the annotation website"); return;}
+  for (i=0;i<url.length;i++) if (url.eq(i).hasClass('url')) break;
+  if (i==url.length) {a.html("Unknow url to join the annotation website"); return;}
+  url=url.eq(i).html();url=url.replace(/\/\/$/,"/");
+
+  var html="";
+  html+="<div class='section CDScol5'><div class='title'>Annotations on "+catid+"<div class='right'>";
+  html+="<a href='"+url+encodeURIComponent(encodeURIComponent(catid))+"'>"+"view</a> . "
+  html+="<a href='"+url+encodeURIComponent(encodeURIComponent(catid))+"/new'>"+"post</a>"
+  html+="</div></div>";
+
+  var details = $("#VizieR-5");
+  var records=0;
+  var printAnnotation=false;
+
+  // get the current page
+  for (i=0;i<o.annotations.length;i++){
+    if (o.annotations[i].text.search(/This annotation concerns/)==0) {
+      records++;
+
+      if (details.length>0) { /*Page5*/
+        var re = /This annotation concerns.*recno%3d(\d+)/i;
+        var found = o.annotations[i].text.match(re);
+        if (found) {
+          var recno = $(".recno");
+          if (recno.length > 0) {
+            if (recno.html()==found[1]) {
+                html += divAnnotation(o.annotations[i]);
+                printAnnotation = true;
+            }
+          }
+        }
+      }
+    }
+    else {
+      html += divAnnotation(o.annotations[i]);
+      printAnnotation = true;
+    }
+    setannotation(url,o.annotations[i].element,catid,records);
+  }
+  html+="</div>";
+  if (printAnnotation) annot.append(html);
+
+}
+
+function updateformaction(){
+  var o=$("form[name='form0']").find("select[name='-out.form']");
+  if (o.length>0) changeOutput(o[0],"-out.form");
+}
+
+function adapttargetform(t){
+  var d3=$('#Vltarget');
+  var d4=$('#Vstarget');
+  /*if (t=='xmatch') {
+    // search the 2 tables containing coordinates
+    var i, count=0;
+    var tab=$('.tablist td');
+    var tname=new Array(2);
+    for (i=0;i<tab.length;i++){
+      if (tab.eq(i).hasClass('cooframe')) {
+        var n=tab.eq(i).find("input[name='-Bsource']");
+        if (n.length>0) tname[count]=encodeURIComponent(n.eq(0).val());
+        else tname[count]=encodeURIComponent(tab.eq(i).text());
+        count ++; if (count==2) break;}
+    }
+    if (count<1) return;
+
+    // get the xmatch service url
+    i = $('#CDSXmatchURL');
+    if (i.length<1) return;
+
+    var a=i.text().replace("table1=","table1="+tname[0]);
+    if (count>1) a=a.replace("table2=","table2="+tname[1]);
+    self.open(a) ;
+    return;
+  }*/
+
+  if (t=='list'){if (d4.hasClass("hiddenb")) return}
+  else {if (d3.hasClass("hiddenb")) return;}
+  var form=$("form[name$='form0']").eq(0);
+  var ifile=form.find("input[name$='-file']");
+  if (ifile.length==0) ifile=$("<input type='hidden' name='-file'>").appendTo(form);
+  if (t=='list') ifile.val("-c");
+  else ifile.val(".");
+  
+  executeinhiddenform("VizieR-3","-to,-c,*-sort");
+}
+
+function adaptonmouse(e,t){
+  if (t=="on"){
+    e.className=e.className.replace(/showb/,"_showb");
+    e.className=e.className.replace(/hiddenb/,"_hiddenb");
+    e.className=e.className+" selectb";
+  }
+  else{
+    e.className=e.className.replace(/selectb/,"");
+    e.className=e.className.replace(/_showb/,"showb");
+    e.className=e.className.replace(/_hiddenb/,"hiddenb");
+  }
+}
+
+function adaptcstform(t){
+  var d3=$('#Vlcst');
+  var d4=$('#Vscst');
+  if (t=='list'){if (d4.hasClass("hiddenb")) return}
+  else {if (d3.hasClass("hiddenb")) return;}
+  var form=$("form[name='form0']").eq(0);
+  var ifile=form.find("input[name$='-file']");
+  if (ifile.length==0) ifile=$("<input type='hidden' name='-file'").appendTo(form);
+  if (t=='list') ifile.val("-sort");
+  else ifile.val(".");
+  executeinhiddenform("VizieR-3","-to,-c,*-sort");
+}
+
+function setlistofcst(e,name){
+  var mytr=$(e).parent().parent();
+  var table=mytr.closest("table");
+  var tr=table.find("tr");
+  var i;
+  tr.each(function(i){tr.eq(i).attr("class","");});
+  mytr.attr("class","cstcol");
+  mytr.find("input[name$='-sort']").eq(0).attr('checked',true);
+  
+  $("#vlistname").html(name);
+}
+
+/* copy form into a second form hidden by a div */
+/* action: not null to chane the action
+ * opt: input list not copied (separated by ,)
+ */
+function executeinhiddenform(action,opt,notexecute){
+  var i,e,form,hform,hdiv,lopt;
+/*  console.debug("executeinhiddenform");*/
+
+  form=$("form[name='form0']");
+  hdiv=$("<div/>").appendTo(form.parent());
+
+  $("form[name='temporary']").remove();
+
+  e=form.find("input[type$='file']");
+  if (e.length>0)
+    hform=$("<form encoding='' method='POST' encType='multipart/form-data' />").appendTo(hdiv);
+  else  hform=$("<form/>").appendTo(hdiv);
+  if (form.attr("method")) hform.attr("method",form.attr("method"));
+  hdiv.attr("id","form_hidden");
+  if (action)hform.attr("action",action);
+  else hform.attr("action",form.attr("action"));
+  hform.attr("method",form.attr("method"));
+  //hform.attr("encoding",form.attr("encoding"));  error with IE
+
+  if (opt)lopt=opt.split(',');
+  var ifiles=new Array();
+
+  var objs=form.find("input"); 
+  objs.each(function(i){
+    var name=objs.eq(i).attr("name");
+    var value=objs.eq(i).val();
+    if (value=="") {/*console.debug("null value:"+name);*/return;}
+    if (!name || name.search(/^\//)==0) return;
+    if (opt){
+      var j;
+      for (j=0;j<lopt.length;j++)
+        if (lopt[j]==name) return;
+    }
+    if (objs.eq(i).attr("type")=="file"){
+      if (objs.eq(i).val().length>0) {
+        //hform.attr("encType", "multipart/form-data");  error with IE
+        ifiles.push(objs.eq(i));
+      }
+      return;
+    }
+    objs.eq(i).clone().appendTo(hform);
+  });
+
+  objs=form.find("select");
+  objs.each(function(i){
+    var name=objs.eq(i).attr("name");
+    if (!name || name.search(/^\//)==0) return;
+    var e=objs.eq(i).clone().appendTo(hform);
+    e.val(objs.eq(i).val());
+  });
+
+  for (i=0;i<ifiles.length;i++){
+    // ifiles[i].clone().appendTo(hform); error with Chrome
+    ifiles[i].clone().insertAfter(ifiles[i]);
+    ifiles[i].appendTo(hform);
+  }
+ 
+  // make a pause (10ms) before submit
+  // to save the history even if the navigator cache is disable
+  hform.attr("name","temporary");
+  if (notexecute) return "temporary";
+  setTimeout(executetemporaryform,10);
+  return false;
+}
+function executetemporaryform(){var f=$("form[name='temporary']");f.submit();}
+
+function xmatch(state){
+  var x=$("#xmatch"); if (x.length==0)return;
+  var menuon=x.find(".on"); if (menuon.length==0) return;
+  var menuoff=x.find(".off"); if (menuoff.length==0) return;
+  var core=x.find(".core"); if (core.length==0) return;
+  var i=x.find("input[name='-xmatch']");
+  if ((state && state=='on')|| (!state && menuon.hasClass("hidden"))){
+    menuon.removeClass("hidden");
+    menuoff.addClass("hidden");
+    core.removeClass("hidden");
+    i.attr("checked",true);
+  }
+  else{
+    menuon.addClass("hidden");
+    menuoff.removeClass("hidden");
+    core.addClass("hidden");
+    i.attr("checked",false);
+  }
+}
+
+function adaptColToDisplay(e){
+  var input=$("#vcst table input[name='-out']");
+  if (input.length<1) return;
+  if ($(e).hasClass("hiddentroff")){
+    input.parent().parent().removeClass("hidden");
+    $(e).removeClass("hiddentroff");
+    return;
+  }
+  input.parent().parent().addClass('hidden');
+  $("#vcst table input[name='-out']:checked").parent().parent().removeClass("hidden");
+  $(e).addClass("hiddentroff");
+}
+function adaptSetDefaultCol(e){
+  var input=$("#vcst table input[name='-out']");
+  $("input[name='-out.all']").attr("checked",false);
+  input.each(function(i){
+    if ($(this).hasClass('default'))
+      $(this).attr("checked","checked");
+    else $(this).removeAttr("checked");
+  });
+}
+function adaptUCD1p(e){
+  var input=$("#vcst table .ucd1p");
+  if (!e){
+    $("#adaptform input[name='//noneucd1p']").attr("checked",true);
+    $("#adaptform input[name='//noneucd1']").attr("checked",false);
+    return;
+  }
+  if ($(e).attr("checked")) input.removeClass("hidden");
+  else input.addClass("hidden");
+}
+function adaptUCD1(e){
+  var input=$("#vcst table .ucd1");
+  if ($(e).attr("checked")) input.removeClass("hidden");
+  else input.addClass("hidden");
+}
+
+//PAGE1
+function showP1FormOpt(){
+  var e=$("#formopt");
+  var a=$("#aformopt");
+  if (e.length<1) return;
+  if (a.length<1) return;
+
+  if (a.hasClass('in')){
+    a.removeClass('in');a.addClass('out');
+    e.removeClass('show');e.addClass('hidden');
+  }
+  else {
+    a.removeClass('out');a.addClass('in');
+    e.removeClass('hidden');e.addClass('show');
+  }
+  return;
+}
+
+function setPageError(){
+    var l=$("span[class='unknown']");
+    if (l.length==0) return;
+    var str=l.eq(0).html();
+    var e,f=$("form[name='form0']");
+    if (str.search(/^[Tt][Aa][rR][Gg][eE][Tt]/)!=-1) e=f.find("input[name='-c']");
+    else e=f.find("input[name='-source']"); 
+    if (e.length==0) return;
+    e.eq(0).attr("class","unknownvalue");
+}
+
+/*function blurfindData(event,func){
+  if (!event) var event = window.event;
+  var code=event.keyCode; //IE
+  if (!code) code=event.which;
+  if (code==13){
+    var b=$("#CDScore .findData input");
+    if (b.length>-1) findDataSubmit(b.eq(0).context);
+    return false;
+  }
+  func.call();
+  return false;
+}*/
+
+function sedoutput() {
+    var param=["-c","-c.r","-c.geom","-source","-ucd"];
+    var paramselect=["-c.u","-c.eq","-kw.Mission", "-kw.Astronomy", "-kw.Wavelength"];
+
+    var url="/vizier/sed-widget.gml?";
+    var form=$("form[name='form0']");
+    for (var j=0;j<param.length;j++) {
+      var o=form.find("input[name='"+param[j]+"']");
+      if (o.length>0 && o.val()!=null && o.val()!="") url+=o.attr("name")+"="+o.val()+"&";
+    }
+    for (var j=0;j<paramselect.length;j++) {
+      var o=form.find("select[name='"+paramselect[j]+"']");
+      if (o.length>0 && o.val()!=null){ url+=paramselect[j]+"="+o.val()+"&";}
+    }
+    /*var elts=form.find("input")
+    for (var j=0; j<elts.length;j++){
+      if (elts.eq(j).attr("type")=="hidden") continue;
+      if (elts.eq(j).attr("type")=="button") continue;
+      if (elts.eq(j).attr("type")=="submit") continue;
+      if (elts.eq(j).attr("name")==null) continue;
+      if (elts.eq(j).attr("name").search('/')==0) continue;
+      if (elts.eq(j).val()==null) continue;
+      if (elts.eq(j).val()=="") continue;
+      url+=elts.eq(j).attr("name")+"="+elts.eq(j).val()+"&";
+    }
+    var elts=form.find("select")
+    for (var j=0; j<elts.length;j++){
+        if (elts.eq(j).length>0 && elts.eq(j).val()!=null) url+=elts.eq(j).attr("name")+"="+elts.eq(j).val()+"&";
+    }
+    alert(url);return;*/
+    window.open(url);
+}
+
+// PAGE4
+
+function showtarget(){
+  var target=$("#target");
+  var atarget=$("#atarget");
+  if (target.length<1) return;
+  if (atarget.length<1) return;
+
+  var vmeta=0;
+  var metaform=$("input[name='-meta.form']");
+  if (metaform.length>0) vmeta = metaform.val()
+  else {
+    metaform=$("<input name='-meta.form' value='0' type='hidden'>");
+    $("form[name='form0']").append(metaform);
+  }
+
+  if (target.eq(0).hasClass("hidden")){
+    target.removeClass("hidden");
+    atarget.eq(0).html("Hide the target form");
+    atarget.removeClass("out");
+    atarget.addClass("in");
+    metaform.val(vmeta|1);
+  }
+  else{
+    target.addClass("hidden");
+    atarget.eq(0).html("Show the target form");
+    atarget.removeClass("in");
+    atarget.addClass("out");
+    if (vmeta&1 != 0) vmeta = vmeta^1;
+    metaform.val(vmeta);
+  }
+  return false;
+}
+
+function warningontop(){
+   var w=$(".wontop");
+   if (w.length==0) return;
+   var e=$("#CDScore").children().eq(0);
+   w.each(function(i){
+       $("<br/>").insertBefore(e);
+       w.eq(i).insertBefore(e);
+   });
+   messageontop();
+}
+function messageontop(text){
+    var w=$("#msgontop");
+    if (!text) w.remove();
+    if (w.length==0){
+        var e=$("#CDScore").children().eq(0);
+        $("<div id='msgontop' class='CDScol5'/>").insertBefore(e);
+    }
+    w.html(text);
+}
+
+// PAGE 2
+function displayObsolete(){
+  var e2=$(".aobsolete input:checked");
+  if (e2.length == 0) $(".tablist .obsolete").addClass("hidden");
+  else $(".tablist .obsolete").removeClass("hidden");
+}
+
+function updatecatmsg(n){
+  var s="("+n+" really found)";
+  var headmsg=$(".headmsg");
+  if (headmsg.length<1) return;
+  if (headmsg.find(".optncat").length>0){
+    headmsg.html(headmsg.html()+" "+s);
+  }
+  // show if there are obsolete catalogs
+  var o=$("#CDScore table .obsolete");
+  if (o.length>0){
+    $(".aobsolete").removeClass("hidden");
+    headmsg.html(headmsg.html()+" (containing "+o.length+" obsolete)");
+  }
+}
+
+var sortpage2ref;
+var sortpage2COL;
+function sortpage2fn2(a,b){return (a.val - b.val);}
+function sortpage2fn (a,b){return (b.val - a.val);}
+function _sortpage2(ncol){
+// the syntax: <td><div class='sortXY'>...<div class='hidden val'>value</div></div></td>
+// X: ncol, Y: optionnal letter
+  var i,e,d,cname,fn;
+  var tab=$(".tablist");
+
+  var tr=tab.find("tr");
+  if (!sortpage2ref){
+    i=tr.eq(2).find("td").length;
+    sortpage2ref=new Array(i);
+  }
+
+
+  if (tr.eq(2).find("td").eq(ncol).find(".sort"+ncol).length>0){
+    cname="sort"+ncol;
+    if (sortpage2ref[ncol]=="sort"+ncol) {fn=sortpage2fn2;sortpage2ref[ncol]="";}
+    else {fn=sortpage2fn; sortpage2ref[ncol]=cname;}
+  }
+  else{
+    // get the classname (it can have several type of sort per column)
+    d=tr.eq(2).find("td").eq(ncol).find("div");
+    for (i=0;i<d.length;i++){
+      e=d.eq(i).attr("class")
+      if (e.search('sort')>-1)
+        if (sortpage2ref[ncol]!=e) {cname=e;break;}
+    }
+    if (i==0)fn=sortpage2fn;
+    else fn=sortpage2fn2;
+    sortpage2ref[ncol]=cname;
+  }
+
+  // save in a list all data rows
+  var l=new Array();
+  for (i=2;i<tr.length;i++){
+    d=tr.eq(i).find("td").eq(ncol).find("."+cname);
+    if(d.length==1){
+      e=d.find(".val");
+      if (e.length==1) {
+        var o=new Object();    
+        o.val=e.eq(0).html();
+        o.tr=tr.eq(i);
+        l.push(o);
+      } 
+    }
+    tr.eq(i).remove();
+  }
+
+  l.sort(fn);
+  d=tr.eq(1).find("td");
+
+  tab.append(l[0].tr);
+  for (i=1;i<l.length;i++){
+    if (i%20 == 0) tab.append(tr.eq(0).clone());
+    tab.append(l[i].tr);
+  }
+  tab.append(tr.eq(0).clone());
+
+  $(sortpage2COL).removeClass("Vbgcol3");
+  $(sortpage2COL).addClass("Vbgcol4");
+  $(sortpage2COL).html("");
+  return;
+}
+function sortpage2(elt,ncol){
+  sortpage2COL=elt;
+  var tab=$(".tablist tr");
+  if (tab.length<1) return;
+
+  tab.eq(1).find("td").removeClass("Vbgcol4");
+  tab.eq(1).find("td").addClass("Vbgcol3");
+  $(elt).append($("<img src='/vizier/VizieR/vizmine/blue.gif'>")); 
+  setTimeout("_sortpage2("+ncol+")", 10);
+}
+
+function init_navinfo(){
+  var d=$("#naviginfo #navcat div");
+  if (d.length==0) return;
+  d.eq(0).append("<a class='newcat' title='Add new catalog(s)' onClick='ninfo.addcatalog()'><img src='/vizier/add.png'/></a>");
+}
+
+//PAGE5
+function swap_P4P5(){
+    url=window.document.URL.replace("VizieR-5?","VizieR-4?").replace("VizieR?","VizieR-4?");
+    w = window.open(url+"&-out.all=1","_self") ;
+    return true;
+}
+
+jqMenu().ready(function() {
+    param=window.document.URL.replace(/\?debug=/,"");
+    if (param.search("true")>-1) {alert("set debug in jStorage"); jqMenu.jStorage.set('debug','true');}
+    else if (param.search("false")>-1) {alert("delete debug in jStorage"); jqMenu.jStorage.deleteKey('debug');}
+
+    var debug = jqMenu.jStorage.get('debug');
+    if (debug && debug=="true") {
+        e=$("#Vmenuappli #naviginfo .menu");
+        if (e.length==0) return;
+        e.eq(0).append("<img src='/vizier/bug.png' class='remote' onClick='javascript:execute_changeMode(\"local\")'>");
+    }
+
+      /*var e=$("#CDScore #submitsection .right");
+      if (e.length==0) return;
+      e.append($("<input type='button' value='Plot Photometry' onClick='sedoutput()'>"));*/
+     
+});

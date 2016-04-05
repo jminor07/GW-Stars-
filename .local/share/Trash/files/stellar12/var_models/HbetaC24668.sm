@@ -1,0 +1,150 @@
+erase
+ctype default
+
+data pad11/everything.out
+lines 2 0
+read { Hbeta 49 C24668 48 }
+
+limits Hbeta C24668
+box
+
+xlabel C_24668 (\AA)
+ylabel H\beta (\AA)
+
+!Bianca's data:
+! Sanchez-Blazquez
+!data usr/b/hansen/Bianca/calciumplot/temp.plot
+!read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 fe52e 94 fe53e 95 cahke 119 } 
+!set fe = 0.5* (fe52 + fe53)
+!set fee = 0.35*(fe53e + fe52e)
+!set efactor = vd/100
+!expand efactor
+
+!ctype cyan
+!ptype 20 0
+!points c24668 hbeta
+!expand 0
+
+
+
+
+
+lines 2 6
+read { Hbeta 49 C24668 48 }
+ctype red 
+connect Hbeta C24668
+
+lines 7 11
+read { Hbeta 49 C24668 48 }
+ctype red
+connect Hbeta C24668
+
+lines 12 16
+read { Hbeta 49 C24668 48 }
+ctype red
+connect Hbeta C24668 
+
+data pad94/everything.out
+lines 2 0
+read { Hbeta 49 C24668 48 }
+
+lines 2 6
+read { Hbeta 49 C24668 48 }
+ctype blue
+connect Hbeta C24668 
+
+lines 7 11
+read { Hbeta 49 C24668 48 }
+ctype blue
+connect Hbeta C24668 
+
+lines 12 16 
+read { Hbeta 49 C24668 48 }
+ctype blue
+connect Hbeta C24668
+
+lines 17 21 
+read { Hbeta 49 C24668 48 }
+ctype blue
+connect Hbeta C24668 
+
+data dotter4new2/everything.out
+lines 2 0
+read { Hbeta 49 C24668 48 }
+
+lines 2 6
+read { Hbeta 49 C24668 48 }
+ctype green
+connect Hbeta C24668 
+
+lines 7 11
+read { Hbeta 49 C24668 48 }
+ctype green 
+connect Hbeta C24668 
+
+lines 12 16
+read { Hbeta 49 C24668 48 }
+ctype green 
+connect Hbeta C24668
+
+data basti5new/everything.out
+lines 2 0
+read {Hbeta 49 C24668 48 }
+
+lines 2 5
+read { Hbeta 49 C24668 48 }
+ctype white
+connect Hbeta C24668
+
+lines 6 9
+read { Hbeta 49 C24668 48 }
+ctype white
+connect Hbeta C24668 
+
+lines 10 13 
+read { Hbeta 49 C24668 48 }
+ctype white
+connect Hbeta C24668
+
+data van0/everything.out
+lines 2 0
+read { Hbeta 49 C24668 48 }
+
+lines 2 3
+read { Hbeta 49 C24668 48 }
+ctype yellow
+connect Hbeta C24668
+
+lines 4 8
+read { Hbeta 49 C24668 48 }
+ctype yellow
+connect Hbeta C24668
+
+lines 9 13
+read { Hbeta 49 C24668 48 }
+ctype yellow
+connect Hbeta C24668
+
+data  temp.plot
+lines 1 0
+read { vd 1 c24668 9 hbeta 10 mgb 14 fe52 15 fe53 16 cahk 40 fe52e 94 fe53e 95 cahke 119 } 
+
+lines 1 19
+ptype cyan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

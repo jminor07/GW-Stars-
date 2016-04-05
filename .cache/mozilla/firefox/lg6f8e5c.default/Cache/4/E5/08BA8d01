@@ -1,0 +1,486 @@
+// Javascript source for X axis color options menu
+
+//var hide_empty_list=true; //uncomment this line to hide empty selection lists
+var disable_empty_list=true; //uncomment this line to disable empty selection lists
+
+var onclickaction="alert" //set to "alert" or "goto". Former is for debugging purposes, to tell you the value of the final selected list that will be used as the destination URL. Set to "goto" when below configuration is all set up as desired. 
+
+var newwindow=0 //Open links in new window or not? 1=yes, 0=no.
+
+/////DEFINE YOUR MENU LISTS and ITEMS below/////////////////
+
+addListGroup("chainedmenu", "First-Select");
+
+/////For X-Axis//////
+
+addOption("First-Select", "Select an item", "", 1); //HEADER OPTION
+addList("First-Select", "Low-res Synthetic", "", "low");
+addList("First-Select", "High-res Synthetic", "", "high");
+addList("First-Select", "Empirical", "", "emp");
+addList("First-Select", "Theoretical", "", "theor");
+
+addOption("low", "Select an item", "", 1); //HEADER OPTION
+addList("low", "Beijing", "", "lowbeij");
+addList("low", "Johnson/Cousins", "", "lowJC");
+addList("low", "STIS-NIC", "", "lowstisnic");
+addList("low", "WFC3", "", "lowwfc3");
+addList("low", "ugriz/Stromgren/Washington", "", "lowugriz");
+addList("low", "Galex/Spitzer", "", "lowgal");//END OF THIS NODE
+
+
+addOption("lowwfc3", "Select an item", "", 1); //HEADER OPTION
+addOption("lowwfc3", "218w-555w", value="x low_ hstwfc3 c0614 0");
+addOption("lowwfc3", "225w-555w", value="x low_ hstwfc3 c0714 0");
+addOption("lowwfc3", "275w-555w", value="x low_ hstwfc3 c0814 0");
+addOption("lowwfc3", "336w-555w", value="x low_ hstwfc3 c0914 0");
+addOption("lowwfc3", "390w-555w", value="x low_ hstwfc3 c1014 0");
+addOption("lowwfc3", "438w-555w", value="x low_ hstwfc3 c1114 0");
+addOption("lowwfc3", "469w-555w", value="x low_ hstwfc3 c1214 0");
+addOption("lowwfc3", "475w-555w", value="x low_ hstwfc3 c1314 0");
+addOption("lowwfc3", "555w-606w", value="x low_ hstwfc3 c1415 0");
+addOption("lowwfc3", "555w-635w", value="x low_ hstwfc3 c1416 0");
+addOption("lowwfc3", "555w-775w", value="x low_ hstwfc3 c1417 0");
+addOption("lowwfc3", "555w-814w", value="x low_ hstwfc3 c1418 0");
+addOption("lowwfc3", "555w-3501p", value="x low_ hstwfc3 c1419 0");
+addOption("lowwfc3", "555w-6001p", value="x low_ hstwfc3 c1420 0");
+addOption("lowwfc3", "555w-8501p", value="x low_ hstwfc3 c1421 0");
+addOption("lowwfc3", "555w-105w", value="x low_ hstwfc3 c1422 0");
+addOption("lowwfc3", "555w-110w", value="x low_ hstwfc3 c1423 0");
+addOption("lowwfc3", "555w-125w", value="x low_ hstwfc3 c1424 0");
+addOption("lowwfc3", "555w-140w", value="x low_ hstwfc3 c1425 0");
+addOption("lowwfc3", "555w-160w", value="x low_ hstwfc3 c1426 0");
+addOption("lowwfc3", "218w-814w", value="x low_ hstwfc3 c0618 0");
+addOption("lowwfc3", "225w-814w", value="x low_ hstwfc3 c0718 0");
+addOption("lowwfc3", "275w-814w", value="x low_ hstwfc3 c0818 0");
+addOption("lowwfc3", "336w-814w", value="x low_ hstwfc3 c0918 0");
+addOption("lowwfc3", "390w-814w", value="x low_ hstwfc3 c1018 0");
+addOption("lowwfc3", "438w-814w", value="x low_ hstwfc3 c1118 0");
+addOption("lowwfc3", "469w-814w", value="x low_ hstwfc3 c1218 0");
+addOption("lowwfc3", "475w-814w", value="x low_ hstwfc3 c1318 0");
+addOption("lowwfc3", "606w-814w", value="x low_ hstwfc3 c1518 0");
+addOption("lowwfc3", "635w-814w", value="x low_ hstwfc3 c1618 0");
+addOption("lowwfc3", "775w-814w", value="x low_ hstwfc3 c1718 0");
+addOption("lowwfc3", "3501p-814w", value="x low_ hstwfc3 c1918 0");
+addOption("lowwfc3", "6001p-814w", value="x low_ hstwfc3 c2018 0");
+addOption("lowwfc3", "814w-8501p", value="x low_ hstwfc3 c1821 0");
+addOption("lowwfc3", "814w-105w", value="x low_ hstwfc3 c1822 0");
+addOption("lowwfc3", "814w-110w", value="x low_ hstwfc3 c1823 0");
+addOption("lowwfc3", "814w-125w", value="x low_ hstwfc3 c1824 0");
+addOption("lowwfc3", "814w-140w", value="x low_ hstwfc3 c1825 0");
+addOption("lowwfc3", "814w-160w", value="x low_ hstwfc3 c1826 0");
+addOption("lowwfc3", "218w-336w", value="x low_ hstwfc3 c0609 0");
+addOption("lowwfc3", "225w-336w", value="x low_ hstwfc3 c0709 0");
+addOption("lowwfc3", "275w-336w", value="x low_ hstwfc3 c0809 0");
+addOption("lowwfc3", "336w-390w", value="x low_ hstwfc3 c0910 0");
+addOption("lowwfc3", "336w-438w", value="x low_ hstwfc3 c0911 0");
+addOption("lowwfc3", "336w-469w", value="x low_ hstwfc3 c0912 0");
+addOption("lowwfc3", "336w-475w", value="x low_ hstwfc3 c0913 0");
+addOption("lowwfc3", "336w-606w", value="x low_ hstwfc3 c0915 0");
+addOption("lowwfc3", "336w-635w", value="x low_ hstwfc3 c0916 0");
+addOption("lowwfc3", "336w-775w", value="x low_ hstwfc3 c0917 0");
+addOption("lowwfc3", "336w-3501p", value="x low_ hstwfc3 c0919 0");
+addOption("lowwfc3", "336w-6001p", value="x low_ hstwfc3 c0920 0");
+addOption("lowwfc3", "336w-8501p", value="x low_ hstwfc3 c0921 0");
+addOption("lowwfc3", "336w-105w", value="x low_ hstwfc3 c0922 0");
+addOption("lowwfc3", "336w-110w", value="x low_ hstwfc3 c0923 0");
+addOption("lowwfc3", "336w-125w", value="x low_ hstwfc3 c0924 0");
+addOption("lowwfc3", "336w-140w", value="x low_ hstwfc3 c0925 0");
+addOption("lowwfc3", "336w-160w", value="x low_ hstwfc3 c0926 0");
+addOption("lowwfc3", "218w-160w", value="x low_ hstwfc3 c0626 0");
+addOption("lowwfc3", "225w-160w", value="x low_ hstwfc3 c0726 0");
+addOption("lowwfc3", "275w-160w", value="x low_ hstwfc3 c0826 0");
+addOption("lowwfc3", "390w-160w", value="x low_ hstwfc3 c1026 0");
+addOption("lowwfc3", "438w-160w", value="x low_ hstwfc3 c1126 0");
+addOption("lowwfc3", "469w-160w", value="x low_ hstwfc3 c1226 0");
+addOption("lowwfc3", "475w-160w", value="x low_ hstwfc3 c1326 0");
+addOption("lowwfc3", "606w-160w", value="x low_ hstwfc3 c1526 0");
+addOption("lowwfc3", "635w-160w", value="x low_ hstwfc3 c1626 0");
+addOption("lowwfc3", "775w-160w", value="x low_ hstwfc3 c1726 0");
+addOption("lowwfc3", "3501p-160w", value="x low_ hstwfc3 c1926 0");
+addOption("lowwfc3", "6001p-160w", value="x low_ hstwfc3 c2026 0");
+addOption("lowwfc3", "8501p-160w", value="x low_ hstwfc3 c2126 0");
+addOption("lowwfc3", "105w-160w", value="x low_ hstwfc3 c2226 0");
+addOption("lowwfc3", "110w-160w", value="x low_ hstwfc3 c2326 0");
+addOption("lowwfc3", "125w-160w", value="x low_ hstwfc3 c2426 0");
+addOption("lowwfc3", "140w-160w", value="x low_ hstwfc3 c2526 0");
+
+
+addOption("lowbeij", "Select an item", "", 1); //HEADER OPTION
+addOption("lowbeij", "3890-6075", value="x low_ beijing c1420 0");
+addOption("lowbeij", "4550-6075", value="x low_ beijing c1620 0");
+addOption("lowbeij", "5795-6075", value="x low_ beijing c1920 0");
+addOption("lowbeij", "6075-6660", value="x low_ beijing c2021 0");
+addOption("lowbeij", "6075-9190", value="x low_ beijing c2025 0");
+addOption("lowbeij", "6075-9745", value="x low_ beijing c2026 0");
+addOption("lowbeij", "3890-7215", value="x low_ beijing c1422 0");
+addOption("lowbeij", "4550-7215", value="x low_ beijing c1622 0");
+addOption("lowbeij", "5795-7215", value="x low_ beijing c1922 0");
+addOption("lowbeij", "6660-7215", value="x low_ beijing c2122 0");
+addOption("lowbeij", "7215-9745", value="x low_ beijing c2226 0");
+addOption("lowbeij", "3890-9190", value="x low_ beijing c1425 0");
+addOption("lowbeij", "4550-9190", value="x low_ beijing c1625 0");
+addOption("lowbeij", "5795-9190", value="x low_ beijing c1925 0");
+addOption("lowbeij", "6660-9190", value="x low_ beijing c2125 0");
+addOption("lowbeij", "9190-9745", value="x low_ beijing c2526 0");
+
+addOption("lowstisnic", "Select an item", "", 1); //HEADER OPTION
+addOption("lowstisnic", "STIS_LP-814w", value="x low_ stisnic c2118 0");
+addOption("lowstisnic", "STIS_LP-NIC160", value="x low_ stisnic c2123 0");
+addOption("lowstisnic", "NIC110-NIC160", value="x low_ stisnic c2223 0");
+addOption("lowstisnic", "814w-NIC110", value="x low_ stisnic c1822 0");
+addOption("lowstisnic", "814w-NIC160", value="x low_ stisnic c1823 0");
+addOption("lowstisnic", "V-NIC110", value="x low_ stisnic c0922 0");
+addOption("lowstisnic", "V-NIC160", value="x low_ stisnic c0923 0");
+
+addOption("lowJC", "Select an item", "", 1); //HEADER OPTION
+addOption("lowJC", "U-B", value="x low_ johnson c0708 0");
+addOption("lowJC", "U-V", value="x low_ johnson c0709 0");
+addOption("lowJC", "U-R", value="x low_ johnson c0710 0");
+addOption("lowJC", "U-I", value="x low_ johnson c0711 0");
+addOption("lowJC", "B-V", value="x low_ johnson c1919 0");
+addOption("lowJC", "B-R", value="x low_ johnson c0810 0");
+addOption("lowJC", "B-I", value="x low_ johnson c0811 0");
+addOption("lowJC", "V-R", value="x low_ johnson c0910 0");
+addOption("lowJC", "V-I", value="x low_ johnson c2626 0");
+addOption("lowJC", "V-J", value="x low_ johnson c0912 0");
+addOption("lowJC", "V-H", value="x low_ johnson c0913 0");
+addOption("lowJC", "V-K", value="x low_ johnson c2121 0");
+addOption("lowJC", "V-Kp", value="x low_ johnson c0918 0");
+addOption("lowJC", "V-L", value="x low_ johnson c0915 0");
+addOption("lowJC", "V-M", value="x low_ johnson c0917 0");
+addOption("lowJC", "I-J", value="x low_ johnson c1112 0");
+addOption("lowJC", "I-H", value="x low_ johnson c1113 0");
+addOption("lowJC", "I-K", value="x low_ johnson c1114 0");
+addOption("lowJC", "J-K", value="x low_ johnson c2222 0");
+addOption("lowJC", "H-K", value="x low_ johnson c1314 0");
+addOption("lowJC", "I-Kp", value="x low_ johnson c1118 0");
+addOption("lowJC", "J-Kp", value="x low_ johnson c1218 0");
+addOption("lowJC", "H-Kp", value="x low_ johnson c1318 0");
+addOption("lowJC", "K-M", value="x low_ johnson c1417 0");
+
+addOption("lowugriz", "Select an item", "", 1); //HEADER OPTION
+addOption("lowugriz", "u-g", value="x low_ ugriz__ c0607 0");
+addOption("lowugriz", "u-r", value="x low_ ugriz__ c0608 0");
+addOption("lowugriz", "u-i", value="x low_ ugriz__ c0609 0");
+addOption("lowugriz", "u-z", value="x low_ ugriz__ c0610 0");
+addOption("lowugriz", "g-r", value="x low_ ugriz__ c0708 0");
+addOption("lowugriz", "g-i", value="x low_ ugriz__ c0709 0");
+addOption("lowugriz", "g-z", value="x low_ ugriz__ c0710 0");
+addOption("lowugriz", "r-i", value="x low_ ugriz__ c0809 0");
+addOption("lowugriz", "r-z", value="x low_ ugriz__ c0810 0");
+addOption("lowugriz", "i-z", value="x low_ ugriz__ c0910 0");
+
+addOption("lowugriz", "m1", value="x low_ ugriz__ c1616 0");
+addOption("lowugriz", "c1", value="x low_ ugriz__ c1717 0");
+addOption("lowugriz", "b-y", value="x low_ ugriz__ c1515 0");
+
+addOption("lowugriz", "C-T1", value="x low_ ugriz__ c1820 0");
+addOption("lowugriz", "C-M", value="x low_ ugriz__ c1819 0");
+addOption("lowugriz", "M-T1", value="x low_ ugriz__ c1920 0");
+addOption("lowugriz", "T1-T2", value="x low_ ugriz__ c2021 0");
+
+addOption("lowgal", "Select an item", "", 1); //HEADER OPTION
+addOption("lowgal", "fuv-nuv",     value="x low_ spitzer c1314 0");
+addOption("lowgal", "nuv-3.6um",   value="x low_ spitzer c1406 0");
+addOption("lowgal", "3.6um-4.5um", value="x low_ spitzer c0607 0");
+addOption("lowgal", "3.6um-5.8um", value="x low_ spitzer c0608 0");
+addOption("lowgal", "3.6um-8.0um", value="x low_ spitzer c0609 0");
+addOption("lowgal", "3.6um-24um",  value="x low_ spitzer c0610 0");
+addOption("lowgal", "4.5um-5.8um", value="x low_ spitzer c0708 0");
+addOption("lowgal", "4.5um-8.0um", value="x low_ spitzer c0709 0");
+addOption("lowgal", "4.5um-24um",  value="x low_ spitzer c0710 0");
+addOption("lowgal", "5.8um-8.0um", value="x low_ spitzer c0809 0");
+addOption("lowgal", "5.8um-24um",  value="x low_ spitzer c0810 0");
+addOption("lowgal", "8.0um-24um",  value="x low_ spitzer c0910 0");
+
+addOption("high", "Select an item", "", 1); //HEADER OPTION
+addList("high", "Beijing", "", "highbeij");
+addList("high", "Johnson/Cousins", "", "highJC");
+addList("high", "WFC3", "", "highwfc3");
+addList("high", "ugriz/Stromgren/Washington", "", "highugriz");
+
+addOption("highwfc3", "Select an item", "", 1); //HEADER OPTION
+addOption("highwfc3", "218w-555w", value="x high hstwfc3 c0614 0");
+addOption("highwfc3", "225w-555w", value="x high hstwfc3 c0714 0");
+addOption("highwfc3", "275w-555w", value="x high hstwfc3 c0814 0");
+addOption("highwfc3", "336w-555w", value="x high hstwfc3 c0914 0");
+addOption("highwfc3", "390w-555w", value="x high hstwfc3 c1014 0");
+addOption("highwfc3", "438w-555w", value="x high hstwfc3 c1114 0");
+addOption("highwfc3", "469w-555w", value="x high hstwfc3 c1214 0");
+addOption("highwfc3", "475w-555w", value="x high hstwfc3 c1314 0");
+addOption("highwfc3", "555w-606w", value="x high hstwfc3 c1415 0");
+addOption("highwfc3", "555w-635w", value="x high hstwfc3 c1416 0");
+addOption("highwfc3", "555w-775w", value="x high hstwfc3 c1417 0");
+addOption("highwfc3", "555w-814w", value="x high hstwfc3 c1418 0");
+addOption("highwfc3", "555w-3501p", value="x high hstwfc3 c1419 0");
+addOption("highwfc3", "555w-6001p", value="x high hstwfc3 c1420 0");
+addOption("highwfc3", "555w-8501p", value="x high hstwfc3 c1421 0");
+addOption("highwfc3", "218w-814w", value="x high hstwfc3 c0618 0");
+addOption("highwfc3", "225w-814w", value="x high hstwfc3 c0718 0");
+addOption("highwfc3", "275w-814w", value="x high hstwfc3 c0818 0");
+addOption("highwfc3", "336w-814w", value="x high hstwfc3 c0918 0");
+addOption("highwfc3", "390w-814w", value="x high hstwfc3 c1018 0");
+addOption("highwfc3", "438w-814w", value="x high hstwfc3 c1118 0");
+addOption("highwfc3", "469w-814w", value="x high hstwfc3 c1218 0");
+addOption("highwfc3", "475w-814w", value="x high hstwfc3 c1318 0");
+addOption("highwfc3", "606w-814w", value="x high hstwfc3 c1518 0");
+addOption("highwfc3", "635w-814w", value="x high hstwfc3 c1618 0");
+addOption("highwfc3", "775w-814w", value="x high hstwfc3 c1718 0");
+addOption("highwfc3", "3501p-814w", value="x high hstwfc3 c1918 0");
+addOption("highwfc3", "6001p-814w", value="x high hstwfc3 c2018 0");
+addOption("highwfc3", "814w-8501p", value="x high hstwfc3 c1821 0");
+addOption("highwfc3", "218w-336w", value="x high hstwfc3 c0609 0");
+addOption("highwfc3", "225w-336w", value="x high hstwfc3 c0709 0");
+addOption("highwfc3", "275w-336w", value="x high hstwfc3 c0809 0");
+addOption("highwfc3", "336w-390w", value="x high hstwfc3 c0910 0");
+addOption("highwfc3", "336w-438w", value="x high hstwfc3 c0911 0");
+addOption("highwfc3", "336w-469w", value="x high hstwfc3 c0912 0");
+addOption("highwfc3", "336w-475w", value="x high hstwfc3 c0913 0");
+addOption("highwfc3", "336w-606w", value="x high hstwfc3 c0915 0");
+addOption("highwfc3", "336w-635w", value="x high hstwfc3 c0916 0");
+addOption("highwfc3", "336w-775w", value="x high hstwfc3 c0917 0");
+addOption("highwfc3", "336w-3501p", value="x high hstwfc3 c0919 0");
+addOption("highwfc3", "336w-6001p", value="x high hstwfc3 c0920 0");
+addOption("highwfc3", "336w-8501p", value="x high hstwfc3 c0921 0");
+
+addOption("highbeij", "Select an item", "", 1); //HEADER OPTION
+addOption("highbeij", "3890-6075", value="x high beijing c1420 0");
+addOption("highbeij", "4550-6075", value="x high beijing c1620 0");
+addOption("highbeij", "5795-6075", value="x high beijing c1920 0");
+addOption("highbeij", "6075-6660", value="x high beijing c2021 0");
+addOption("highbeij", "6075-9190", value="x high beijing c2025 0");
+addOption("highbeij", "6075-9745", value="x high beijing c2026 0");
+addOption("highbeij", "3890-7215", value="x high beijing c1422 0");
+addOption("highbeij", "4550-7215", value="x high beijing c1622 0");
+addOption("highbeij", "5795-7215", value="x high beijing c1922 0");
+addOption("highbeij", "6660-7215", value="x high beijing c2122 0");
+addOption("highbeij", "7215-9745", value="x high beijing c2226 0");
+addOption("highbeij", "3890-9190", value="x high beijing c1425 0");
+addOption("highbeij", "4550-9190", value="x high beijing c1625 0");
+addOption("highbeij", "5795-9190", value="x high beijing c1925 0");
+addOption("highbeij", "6660-9190", value="x high beijing c2125 0");
+addOption("highbeij", "9190-9745", value="x high beijing c2526 0");
+
+addOption("highJC", "Select an item", "", 1); //HEADER OPTION
+addOption("highJC", "U-B",  value="x high johnson c0708 0");
+addOption("highJC", "U-V",  value="x high johnson c0709 0");
+addOption("highJC", "U-R",  value="x high johnson c0710 0");
+addOption("highJC", "U-I",  value="x high johnson c0711 0");
+addOption("highJC", "B-V",  value="x high johnson c1919 0");
+addOption("highJC", "B-R",  value="x high johnson c0810 0");
+addOption("highJC", "B-I",  value="x high johnson c0811 0");
+addOption("highJC", "V-R",  value="x high johnson c0910 0");
+addOption("highJC", "V-I",  value="x high johnson c2626 0");
+
+addOption("highugriz", "u-g", value="x low_ ugriz__ c0607 0");
+addOption("highugriz", "u-r", value="x low_ ugriz__ c0608 0");
+addOption("highugriz", "u-i", value="x low_ ugriz__ c0609 0");
+addOption("highugriz", "g-r", value="x low_ ugriz__ c0708 0");
+addOption("highugriz", "g-i", value="x low_ ugriz__ c0709 0");
+addOption("highugriz", "r-i", value="x low_ ugriz__ c0809 0");
+
+addOption("highugriz", "m1", value="x low_ ugriz__ c1616 0");
+addOption("highugriz", "c1", value="x low_ ugriz__ c1717 0");
+addOption("highugriz", "b-y", value="x low_ ugriz__ c1515 0");
+
+addOption("highugriz", "C-T1", value="x low_ ugriz__ c1820 0");
+addOption("highugriz", "C-M", value="x low_ ugriz__ c1819 0");
+addOption("highugriz", "M-T1", value="x low_ ugriz__ c1920 0");
+addOption("highugriz", "T1-T2", value="x low_ ugriz__ c2021 0");
+
+addOption("emp", "Select an item", "", 1); //HEADER OPTION
+addList("emp", "Worthey & Lee 2011", "", "worthemp");
+addList("emp", "Transformed from WL11", "", "tw09");
+addList("emp", "V & C Semiempirical", "", "vcemp");
+
+addOption("worthemp", "Select an item", "", 1); //HEADER OPTION
+addOption("worthemp", "U-B", value="x empi w09empi c1515 0");
+addOption("worthemp", "B-V", value="x empi w09empi c1616 0");
+addOption("worthemp", "V-K", value="x empi w09empi c2121 0");
+addOption("worthemp", "V-R", value="x empi w09empi c1717 0");
+addOption("worthemp", "V-I", value="x empi w09empi c1818 0");
+addOption("worthemp", "J-K", value="x empi w09empi c1919 0");
+addOption("worthemp", "H-K", value="x empi w09empi c2020 0");
+
+addOption("tw09", "Select an item", "", 1); //HEADER OPTION
+addOption("tw09", "u-g", value="x empi w09empi c2223 0");
+addOption("tw09", "u-r", value="x empi w09empi c2224 0");
+addOption("tw09", "u-i", value="x empi w09empi c2225 0");
+addOption("tw09", "u-z", value="x empi w09empi c2226 0");
+addOption("tw09", "g-r", value="x empi w09empi c2324 0");
+addOption("tw09", "g-i", value="x empi w09empi c2325 0");
+addOption("tw09", "g-z", value="x empi w09empi c2326 0");
+addOption("tw09", "r-i", value="x empi w09empi c2425 0");
+addOption("tw09", "r-z", value="x empi w09empi c2426 0");
+addOption("tw09", "i-z", value="x empi w09empi c2526 0");
+
+addOption("vcemp", "Select an item", "", 1); //HEADER OPTION
+addOption("vcemp", "B-V" , value="x empi w09empi c2727 0");
+addOption("vcemp", "V-R" , value="x empi w09empi c2828 0");
+addOption("vcemp", "V-I" , value="x empi w09empi c2929 0");
+addOption("vcemp", "b-y" , value="x empi w09empi c3535 0");
+addOption("vcemp", "m1" , value="x empi w09empi c3636 0");
+addOption("vcemp", "c1" , value="x empi w09empi c3737 0");
+
+
+
+
+addOption("theor", "Select an item", "", 1); //HEADER OPTION
+addList("theor", "Theoretical Quantities", "", "theoryx");//END OF THIS NODE
+
+addOption("theoryx", "Select an item", "", 1); //HEADER OPTION
+addOption("theoryx", "Teff", value="x theo johnson c3333 0");
+addOption("theoryx", "log Teff", value="x theo johnson c0404 0");
+addOption("theoryx", "Theta", value="x theo johnson c3131 0");
+addOption("theoryx", "log Theta", value="x theo johnson c3232 0");
+addOption("theoryx", "log g", value="x theo johnson c3535 0");
+addOption("theoryx", "log R/Ro", value="x theo johnson c3636 0");
+
+
+
+/////For Y-Axis/////
+
+addListGroup("chainedmenu2", "Second-Select");
+
+addOption("Second-Select", "Select an item", "", 1); //HEADER OPTION
+addList("Second-Select", "Low-res Synthetic", "", "lowy");
+addList("Second-Select", "High-res Synthetic", "", "highy");
+addList("Second-Select", "Empirical", "", "empy");
+addList("Second-Select", "Theoretical", "", "theory");
+
+addOption("lowy", "Select an item", "", 1); //HEADER OPTION
+addList("lowy", "Beijing", "", "lowbeijy");
+addList("lowy", "Johnson/Cousins", "", "lowJCy");
+addList("lowy", "STIS-NIC", "", "lowstisnicy");
+addList("lowy", "WFC3", "", "lowwfc3y");
+addList("lowy", "ugriz/Stromgren/Washington", "", "lowugrizy");
+addList("lowy", "Galex/Spitzer", "", "lowgaly");
+
+addOption("lowwfc3y", "Select an item", "", 1); //HEADER OPTION
+addOption("lowwfc3y", "555w", value="y low_ hstwfc3 c1414 0");
+addOption("lowwfc3y", "606w", value="y low_ hstwfc3 c1515 0");
+addOption("lowwfc3y", "814w", value="y low_ hstwfc3 c1818 0");
+addOption("lowwfc3y", "110w", value="y low_ hstwfc3 c2323 0");
+addOption("lowwfc3y", "160w", value="y low_ hstwfc3 c2626 0");
+
+addOption("lowbeijy", "Select an item", "", 1); //HEADER OPTION
+addOption("lowbeijy", "3890", value="y low_ beijing c1414 0");
+addOption("lowbeijy", "4550", value="y low_ beijing c1616 0");
+addOption("lowbeijy", "5795", value="y low_ beijing c1919 0");
+addOption("lowbeijy", "6075", value="y low_ beijing c2020 0");
+addOption("lowbeijy", "6660", value="y low_ beijing c2121 0");
+addOption("lowbeijy", "9190", value="y low_ beijing c2525 0");
+addOption("lowbeijy", "9745", value="y low_ beijing c2626 0");
+
+addOption("lowstisnicy", "Select an item", "", 1); //HEADER OPTION
+addOption("lowstisnicy", "555w", value="y low_ stisnic c1616 0");
+addOption("lowstisnicy", "606w", value="y low_ stisnic c1717 0");
+addOption("lowstisnicy", "814w", value="y low_ stisnic c1818 0");
+addOption("lowstisnicy", "STIS Lp", value="y low_ stisnic c2121 0");
+addOption("lowstisnicy", "NIC110", value="y low_ stisnic c2222 0");
+addOption("lowstisnicy", "NIC160", value="y low_ stisnic c2323 0");
+
+addOption("lowJCy", "Select an item", "", 1); //HEADER OPTION
+addOption("lowJCy", "U", value="y low_ johnson c0707 0");
+addOption("lowJCy", "B", value="y low_ johnson c0808 0");
+addOption("lowJCy", "V", value="y low_ johnson c0909 0");
+addOption("lowJCy", "Rc", value="y low_ johnson c1010 0");
+addOption("lowJCy", "Ic", value="y low_ johnson c1111 0");
+addOption("lowJCy", "J", value="y low_ johnson c1212 0");
+addOption("lowJCy", "H", value="y low_ johnson c1313 0");
+addOption("lowJCy", "K", value="y low_ johnson C1414 0");
+addOption("lowJCy", "Kp", value="y low_ johnson c1818 0");
+addOption("lowJCy", "L", value="y low_ johnson c1515 0");
+addOption("lowJCy", "M", value="y low_ johnson c1717 0");
+
+addOption("lowugrizy", "Select an item", "", 1); //HEADER OPTION
+addOption("lowugrizy", "u", value="y low_ ugriz__ c0606 0");
+addOption("lowugrizy", "g", value="y low_ ugriz__ c0707 0");
+addOption("lowugrizy", "r", value="y low_ ugriz__ c0808 0");
+addOption("lowugrizy", "i", value="y low_ ugriz__ c0909 0");
+addOption("lowugrizy", "z", value="y low_ ugriz__ c1010 0");
+addOption("lowugrizy", "b", value="y low_ ugriz__ c1313 0");
+addOption("lowugrizy", "y", value="y low_ ugriz__ c1414 0");
+addOption("lowugrizy", "T1", value="y low_ ugriz__ c2020 0");
+addOption("lowugrizy", "T2", value="y low_ ugriz__ c2121 0");
+
+addOption("lowgaly", "Select an item", "", 1); //HEADER OPTION
+addOption("lowgaly", "nuv", value="y low_ spitzer c1414 0");
+addOption("lowgaly", "4.5um", value="y low_ spitzer c0707 0");
+addOption("lowgaly", "5.8um", value="y low_ spitzer c0808 0");
+addOption("lowgaly", "8.0um", value="y low_ spitzer c0909 0");
+addOption("lowgaly", "24um", value="y low_ spitzer c1010 0");
+
+addOption("highy", "Select an item", "", 1); //HEADER OPTION
+addList("highy", "Beijing", "", "highbeijy");
+addList("highy", "Johnson/Cousins", "", "highJCy");
+addList("highy", "WFC3", "", "highwfc3y");
+addList("highy", "ugriz/Stromgren/Washington", "", "highugrizy");
+
+addOption("highwfc3y", "Select an item", "", 1); //HEADER OPTION
+addOption("highwfc3y", "555w", value="y high hstwfc3 c1414 0");
+addOption("highwfc3y", "606w", value="y high hstwfc3 c1515 0");
+addOption("highwfc3y", "814w", value="y high hstwfc3 c1818 0");
+
+addOption("highbeijy", "Select an item", "", 1); //HEADER OPTION
+addOption("highbeijy", "3890", value="y high beijing c1414 0");
+addOption("highbeijy", "4550", value="y high beijing c1616 0");
+addOption("highbeijy", "5795", value="y high beijing c1919 0");
+addOption("highbeijy", "6075", value="y high beijing c2020 0");
+addOption("highbeijy", "6660", value="y high beijing c2121 0");
+addOption("highbeijy", "9190", value="y high beijing c2525 0");
+addOption("highbeijy", "9745", value="y high beijing c2626 0");
+
+addOption("highJCy", "Select an item", "", 1); //HEADER OPTION
+addOption("highJCy", "U", value="y high johnson c0707 0");
+addOption("highJCy", "B", value="y high johnson c0808 0");
+addOption("highJCy", "V", value="y high johnson c0909 0");
+addOption("highJCy", "Rc", value="y high johnson c1010 0");
+addOption("highJCy", "Ic", value="y high johnson c1111 0");
+
+addOption("highugrizy", "Select an item", "", 1); //HEADER OPTION
+addOption("highugrizy", "u", value="y high ugriz__ c0606 0");
+addOption("highugrizy", "g", value="y high ugriz__ c0707 0");
+addOption("highugrizy", "r", value="y high ugriz__ c0808 0");
+addOption("highugrizy", "i", value="y high ugriz__ c0909 0");
+addOption("highugrizy", "b", value="y high ugriz__ c1313 0");
+addOption("highugrizy", "y", value="y high ugriz__ c1414 0");
+addOption("highugrizy", "T1", value="y high ugriz__ c2020 0");
+addOption("highugrizy", "T2", value="y high ugriz__ c2121 0");
+
+addOption("empy", "Select an item", "", 1); //HEADER OPTION
+addList("empy", "Worthey & Lee 2011", "", "worthempy");
+addList("empy", "Transformed from WL11", "", "tw09y");
+addList("empy", "V & C Semiempirical", "", "vcempy");
+
+addOption("worthempy", "Select an item", "", 1); //HEADER OPTION
+addOption("worthempy", "V_emp", value="y empi w09empi c0909 0");
+addOption("worthempy", "I_emp", value="y empi w09empi c1111 1");
+addOption("worthempy", "K_emp", value="y empi w09empi c1414 0");
+addOption("worthempy", "V_th", value="y empi w09empi c0606 0");
+
+addOption("tw09y", "Select an item", "", 1); //HEADER OPTION
+addOption("tw09y", "u", value="y empi w09empi c2222 0");
+addOption("tw09y", "g", value="y empi w09empi c2323 0");
+addOption("tw09y", "r", value="y empi w09empi c2424 0");
+addOption("tw09y", "i", value="y empi w09empi c2525 0");
+addOption("tw09y", "z", value="y empi w09empi c2626 0");
+
+addOption("vcempy", "Select an item", "", 1); //HEADER OPTION
+addOption("vcempy", "B" ,       value="y empi w09empi c3232 1 Bvc");
+addOption("vcempy", "V" ,       value="y empi w09empi c3131 0");
+addOption("vcempy", "R" ,       value="y empi w09empi c3333 1 Rvc");
+addOption("vcempy", "I" ,       value="y empi w09empi c3434 1 Ivc");
+addOption("vcempy", "v_strom" , value="y empi w09empi c3939 0");
+
+
+addOption("theory", "Select an item", "", 1); //HEADER OPTION
+addList("theory", "Theoretical Quantities", "", "theoryy");//END OF THIS NODE
+
+addOption("theoryy", "Select an item", "", 1); //HEADER OPTION
+addOption("theoryy", "log L",    value="y theo johnson c0303 0");
+addOption("theoryy", "M_bol",    value="y theo johnson c3434 0");
+addOption("theoryy", "log g",    value="y theo johnson c3535 0");
+addOption("theoryy", "log R/Ro", value="y theo johnson c3636 0");
+
+

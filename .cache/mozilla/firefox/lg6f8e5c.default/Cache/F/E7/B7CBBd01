@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="http://cdsannotations.u-strasbg.fr/cds-navbar-resources/css/cdshead.min.css" rel="stylesheet" />
+<!--<script type="text/javascript" src="http://cdsannotations.u-strasbg.fr/cds-navbar-resources/js/jquery-1.7.1.min.js"></script>-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">var jqMenu = jQuery.noConflict();</script>
+<script type="text/javascript" src="http://cdsannotations.u-strasbg.fr/cds-navbar-resources/js/cdsmenu.min.js"></script><link rel="stylesheet" href="http://simbad.u-strasbg.fr/Simlib/tables.css" type="text/css" />
+<link rel="search" type="application/opensearchdescription+xml" title="SIMBAD basic" href="http://simbad.u-strasbg.fr/Simlib/simbadBasic.xml" />
+<script src="http://simbad.u-strasbg.fr/Simlib/jquery.js" type="text/javascript"></script>
+<script src="http://simbad.u-strasbg.fr/Simlib/simbad.js" type="text/javascript"></script>
+<script src="http://simbad.u-strasbg.fr/Simlib/tables.js" type="text/javascript"></script>
+<style type="text/css">
+<!--
+TEXTAREA { background-color: #FFF0DC; }
+-->
+</style>
+<TITLE>SIMBAD query result</TITLE></head>
+<body>
+<div class="navbar navbar-top">
+<div class="navbar-inner simbad">
+<div class="container-fluid minwidth920">
+<a class="brand" title="CDS home" href="http://cds.u-strasbg.fr/"><img src="http://cdsannotations.u-strasbg.fr/cds-navbar-resources/img/cds_small.png" alt="CDS" /></a>
+<div class="nav-collapse">
+<ul class="nav">
+<li id="portalNavbarItem"><a href="http://cdsportal.u-strasbg.fr">Portal</a></li>
+<li id="simbadNavbarItem"><a href="http://simbad.u-strasbg.fr/simbad">Simbad</a></li>
+<li id="vizierNavbarItem"><a href="http://vizier.u-strasbg.fr/viz-bin/VizieR">VizieR</a></li>
+<li id="aladinNavbarItem"><a href="http://aladin.u-strasbg.fr/aladin.gml">Aladin</a></li>
+<li id="xmatchNavbarItem"><a href="http://cdsxmatch.u-strasbg.fr">X-Match</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="http://cds.u-strasbg.fr/cgi-bin/Sesame">Sesame name resolver</a></li>
+<li><a href="http://cdsarc.u-strasbg.fr/viz-bin/Cat">Catalogue collection</a></li>
+<li><a href='http://tapvizier.u-strasbg.fr/adql/' alt='TAP VizieR'>TAP VizieR</a></li>
+<li><a href="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad">Dictionary of nomenclature</a></li>
+<li><a href="http://cdsweb.u-strasbg.fr/SimPlay">SimPlay</a></li>
+<li><a href="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib">Bibliography</a></li>
+<li class="divider"></li>
+<li><a href="mailto:cds-question@unistra.fr">Contact us</a></li>
+</ul>
+</li>
+<li class="divider"></li>
+<li><a href="http://cdsweb.u-strasbg.fr/help">Help</a></li>
+</ul>
+<div class="nav pull-right serviceLogo simbad">
+</div>
+</div><!--/.nav-collapse -->
+</div>
+</div>
+</div>
+<script type="text/javascript">setMenuItem("simbad");</script>
+<div class="cdsPageTitle"><h1>SIMBAD query result</h1></div><div style="margin: 10px"> <TABLE CELLPADDING="6">
+  <TR ALIGN="LEFT" VALIGN="TOP" id="menu">
+   <TD>
+    <B>
+     <I>
+other query<br>modes :      </I>
+    </B>
+   </TD>
+   <TD ALIGN="CENTER" BGCOLOR="#CCCCFF" id="nav-1">
+    <A HREF="sim-fid">
+     <FONT SIZE="+0" COLOR="#000000">
+Identifier<br>query     </FONT>
+    </A>
+   </TD>
+   <TD ALIGN="CENTER" BGCOLOR="#CCCCFF" id="nav-2">
+    <A HREF="sim-fcoo">
+     <FONT SIZE="+0" COLOR="#000000">
+Coordinate<br>query     </FONT>
+    </A>
+   </TD>
+   <TD ALIGN="CENTER" BGCOLOR="#CCCCFF" id="nav-3">
+    <A HREF="sim-fsam">
+     <FONT SIZE="+0" COLOR="#000000">
+Criteria<br>query     </FONT>
+    </A>
+   </TD>
+   <TD ALIGN="CENTER" BGCOLOR="#CCCCFF" id="nav-5">
+    <A HREF="sim-fref">
+     <FONT SIZE="+0" COLOR="#000000">
+Reference<br>query     </FONT>
+    </A>
+   </TD>
+   <TD ALIGN="CENTER" BGCOLOR="#CCCCFF" id="nav-6">
+    <A HREF="sim-fbasic">
+     <FONT SIZE="+0" COLOR="#000000">
+Basic<br>query     </FONT>
+    </A>
+   </TD>
+   <TD ALIGN="CENTER"/>
+   <TD ALIGN="CENTER" BGCOLOR="#CCCCFF" id="nav-4">
+    <A HREF="sim-fscript">
+     <FONT SIZE="+0" COLOR="#000000">
+Script<br>submission     </FONT>
+    </A>
+   </TD>
+   <TD ALIGN="CENTER"/>
+   <TD ALIGN="CENTER" BGCOLOR="#FFFF99" id="nav-7">
+    <A HREF="sim-fout" target="_blank">
+     <FONT SIZE="+0" COLOR="#000000">
+Output<br>options     </FONT>
+    </A>
+   </TD>
+   <TD ALIGN="RIGHT" BGCOLOR="#CCFFCC">
+    <FONT SIZE="+0" COLOR="#000000">
+<A HREF="http://simbad.u-strasbg.fr/simbad/sim-help?Page=sim-id">Help</A>    </FONT>
+   </TD>
+  </TR>
+ </TABLE>
+<P><P> <TABLE WIDTH="100%" CELLPADDING="3">
+  <TR>
+   <TD>
+    <FONT SIZE="+1">
+Object query : Z Psc    </FONT>
+   </TD>
+   <TD ALIGN="RIGHT" VALIGN="TOP" WIDTH="40%">
+C.D.S.  -  SIMBAD4 rel 1.213  -  2013.11.08CET20:27:08
+   </TD>
+  </TR>
+ </TABLE>
+<BR><P> <B>
+  <I>
+Available data : 
+  </I>
+ </B>
+ <A HREF="#lab_basic">
+Basic data </A>
+&nbsp;&bull;&nbsp; <A HREF="#lab_ident">
+Identifiers </A>
+&nbsp;&bull;&nbsp; <A HREF="#lab_plot">
+Plot &amp; images </A>
+&nbsp;&bull;&nbsp; <A HREF="#lab_bib">
+Bibliography </A>
+&nbsp;&bull;&nbsp; <A HREF="#lab_meas">
+Measurements </A>
+&nbsp;&bull;&nbsp; <A HREF="#lab_arch">
+External archives </A>
+&nbsp;&bull;&nbsp; <A HREF="#lab_notes">
+Notes </A>
+&nbsp;&bull;&nbsp; <A HREF="#lab_annotations">
+Annotations </A>
+<HR><P><A NAME="lab_basic"></A>
+ <script language="JavaScript" type="text/javascript" src="http://vizier.u-strasbg.fr/lib/viz2.js"> </script>
+ <TABLE WIDTH="100%" CELLSPACING="2">
+  <TR>
+   <TD>
+    <FONT SIZE="+1">
+     <B>
+Basic data : 
+     </B>
+    </FONT>
+   </TD>
+  </TR>
+  <TR>
+   <TD>
+    <FONT SIZE="+2">
+     <B>
+V* Z Psc
+     </B>
+ -- 
+Semi-regular pulsating Star
+    </FONT>
+   </TD>
+   <TD ALIGN="RIGHT" VALIGN="MIDDLE">
+    <FORM ACTION="sim-coo" METHOD="GET">
+     <INPUT TYPE="hidden" NAME="Coord" VALUE="01 16 05.02960+25 46 09.6882" />
+     <INPUT TYPE="hidden" NAME="CooFrame" VALUE="ICRS" />
+     <INPUT TYPE="hidden" NAME="CooEqui" VALUE="2000.0" />
+     <INPUT TYPE="hidden" NAME="CooEpoch" VALUE="J2000" />
+     <INPUT TYPE="hidden" NAME="Radius.unit" VALUE="arcmin" />
+     <INPUT TYPE="submit" NAME="submit" VALUE="query around" />
+ with radius 
+     <INPUT TYPE="text" NAME="Radius" SIZE="8" MAXLENGTH="8" VALUE="2" />
+ arcmin
+    </FORM>
+   </TD>
+  </TR>
+ </TABLE>
+<P> <TABLE WIDTH="100%" CELLSPACING="2" CELLPADDING="2">
+  <TR>
+   <TD VALIGN="TOP">
+    <TABLE>
+     <TR>
+      <TD ALIGN="LEFT" VALIGN="TOP" NOWRAP>
+       <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> List of object types known in the Dictionary of nomenclature about this source </FONT> ')" onmouseout="laz()">
+Other object types: 
+       </SPAN>
+      </TD>
+      <TD>
+       <B>
+        <TT>
+sr*
+        </TT>
+       </B>
+       <TT>
+()
+       </TT>
+, 
+       <B>
+        <TT>
+*
+        </TT>
+       </B>
+       <TT>
+(AG,BD,DO,GC,GCRV,GEN#,GSC,HD,HIC,HIP,N30,PPM,SAO,SKY#,TYC,UBV,YZ,[LFO93])
+       </TT>
+, 
+       <B>
+        <TT>
+IR
+        </TT>
+       </B>
+       <TT>
+(IRAS,IRC,2MASS,RAFGL)
+       </TT>
+, 
+       <B>
+        <TT>
+C*
+        </TT>
+       </B>
+       <TT>
+(C*,CGCS,LEE)
+       </TT>
+, 
+       <B>
+        <TT>
+V*
+        </TT>
+       </B>
+       <TT>
+(V*,AAVSO)
+       </TT>
+      </TD>
+     </TR>
+     <TR>
+      <TD NOWRAP>
+       <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> Syntax of coordinates is : \'ra dec (wtype) [error ellipse] quality bibcode\' : <UL> <LI><EM>ra</EM> : right ascension (unit and frame defined according to your Output Options) <LI><EM>dec</EM> : declination (unit and frame defined according to your Output Options) <LI><EM>(wtype)</EM> : wavelength class for the origin of the coordinates (Rad, mm, IR, Optical, UV, Xray, Gam) <LI><EM>[error ellipse]</EM> : coordinates error major axis, minor axis (in mas at epoch defined in your output options),<BR> position angle (in degrees North to East of the specified coordinate frame) <LI><EM>quality</EM> : flag of quality  <UL>  <LI>E &gt;= 10<LI>D : 1-10(and some old data) <LI>C : 0.1-1<LI>B : 0.01-0.1+ 2MASS, Tyc <LI>A : VLBI, Hipparcos  </UL> <LI><EM>bibcode</EM> : bibcode of the coordinates reference </UL>  </FONT> ')" onmouseout="laz()">
+        <B>
+ICRS
+        </B>
+ coord. (ep=J2000) : 
+       </SPAN>
+      </TD>
+      <TD>
+       <B>
+        <TT>
+01 16 05.02960 +25 46 09.6882
+ 
+(
+Optical
+) 
+[
+6.59 3.26 0
+] 
+A
+ 
+<A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?2007A%26A...474..653V">2007A&A...474..653V</A>        </TT>
+       </B>
+      </TD>
+     </TR>
+     <TR>
+      <TD NOWRAP>
+       <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> Syntax of coordinates is : \'ra dec (wtype) [error ellipse] quality bibcode\' : <UL> <LI><EM>ra</EM> : right ascension (unit and frame defined according to your Output Options) <LI><EM>dec</EM> : declination (unit and frame defined according to your Output Options) <LI><EM>(wtype)</EM> : wavelength class for the origin of the coordinates (Rad, mm, IR, Optical, UV, Xray, Gam) <LI><EM>[error ellipse]</EM> : coordinates error major axis, minor axis (in mas at epoch defined in your output options),<BR> position angle (in degrees North to East of the specified coordinate frame) <LI><EM>quality</EM> : flag of quality  <UL>  <LI>E &gt;= 10<LI>D : 1-10(and some old data) <LI>C : 0.1-1<LI>B : 0.01-0.1+ 2MASS, Tyc <LI>A : VLBI, Hipparcos  </UL> <LI><EM>bibcode</EM> : bibcode of the coordinates reference </UL>  </FONT> ')" onmouseout="laz()">
+        <B>
+FK5
+        </B>
+ coord. (ep=J2000 eq=2000) : 
+       </SPAN>
+      </TD>
+      <TD>
+       <B>
+        <TT>
+01 16 05.030 +25 46 09.69
+ 
+(
+Optical
+) 
+[
+6.59 3.26 0
+] 
+A
+ 
+<A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?2007A%26A...474..653V">2007A&A...474..653V</A>        </TT>
+       </B>
+      </TD>
+     </TR>
+     <TR>
+      <TD NOWRAP>
+       <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> Syntax of coordinates is : \'ra dec (wtype) [error ellipse] quality bibcode\' : <UL> <LI><EM>ra</EM> : right ascension (unit and frame defined according to your Output Options) <LI><EM>dec</EM> : declination (unit and frame defined according to your Output Options) <LI><EM>(wtype)</EM> : wavelength class for the origin of the coordinates (Rad, mm, IR, Optical, UV, Xray, Gam) <LI><EM>[error ellipse]</EM> : coordinates error major axis, minor axis (in mas at epoch defined in your output options),<BR> position angle (in degrees North to East of the specified coordinate frame) <LI><EM>quality</EM> : flag of quality  <UL>  <LI>E &gt;= 10<LI>D : 1-10(and some old data) <LI>C : 0.1-1<LI>B : 0.01-0.1+ 2MASS, Tyc <LI>A : VLBI, Hipparcos  </UL> <LI><EM>bibcode</EM> : bibcode of the coordinates reference </UL>  </FONT> ')" onmouseout="laz()">
+        <B>
+FK4
+        </B>
+ coord. (ep=B1950 eq=1950) : 
+       </SPAN>
+      </TD>
+      <TD>
+       <B>
+        <TT>
+01 13 21.02 +25 30 20.4
+ 
+(
+Optical
+) 
+[
+38.08 18.78 0
+] 
+A
+ 
+<A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?2007A%26A...474..653V">2007A&A...474..653V</A>        </TT>
+       </B>
+      </TD>
+     </TR>
+     <TR>
+      <TD NOWRAP>
+       <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> Syntax of coordinates is : \'ra dec (wtype) [error ellipse] quality bibcode\' : <UL> <LI><EM>ra</EM> : right ascension (unit and frame defined according to your Output Options) <LI><EM>dec</EM> : declination (unit and frame defined according to your Output Options) <LI><EM>(wtype)</EM> : wavelength class for the origin of the coordinates (Rad, mm, IR, Optical, UV, Xray, Gam) <LI><EM>[error ellipse]</EM> : coordinates error major axis, minor axis (in mas at epoch defined in your output options),<BR> position angle (in degrees North to East of the specified coordinate frame) <LI><EM>quality</EM> : flag of quality  <UL>  <LI>E &gt;= 10<LI>D : 1-10(and some old data) <LI>C : 0.1-1<LI>B : 0.01-0.1+ 2MASS, Tyc <LI>A : VLBI, Hipparcos  </UL> <LI><EM>bibcode</EM> : bibcode of the coordinates reference </UL>  </FONT> ')" onmouseout="laz()">
+        <B>
+Gal
+        </B>
+ coord. (ep=J2000) : 
+       </SPAN>
+      </TD>
+      <TD>
+       <B>
+        <TT>
+129.8624 -36.7705
+ 
+(
+Optical
+) 
+[
+6.59 3.26 0
+] 
+A
+ 
+<A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?2007A%26A...474..653V">2007A&A...474..653V</A>        </TT>
+       </B>
+      </TD>
+     </TR>
+     <TR>
+      <TD ALIGN="LEFT" VALIGN="TOP" NOWRAP>
+       <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> Syntax of proper motions is : \'pm-ra pm-dec [error ellipse] quality bibcode\' <UL> <LI><EM>pm-ra</EM> : mu-ra*cos(dec) (expressed in the ICRS system in mas/yr) <LI><EM>pm-dec</EM> : mu-dec (expressed in the ICRS system in mas/yr) <LI><EM>[error ellipse]</EM> : error major axis and minor axis (in mas), orientation angle (in deg) <LI><EM>quality</EM> : flag of quality (A=best quality -&gt; E=worst quality, ~ =unknown quality) <LI><EM>bibcode</EM> : bibcode of the proper motion reference </UL>  </FONT> ')" onmouseout="laz()">
+Proper motions <i>mas/yr</i> [error ellipse]:        </SPAN>
+      </TD>
+      <TD>
+       <B>
+        <TT>
+-5.95 -0.94 [0.75 0.37 0] A <A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?2007A%26A...474..653V">2007A&A...474..653V</A>        </TT>
+       </B>
+      </TD>
+     </TR>
+     <TR>
+      <TD ALIGN="LEFT" VALIGN="TOP" NOWRAP>
+       <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> Syntax of radial velocity (or/and redshift) is : \'value [error] quality bibcode\' <UL> <LI><EM>value</EM> : radial velocity or/and redshift (Heliocentric frame) according to your Output Options  <BR> (redshift may be not displayed if the data value is &lt;0 and the database inside value is a radial velocity) <LI><EM>[error]</EM> : error of the corresponding value displayed before <LI><EM>(wavelength)</EM> : wavelength range of the measurement :  Rad, mm, IR, Opt, UV, Xray, Gam or&#160;&#160;\'&#8764;\'(unknown) <LI><EM>quality</EM> : flag of quality ( A=best quality -&gt; E=worst quality, ~ =unknown quality)  <LI><EM>bibcode</EM> : bibcode of the value\'s origin  </UL>  </FONT> ')" onmouseout="laz()">
+Radial velocity / Redshift / cz :        </SPAN>
+      </TD>
+      <TD>
+       <B>
+        <TT>
+V(km/s) 18.0 [2] / 
+         <FONT SIZE="+0" COLOR="#969696">
+z(~) 0.000060 [0.000007]         </FONT>
+ / 
+         <FONT SIZE="+0" COLOR="#969696">
+cz 18.00 [2.00]         </FONT>
+&nbsp;&nbsp;(~) B <A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?1953GCRV..C......0W">1953GCRV..C......0W</A>        </TT>
+       </B>
+      </TD>
+     </TR>
+     <TR>
+      <TD ALIGN="LEFT" VALIGN="TOP" NOWRAP>
+       <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> Syntax of parallax is : \'value quality [error] bibcode\' <UL> <LI><EM>value</EM> : parallax value <LI><EM>quality</EM> : flag of quality (A=best quality -&gt; E=worst quality, ~ =unknown quality) <LI><EM>[error]</EM> : mean error <LI><EM>bibcode</EM> : bibcode of the parallax reference </UL>   </FONT> ')" onmouseout="laz()">
+Parallaxes <i>mas</i>:        </SPAN>
+      </TD>
+      <TD>
+       <B>
+        <TT>
+2.60  [0.63] A <A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?2007A%26A...474..653V">2007A&A...474..653V</A>        </TT>
+       </B>
+      </TD>
+     </TR>
+     <TR>
+      <TD ALIGN="LEFT" VALIGN="TOP" NOWRAP>
+       <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> Spectral type is made of 3 parts:  <UL>  <LI>the <EM>spectral type</EM>, which is made of a   temperature class, eventually a luminosity class (roman number)   and/or spectral peculiarities; <LI>a <EM>quality</EM> letter: A=best quality-&gt;E=worst quality, ~ =unknown quality  <LI><EM>bibcode</EM> : bibcode of the spectral type reference  </UL>  </FONT> ')" onmouseout="laz()">
+Spectral type:        </SPAN>
+      </TD>
+      <TD>
+       <B>
+        <TT>
+C D <A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?1971ApJ...167..521R">1971ApJ...167..521R</A>        </TT>
+       </B>
+      </TD>
+     </TR>
+     <TR>
+      <TD ALIGN="LEFT" VALIGN="TOP" NOWRAP>
+       <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> Syntax of fluxes (or magnitudes) is : \'filter-name  flux-value [error] quality MultVarFlags bibcode\' <UL> <LI><EM>filter-name</EM> : U, B, V, R, I, J, H, K, u, g, r, i, z  <LI><EM>flux-value</EM> : value of flux or magnitude <LI><EM>[error]</EM> : error value <LI><EM>quality</EM> : flag of quality of the flux value ( A=best quality -&gt; E=worst quality, ~ =unknown quality) <LI><EM>MultVarFlags</EM> : Mult is zero or one char (J) for joined photometry ; Var can be zero or two chars (V[0-4]) <LI><EM>bibcode </EM> : bibcode of the flux reference </UL>  </FONT> ')" onmouseout="laz()">
+Fluxes (5) : 
+       </SPAN>
+      </TD>
+      <TD>
+       <TABLE>
+        <TR>
+         <TD>
+          <B>
+           <TT>
+B      9.58 [~]  C 
+           </TT>
+          </B>
+          <B>
+           <TT>
+~                  
+           </TT>
+          </B>
+         </TD>
+        </TR>
+        <TR>
+         <TD>
+          <B>
+           <TT>
+V      6.76 [~]  C 
+           </TT>
+          </B>
+          <B>
+           <TT>
+~                  
+           </TT>
+          </B>
+         </TD>
+        </TR>
+        <TR>
+         <TD>
+          <B>
+           <TT>
+J      2.380 [0.312]  E 
+           </TT>
+          </B>
+          <B>
+           <TT>
+<A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?2003yCat.2246....0C">2003yCat.2246....0C</A>           </TT>
+          </B>
+         </TD>
+        </TR>
+        <TR>
+         <TD>
+          <B>
+           <TT>
+H      1.098 [0.220]  D 
+           </TT>
+          </B>
+          <B>
+           <TT>
+<A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?2003yCat.2246....0C">2003yCat.2246....0C</A>           </TT>
+          </B>
+         </TD>
+        </TR>
+        <TR>
+         <TD>
+          <B>
+           <TT>
+K      0.865 [0.202]  D 
+           </TT>
+          </B>
+          <B>
+           <TT>
+<A HREF="http://cdsbib.u-strasbg.fr/cgi-bin/cdsbib?2003yCat.2246....0C">2003yCat.2246....0C</A>           </TT>
+          </B>
+         </TD>
+        </TR>
+       </TABLE>
+      </TD>
+     </TR>
+    </TABLE>
+   </TD>
+   <TD VALIGN="TOP">
+    <IMG SRC="http://alasky.u-strasbg.fr/cgi/simbad-thumbnails/get-thumbnail.py?oid=1494518&size=200&legend=false&reticle=true&reticleWidth=1&reticleColor=yellow&scale=true" ALT=" " ALIGN="CENTER" />
+   </TD>
+  </TR>
+ </TABLE>
+<HR><P><A NAME="lab_ident"></A>
+ <TABLE>
+  <TR>
+   <TD>
+    <SPAN onmouseover="lay('<FONT SIZE=\'-1\'> The link on the acronym of the identifiers give access to the information for this acronym in the dictionary of nomenclature.  </FONT> ')" onmouseout="laz()">
+     <FONT SIZE="+1">
+      <B>
+Identifiers (28) : 
+      </B>
+     </FONT>
+    </SPAN>
+   </TD>
+  </TR>
+ </TABLE>
+<P> <TABLE WIDTH="100%">
+  <TR>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?V*%20Z">V*</A> Z Psc
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?GCRV">GCRV</A> 728
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?IRC">IRC</A> +30025
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?SKY%23">SKY#</A> 1918
+     </TT>
+    </B>
+   </TD>
+  </TR>
+  <TR>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?AG%2b25">AG</A>+25 127
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?GEN%23">GEN#</A> +1.00007561
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?LEE">LEE</A> 159
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?TYC">TYC</A> 1750-2134-1
+     </TT>
+    </B>
+   </TD>
+  </TR>
+  <TR>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?BD%2b25">BD</A>+25 205
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?GSC">GSC</A> 01750-02134
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?2MASS">2MASS</A> J01160504+2546098
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?UBV%20M">UBV</A> M 8053
+     </TT>
+    </B>
+   </TD>
+  </TR>
+  <TR>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?C*">C*</A> 63
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?HD">HD</A> 7561
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?N30">N30</A> 259
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?YZ%200">YZ</A> 0 391
+     </TT>
+    </B>
+   </TD>
+  </TR>
+  <TR>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?CGCS">CGCS</A> 198
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?HIC">HIC</A> 5914
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?PPM">PPM</A> 90619
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?YZ%2025">YZ</A> 25 379
+     </TT>
+    </B>
+   </TD>
+  </TR>
+  <TR>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?DO">DO</A> 8700
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?HIP">HIP</A> 5914
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?RAFGL">RAFGL</A> 188
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?%5bLFO93%5d">[LFO93]</A> 0113+25
+     </TT>
+    </B>
+   </TD>
+  </TR>
+  <TR>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?GC">GC</A> 1518
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?IRAS">IRAS</A> 01133+2530
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?SAO">SAO</A> 74593
+     </TT>
+    </B>
+   </TD>
+   <TD>
+    <B>
+     <TT>
+<A HREF="http://cds.u-strasbg.fr/cgi-bin/Dic-Simbad?AAVSO">AAVSO</A> 0110+25
+     </TT>
+    </B>
+   </TD>
+  </TR>
+ </TABLE>
+<HR><P><A NAME="lab_plot"></A>
+<P> <TABLE WIDTH="80%">
+  <TR VALIGN="TOP">
+   <TD WIDTH="12%">
+    <FONT SIZE="+1">
+     <B>
+Plots and Images
+     </B>
+    </FONT>
+   </TD>
+   <TD ALIGN="CENTER" VALIGN="TOP" WIDTH="12%">
+    <FORM ACTION="sim-plot" METHOD="GET">
+     <INPUT TYPE="hidden" NAME="target" VALUE="_BLANK" />
+     <INPUT TYPE="hidden" NAME="ident" VALUE="V* Z Psc" />
+     <INPUT TYPE="hidden" NAME="coo" VALUE="01 16 05.02960+25 46 09.6882" />
+     <INPUT TYPE="hidden" NAME="radius.unit" VALUE="arcmin" />
+     <INPUT TYPE="image" VALUE="plot around" SRC="http://simbad.u-strasbg.fr/icons/plot-icon.png" BORDER="0" ALIGN="MIDDLE" />
+<BR>     <B>
+plot
+     </B>
+<P>radius 
+     <INPUT TYPE="text" NAME="radius" SIZE="8" MAXLENGTH="8" VALUE="10" />
+ arcmin
+    </FORM>
+   </TD>
+   <TD ALIGN="CENTER" VALIGN="TOP" WIDTH="12%">
+    <A HREF="http://cdsportal.u-strasbg.fr/#V*%20Z%20Psc" TARGET="_blank">
+     <IMG SRC="http://simbad.u-strasbg.fr/icons/portal-icon.png" BORDER="0" />
+    </A>
+<BR>    <B>
+CDS portal
+    </B>
+   </TD>
+   <TD ALIGN="CENTER" VALIGN="TOP" WIDTH="12%">
+    <A HREF="http://cdsweb.u-strasbg.fr/SimPlay/#target=V*%20Z%20Psc&lp=true&rp=true&bp=true" TARGET="_blank">
+     <IMG SRC="http://simbad.u-strasbg.fr/icons/simplay-icon.png" BORDER="0" />
+    </A>
+<BR><B>CDS Simplay</B><br><I><FONT size='-1'>(requires flash)</FONT></I>   </TD>
+   <TD ALIGN="CENTER" VALIGN="TOP" WIDTH="12%">
+    <A HREF="http://aladin.u-strasbg.fr/java/nph-aladin.pl?script=get%20Aladin%20V*%20Z%20Psc%2011arcmin%3bget%20simbad%20V*%20Z%20Psc%2011arcmin&from=Simbad4" TARGET="_blank">
+     <IMG SRC="http://simbad.u-strasbg.fr/icons/aladin-icon.png" BORDER="0" />
+    </A>
+<BR>    <B>
+Aladin applet
+    </B>
+   </TD>
+  </TR>
+ </TABLE>
+</HTML>
+<HR><P><A NAME="lab_bib"></A>
+<TABLE WIDTH="100%">
+ <TR>
+  <TD VALIGN="TOP">
+   <FONT SIZE="+1">
+    <B>
+References (151 between 1850 and 2014)
+    </B>
+   </FONT>
+<BR>   <FONT SIZE="-1">
+    <I>
+Simbad bibliographic survey began in 1950 for stars (at least bright stars) and in 1983 for all other objects (outside the solar system).
+    </I>
+   </FONT>
+  </TD>
+  <TD VALIGN="TOP">
+   <FORM ACTION="sim-id#lab_bib" METHOD="GET">
+    <INPUT TYPE="submit" NAME="submit" VALUE="display" />
+    <SELECT NAME="bibdisplay">
+     <OPTION VALUE="bibnum">
+number of references     </OPTION>
+     <OPTION VALUE="bibcode">
+only bibcodes     </OPTION>
+     <OPTION VALUE="refsum" SELECTED>
+reference summary     </OPTION>
+     <OPTION VALUE="bibnumauthors">
+number of references by 1st author     </OPTION>
+     <OPTION VALUE="bibnumyears">
+number of references by year     </OPTION>
+     <OPTION VALUE="bibnumjournals">
+number of references by journal     </OPTION>
+    </SELECT>
+<P>from: 
+    <INPUT TYPE="text" NAME="bibyear1" SIZE="10" MAXLENGTH="12" VALUE="1850" />
+ to: 
+    <INPUT TYPE="text" NAME="bibyear2" SIZE="10" MAXLENGTH="12" VALUE="$currentYear" />
+    <INPUT TYPE="hidden" NAME="Ident" VALUE="@1494518" />
+    <INPUT TYPE="hidden" NAME="Name" VALUE="V* Z Psc" />
+   </FORM>
+  </TD>
+ </TR>
+</TABLE>
+<script language="JavaScript" type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<FORM ACTION="sim-id#lab_bib" METHOD="GET" id="formSort" accept-charset="utf-8">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <B>
+Sort
+ </B>
+ reference summaries by : 
+ (not exhaustive, 
+<A HREF="http://simbad.u-strasbg.fr/Pages/data_bibobjinfo.htx">explanation here</A>)<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <INPUT TYPE="submit" NAME="submit" VALUE="Date" />
+ <INPUT TYPE="submit" NAME="submit" VALUE="Title|Abstract|Keyword" />
+ <INPUT TYPE="submit" NAME="submit" VALUE="In table" />
+ <INPUT TYPE="hidden" NAME="Ident" VALUE="@1494518" />
+ <INPUT TYPE="hidden" NAME="Name" VALUE="V* Z Psc" />
+ <INPUT TYPE="hidden" NAME="bibdisplay" VALUE="refsum" />
+ <INPUT TYPE="hidden" NAME="bibyear1" VALUE="1850" />
+ <INPUT TYPE="hidden" NAME="bibyear2" VALUE="$currentYear" />
+</FORM>
+<P><script language="JavaScript" type="text/javascript">
+$('#formSort input[type="submit"]').attr("disabled","disabled");
+</script>
+<HR><P><P><A NAME="lab_meas"></A>
+<FONT SIZE="+1">
+ <B>
+Measurements (13 types) : 
+ </B>
+</FONT>
+<P><FORM ACTION="sim-id#lab_meas" METHOD="GET">
+<BR> <INPUT TYPE="checkbox" NAME="mescat.fe_h" />
+ <B>
+  <TT>
+Fe_H
+  </TT>
+ </B>
+:
+ <B>
+1
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.iras" />
+ <B>
+  <TT>
+IRAS
+  </TT>
+ </B>
+:
+ <B>
+1
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.irc" />
+ <B>
+  <TT>
+IRC
+  </TT>
+ </B>
+:
+ <B>
+1
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.mk" />
+ <B>
+  <TT>
+MK
+  </TT>
+ </B>
+:
+ <B>
+5
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.orv" />
+ <B>
+  <TT>
+oRV
+  </TT>
+ </B>
+:
+ <B>
+5
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.plx" />
+ <B>
+  <TT>
+PLX
+  </TT>
+ </B>
+:
+ <B>
+2
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.pm" />
+ <B>
+  <TT>
+PM
+  </TT>
+ </B>
+:
+ <B>
+4
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.pos" />
+ <B>
+  <TT>
+pos
+  </TT>
+ </B>
+:
+ <B>
+4
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.posa" />
+ <B>
+  <TT>
+posa
+  </TT>
+ </B>
+:
+ <B>
+1
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.sao" />
+ <B>
+  <TT>
+SAO
+  </TT>
+ </B>
+:
+ <B>
+1
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.ubv" />
+ <B>
+  <TT>
+UBV
+  </TT>
+ </B>
+:
+ <B>
+2
+ </B>
+&nbsp;&nbsp; <INPUT TYPE="checkbox" NAME="mescat.v*" />
+ <B>
+  <TT>
+V*
+  </TT>
+ </B>
+:
+ <B>
+1
+ </B>
+&nbsp;&nbsp;<BR> <INPUT TYPE="checkbox" NAME="mescat.velocities" />
+ <B>
+  <TT>
+velocities
+  </TT>
+ </B>
+:
+ <B>
+6
+ </B>
+&nbsp;&nbsp;<P> <INPUT TYPE="hidden" NAME="Ident" VALUE="@1494518" />
+ <INPUT TYPE="hidden" NAME="Name" VALUE="V* Z Psc" />
+ <INPUT TYPE="submit" NAME="submit" VALUE="display selected measurements" />
+&nbsp; <INPUT TYPE="submit" NAME="submit" VALUE="display all measurements" />
+&nbsp; <INPUT TYPE="submit" NAME="submit" VALUE="clear" />
+</FORM>
+<HR><P><P><A NAME="lab_arch"></A>
+<A NAME="lab_external"></A>
+<FONT SIZE="+1">
+ <B>
+External archives : 
+ </B>
+</FONT>
+<P>Data at 
+<A HREF="http://nedwww.ipac.caltech.edu/cgi-bin/nph-objsearch?objname=IRAS%2000342%2b234330&extend=no&out_csys=Equatorial&out_equinox=J2000.0&obj_sort=RA+or+Longitude&of=pre_text&zv_breaker=30000.0&list_limit=5&img_stamp=YES">NED - NASA/IPAC Extragalactic Database</A><P>Catalogue information from 
+<A HREF="http://vizier.u-strasbg.fr/">VizieR</A> :
+<P><A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-4?-c=019.02095668%2b25.76935785&-c.rs=5&-out.add=_r&-sort=_r&-out.max=$4">Generic search by coordinates (radius: 5 arcsec)</A><P><TABLE WIDTH="100%">
+ <TR>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?V*%20Z%20Psc">V* Z Psc</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?AG%2b25%20127">AG+25 127</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?BD%2b25%20205">BD+25 205</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?CGCS%20198">CGCS 198</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?GSC%2001750-02134">GSC 01750-02134</A>    </TT>
+   </B>
+  </TD>
+ </TR>
+ <TR>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?HD%207561">HD 7561</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?HIC%205914">HIC 5914</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?HIP%205914">HIP 5914</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?IRAS%2001133%2b2530">IRAS 01133+2530</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?IRC%20%2b30025">IRC +30025</A>    </TT>
+   </B>
+  </TD>
+ </TR>
+ <TR>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?2MASS%20J01160504%2b2546098">2MASS J01160504+2546098</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?PPM%2090619">PPM 90619</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?RAFGL%20188">RAFGL 188</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?SAO%2074593">SAO 74593</A>    </TT>
+   </B>
+  </TD>
+  <TD>
+   <B>
+    <TT>
+<A HREF="http://vizier.u-strasbg.fr/viz-bin/VizieR-S?TYC%201750-2134-1">TYC 1750-2134-1</A>    </TT>
+   </B>
+  </TD>
+ </TR>
+</TABLE>
+<HR><P><P><A NAME="lab_annotations"></A>
+<FONT SIZE="+1">
+ <B>
+Annotations :
+ </B>
+</FONT>
+<BR><FONT SIZE="+0">
+ <I>
+Annotations allow a user to add a note or report an error concerning the astronomical object and its data. It requires registration to post a note. See <A HREF="http://cdsannotations.u-strasbg.fr/annotations/doc/">description</A> .<br>The list of all annotations to SIMBAD objects can be found <A HREF="http://cdsannotations.u-strasbg.fr/">here</A> . </I>
+</FONT>
+<P>Currently no annotations available
+<P><A HREF="http://cdsannotations.u-strasbg.fr/annotations/simbadObject/1494518/new">add an annotation to this object</A><P><A HREF="http://cdsannotations.u-strasbg.fr/annotations/simbadObject/1494518/new?isErrorNotification=true">report an error concerning the data of this object</A><HR><P><P><A href="http://cdsportal.u-strasbg.fr/StoreSimbadData.html?requestURL=http%3A%2F%2Fsimbad.u-strasbg.fr%2Fsimbad%2Fsim-id%3Foutput.format%3DVOTable%26Ident%3DZ%2BPsc%26NbIdent%3D1%26Radius.unit%3Darcmin%26Radius%3D2&destURL=http%3A%2F%2Fsimbad.u-strasbg.fr%2Fsimbad%2Fsim-id%2526Ident%3DZ%2BPsc%2526NbIdent%3D1%2526submit%3Dsubmit+id%2526Radius.unit%3Darcmin%2526Radius%3D2&target=Z+Psc&radius=2arcmin">Store this result in the CDS portal</A><P>To bookmark this query, right click on this link: <A href="http://simbad.u-strasbg.fr/simbad/sim-id?Ident=Z%20Psc&NbIdent=1&submit=submit%20id&Radius.unit=arcmin&Radius=2">simbad:Z Psc</A> and select 'bookmark this link' or equivalent in the popup menu</div>
+<div class="cdstail">
+<hr class="simbad"/>
+<div>
+<div>2013.11.08-20:27:08</div>
+<div>
+<p>&copy; UDS/CNRS</p>
+<p><a href="mailto:cds-question@unistra.fr?Subject=Simbad"><i class="icon-envelope"></i> Contact</a></p>
+</div>
+</div>
+</div><script type="text/javascript">var piwikSiteId="simbad";</script>
+<script type="text/javascript" src="http://cdsannotations.u-strasbg.fr/piwikinit"></script>
+<script type="text/javascript" src="http://cdsannotations.u-strasbg.fr/piwiktracker"></script></body>

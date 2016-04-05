@@ -1,0 +1,4 @@
+erase
+data uvmg2data.out
+lines 2 0
+read { (NUV-V)s

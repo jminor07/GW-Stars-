@@ -1,0 +1,50 @@
+erase
+ctype black
+
+data tmspectra.000
+read { w 1 szero 5 ssmoo 10 }
+limits 5000 5260   0 1.3
+box
+connect w szero
+ctype red
+connect w ssmoo
+
+
+ctype blue
+data tmspectra.100
+read { w 1 szero 5 ssmoo 10 }
+connect w ssmoo
+
+ctype cyan
+data tmspectra.200
+read { w 1 szero 5 ssmoo 10 }
+connect w ssmoo
+
+ctype magenta
+data tmspectra.300
+read { w 1 szero 5 ssmoo 10 }
+connect w ssmoo
+
+ctype yellow
+data tmspectra.400
+read { w 1 szero 5 ssmoo 10 }
+connect w ssmoo
+
+
+ctype default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

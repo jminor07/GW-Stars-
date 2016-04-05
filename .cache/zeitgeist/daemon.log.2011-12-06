@@ -1,0 +1,627 @@
+15729 [2011-12-06 09:48:59,761] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/LOGS/log10.data'
+15729 [2011-12-06 09:48:59,764] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/LOGS/log10.data'
+15729 [2011-12-06 09:48:59,766] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/LOGS/log10.data'
+15729 [2011-12-06 09:48:59,941] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.182941s
+15729 [2011-12-06 09:48:59,941] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 09:48:59,941] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 09:48:59,947] - DEBUG - zeitgeist.engine - Found 100 events in 0.003951s
+15729 [2011-12-06 09:48:59,954] - DEBUG - zeitgeist.engine - Got 100 raw events in 0.000539s
+15729 [2011-12-06 09:48:59,954] - DEBUG - zeitgeist.engine - Got 100 events in 0.006348s
+15729 [2011-12-06 09:48:59,954] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.001617s
+15729 [2011-12-06 09:48:59,954] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.001247s
+15729 [2011-12-06 09:48:59,954] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000441s
+15729 [2011-12-06 09:49:00,267] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 10:41:40,370] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/LOGS/star.log'
+15729 [2011-12-06 10:41:40,373] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/LOGS/star.log'
+15729 [2011-12-06 10:41:40,375] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/LOGS/star.log'
+15729 [2011-12-06 10:41:40,499] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.131607s
+15729 [2011-12-06 10:41:40,499] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 10:41:40,499] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 10:41:40,505] - DEBUG - zeitgeist.engine - Found 100 events in 0.003560s
+15729 [2011-12-06 10:41:40,507] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001425s
+15729 [2011-12-06 10:41:40,507] - DEBUG - zeitgeist.engine - Got 100 events in 0.000169s
+15729 [2011-12-06 10:41:40,507] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000029s
+15729 [2011-12-06 10:41:40,507] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000019s
+15729 [2011-12-06 10:41:40,507] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 10:41:40,875] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 18:23:59,373] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:23:59,375] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:23:59,377] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:23:59,507] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.137405s
+15729 [2011-12-06 18:23:59,507] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 18:23:59,507] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 18:23:59,516] - DEBUG - zeitgeist.engine - Found 100 events in 0.006290s
+15729 [2011-12-06 18:23:59,519] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002395s
+15729 [2011-12-06 18:23:59,519] - DEBUG - zeitgeist.engine - Got 100 events in 0.000267s
+15729 [2011-12-06 18:23:59,519] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 18:23:59,519] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000030s
+15729 [2011-12-06 18:23:59,520] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 18:23:59,878] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 18:24:33,900] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:24:34,014] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.115685s
+15729 [2011-12-06 18:24:34,014] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 18:24:34,014] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 18:24:34,023] - DEBUG - zeitgeist.engine - Found 100 events in 0.006080s
+15729 [2011-12-06 18:24:34,025] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002384s
+15729 [2011-12-06 18:24:34,026] - DEBUG - zeitgeist.engine - Got 100 events in 0.000270s
+15729 [2011-12-06 18:24:34,026] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000042s
+15729 [2011-12-06 18:24:34,026] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000030s
+15729 [2011-12-06 18:24:34,026] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 18:24:34,401] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 18:24:47,369] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:24:47,484] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.117591s
+15729 [2011-12-06 18:24:47,484] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 18:24:47,484] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 18:24:47,493] - DEBUG - zeitgeist.engine - Found 100 events in 0.006244s
+15729 [2011-12-06 18:24:47,496] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002353s
+15729 [2011-12-06 18:24:47,496] - DEBUG - zeitgeist.engine - Got 100 events in 0.000266s
+15729 [2011-12-06 18:24:47,496] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 18:24:47,496] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 18:24:47,496] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 18:24:47,870] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 18:24:59,427] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:24:59,555] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.129807s
+15729 [2011-12-06 18:24:59,555] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 18:24:59,555] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 18:24:59,564] - DEBUG - zeitgeist.engine - Found 100 events in 0.006225s
+15729 [2011-12-06 18:24:59,566] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002439s
+15729 [2011-12-06 18:24:59,567] - DEBUG - zeitgeist.engine - Got 100 events in 0.000268s
+15729 [2011-12-06 18:24:59,567] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 18:24:59,567] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 18:24:59,567] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 18:24:59,928] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 18:26:02,878] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:26:02,989] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.112100s
+15729 [2011-12-06 18:26:02,989] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 18:26:02,989] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 18:26:02,994] - DEBUG - zeitgeist.engine - Found 100 events in 0.003743s
+15729 [2011-12-06 18:26:02,996] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001517s
+15729 [2011-12-06 18:26:02,996] - DEBUG - zeitgeist.engine - Got 100 events in 0.000173s
+15729 [2011-12-06 18:26:02,996] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000029s
+15729 [2011-12-06 18:26:02,996] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000020s
+15729 [2011-12-06 18:26:02,996] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000005s
+15729 [2011-12-06 18:26:03,379] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 18:26:36,312] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:26:36,444] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.134168s
+15729 [2011-12-06 18:26:36,444] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 18:26:36,445] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 18:26:36,453] - DEBUG - zeitgeist.engine - Found 100 events in 0.006131s
+15729 [2011-12-06 18:26:36,456] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002387s
+15729 [2011-12-06 18:26:36,456] - DEBUG - zeitgeist.engine - Got 100 events in 0.000267s
+15729 [2011-12-06 18:26:36,456] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 18:26:36,456] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 18:26:36,456] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 18:26:36,813] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 18:26:51,688] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:26:51,802] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.115964s
+15729 [2011-12-06 18:26:51,802] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 18:26:51,802] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 18:26:51,811] - DEBUG - zeitgeist.engine - Found 100 events in 0.006285s
+15729 [2011-12-06 18:26:51,813] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002452s
+15729 [2011-12-06 18:26:51,814] - DEBUG - zeitgeist.engine - Got 100 events in 0.000268s
+15729 [2011-12-06 18:26:51,814] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000042s
+15729 [2011-12-06 18:26:51,814] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 18:26:51,814] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 18:26:52,189] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 18:27:07,953] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:27:08,029] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.077902s
+15729 [2011-12-06 18:27:08,029] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 18:27:08,029] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 18:27:08,038] - DEBUG - zeitgeist.engine - Found 100 events in 0.006261s
+15729 [2011-12-06 18:27:08,040] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002514s
+15729 [2011-12-06 18:27:08,041] - DEBUG - zeitgeist.engine - Got 100 events in 0.000279s
+15729 [2011-12-06 18:27:08,041] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 18:27:08,041] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 18:27:08,041] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000007s
+15729 [2011-12-06 18:27:08,454] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 18:27:28,820] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 18:27:28,925] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.106092s
+15729 [2011-12-06 18:27:28,925] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 18:27:28,925] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 18:27:28,931] - DEBUG - zeitgeist.engine - Found 100 events in 0.003720s
+15729 [2011-12-06 18:27:28,932] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001484s
+15729 [2011-12-06 18:27:28,932] - DEBUG - zeitgeist.engine - Got 100 events in 0.000178s
+15729 [2011-12-06 18:27:28,932] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000029s
+15729 [2011-12-06 18:27:28,932] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000020s
+15729 [2011-12-06 18:27:28,933] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 18:27:29,321] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 18:27:45,693] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_4'
+15729 [2011-12-06 18:27:45,695] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_4'
+15729 [2011-12-06 18:27:45,697] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_4'
+15729 [2011-12-06 18:27:45,806] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.116120s
+15729 [2011-12-06 18:27:45,806] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 18:27:45,806] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 18:27:45,815] - DEBUG - zeitgeist.engine - Found 100 events in 0.006343s
+15729 [2011-12-06 18:27:45,818] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002505s
+15729 [2011-12-06 18:27:45,818] - DEBUG - zeitgeist.engine - Got 100 events in 0.000267s
+15729 [2011-12-06 18:27:45,818] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 18:27:45,818] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000030s
+15729 [2011-12-06 18:27:45,819] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 18:27:46,198] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:15:02,978] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 21:15:03,112] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.136955s
+15729 [2011-12-06 21:15:03,113] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:15:03,113] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:15:03,121] - DEBUG - zeitgeist.engine - Found 100 events in 0.006184s
+15729 [2011-12-06 21:15:03,124] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002385s
+15729 [2011-12-06 21:15:03,124] - DEBUG - zeitgeist.engine - Got 100 events in 0.000269s
+15729 [2011-12-06 21:15:03,124] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:15:03,124] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:15:03,124] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:15:03,479] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:15:16,455] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 21:15:16,549] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.096017s
+15729 [2011-12-06 21:15:16,549] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:15:16,550] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:15:16,558] - DEBUG - zeitgeist.engine - Found 100 events in 0.006298s
+15729 [2011-12-06 21:15:16,561] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002530s
+15729 [2011-12-06 21:15:16,561] - DEBUG - zeitgeist.engine - Got 100 events in 0.000267s
+15729 [2011-12-06 21:15:16,561] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:15:16,561] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:15:16,562] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:15:16,957] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:15:24,078] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 21:15:24,182] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.106710s
+15729 [2011-12-06 21:15:24,183] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:15:24,183] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:15:24,192] - DEBUG - zeitgeist.engine - Found 100 events in 0.006373s
+15729 [2011-12-06 21:15:24,195] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002597s
+15729 [2011-12-06 21:15:24,195] - DEBUG - zeitgeist.engine - Got 100 events in 0.000289s
+15729 [2011-12-06 21:15:24,195] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:15:24,195] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000034s
+15729 [2011-12-06 21:15:24,195] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000005s
+15729 [2011-12-06 21:15:24,579] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:15:39,477] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_1'
+15729 [2011-12-06 21:15:39,479] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_1'
+15729 [2011-12-06 21:15:39,481] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_1'
+15729 [2011-12-06 21:15:39,673] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.199058s
+15729 [2011-12-06 21:15:39,673] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:15:39,673] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 21:15:39,681] - DEBUG - zeitgeist.engine - Found 100 events in 0.005482s
+15729 [2011-12-06 21:15:39,683] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001405s
+15729 [2011-12-06 21:15:39,683] - DEBUG - zeitgeist.engine - Got 100 events in 0.000166s
+15729 [2011-12-06 21:15:39,683] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000028s
+15729 [2011-12-06 21:15:39,683] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000018s
+15729 [2011-12-06 21:15:39,683] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:15:39,982] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:15:43,834] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_2'
+15729 [2011-12-06 21:15:43,836] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_2'
+15729 [2011-12-06 21:15:43,838] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_2'
+15729 [2011-12-06 21:15:44,027] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.197023s
+15729 [2011-12-06 21:15:44,028] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:15:44,028] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 21:15:44,037] - DEBUG - zeitgeist.engine - Found 100 events in 0.006474s
+15729 [2011-12-06 21:15:44,039] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002406s
+15729 [2011-12-06 21:15:44,040] - DEBUG - zeitgeist.engine - Got 100 events in 0.000266s
+15729 [2011-12-06 21:15:44,040] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:15:44,040] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:15:44,040] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:15:44,339] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:15:46,580] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_3'
+15729 [2011-12-06 21:15:46,582] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_3'
+15729 [2011-12-06 21:15:46,584] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_3'
+15729 [2011-12-06 21:15:46,726] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.149546s
+15729 [2011-12-06 21:15:46,726] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:15:46,727] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 21:15:46,736] - DEBUG - zeitgeist.engine - Found 100 events in 0.006449s
+15729 [2011-12-06 21:15:46,738] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002372s
+15729 [2011-12-06 21:15:46,739] - DEBUG - zeitgeist.engine - Got 100 events in 0.000266s
+15729 [2011-12-06 21:15:46,739] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:15:46,739] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000030s
+15729 [2011-12-06 21:15:46,739] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:15:47,085] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:15:50,823] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_4'
+15729 [2011-12-06 21:15:50,940] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.120020s
+15729 [2011-12-06 21:15:50,940] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:15:50,941] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:15:50,949] - DEBUG - zeitgeist.engine - Found 100 events in 0.006500s
+15729 [2011-12-06 21:15:50,952] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002453s
+15729 [2011-12-06 21:15:50,952] - DEBUG - zeitgeist.engine - Got 100 events in 0.000269s
+15729 [2011-12-06 21:15:50,952] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:15:50,953] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000030s
+15729 [2011-12-06 21:15:50,953] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:15:51,324] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:15:53,938] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_5'
+15729 [2011-12-06 21:15:53,940] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_5'
+15729 [2011-12-06 21:15:53,942] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_5'
+15729 [2011-12-06 21:15:54,119] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.184891s
+15729 [2011-12-06 21:15:54,120] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:15:54,120] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 21:15:54,128] - DEBUG - zeitgeist.engine - Found 100 events in 0.005948s
+15729 [2011-12-06 21:15:54,130] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001417s
+15729 [2011-12-06 21:15:54,130] - DEBUG - zeitgeist.engine - Got 100 events in 0.000166s
+15729 [2011-12-06 21:15:54,130] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000028s
+15729 [2011-12-06 21:15:54,130] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000018s
+15729 [2011-12-06 21:15:54,130] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:15:54,443] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:15:58,213] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_6'
+15729 [2011-12-06 21:15:58,215] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_6'
+15729 [2011-12-06 21:15:58,217] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_6'
+15729 [2011-12-06 21:15:58,483] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.273049s
+15729 [2011-12-06 21:15:58,483] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:15:58,483] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 21:15:58,492] - DEBUG - zeitgeist.engine - Found 100 events in 0.006649s
+15729 [2011-12-06 21:15:58,495] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002390s
+15729 [2011-12-06 21:15:58,495] - DEBUG - zeitgeist.engine - Got 100 events in 0.000269s
+15729 [2011-12-06 21:15:58,495] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000045s
+15729 [2011-12-06 21:15:58,495] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:15:58,495] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:15:58,718] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:16:01,775] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_7'
+15729 [2011-12-06 21:16:01,776] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_7'
+15729 [2011-12-06 21:16:01,777] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_7'
+15729 [2011-12-06 21:16:01,985] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.212638s
+15729 [2011-12-06 21:16:01,985] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:16:01,985] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 21:16:01,994] - DEBUG - zeitgeist.engine - Found 100 events in 0.006387s
+15729 [2011-12-06 21:16:01,997] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002395s
+15729 [2011-12-06 21:16:01,997] - DEBUG - zeitgeist.engine - Got 100 events in 0.000269s
+15729 [2011-12-06 21:16:01,997] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:16:01,997] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:16:01,997] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:16:02,278] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:16:10,113] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_all'
+15729 [2011-12-06 21:16:10,115] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_all'
+15729 [2011-12-06 21:16:10,117] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_all'
+15729 [2011-12-06 21:16:10,321] - DEBUG - zeitgeist.engine - Inserted 3 events out of 3 in 0.211673s
+15729 [2011-12-06 21:16:10,322] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:16:10,322] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 3 insertions
+15729 [2011-12-06 21:16:10,331] - DEBUG - zeitgeist.engine - Found 100 events in 0.006690s
+15729 [2011-12-06 21:16:10,334] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002655s
+15729 [2011-12-06 21:16:10,334] - DEBUG - zeitgeist.engine - Got 100 events in 0.000268s
+15729 [2011-12-06 21:16:10,334] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:16:10,335] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:16:10,335] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:16:10,618] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:16:21,089] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_1'
+15729 [2011-12-06 21:16:21,200] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.113513s
+15729 [2011-12-06 21:16:21,200] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:16:21,200] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:16:21,209] - DEBUG - zeitgeist.engine - Found 100 events in 0.006674s
+15729 [2011-12-06 21:16:21,212] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002415s
+15729 [2011-12-06 21:16:21,212] - DEBUG - zeitgeist.engine - Got 100 events in 0.000169s
+15729 [2011-12-06 21:16:21,212] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000029s
+15729 [2011-12-06 21:16:21,212] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000019s
+15729 [2011-12-06 21:16:21,212] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:16:21,590] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:16:31,822] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_2'
+15729 [2011-12-06 21:16:31,930] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.110582s
+15729 [2011-12-06 21:16:31,930] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:16:31,930] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:16:31,939] - DEBUG - zeitgeist.engine - Found 100 events in 0.006580s
+15729 [2011-12-06 21:16:31,942] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002582s
+15729 [2011-12-06 21:16:31,942] - DEBUG - zeitgeist.engine - Got 100 events in 0.000267s
+15729 [2011-12-06 21:16:31,942] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:16:31,942] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:16:31,942] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:16:32,323] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:16:43,181] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_3'
+15729 [2011-12-06 21:16:43,289] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.109703s
+15729 [2011-12-06 21:16:43,289] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:16:43,289] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:16:43,298] - DEBUG - zeitgeist.engine - Found 100 events in 0.006654s
+15729 [2011-12-06 21:16:43,301] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002521s
+15729 [2011-12-06 21:16:43,301] - DEBUG - zeitgeist.engine - Got 100 events in 0.000268s
+15729 [2011-12-06 21:16:43,301] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:16:43,301] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:16:43,301] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:16:43,682] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:17:06,672] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_4'
+15729 [2011-12-06 21:17:06,768] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.098467s
+15729 [2011-12-06 21:17:06,768] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:17:06,768] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:17:06,777] - DEBUG - zeitgeist.engine - Found 100 events in 0.006556s
+15729 [2011-12-06 21:17:06,780] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002383s
+15729 [2011-12-06 21:17:06,780] - DEBUG - zeitgeist.engine - Got 100 events in 0.000281s
+15729 [2011-12-06 21:17:06,780] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:17:06,780] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000038s
+15729 [2011-12-06 21:17:06,780] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:17:07,173] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:17:15,792] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_5'
+15729 [2011-12-06 21:17:15,875] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.085412s
+15729 [2011-12-06 21:17:15,875] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:17:15,875] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:17:15,884] - DEBUG - zeitgeist.engine - Found 100 events in 0.006778s
+15729 [2011-12-06 21:17:15,887] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002410s
+15729 [2011-12-06 21:17:15,887] - DEBUG - zeitgeist.engine - Got 100 events in 0.000268s
+15729 [2011-12-06 21:17:15,887] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:17:15,887] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:17:15,888] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:17:16,293] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:17:22,997] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_6'
+15729 [2011-12-06 21:17:23,077] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.083464s
+15729 [2011-12-06 21:17:23,078] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:17:23,078] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:17:23,086] - DEBUG - zeitgeist.engine - Found 100 events in 0.005539s
+15729 [2011-12-06 21:17:23,087] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001412s
+15729 [2011-12-06 21:17:23,087] - DEBUG - zeitgeist.engine - Got 100 events in 0.000168s
+15729 [2011-12-06 21:17:23,087] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000029s
+15729 [2011-12-06 21:17:23,087] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000019s
+15729 [2011-12-06 21:17:23,087] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:17:23,498] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:17:29,323] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_7'
+15729 [2011-12-06 21:17:29,403] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.082125s
+15729 [2011-12-06 21:17:29,403] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:17:29,403] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:17:29,412] - DEBUG - zeitgeist.engine - Found 100 events in 0.006635s
+15729 [2011-12-06 21:17:29,415] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002405s
+15729 [2011-12-06 21:17:29,415] - DEBUG - zeitgeist.engine - Got 100 events in 0.000267s
+15729 [2011-12-06 21:17:29,415] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:17:29,415] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:17:29,415] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:17:29,824] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:18:01,720] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_all'
+15729 [2011-12-06 21:18:01,799] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.080852s
+15729 [2011-12-06 21:18:01,799] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:18:01,799] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:18:01,808] - DEBUG - zeitgeist.engine - Found 100 events in 0.006561s
+15729 [2011-12-06 21:18:01,811] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002381s
+15729 [2011-12-06 21:18:01,811] - DEBUG - zeitgeist.engine - Got 100 events in 0.000269s
+15729 [2011-12-06 21:18:01,811] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:18:01,811] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000030s
+15729 [2011-12-06 21:18:01,811] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:18:02,221] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:18:13,506] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_7'
+15729 [2011-12-06 21:18:13,588] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.084108s
+15729 [2011-12-06 21:18:13,588] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:18:13,588] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:18:13,597] - DEBUG - zeitgeist.engine - Found 100 events in 0.006596s
+15729 [2011-12-06 21:18:13,600] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002385s
+15729 [2011-12-06 21:18:13,600] - DEBUG - zeitgeist.engine - Got 100 events in 0.000336s
+15729 [2011-12-06 21:18:13,600] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:18:13,600] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:18:13,600] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:18:14,007] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:18:25,373] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_6'
+15729 [2011-12-06 21:18:25,510] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.139335s
+15729 [2011-12-06 21:18:25,510] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:18:25,510] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:18:25,519] - DEBUG - zeitgeist.engine - Found 100 events in 0.006418s
+15729 [2011-12-06 21:18:25,521] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001848s
+15729 [2011-12-06 21:18:25,521] - DEBUG - zeitgeist.engine - Got 100 events in 0.000167s
+15729 [2011-12-06 21:18:25,521] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000028s
+15729 [2011-12-06 21:18:25,521] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000018s
+15729 [2011-12-06 21:18:25,521] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:18:25,874] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:18:36,045] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_5'
+15729 [2011-12-06 21:18:36,132] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.088618s
+15729 [2011-12-06 21:18:36,132] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:18:36,132] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:18:36,141] - DEBUG - zeitgeist.engine - Found 100 events in 0.006894s
+15729 [2011-12-06 21:18:36,144] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002392s
+15729 [2011-12-06 21:18:36,144] - DEBUG - zeitgeist.engine - Got 100 events in 0.000386s
+15729 [2011-12-06 21:18:36,144] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000045s
+15729 [2011-12-06 21:18:36,144] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000030s
+15729 [2011-12-06 21:18:36,144] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:18:36,546] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:18:43,791] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_4'
+15729 [2011-12-06 21:18:43,881] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.091650s
+15729 [2011-12-06 21:18:43,881] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:18:43,881] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:18:43,890] - DEBUG - zeitgeist.engine - Found 100 events in 0.006669s
+15729 [2011-12-06 21:18:43,893] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002140s
+15729 [2011-12-06 21:18:43,893] - DEBUG - zeitgeist.engine - Got 100 events in 0.000170s
+15729 [2011-12-06 21:18:43,893] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000028s
+15729 [2011-12-06 21:18:43,893] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000019s
+15729 [2011-12-06 21:18:43,893] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:18:44,292] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:18:52,519] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_3'
+15729 [2011-12-06 21:18:52,615] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.098820s
+15729 [2011-12-06 21:18:52,615] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:18:52,616] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:18:52,624] - DEBUG - zeitgeist.engine - Found 100 events in 0.006632s
+15729 [2011-12-06 21:18:52,627] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002382s
+15729 [2011-12-06 21:18:52,627] - DEBUG - zeitgeist.engine - Got 100 events in 0.000267s
+15729 [2011-12-06 21:18:52,627] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:18:52,627] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:18:52,628] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:18:53,020] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:19:18,668] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_2'
+15729 [2011-12-06 21:19:18,760] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.094802s
+15729 [2011-12-06 21:19:18,761] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:19:18,761] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:19:18,770] - DEBUG - zeitgeist.engine - Found 100 events in 0.006744s
+15729 [2011-12-06 21:19:18,772] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002479s
+15729 [2011-12-06 21:19:18,773] - DEBUG - zeitgeist.engine - Got 100 events in 0.000354s
+15729 [2011-12-06 21:19:18,773] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000057s
+15729 [2011-12-06 21:19:18,773] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000030s
+15729 [2011-12-06 21:19:18,773] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000007s
+15729 [2011-12-06 21:19:19,169] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:19:27,999] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_1'
+15729 [2011-12-06 21:19:28,091] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.094323s
+15729 [2011-12-06 21:19:28,091] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:19:28,091] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:19:28,100] - DEBUG - zeitgeist.engine - Found 100 events in 0.006631s
+15729 [2011-12-06 21:19:28,102] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001417s
+15729 [2011-12-06 21:19:28,102] - DEBUG - zeitgeist.engine - Got 100 events in 0.000167s
+15729 [2011-12-06 21:19:28,102] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000027s
+15729 [2011-12-06 21:19:28,102] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000019s
+15729 [2011-12-06 21:19:28,102] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:19:28,500] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:19:38,817] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 21:19:38,903] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.088480s
+15729 [2011-12-06 21:19:38,903] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:19:38,904] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:19:38,913] - DEBUG - zeitgeist.engine - Found 100 events in 0.006685s
+15729 [2011-12-06 21:19:38,915] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002391s
+15729 [2011-12-06 21:19:38,915] - DEBUG - zeitgeist.engine - Got 100 events in 0.000266s
+15729 [2011-12-06 21:19:38,915] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:19:38,916] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:19:38,916] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:19:39,318] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:20:16,373] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 21:20:16,457] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.085729s
+15729 [2011-12-06 21:20:16,457] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:20:16,457] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:20:16,466] - DEBUG - zeitgeist.engine - Found 100 events in 0.006725s
+15729 [2011-12-06 21:20:16,469] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002472s
+15729 [2011-12-06 21:20:16,469] - DEBUG - zeitgeist.engine - Got 100 events in 0.000268s
+15729 [2011-12-06 21:20:16,469] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000045s
+15729 [2011-12-06 21:20:16,469] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:20:16,469] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:20:16,874] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:21:05,980] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 21:21:06,065] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.087345s
+15729 [2011-12-06 21:21:06,065] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:21:06,065] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:21:06,074] - DEBUG - zeitgeist.engine - Found 100 events in 0.006671s
+15729 [2011-12-06 21:21:06,077] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002494s
+15729 [2011-12-06 21:21:06,077] - DEBUG - zeitgeist.engine - Got 100 events in 0.000271s
+15729 [2011-12-06 21:21:06,077] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:21:06,077] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:21:06,077] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:21:06,481] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:22:07,929] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 21:22:08,017] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.090092s
+15729 [2011-12-06 21:22:08,017] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:22:08,017] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:22:08,025] - DEBUG - zeitgeist.engine - Found 100 events in 0.005703s
+15729 [2011-12-06 21:22:08,027] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001415s
+15729 [2011-12-06 21:22:08,027] - DEBUG - zeitgeist.engine - Got 100 events in 0.000169s
+15729 [2011-12-06 21:22:08,027] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000028s
+15729 [2011-12-06 21:22:08,027] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000018s
+15729 [2011-12-06 21:22:08,027] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:22:08,430] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:22:13,596] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_all'
+15729 [2011-12-06 21:22:13,680] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.085862s
+15729 [2011-12-06 21:22:13,680] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:22:13,680] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:22:13,689] - DEBUG - zeitgeist.engine - Found 100 events in 0.006517s
+15729 [2011-12-06 21:22:13,692] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002393s
+15729 [2011-12-06 21:22:13,692] - DEBUG - zeitgeist.engine - Got 100 events in 0.000266s
+15729 [2011-12-06 21:22:13,692] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000042s
+15729 [2011-12-06 21:22:13,692] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:22:13,692] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:22:14,097] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:22:15,576] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_7'
+15729 [2011-12-06 21:22:15,663] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.089579s
+15729 [2011-12-06 21:22:15,663] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:22:15,664] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:22:15,672] - DEBUG - zeitgeist.engine - Found 100 events in 0.006752s
+15729 [2011-12-06 21:22:15,675] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002388s
+15729 [2011-12-06 21:22:15,675] - DEBUG - zeitgeist.engine - Got 100 events in 0.000268s
+15729 [2011-12-06 21:22:15,675] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000045s
+15729 [2011-12-06 21:22:15,676] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:22:15,676] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:22:16,077] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:22:18,885] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_5'
+15729 [2011-12-06 21:22:18,970] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.086868s
+15729 [2011-12-06 21:22:18,970] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:22:18,970] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:22:18,979] - DEBUG - zeitgeist.engine - Found 100 events in 0.006702s
+15729 [2011-12-06 21:22:18,981] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001787s
+15729 [2011-12-06 21:22:18,981] - DEBUG - zeitgeist.engine - Got 100 events in 0.000168s
+15729 [2011-12-06 21:22:18,981] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000029s
+15729 [2011-12-06 21:22:18,981] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000019s
+15729 [2011-12-06 21:22:18,981] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:22:19,386] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:22:20,385] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_4'
+15729 [2011-12-06 21:22:20,468] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.086204s
+15729 [2011-12-06 21:22:20,469] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:22:20,469] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:22:20,478] - DEBUG - zeitgeist.engine - Found 100 events in 0.006519s
+15729 [2011-12-06 21:22:20,480] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002345s
+15729 [2011-12-06 21:22:20,480] - DEBUG - zeitgeist.engine - Got 100 events in 0.000171s
+15729 [2011-12-06 21:22:20,480] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000029s
+15729 [2011-12-06 21:22:20,480] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000019s
+15729 [2011-12-06 21:22:20,480] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:22:20,886] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:22:25,291] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist_1.0_1'
+15729 [2011-12-06 21:22:25,361] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.072599s
+15729 [2011-12-06 21:22:25,361] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:22:25,362] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:22:25,370] - DEBUG - zeitgeist.engine - Found 100 events in 0.006505s
+15729 [2011-12-06 21:22:25,373] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002407s
+15729 [2011-12-06 21:22:25,373] - DEBUG - zeitgeist.engine - Got 100 events in 0.000268s
+15729 [2011-12-06 21:22:25,373] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:22:25,373] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000030s
+15729 [2011-12-06 21:22:25,374] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:22:25,792] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:22:43,271] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/1M_pre_ms_to_wd/inlist'
+15729 [2011-12-06 21:22:43,376] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.106971s
+15729 [2011-12-06 21:22:43,376] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:22:43,377] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:22:43,382] - DEBUG - zeitgeist.engine - Found 100 events in 0.003949s
+15729 [2011-12-06 21:22:43,384] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001426s
+15729 [2011-12-06 21:22:43,384] - DEBUG - zeitgeist.engine - Got 100 events in 0.000215s
+15729 [2011-12-06 21:22:43,384] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000029s
+15729 [2011-12-06 21:22:43,384] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000024s
+15729 [2011-12-06 21:22:43,384] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:22:43,771] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:24:44,073] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/he_core_flash/inlist_he_core_flash'
+15729 [2011-12-06 21:24:44,159] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.087998s
+15729 [2011-12-06 21:24:44,159] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:24:44,159] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:24:44,168] - DEBUG - zeitgeist.engine - Found 100 events in 0.006763s
+15729 [2011-12-06 21:24:44,171] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002390s
+15729 [2011-12-06 21:24:44,171] - DEBUG - zeitgeist.engine - Got 100 events in 0.000265s
+15729 [2011-12-06 21:24:44,171] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:24:44,171] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:24:44,172] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:24:44,574] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:25:01,715] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/he_core_flash/inlist_he_core_flash'
+15729 [2011-12-06 21:25:01,884] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.171888s
+15729 [2011-12-06 21:25:01,885] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:25:01,885] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:25:01,893] - DEBUG - zeitgeist.engine - Found 100 events in 0.005959s
+15729 [2011-12-06 21:25:01,895] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001416s
+15729 [2011-12-06 21:25:01,895] - DEBUG - zeitgeist.engine - Got 100 events in 0.000167s
+15729 [2011-12-06 21:25:01,895] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000028s
+15729 [2011-12-06 21:25:01,895] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000019s
+15729 [2011-12-06 21:25:01,895] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000003s
+15729 [2011-12-06 21:25:02,216] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:25:49,098] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/he_core_flash/inlist_he_core_flash'
+15729 [2011-12-06 21:25:49,191] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.095685s
+15729 [2011-12-06 21:25:49,191] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:25:49,191] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:25:49,200] - DEBUG - zeitgeist.engine - Found 100 events in 0.006712s
+15729 [2011-12-06 21:25:49,203] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002395s
+15729 [2011-12-06 21:25:49,203] - DEBUG - zeitgeist.engine - Got 100 events in 0.000268s
+15729 [2011-12-06 21:25:49,203] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:25:49,203] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000030s
+15729 [2011-12-06 21:25:49,203] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:25:49,599] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:26:19,684] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/he_core_flash/inlist_he_core_flash'
+15729 [2011-12-06 21:26:19,773] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.091743s
+15729 [2011-12-06 21:26:19,774] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:26:19,774] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:26:19,783] - DEBUG - zeitgeist.engine - Found 100 events in 0.006644s
+15729 [2011-12-06 21:26:19,786] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002585s
+15729 [2011-12-06 21:26:19,786] - DEBUG - zeitgeist.engine - Got 100 events in 0.000269s
+15729 [2011-12-06 21:26:19,786] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:26:19,786] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:26:19,786] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:26:20,185] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:27:11,163] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/he_core_flash/inlist_he_core_flash'
+15729 [2011-12-06 21:27:11,252] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.091324s
+15729 [2011-12-06 21:27:11,253] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:27:11,253] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:27:11,258] - DEBUG - zeitgeist.engine - Found 100 events in 0.004031s
+15729 [2011-12-06 21:27:11,260] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.001542s
+15729 [2011-12-06 21:27:11,260] - DEBUG - zeitgeist.engine - Got 100 events in 0.000172s
+15729 [2011-12-06 21:27:11,260] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000031s
+15729 [2011-12-06 21:27:11,260] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000019s
+15729 [2011-12-06 21:27:11,260] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000004s
+15729 [2011-12-06 21:27:11,663] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:27:25,247] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/he_core_flash/inlist_he_core_flash'
+15729 [2011-12-06 21:27:25,335] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.089950s
+15729 [2011-12-06 21:27:25,335] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:27:25,335] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:27:25,344] - DEBUG - zeitgeist.engine - Found 100 events in 0.006795s
+15729 [2011-12-06 21:27:25,347] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002468s
+15729 [2011-12-06 21:27:25,347] - DEBUG - zeitgeist.engine - Got 100 events in 0.000268s
+15729 [2011-12-06 21:27:25,347] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000043s
+15729 [2011-12-06 21:27:25,348] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:27:25,348] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:27:25,748] - DEBUG - zeitgeist.fts - Committing FTS index
+15729 [2011-12-06 21:29:12,071] - DEBUG - zeitgeist.fts - Indexing 'file:///home/student/Documents/mesa3723_PG/star/test_suite/he_core_flash/inlist_he_core_flash'
+15729 [2011-12-06 21:29:12,176] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.106026s
+15729 [2011-12-06 21:29:12,176] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-06 21:29:12,176] - DEBUG - zeitgeist.notify - Notifying :1.99/org/gnome/zeitgeist/monitor/0 about 1 insertions
+15729 [2011-12-06 21:29:12,185] - DEBUG - zeitgeist.engine - Found 100 events in 0.006935s
+15729 [2011-12-06 21:29:12,188] - DEBUG - zeitgeist.engine - Got 1 raw events in 0.002609s
+15729 [2011-12-06 21:29:12,188] - DEBUG - zeitgeist.engine - Got 100 events in 0.000270s
+15729 [2011-12-06 21:29:12,188] - DEBUG - zeitgeist.engine -     Where time spent in _get_event_from_row in 0.000044s
+15729 [2011-12-06 21:29:12,188] - DEBUG - zeitgeist.engine -     Where time spent in _get_subject_from_row in 0.000029s
+15729 [2011-12-06 21:29:12,188] - DEBUG - zeitgeist.engine -     Where time spent in apply_get_hooks in 0.000006s
+15729 [2011-12-06 21:29:12,572] - DEBUG - zeitgeist.fts - Committing FTS index

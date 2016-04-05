@@ -1,0 +1,198 @@
+help
+help fcp
+help cp
+help data
+quit
+help gv
+quit
+inp RIVI.sm
+quit
+inp RIVI.sm
+quit
+macro read RIVI.sm
+device postencap RIVI.eps
+hardcopy
+quit
+device postencap RIVI.ps
+quit
+inp RIVI.sm
+hardcopy
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp RIVI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+inp ,g2VI.sm
+inp mg2VI.sm
+inp RIVI.sm
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+help
+lines
+help lines
+device postencap RIVI.eps
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+inp RIVI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp RIVI.sm
+quit
+inp RIVI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI.sm
+quit
+inp mg2VI1.sm
+quit
+inp mg2VI1.sm
+quit
+inp mg2VI1.sm
+inp mg2VI.sm
+quit
+inp mg2VI1.sm
+inp mg2VI.sm
+quit
+inp padRIVI.sm
+quit
+inp padRIVI.sm
+quit
+inp padmg2VI.sm
+quit
+inp padfec2.sm
+quit
+inp femgb.sm
+quit
+inp femgb.sm
+quit
+inp femgb.sm
+quit
+inp femgb.sm
+quit
+inp padfemgb.sm
+quit
+inp femgb.sm
+quit
+inp padfemgb.sm
+quit
+inp padfec2.sm
+quit
+inp padfec2.sm
+inp padRIVI.sm
+inp padmg2VI.sm
+quit
+inp padRIVI.sm
+quit
+inp padfec2.sm
+inp padfemgb.sm
+inp padRIVI.sm
+inp padmg2VI.sm
+quit
+inp padmg2VI.sm
+quit
+inp padmg2VI.sm
+quit
+inp padhbeta.sm
+quit
+inp hspectrum.sm
+quit
+inp padRIVI.sm
+inp padmg2VI.sm
+inp padfemgb.sm
+inp padfec2.sm
+inp padhbeta.sm
+quit
+inp padfemgb.sm
+quit
+inp padfemgb.sm
+inp padfec2.sm
+quit
+inp padfemgb.sm
+quit
+inp padfemgb.sm
+quit
+inp padfemgb.sm
+quit
+inp padhbeta.sm
+quit
+inp padRIVI.sm
+quit
+inp padmg2VI.sm
+quit
+inp padfec2.sm
+quit
+inp padfemgb.sm
+inp padmg2VI.sm
+inp padRIVI.sm
+inp padhbeta.sm
+quit
+inp fec2.sm
+quit
+inp fec2.sm
+quit
+inp femgb.sm
+quit
+inp mg2VI.sm
+quit
+inp RIVI.sm
+inp padRIVI.sm
+quit
+inp hbeta.sm
+quit
+inp RIVI.sm
+quit
+inp padRIVI.sm
+inp padmg2VI.sm
+inp padfemgb.sm
+inp padfec2.sm
+inp hbeta.sm
+inp RIVI.sm
+inp mg2VI.sm
+inp hbeta.sm
+inp fec2.sm
+inp femgb.sm
+quit
+inp RIVI.sm
+quit
+inp padmg2VI.sm
+quit
+inp padhbeta.sm
+quit
+inp femgb.sm
+quit
+inp RIVI.sm
+inp hbeta.sm
+inp femgb.sm
+inp fec2.sm
+quit

@@ -1,0 +1,19 @@
+erase
+data uvmg2data.out
+lines 2 0
+read { Mg2 4 error2 5 NUVV 1 error 2 }
+
+limits 1 4.5 0 0.2
+box
+points NUVV Mg2
+
+xlabel NUVV
+ylabel Mg2
+
+lines 2 32
+read { Mg2 4 error2 5 NUVV 1 error 2 }
+
+errorbar NUVV Mg2 error 1
+errorbar NUVV Mg2 error 3
+errorbar NUVV Mg2 error2 2
+errorbar NUVV Mg2 error2 4

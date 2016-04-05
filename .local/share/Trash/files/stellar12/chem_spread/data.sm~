@@ -1,0 +1,10 @@
+erase
+
+lines 3 0
+data { x 1 x2 2 }
+
+limits x x2
+box
+
+connect x x2
+

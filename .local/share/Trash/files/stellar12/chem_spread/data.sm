@@ -1,0 +1,18 @@
+erase
+
+lines 3 0
+data data.dat
+read { x 1 x2 2 }
+
+limits x x2
+box
+xlabel Students
+ylabel Student^2
+
+connect x x2
+
+expand 3.5
+ptype 20 3
+points x x2
+
+expand 1.1

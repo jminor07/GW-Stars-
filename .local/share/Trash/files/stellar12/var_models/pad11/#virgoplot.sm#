@@ -1,0 +1,16 @@
+erase
+data virgodata.out
+lines 2 0
+read { RI 1 error 2 VI 3 error2 4 }
+
+limits RI VI
+box
+points RI VI
+
+xlabel Rbar-Ibar
+ylabel Vbar-Ibar
+
+lines 2 12
+read { RI 1 VI 3 }
+ptype 4 0
+

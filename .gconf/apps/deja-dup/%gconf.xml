@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="include-list" mtime="1346355122" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>$HOME</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>/home/gworthey</stringvalue>
+		</li>
+	</entry>
+	<entry name="backend" mtime="1346354022" type="string">
+		<stringvalue>file</stringvalue>
+	</entry>
+</gconf>

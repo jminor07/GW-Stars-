@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<!--RAW FILE-->
+<head>
+<base href="http://adsabs.harvard.edu/abs/2008A&amp;A...482..883M" />
+<link rel="canonical" content="http://adsabs.harvard.edu/abs/2008A%26A...482..883M" />
+<meta name="robots" content="noarchive" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<TITLE>Evolution of asymptotic giant branch stars. II. Optical to far-infrared isochron</TITLE>
+<meta name="citation_language" content="en" />
+<meta name="citation_doi" content="10.1051/0004-6361:20078467" />
+<meta name="citation_abstract_html_url" content="http://adsabs.harvard.edu/abs/2008A%26A...482..883M" />
+<meta name="citation_title" content="Evolution of asymptotic giant branch stars. II. Optical to far-infrared isochrones with improved TP-AGB models" />
+<meta name="citation_authors" content="Marigo, P.; Girardi, L.; Bressan, A.; Groenewegen, M. A. T.; Silva, L.; Granato, G. L." />
+<meta name="citation_keywords" content="astronomical data bases: miscellaneous, stars: AGB and post-AGB, stars: carbon, stars: evolution, galaxies: Magellanic Clouds, stars: Hertzsprung-Russell (HR) and C-M diagrams" />
+<meta name="citation_issn" content="0004-6361" />
+<meta name="citation_date" content="05/2008" />
+<meta name="citation_journal_title" content="Astronomy and Astrophysics" />
+<meta name="citation_volume" content="482" />
+<meta name="citation_firstpage" content="883" />
+<meta name="citation_lastpage" content="905" />
+<link title="schema(PRISM)" rel="schema.prism" href="http://prismstandard.org/namespaces/1.2/basic/" />
+<meta name="prism.publicationName" content="Astronomy and Astrophysics" />
+<meta name="prism.issn" content="0004-6361" />
+<meta name="prism.volume" content="482" />
+<meta name="prism.startingPage" content="883" />
+<meta name="prism.endingPage" content="905" />
+<link title="schema(DC)" rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
+<meta name="dc.language" content="en" />
+<meta name="dc.identifier" content="doi:10.1051/0004-6361:20078467" />
+<meta name="dc.date" content="2008-05" />
+<meta name="dc.source" content="Astronomy and Astrophysics, Volume 482, Issue 3, 2008, pp.883-905" />
+<meta name="dc.title" content="Evolution of asymptotic giant branch stars. II. Optical to far-infrared isochrones with improved TP-AGB models" />
+<meta name="dc.creator" content="Marigo, P." />
+<meta name="dc.creator" content="Girardi, L." />
+<meta name="dc.creator" content="Bressan, A." />
+<meta name="dc.creator" content="Groenewegen, M. A. T." />
+<meta name="dc.creator" content="Silva, L." />
+<meta name="dc.creator" content="Granato, G. L." />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<SCRIPT language="JavaScript" type="text/javascript">
+<!-- Begin
+function mkemail(parts) {
+    var sep = ".";
+    var str = arguments[0];
+    for ( var i = 1 ; i < arguments.length ; i++ ) {
+        if ( arguments[i] == "" ) {
+            sep = String.fromCharCode(29+35) ;
+           continue ;
+        } else {
+            str = str.concat ( sep ) ;
+            str = str.concat ( arguments[i] ) ;
+            sep = ".";
+        }
+    }
+    return(str);
+}
+var toggle = 0 ;
+function t(){
+if ( toggle == 0 ) {
+setStyleByClass("span","a","backgroundColor","#ffffff");
+setStyleByClass("div","h","backgroundColor","#ffffff");
+setStyleByClass("div","h","opacity","0");
+setStyleByClass("div","h","filter","alpha(opacity=0)");
+setStyleByClass("span","b","backgroundColor","#ffffff");
+setStyleByClass("div","i","backgroundColor","#ffffff");
+setStyleByClass("div","i","opacity","0");
+setStyleByClass("div","i","filter","alpha(opacity=0)");
+setStyleByClass("span","c","backgroundColor","#ffffff");
+setStyleByClass("div","j","backgroundColor","#ffffff");
+setStyleByClass("div","j","opacity","0");
+setStyleByClass("div","j","filter","alpha(opacity=0)");
+setStyleByClass("span","d","backgroundColor","#ffffff");
+setStyleByClass("div","k","backgroundColor","#ffffff");
+setStyleByClass("div","k","opacity","0");
+setStyleByClass("div","k","filter","alpha(opacity=0)");
+setStyleByClass("span","e","backgroundColor","#ffffff");
+setStyleByClass("div","l","backgroundColor","#ffffff");
+setStyleByClass("div","l","opacity","0");
+setStyleByClass("div","l","filter","alpha(opacity=0)");
+setStyleByClass("span","f","backgroundColor","#ffffff");
+setStyleByClass("div","m","backgroundColor","#ffffff");
+setStyleByClass("div","m","opacity","0");
+setStyleByClass("div","m","filter","alpha(opacity=0)");
+setStyleByClass("span","g","backgroundColor","#ffffff");
+setStyleByClass("div","n","backgroundColor","#ffffff");
+setStyleByClass("div","n","opacity","0");
+setStyleByClass("div","n","filter","alpha(opacity=0)");
+toggle = 1 ;
+} else {
+setStyleByClass("span","a","backgroundColor","#ffff88");
+setStyleByClass("div","h","backgroundColor","#ffff00");
+setStyleByClass("div","h","opacity","0.3");
+setStyleByClass("div","h","filter","alpha(opacity=30)");
+setStyleByClass("span","b","backgroundColor","#ccccff");
+setStyleByClass("div","i","backgroundColor","#3333ff");
+setStyleByClass("div","i","opacity","0.3");
+setStyleByClass("div","i","filter","alpha(opacity=30)");
+setStyleByClass("span","c","backgroundColor","#ffcccc");
+setStyleByClass("div","j","backgroundColor","#ff3333");
+setStyleByClass("div","j","opacity","0.3");
+setStyleByClass("div","j","filter","alpha(opacity=30)");
+setStyleByClass("span","d","backgroundColor","#bbffff");
+setStyleByClass("div","k","backgroundColor","#00ffff");
+setStyleByClass("div","k","opacity","0.3");
+setStyleByClass("div","k","filter","alpha(opacity=30)");
+setStyleByClass("span","e","backgroundColor","#ffdd77");
+setStyleByClass("div","l","backgroundColor","#ff6600");
+setStyleByClass("div","l","opacity","0.3");
+setStyleByClass("div","l","filter","alpha(opacity=30)");
+setStyleByClass("span","f","backgroundColor","#ccffaa");
+setStyleByClass("div","m","backgroundColor","#33ff00");
+setStyleByClass("div","m","opacity","0.3");
+setStyleByClass("div","m","filter","alpha(opacity=30)");
+setStyleByClass("span","g","backgroundColor","#ffccff");
+setStyleByClass("div","n","backgroundColor","#ff00ff");
+setStyleByClass("div","n","opacity","0.3");
+setStyleByClass("div","n","filter","alpha(opacity=30)");
+toggle = 0 ;
+}
+}
+var ie = (document.all) ? true : false;
+
+function setStyleByClass(t,c,p,v){
+	var elements;
+	if(t == '*') {
+		elements = (ie) ? document.all : document.getElementsByTagName('*');
+	} else {
+		elements = document.getElementsByTagName(t);
+	}
+	for (var i = 0; i < elements.length; i++)
+    {
+		var node = elements.item(i);
+		for(var j = 0; j < node.attributes.length; j++)
+		{
+			if(node.attributes.item(j).nodeName == 'class')
+			{
+				if(node.attributes.item(j).nodeValue == c)
+				{
+				eval('node.style.' + p + " = '" +v + "'");
+				}
+			}
+		}
+	}
+}
+//  End -->
+</SCRIPT>
+<style>.a{background-color: #ffff88}</style>
+<style>.h{background-color: #ffff00}</style>
+<style>.b{background-color: #ccccff}</style>
+<style>.i{background-color: #3333ff}</style>
+<style>.c{background-color: #ffcccc}</style>
+<style>.j{background-color: #ff3333}</style>
+<style>.d{background-color: #bbffff}</style>
+<style>.k{background-color: #00ffff}</style>
+<style>.e{background-color: #ffdd77}</style>
+<style>.l{background-color: #ff6600}</style>
+<style>.f{background-color: #ccffaa}</style>
+<style>.m{background-color: #33ff00}</style>
+<style>.g{background-color: #ffccff}</style>
+<style>.n{background-color: #ff00ff}</style>
+<style type="text/css">
+a:link {color: #0000ff}
+a.oa:link {color: #00a000}
+a:visited {color: #4000a0}
+a.oa:visited {color: #006666}
+a:hover {color: #ff0000}
+a.oa:hover {color: #cc33cc}
+</style>
+</head>
+<body bgcolor="#ffffff"  text="#000000" link="#0000ff" alink="#ff0000" vlink="#4000a0">
+<div align="right" style="font-size:84%;padding-bottom:4px"><a href="http://adsabs.harvard.edu/cgi-bin/nph-manage_account?man_cmd=login&amp;man_url=http://adsabs.harvard.edu/abs/2008A%26A...482..883M">Sign on</a></div>
+<p><h3><A HREF="http://www.adsabs.harvard.edu/">SAO/NASA ADS</a> <a href="http://adsabs.harvard.edu/abstract_service.html">Astronomy Abstract Service</A></h3>
+<hr>
+<p>
+<dl>
+<dt><table width="100%"><tr><td align="left"><strong>&#183; <a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?return_req=no_params&amp;arxiv_sel=ALL&amp;db_key=AST&amp;text=We%20present%20a%20large%20set%20of%20theoretical%20isochrones,%20whose%20distinctive%0afeatures%20mostly%20reside%20on%20the%20greatly-improved%20treatment%20of%20the%0athermally-pulsing%20asymptotic%20giant%20branch%20%28TP-AGB%29%20phase.%20Essentially,%0awe%20have%20coupled%20the%20TP-AGB%20tracks%20described%20in%20Paper%20I,%20at%20their%20stages%0aof%20pre-flash%20quiescent%20H-shell%20burning,%20with%20the%20evolutionary%20tracks%20for%0athe%20previous%20evolutionary%20phases%20from%20Girardi%20et%20al.%20%282000,%20A%26amp%3bAS,%0a141,%20371%29.%20Theoretical%20isochrones%20for%20any%20intermediate%20value%20of%20age%20and%0ametallicity%20are%20then%20derived%20by%20interpolation%20in%20the%20grids.%20We%20take%20care%0athat%20the%20isochrones%20keep,%20to%20a%20good%20level%20of%20detail,%20the%20several%0apeculiarities%20present%20in%20these%20TP-AGB%20tracks%20-%20e.g.,%20the%20cool%20tails%20of%0aC-type%20stars%20owing%20to%20the%20use%20of%20proper%20molecular%20opacities%20as%0aconvective%20dredge-up%20occurs%20along%20the%20TP-AGB%3b%20the%20bell-shaped%20sequences%0ain%20the%20Hertzsprung-Russell%20%28HR%29%20diagram%20for%20stars%20with%20hot-bottom%0aburning%3b%20the%20changes%20of%20pulsation%20mode%20between%20fundamental%20and%20first%0aovertone%3b%20the%20sudden%20changes%20of%20mean%20mass-loss%20rates%20as%20the%20surface%0achemistry%20changes%20from%20M-%20to%20C-type%3b%20etc.%20Theoretical%20isochrones%20are%0athen%20converted%20to%20about%2020%20different%20photometric%20systems%20-%20including%0atraditional%20ground-based%20systems,%20and%20those%20of%20recent%20major%20wide-field%0asurveys%20such%20as%20SDSS,%20OGLE,%20DENIS,%202MASS,%20UKIDSS,%20etc.,%20-%20by%20means%20of%0asynthetic%20photometry%20applied%20to%20an%20updated%20library%20of%20stellar%20spectra,%0asuitably%20extended%20to%20include%20C-type%20stars.%20Finally,%20we%20correct%20the%0apredicted%20photometry%20for%20the%20effect%20of%20circumstellar%20dust%20during%20the%0amass-losing%20stages%20of%20the%20AGB%20evolution,%20which%20allows%20us%20to%20improve%20the%0aresults%20for%20the%20optical-to-infrared%20systems,%20and%20to%20simulate%20mid-%20and%0afar-IR%20systems%20such%20as%20those%20of%20Spitzer%20and%20AKARI.%20We%20illustrate%20the%0amost%20striking%20properties%20of%20these%20isochrones%20by%20means%20of%20basic%0acomparisons%20with%20observational%20data%20for%20the%20Milky%20Way%20disc%20and%20the%0aMagellanic%20Clouds.%20Access%20to%20the%20data%20is%20provided%20both%20via%20a%20web%0arepository%20of%20static%20tables%20%28http%3a//stev.oapd.inaf.it/dustyAGB07%20and%0aCDS%29,%20and%20via%20an%20interactive%20web%20interface%0a%28http%3a//stev.oapd.inaf.it/cmd%29,%20which%20provides%20tables%20for%20any%0aintermediate%20value%20of%20age%20and%20metallicity,%20for%20several%20photometric%0asystems,%20and%20for%20different%20choices%20of%20dust%20properties.%0a+astronomical%20data%20bases%3a%20miscellaneous,%20stars%3a%20AGB%20and%20post-AGB,%20stars%3a%20carbon,%20stars%3a%20evolution,%20galaxies%3a%20Magellanic%20Clouds,%20stars%3a%20Hertzsprung-Russell%20%28HR%29%20and%20C-M%20diagrams+&amp;title=Evolution%20of%20asymptotic%20giant%20branch%20stars.%20II.%20Optical%20to%20far-infrared%20isochrones%20with%20improved%20TP-AGB%20models">Find Similar Abstracts</a> (with <a href="#feedback">default settings below</a>)</strong></td>
+</tr></table>
+<dt><strong>· <a class="oa" href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=EJOURNAL&amp;db_key=AST&amp;high=">Electronic Refereed Journal Article (HTML)</a></strong>
+<dt><strong>· <a class="oa" href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=ARTICLE&amp;db_key=AST&amp;high=">Full Refereed Journal Article (PDF/Postscript)</a></strong>
+<dt><strong>· <a class="oa" href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=PREPRINT&amp;db_key=AST">arXiv e-print</strong></a> (arXiv:0711.4922)
+<dt><strong>· <a  href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=DATA&amp;db_key=AST&amp;high=">On-line Data</a></strong>
+<dt><strong>· <a  href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=REFERENCES&amp;db_key=AST&amp;high=">References in the article</a></strong>
+<dt><strong>· <a href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=CITATIONS&amp;db_key=AST">Citations to the Article (398)</strong></a> (<a href="http://adsabs.harvard.edu/cgi-bin/nph-ref_history?refs=CITATIONS&amp;bibcode=2008A%26A...482..883M">Citation History</a>)
+<dt><strong>· <a  href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=REFCIT&amp;db_key=AST&amp;high=">Refereed Citations to the Article</a></strong>
+<dt><strong>· <a href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=SIMBAD&amp;db_key=AST">SIMBAD Objects (6)</a></strong>
+<dt><strong>· <a href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=NED&amp;db_key=AST">NED Objects (2)</a></strong>
+<dt><strong>· <a  href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=ASSOCIATED&amp;db_key=AST&amp;high=">Associated Articles</a></strong>
+<dt><strong>· <a href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=2008A%26A...482..883M&amp;link_type=AR&amp;db_key=AST">Also-Read Articles</a></strong> (<a href="http://adsabs.harvard.edu/cgi-bin/nph-ref_history?refs=AR&amp;bibcode=2008A%26A...482..883M">Reads History</a>)
+<dt>&#183;
+<dt><strong>&#183; <a href="http://www.microsofttranslator.com/BV.aspx?from=en&amp;a=http://adsabs.harvard.edu/abs/2008A%26A...482..883M">Translate This Page</a></strong>
+
+</dl>
+<table>
+<tr><td nowrap valign="top" align="left"><b>Title:</b></td><td><br></td><td align="left" valign="top">Evolution of asymptotic giant branch stars. II. Optical to far-infrared isochrones with improved TP-AGB models</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Authors:</b></td><td><br></td><td align="left" valign="top"><a href="http://adsabs.harvard.edu/cgi-bin/author_form?author=Marigo,+P&amp;fullauthor=Marigo,%20P.&amp;charset=UTF-8&amp;db_key=AST">Marigo, P.</a>; <a href="http://adsabs.harvard.edu/cgi-bin/author_form?author=Girardi,+L&amp;fullauthor=Girardi,%20L.&amp;charset=UTF-8&amp;db_key=AST">Girardi, L.</a>; <a href="http://adsabs.harvard.edu/cgi-bin/author_form?author=Bressan,+A&amp;fullauthor=Bressan,%20A.&amp;charset=UTF-8&amp;db_key=AST">Bressan, A.</a>; <a href="http://adsabs.harvard.edu/cgi-bin/author_form?author=Groenewegen,+M&amp;fullauthor=Groenewegen,%20M.%20A.%20T.&amp;charset=UTF-8&amp;db_key=AST">Groenewegen, M. A. T.</a>; <a href="http://adsabs.harvard.edu/cgi-bin/author_form?author=Silva,+L&amp;fullauthor=Silva,%20L.&amp;charset=UTF-8&amp;db_key=AST">Silva, L.</a>; <a href="http://adsabs.harvard.edu/cgi-bin/author_form?author=Granato,+G&amp;fullauthor=Granato,%20G.%20L.&amp;charset=UTF-8&amp;db_key=AST">Granato, G. L.</a></td></tr>
+<tr><td nowrap valign="top" align="left"><b>Affiliation:</b></td><td><br></td><td align="left" valign="top">AA(Dipartimento di Astronomia, Università di Padova, Vicolo dell'Osservatorio 2, 35122 Padova, Italy <EMAIL><SCRIPT language="JavaScript" type="text/javascript">document.write(mkemail("paola","marigo","","unipd","it"));</SCRIPT></EMAIL>), AB(Osservatorio Astronomico di Padova - INAF, Vicolo dell'Osservatorio 5, 35122 Padova, Italy), AC(Osservatorio Astronomico di Padova - INAF, Vicolo dell'Osservatorio 5, 35122 Padova, Italy; INAOE, Luis Enrique Erro 1, 72840 Tonantzintla, Puebla, Mexico), AD(Instituut voor Sterrenkunde, Katholieke Universiteit Leuven, Celestijnenlaan 200 D, 3001 Leuven, Belgium), AE(Osservatorio Astronomico di Trieste - INAF, via Tiepolo 11, 34131 Trieste, Italy), AF(Osservatorio Astronomico di Padova - INAF, Vicolo dell'Osservatorio 5, 35122 Padova, Italy)</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Publication:</b></td><td><br></td><td align="left" valign="top">Astronomy and Astrophysics, Volume 482, Issue 3, 2008, pp.883-905 (<A href="http://www.aanda.org">A&A Homepage</a>)</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Publication Date:</b></td><td><br></td><td align="left" valign="top">05/2008</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Origin:</b></td><td><br></td><td align="left" valign="top"><a href="http://www.edpsciences.org">EDP Sciences</a></td></tr>
+<tr><td nowrap valign="top" align="left"><b>Astronomy Keywords:</b></td><td><br></td><td align="left" valign="top">astronomical data bases: miscellaneous, stars: AGB and post-AGB, stars: carbon, stars: evolution, galaxies: Magellanic Clouds, stars: Hertzsprung-Russell (HR) and C-M diagrams</td></tr>
+<tr><td nowrap valign="top" align="left"><b>DOI:</b></td><td><br></td><td align="left" valign="top"><A href="http://dx.doi.org/10.1051/0004-6361:20078467">10.1051/0004-6361:20078467</a></td></tr>
+<tr><td nowrap valign="top" align="left"><b>Bibliographic Code:</b></td><td><br></td><td align="left" valign="top"><A href="http://adsabs.harvard.edu/abs/2008A%26A...482..883M">2008A&amp;A...482..883M</a></td></tr>
+</table>
+<h3 align="center">                               Abstract</h3>
+We present a large set of theoretical isochrones, whose distinctive
+features mostly reside on the greatly-improved treatment of the
+thermally-pulsing asymptotic giant branch (TP-AGB) phase. Essentially,
+we have coupled the TP-AGB tracks described in Paper I, at their stages
+of pre-flash quiescent H-shell burning, with the evolutionary tracks for
+the previous evolutionary phases from Girardi et al. (2000, A&amp;AS,
+141, 371). Theoretical isochrones for any intermediate value of age and
+metallicity are then derived by interpolation in the grids. We take care
+that the isochrones keep, to a good level of detail, the several
+peculiarities present in these TP-AGB tracks - e.g., the cool tails of
+C-type stars owing to the use of proper molecular opacities as
+convective dredge-up occurs along the TP-AGB; the bell-shaped sequences
+in the Hertzsprung-Russell (HR) diagram for stars with hot-bottom
+burning; the changes of pulsation mode between fundamental and first
+overtone; the sudden changes of mean mass-loss rates as the surface
+chemistry changes from M- to C-type; etc. Theoretical isochrones are
+then converted to about 20 different photometric systems - including
+traditional ground-based systems, and those of recent major wide-field
+surveys such as SDSS, OGLE, DENIS, 2MASS, UKIDSS, etc., - by means of
+synthetic photometry applied to an updated library of stellar spectra,
+suitably extended to include C-type stars. Finally, we correct the
+predicted photometry for the effect of circumstellar dust during the
+mass-losing stages of the AGB evolution, which allows us to improve the
+results for the optical-to-infrared systems, and to simulate mid- and
+far-IR systems such as those of Spitzer and AKARI. We illustrate the
+most striking properties of these isochrones by means of basic
+comparisons with observational data for the Milky Way disc and the
+Magellanic Clouds. Access to the data is provided both via a web
+repository of static tables (http://stev.oapd.inaf.it/dustyAGB07 and
+CDS), and via an interactive web interface
+(http://stev.oapd.inaf.it/cmd), which provides tables for any
+intermediate value of age and metallicity, for several photometric
+systems, and for different choices of dust properties.
+<hr>
+<h4>Associated Articles</h4>
+<a href="http://adsabs.harvard.edu/abs/2007A%26A...469..239M">Part 1</a>     Part  2     <p>
+<hr>
+<table width=100%><tr><td align="left"><b><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2008A%26A...482..883M&amp;data_type=BIBTEX&amp;db_key=AST&amp;nocookieset=1">Bibtex entry for this abstract</a></b>&nbsp;&nbsp;&nbsp;<b><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?bibcode=2008A%26A...482..883M&amp;data_type=Custom&amp;format=%5c%5cbibitem%5b%25%5c2m%25%28y%29%5d%25%7bR%7d%20%25%5c5.3l%20%25%5cY,%25%5cj,%25%5cV,%25%5cp%5cn&amp;return_fmt=LONG&amp;db_key=AST&amp;nocookieset=1">Preferred format for this abstract</a></b> (see <a href="http://adsabs.harvard.edu/cgi-bin/pref_set">Preferences</a>)</td>
+</tr></table>
+<hr>
+<form method="POST" action="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect"><a name="private"></a>
+<input type="hidden" name="bibcode" value="2008A&amp;A...482..883M">
+
+<input type="submit" name="library" value=" Add this article to private library ">&nbsp;&nbsp;&nbsp;<input type="submit" name="library" value=" Remove this article from private library "><br>
+</form>
+<hr>
+<form method="POST" action="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect"><a name="feedback"></a>
+<h3>Find Similar Abstracts:</h3>
+
+<input type="hidden" name="return_req" value="no_params">
+<table>
+<tr><td>Use:</td><td>      <input type="checkbox" name="use_auth" value="YES"></td><td>  Authors</td></tr>
+<tr><td></td><td>          <input type="checkbox" checked name="use_title" value="YES"></td><td>  Title</td></tr>
+<tr><td></td><td>          <input type="checkbox" checked name="use_kwds" value="YES"></td><td>  Keywords (in text query field)</td></tr>
+<tr><td></td><td>          <input type="checkbox" checked name="use_text" value="YES"></td><td>  Abstract Text</td></tr>
+
+<tr><td>Return:</td><td>   <input type="radio" checked name="return_req" value="feedback"></td><td>  Query Results</td><td>   Return <input name="nr_to_return" size="5" value="100">&nbsp;&nbsp;&nbsp;items starting with number <input name="start_nr" size="5" value="1"></td></tr>
+<tr><td></td><td>          <input type="radio" name="return_req" value="form"></td><td>  Query Form</td></tr>
+
+<tr><td>Database:</td><td> <input type="checkbox" checked name="db_key" value="AST"></td><td>  Astronomy</td></tr>
+<tr><td></td><td>          <input type="checkbox"  name="db_key" value="PHY"></td><td>  Physics</td></tr>
+<tr><td></td><td>          <input type="checkbox"  name="db_key" value="PRE"></td><td>  arXiv e-prints</td></tr>
+
+</table>
+
+<input type="hidden" name="arxiv_sel" value="ALL">
+<input type="hidden" name="bib_dbkey" value="AST">
+<input type="submit" name="selfeedback" value="      Send Query     ">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="      Reset      ">
+<input type="hidden" name="bibcode" value="2008A&A...482..883M">
+</form>
+<br><hr><br>
+</body>
+</html>

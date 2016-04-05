@@ -1,0 +1,11 @@
+erase
+
+
+data tmspectra.000
+read { w 1 szero 5 ssmoo 10 }
+limits w szero
+box
+ connect w szero
+connect w ssmoo
+
+

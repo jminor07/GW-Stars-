@@ -1,0 +1,4 @@
+15729 [2011-12-08 14:21:13,583] - DEBUG - zeitgeist.fts - Indexing 'application://firefox.desktop'
+15729 [2011-12-08 14:21:13,669] - DEBUG - zeitgeist.engine - Inserted 1 events out of 1 in 0.087056s
+15729 [2011-12-08 14:21:13,670] - DEBUG - zeitgeist.notify - Checking monitor :1.99/org/gnome/zeitgeist/monitor/0
+15729 [2011-12-08 14:21:14,084] - DEBUG - zeitgeist.fts - Committing FTS index

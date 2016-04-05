@@ -1,0 +1,287 @@
+#!/bin/sh
+
+# This script is run as eval `ur_setup ...`
+# Send any output intended for the user >&2
+# Send any output intended as shell commands to evaluate to stdout
+
+dotureka=$HOME/.ureka
+
+# find default installation
+default=`cat $dotureka/.default`
+if [ -z $default ]
+then
+    echo "ERROR: ~/.ureka was misconfigured" >&2
+    exit 1
+fi
+
+
+FORCE_SHELL=""
+case "$1"
+in
+    -sh|-csh)
+        FORCE_SHELL=$1
+        shift
+        ;;
+    *)
+        :
+        ;;
+esac
+
+# set default installation
+if [ "$1" = "-d" ]
+then
+    if [ -z "$2" ]
+    then
+        echo "ERROR: missing argument (name of installation to set as default)" >&2
+        exit 1
+    fi
+    name=$2
+    if [ -d "$dotureka/$name" ]
+    then
+        l=`cat $dotureka/$name/location`
+        if [ -e $l ]
+        then
+            echo "$name" > $dotureka/.default
+            exit 0
+        else
+            echo "ERROR: no Ureka installation named $name was found" >&2
+            exit 1
+        fi
+    fi
+fi
+
+
+# make sure an installation name was specified if -n
+if [ "$1" = "-n" ] && [ -z "$2" ]
+then
+    echo "ERROR: missing argument (name of new variant)" >&2  
+    exit 1
+fi
+
+
+# make sure an installation name was specified if -rm
+if [ "$1" = "-rm" ] && [ -z "$2" ]
+then
+    echo "ERROR: missing argument (name of variant to remove)" >&2
+    exit 1
+fi
+
+# display usage information
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]
+then
+    echo "Usage:" >&2
+    echo "  ur_setup [variant] [name]" >&2
+    echo "  ur_setup -n variant [name]" >&2
+    echo "  ur_setup -rm variant [name]" >&2
+    echo "  ur_setup -d name" >&2
+    echo "  ur_setup --list" >&2
+    echo "  ur_setup --help" >&2
+    echo >&2
+    echo "name is the user-specified installation name; the default installation will be used if name is omitted" >&2
+    echo "variant is the Ureka variant to use; the common variant will be used if this argument is omitted" >&2
+    echo "-n creates a new variant" >&2
+    echo "-rm removes a variant" >&2
+    echo "-d sets default installation by name" >&2
+    echo "--list or -l displays available installations by name" >&2
+    echo "--help or -h displays this usage information" >&2
+    echo >&2
+    exit 0
+fi
+
+
+# display available installations by name
+if [ "$1" = "-l" ] || [ "$1" = "--list" ]
+then
+    echo >&2
+    for name in `ls $dotureka`
+    do
+        if [ -d "$dotureka/$name" ]
+        then
+            l=`cat $dotureka/$name/location`
+            if [ -e $l ]
+            then
+                if [ "$name" = "$default" ]
+                then
+                    echo "$name (default) is installed to $l with variants:" >&2
+                else
+                    echo "$name is installed to $l with variants:" >&2
+                fi
+                
+                V=$l/variants
+                for v in `ls $V`
+                do
+                    echo "      $v" >&2
+                done
+                echo >&2
+            fi
+        fi
+    done
+    exit 0
+fi
+
+# -ls (list short) is for the installer to use to make a list of
+# existing ureka installations for the user.  Maybe we document
+# it some day.
+if [ "$1" = "-ls" ]
+then
+    noneyet=true
+    for name in `ls $dotureka`
+    do
+        if [ -d "$dotureka/$name" ]
+        then
+            l=`cat $dotureka/$name/location`
+            if [ -e $l ]
+            then
+                if $noneyet
+                then
+                    echo 'Here is a list of your existing Ureka installations:' >&2
+                    noneyet=false
+                fi
+                echo "    "$name >&2
+            fi
+        fi
+    done
+    if $noneyet
+    then
+        echo 'You have no existing Ureka installs configured' >&2
+    fi
+    exit 0
+fi
+
+
+
+# figure out the variant and installation name from arguments
+if [ "$1" = "-n" ] || [ "$1" = "-rm" ] 
+then
+    variant=$2
+    N=$3
+else
+    variant=$1
+    N=$2
+fi
+
+if [ -z $N ]
+then
+    if [ "$UR_DIR" = "" ]
+	then
+        N=$default
+    else
+        N=`cat $UR_DIR/misc/name`
+    fi
+fi
+
+
+# make sure installation has been registered in ~/.ureka
+if [ ! -d "$dotureka/$N" ]
+then
+    echo >&2
+    echo "No Ureka installation named $N was found" >&2
+    echo >&2
+    exit 1
+fi
+
+
+read ur < $dotureka/$N/location
+
+
+# forget about any existing Ureka environment variables
+if [ "$UR_DIR" != "" ]
+then
+    forget=$UR_DIR/bin/ur-forget
+    if [ -e $forget ]
+    then
+        $forget "$FORCE_SHELL"
+    fi
+fi
+
+# make sure installation has not moved since last being normalized
+if [ ! -d $ur ]
+then
+    echo >&2
+    echo "The Ureka installation named $N was not found in $ur" >&2
+    echo >&2
+    echo "If you moved it, run the following command from the new location:" >&2
+    echo >&2
+    echo "bin/ur_normalize" >&2
+    echo >&2
+    exit 1
+fi
+
+
+# create new variant
+if [ "$1" = "-n" ]
+then
+    $ur/bin/ur-setup-real -n $2 "$FORCE_SHELL" 
+    exit $?
+fi
+
+
+# remove requested variant
+if [ "$1" = "-rm" ]
+then
+    $ur/bin/ur-setup-real -rm $2 "$FORCE_SHELL"  
+    exit $?
+fi
+
+
+# "-" is shorthand for "common"
+if [ "$variant" = "-" ]
+then
+    variant=common
+fi
+
+
+# make sure variant exists
+if [ ! -d "$ur/variants/$variant" ]
+then
+    echo >&2
+    echo "No variant called $variant was found in Ureka installation $N" >&2
+    echo >&2
+    echo "Use --list to see all available Ureka installations and variants" >&2
+    echo >&2
+    exit 1
+fi
+
+
+version=`cat $ur/misc/version`
+if [ -e $ur/misc/build_date ]
+then
+    # Notify user if the installation is older than N days (N=14 for ssbx and
+    #  N=3 for ssbdev)
+    build_date=`cat $ur/misc/build_date`
+
+    case `cat $ur/misc/os`
+    in
+        osx-*)
+            date_b=`date -j -f '%Y-%m-%d' $build_date "+%s"`
+            ;;
+
+        linux*)
+            date_b=$(date -d $build_date "+%s")
+            ;;
+    esac
+
+    date_now=`date $date "+%s"`
+    days_old=$(((date_now-date_b)/86400))
+
+    case "$version"
+    in
+        x)
+            if [ $days_old -gt 14 ]
+            then    
+                 echo "The SSBX installation is out of date." >&2
+                 echo "Please reinstall by following the instructions at http://ssb.stsci.edu/ssb_software.shtml." >&2
+            fi
+            ;;
+        dev)
+            if [ $days_old -gt 3 ]
+            then    
+                 echo "The SSBDEV installation is out of date." >&2
+                 echo "Please reinstall by following the instructions at http://ssb.stsci.edu/ssb_software.shtml." >&2
+            fi
+            ;;
+    esac
+fi
+
+# setup environment
+$ur/bin/ur-setup-real "$FORCE_SHELL" $variant

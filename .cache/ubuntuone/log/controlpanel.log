@@ -1,0 +1,4 @@
+2012-08-30 12:17:43,975 - ubuntuone.controlpanel.backend - INFO - ControlBackend: instance started.
+2012-08-30 12:17:44,193 - ubuntuone.controlpanel.qt.gui - INFO - Updates available? None
+2012-08-30 12:17:44,238 - ubuntuone.controlpanel.qt.wizard - INFO - initializePage: args (<ubuntuone.controlpanel.gui.qt.wizard.UbuntuOneWizard object at 0x27b9320>, 1), kwargs {}.
+2012-08-30 12:17:44,238 - ubuntuone.controlpanel.qt.wizard - INFO - UbuntuOneWizard.initializePage: new page is <ubuntuone.controlpanel.gui.qt.wizard.SignInPage object at 0x27bb8c0>, new button layout is [9, 4], new side widget stage is 1.

@@ -1,0 +1,16 @@
+erase
+data uvmg2data.out
+lines 2 0
+read { Mg2 4 NUVV 1 }
+ 
+points NUVV Mg2
+box
+
+Xlabel (NUV-V)SubNaught
+ylabel Mg2
+
+lines 2 31
+read { Mg2 4 NUVV 1 }
+ptype red
+
+

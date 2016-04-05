@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<!--RAW FILE-->
+<head>
+<base href="http://adsabs.harvard.edu/abs/1989ApJS...71..817B" />
+<link rel="canonical" content="http://adsabs.harvard.edu/abs/1989ApJS...71..817B" />
+<meta name="robots" content="noarchive" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<TITLE>Evolutionary population synthesis in stellar systems. I - A global approach</TITLE>
+<meta name="citation_language" content="en" />
+<meta name="citation_doi" content="10.1086/191399" />
+<meta name="citation_abstract_html_url" content="http://adsabs.harvard.edu/abs/1989ApJS...71..817B" />
+<meta name="citation_title" content="Evolutionary population synthesis in stellar systems. I - A global approach" />
+<meta name="citation_authors" content="Buzzoni, Alberto" />
+<meta name="citation_keywords" content="LATE STARS, STELLAR EVOLUTION, STELLAR MODELS, STELLAR SPECTROPHOTOMETRY, STELLAR SYSTEMS, ASYMPTOTIC GIANT BRANCH STARS, HORIZONTAL BRANCH STARS, RED GIANT STARS, STELLAR MAGNITUDE, STELLAR STRUCTURE" />
+<meta name="citation_issn" content="0067-0049" />
+<meta name="citation_date" content="12/1989" />
+<meta name="citation_journal_title" content="The Astrophysical Journal Supplement Series" />
+<meta name="citation_volume" content="71" />
+<meta name="citation_firstpage" content="817" />
+<meta name="citation_lastpage" content="869" />
+<link title="schema(PRISM)" rel="schema.prism" href="http://prismstandard.org/namespaces/1.2/basic/" />
+<meta name="prism.publicationName" content="The Astrophysical Journal Supplement Series" />
+<meta name="prism.issn" content="0067-0049" />
+<meta name="prism.volume" content="71" />
+<meta name="prism.startingPage" content="817" />
+<meta name="prism.endingPage" content="869" />
+<link title="schema(DC)" rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
+<meta name="dc.language" content="en" />
+<meta name="dc.identifier" content="doi:10.1086/191399" />
+<meta name="dc.date" content="1989-12" />
+<meta name="dc.source" content="Astrophysical Journal Supplement Series (ISSN 0067-0049), vol. 71, Dec. 1989, p. 817-869. Research supported by CNR and MPI." />
+<meta name="dc.title" content="Evolutionary population synthesis in stellar systems. I - A global approach" />
+<meta name="dc.creator" content="Buzzoni, Alberto" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<SCRIPT language="JavaScript" type="text/javascript">
+<!-- Begin
+function mkemail(parts) {
+    var sep = ".";
+    var str = arguments[0];
+    for ( var i = 1 ; i < arguments.length ; i++ ) {
+        if ( arguments[i] == "" ) {
+            sep = String.fromCharCode(29+35) ;
+           continue ;
+        } else {
+            str = str.concat ( sep ) ;
+            str = str.concat ( arguments[i] ) ;
+            sep = ".";
+        }
+    }
+    return(str);
+}
+var toggle = 0 ;
+function t(){
+if ( toggle == 0 ) {
+setStyleByClass("span","a","backgroundColor","#ffffff");
+setStyleByClass("div","h","backgroundColor","#ffffff");
+setStyleByClass("div","h","opacity","0");
+setStyleByClass("div","h","filter","alpha(opacity=0)");
+setStyleByClass("span","b","backgroundColor","#ffffff");
+setStyleByClass("div","i","backgroundColor","#ffffff");
+setStyleByClass("div","i","opacity","0");
+setStyleByClass("div","i","filter","alpha(opacity=0)");
+setStyleByClass("span","c","backgroundColor","#ffffff");
+setStyleByClass("div","j","backgroundColor","#ffffff");
+setStyleByClass("div","j","opacity","0");
+setStyleByClass("div","j","filter","alpha(opacity=0)");
+setStyleByClass("span","d","backgroundColor","#ffffff");
+setStyleByClass("div","k","backgroundColor","#ffffff");
+setStyleByClass("div","k","opacity","0");
+setStyleByClass("div","k","filter","alpha(opacity=0)");
+setStyleByClass("span","e","backgroundColor","#ffffff");
+setStyleByClass("div","l","backgroundColor","#ffffff");
+setStyleByClass("div","l","opacity","0");
+setStyleByClass("div","l","filter","alpha(opacity=0)");
+setStyleByClass("span","f","backgroundColor","#ffffff");
+setStyleByClass("div","m","backgroundColor","#ffffff");
+setStyleByClass("div","m","opacity","0");
+setStyleByClass("div","m","filter","alpha(opacity=0)");
+setStyleByClass("span","g","backgroundColor","#ffffff");
+setStyleByClass("div","n","backgroundColor","#ffffff");
+setStyleByClass("div","n","opacity","0");
+setStyleByClass("div","n","filter","alpha(opacity=0)");
+toggle = 1 ;
+} else {
+setStyleByClass("span","a","backgroundColor","#ffff88");
+setStyleByClass("div","h","backgroundColor","#ffff00");
+setStyleByClass("div","h","opacity","0.3");
+setStyleByClass("div","h","filter","alpha(opacity=30)");
+setStyleByClass("span","b","backgroundColor","#ccccff");
+setStyleByClass("div","i","backgroundColor","#3333ff");
+setStyleByClass("div","i","opacity","0.3");
+setStyleByClass("div","i","filter","alpha(opacity=30)");
+setStyleByClass("span","c","backgroundColor","#ffcccc");
+setStyleByClass("div","j","backgroundColor","#ff3333");
+setStyleByClass("div","j","opacity","0.3");
+setStyleByClass("div","j","filter","alpha(opacity=30)");
+setStyleByClass("span","d","backgroundColor","#bbffff");
+setStyleByClass("div","k","backgroundColor","#00ffff");
+setStyleByClass("div","k","opacity","0.3");
+setStyleByClass("div","k","filter","alpha(opacity=30)");
+setStyleByClass("span","e","backgroundColor","#ffdd77");
+setStyleByClass("div","l","backgroundColor","#ff6600");
+setStyleByClass("div","l","opacity","0.3");
+setStyleByClass("div","l","filter","alpha(opacity=30)");
+setStyleByClass("span","f","backgroundColor","#ccffaa");
+setStyleByClass("div","m","backgroundColor","#33ff00");
+setStyleByClass("div","m","opacity","0.3");
+setStyleByClass("div","m","filter","alpha(opacity=30)");
+setStyleByClass("span","g","backgroundColor","#ffccff");
+setStyleByClass("div","n","backgroundColor","#ff00ff");
+setStyleByClass("div","n","opacity","0.3");
+setStyleByClass("div","n","filter","alpha(opacity=30)");
+toggle = 0 ;
+}
+}
+var ie = (document.all) ? true : false;
+
+function setStyleByClass(t,c,p,v){
+	var elements;
+	if(t == '*') {
+		elements = (ie) ? document.all : document.getElementsByTagName('*');
+	} else {
+		elements = document.getElementsByTagName(t);
+	}
+	for (var i = 0; i < elements.length; i++)
+    {
+		var node = elements.item(i);
+		for(var j = 0; j < node.attributes.length; j++)
+		{
+			if(node.attributes.item(j).nodeName == 'class')
+			{
+				if(node.attributes.item(j).nodeValue == c)
+				{
+				eval('node.style.' + p + " = '" +v + "'");
+				}
+			}
+		}
+	}
+}
+//  End -->
+</SCRIPT>
+<style>.a{background-color: #ffff88}</style>
+<style>.h{background-color: #ffff00}</style>
+<style>.b{background-color: #ccccff}</style>
+<style>.i{background-color: #3333ff}</style>
+<style>.c{background-color: #ffcccc}</style>
+<style>.j{background-color: #ff3333}</style>
+<style>.d{background-color: #bbffff}</style>
+<style>.k{background-color: #00ffff}</style>
+<style>.e{background-color: #ffdd77}</style>
+<style>.l{background-color: #ff6600}</style>
+<style>.f{background-color: #ccffaa}</style>
+<style>.m{background-color: #33ff00}</style>
+<style>.g{background-color: #ffccff}</style>
+<style>.n{background-color: #ff00ff}</style>
+<style type="text/css">
+a:link {color: #0000ff}
+a.oa:link {color: #00a000}
+a:visited {color: #4000a0}
+a.oa:visited {color: #006666}
+a:hover {color: #ff0000}
+a.oa:hover {color: #cc33cc}
+</style>
+</head>
+<body bgcolor="#ffffff"  text="#000000" link="#0000ff" alink="#ff0000" vlink="#4000a0">
+<div align="right" style="font-size:84%;padding-bottom:4px"><a href="http://adsabs.harvard.edu/cgi-bin/nph-manage_account?man_cmd=login&amp;man_url=http://adsabs.harvard.edu/abs/1989ApJS...71..817B">Sign on</a></div>
+<p><h3><A HREF="http://www.adsabs.harvard.edu/">SAO/NASA ADS</a> <a href="http://adsabs.harvard.edu/abstract_service.html">Astronomy Abstract Service</A></h3>
+<hr>
+<p>
+<dl>
+<dt><table width="100%"><tr><td align="left"><strong>&#183; <a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?return_req=no_params&amp;arxiv_sel=ALL&amp;db_key=AST&amp;text=A%20new%20grid%20of%20450%20theoretical%20models%20for%20old%20simple%20stellar%20populations%0ais%20presented.%20Evolutionary%20synthesis%20explores%20the%20influence%20of%20relevant%0aparameters%20such%20as%20age,%20chemical%20composition,%20initial%20mass%20function,%20and%0astellar%20mass%20loss,%20on%20the%20integrated%20spectral%20energy%20distribution.%20Ages%0arange%20between%204%20and%2018%20Gyr,%20and%20the%20metallicity%20Z%20ranges%20from%200.0001%20to%0a0.03,%20with%20helium%20content%20Y%20%3d%200.23%20and%200.25,%20respectively.%20Three%20values%0aare%20considered%20for%20the%20initial%20mass%20function,%20assumed%20as%20a%20power%20law,%0aN%28M%29%20proportional%20to%20M%20exp-s%3b%20s%20%3d%201.35,%202.35,%20and%203.35.%20The%0acomputational%20code%20takes%20into%20account%20in%20a%20quantitative%20way%20the%0acontributions%20from%20all%20the%20relevant%20stellar%20evolutionary%20phases%0aaccording%20to%20the%20theory%20of%20the%20stellar%20evolution.%20Thus,%20late%20stage%20in%0athe%20life%20of%20low-%20mass%20stars,%20such%20as%20the%20horizontal%20branch%20and%20the%0aasymptotic%20and%20postasymptotic%20giant%20branches%20are%20accounted%20for.%0aFurthermore,%20a%20simplified%20treatment%20for%20the%20evolution%20of%20the%20horizontal%0abranch%20is%20developed,%20and%20the%20influence%20of%20different%20morphologies%20are%0ainvestigated.%0a+LATE%20STARS,%20STELLAR%20EVOLUTION,%20STELLAR%20MODELS,%20STELLAR%20SPECTROPHOTOMETRY,%20STELLAR%20SYSTEMS,%20ASYMPTOTIC%20GIANT%20BRANCH%20STARS,%20HORIZONTAL%20BRANCH%20STARS,%20RED%20GIANT%20STARS,%20STELLAR%20MAGNITUDE,%20STELLAR%20STRUCTURE+&amp;title=Evolutionary%20population%20synthesis%20in%20stellar%20systems.%20I%20-%20A%20global%20approach">Find Similar Abstracts</a> (with <a href="#feedback">default settings below</a>)</strong></td>
+</tr></table>
+<dt><strong>· <a class="oa" href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=1989ApJS...71..817B&amp;link_type=ARTICLE&amp;db_key=AST&amp;high=">Full Refereed Journal Article (PDF/Postscript)</a></strong>
+<dt><strong>· <a class="oa" href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=1989ApJS...71..817B&amp;link_type=GIF&amp;db_key=AST">Full Refereed Scanned Article (GIF)</a></strong>
+<dt><strong>· <a  href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=1989ApJS...71..817B&amp;link_type=REFERENCES&amp;db_key=AST&amp;high=">References in the article</a></strong>
+<dt><strong>· <a href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=1989ApJS...71..817B&amp;link_type=CITATIONS&amp;db_key=AST">Citations to the Article (208)</strong></a> (<a href="http://adsabs.harvard.edu/cgi-bin/nph-ref_history?refs=CITATIONS&amp;bibcode=1989ApJS...71..817B">Citation History</a>)
+<dt><strong>· <a  href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=1989ApJS...71..817B&amp;link_type=REFCIT&amp;db_key=AST&amp;high=">Refereed Citations to the Article</a></strong>
+<dt><strong>· <a  href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=1989ApJS...71..817B&amp;link_type=ASSOCIATED&amp;db_key=AST&amp;high=">Associated Articles</a></strong>
+<dt><strong>· <a href="http://adsabs.harvard.edu/cgi-bin/nph-data_query?bibcode=1989ApJS...71..817B&amp;link_type=AR&amp;db_key=AST">Also-Read Articles</a></strong> (<a href="http://adsabs.harvard.edu/cgi-bin/nph-ref_history?refs=AR&amp;bibcode=1989ApJS...71..817B">Reads History</a>)
+<dt>&#183;
+<dt><strong>&#183; <a href="http://www.microsofttranslator.com/BV.aspx?from=en&amp;a=http://adsabs.harvard.edu/abs/1989ApJS...71..817B">Translate This Page</a></strong>
+
+</dl>
+<table>
+<tr><td nowrap valign="top" align="left"><b>Title:</b></td><td><br></td><td align="left" valign="top">Evolutionary population synthesis in stellar systems. I - A global approach</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Authors:</b></td><td><br></td><td align="left" valign="top"><a href="http://adsabs.harvard.edu/cgi-bin/author_form?author=Buzzoni,+A&amp;fullauthor=Buzzoni,%20Alberto&amp;charset=UTF-8&amp;db_key=AST">Buzzoni, Alberto</a></td></tr>
+<tr><td nowrap valign="top" align="left"><b>Affiliation:</b></td><td><br></td><td align="left" valign="top">AA(Osservatorio Astronomico di Brera, Milan, Italy)</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Publication:</b></td><td><br></td><td align="left" valign="top">Astrophysical Journal Supplement Series (ISSN 0067-0049), vol. 71, Dec. 1989, p. 817-869. Research supported by CNR and MPI. (<A href="http://iopscience.iop.org/0067-0049">ApJS Homepage</a>)</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Publication Date:</b></td><td><br></td><td align="left" valign="top">12/1989</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Category:</b></td><td><br></td><td align="left" valign="top">Astrophysics</td></tr>
+<tr><td nowrap valign="top" align="left"><b>Origin:</b></td><td><br></td><td align="left" valign="top"><a href="http://www.sti.nasa.gov/STI-public-homepage.html">STI</a></td></tr>
+<tr><td nowrap valign="top" align="left"><b>NASA/STI Keywords:</b></td><td><br></td><td align="left" valign="top">LATE STARS, STELLAR EVOLUTION, STELLAR MODELS, STELLAR SPECTROPHOTOMETRY, STELLAR SYSTEMS, ASYMPTOTIC GIANT BRANCH STARS, HORIZONTAL BRANCH STARS, RED GIANT STARS, STELLAR MAGNITUDE, STELLAR STRUCTURE</td></tr>
+<tr><td nowrap valign="top" align="left"><b>DOI:</b></td><td><br></td><td align="left" valign="top"><A href="http://dx.doi.org/10.1086/191399">10.1086/191399</a></td></tr>
+<tr><td nowrap valign="top" align="left"><b>Bibliographic Code:</b></td><td><br></td><td align="left" valign="top"><A href="http://adsabs.harvard.edu/abs/1989ApJS...71..817B">1989ApJS...71..817B</a></td></tr>
+</table>
+<h3 align="center">                               Abstract</h3>
+A new grid of 450 theoretical models for old simple stellar populations
+is presented. Evolutionary synthesis explores the influence of relevant
+parameters such as age, chemical composition, initial mass function, and
+stellar mass loss, on the integrated spectral energy distribution. Ages
+range between 4 and 18 Gyr, and the metallicity Z ranges from 0.0001 to
+0.03, with helium content Y = 0.23 and 0.25, respectively. Three values
+are considered for the initial mass function, assumed as a power law,
+N(M) proportional to M exp-s; s = 1.35, 2.35, and 3.35. The
+computational code takes into account in a quantitative way the
+contributions from all the relevant stellar evolutionary phases
+according to the theory of the stellar evolution. Thus, late stage in
+the life of low- mass stars, such as the horizontal branch and the
+asymptotic and postasymptotic giant branches are accounted for.
+Furthermore, a simplified treatment for the evolution of the horizontal
+branch is developed, and the influence of different morphologies are
+investigated.
+<hr>
+<h4>Associated Articles</h4>
+Part 1     <a href="http://adsabs.harvard.edu/abs/1995ApJS...98...69B">Part  2</a>     <p>
+<hr>
+<h4>Printing Options</h4>
+<form method="GET" action="http://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query">
+<input type="hidden" name="db_key" value="PRE">
+<input type="hidden" name="bibcode" value="1989ApJS...71..817B">
+<input type="hidden" name="letter" value=".">
+<input type="hidden" name="classic" value="YES">
+<input type="hidden" name="defaultprint" value="YES">
+<input type="radio" checked name="whole_paper" value="YES"> Print whole paper<br>
+<input type="radio"  name="whole_paper" value="NO"> Print Page(s) <input name="page" value="817" size="7"> through <input name="epage" value="817" size="7"><br>
+<p>
+<input type="submit" name="send" value="Send PDF" size="7">
+Return 600 dpi PDF to Acrobat/Browser.  Different resolutions (200 or 600 dpi),
+formats (Postscript, PDF, etc), page sizes
+(US Letter, European A4, etc), and compression (gzip,compress,none)
+can be set through the
+<a href="http://adsabs.harvard.edu/cgi-bin/pref_set">Printing Preferences</a><input type="hidden" name="filetype" value=".pdf">
+</form>
+<hr><br>
+<a href="http://articles.adsabs.harvard.edu/cgi-bin/article_queryform?bibcode=1989ApJS...71..817B&amp;letter=.&amp;db_key=PRE&amp;page=817&amp;plate=&amp;fiche=&amp;cover=&amp;pagetype=."><h3>More Article Retrieval Options</h3></a>
+
+<a href="http://doc.adsabs.harvard.edu/abs_doc/help_pages/help.art_service_main.html"><h3>HELP for Article Retrieval</h3></a>
+</pre>
+<hr>
+<table width=100%><tr><td align="left"><b><a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1989ApJS...71..817B&amp;data_type=BIBTEX&amp;db_key=AST&amp;nocookieset=1">Bibtex entry for this abstract</a></b>&nbsp;&nbsp;&nbsp;<b><a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?bibcode=1989ApJS...71..817B&amp;data_type=Custom&amp;format=%5c%5cbibitem%5b%25%5c2m%25%28y%29%5d%25%7bR%7d%20%25%5c5.3l%20%25%5cY,%25%5cj,%25%5cV,%25%5cp%5cn&amp;return_fmt=LONG&amp;db_key=AST&amp;nocookieset=1">Preferred format for this abstract</a></b> (see <a href="http://adsabs.harvard.edu/cgi-bin/pref_set">Preferences</a>)</td>
+</tr></table>
+<hr>
+<form method="POST" action="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect"><a name="private"></a>
+<input type="hidden" name="bibcode" value="1989ApJS...71..817B">
+
+<input type="submit" name="library" value=" Add this article to private library ">&nbsp;&nbsp;&nbsp;<input type="submit" name="library" value=" Remove this article from private library "><br>
+</form>
+<hr>
+<form method="POST" action="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect"><a name="feedback"></a>
+<h3>Find Similar Abstracts:</h3>
+
+<input type="hidden" name="return_req" value="no_params">
+<table>
+<tr><td>Use:</td><td>      <input type="checkbox" name="use_auth" value="YES"></td><td>  Authors</td></tr>
+<tr><td></td><td>          <input type="checkbox" checked name="use_title" value="YES"></td><td>  Title</td></tr>
+<tr><td></td><td>          <input type="checkbox" checked name="use_kwds" value="YES"></td><td>  Keywords (in text query field)</td></tr>
+<tr><td></td><td>          <input type="checkbox" checked name="use_text" value="YES"></td><td>  Abstract Text</td></tr>
+
+<tr><td>Return:</td><td>   <input type="radio" checked name="return_req" value="feedback"></td><td>  Query Results</td><td>   Return <input name="nr_to_return" size="5" value="100">&nbsp;&nbsp;&nbsp;items starting with number <input name="start_nr" size="5" value="1"></td></tr>
+<tr><td></td><td>          <input type="radio" name="return_req" value="form"></td><td>  Query Form</td></tr>
+
+<tr><td>Database:</td><td> <input type="checkbox" checked name="db_key" value="AST"></td><td>  Astronomy</td></tr>
+<tr><td></td><td>          <input type="checkbox"  name="db_key" value="PHY"></td><td>  Physics</td></tr>
+<tr><td></td><td>          <input type="checkbox"  name="db_key" value="PRE"></td><td>  arXiv e-prints</td></tr>
+
+</table>
+
+<input type="hidden" name="arxiv_sel" value="ALL">
+<input type="hidden" name="bib_dbkey" value="AST">
+<input type="submit" name="selfeedback" value="      Send Query     ">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="      Reset      ">
+<input type="hidden" name="bibcode" value="1989ApJS...71..817B">
+</form>
+<br><hr><br>
+</body>
+</html>

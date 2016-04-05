@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="lock_enabled" mtime="1316718102" type="bool" value="false"/>
+	<entry name="themes" mtime="1316718085" type="list" ltype="string">
+	</entry>
+	<entry name="mode" mtime="1316718085" type="string">
+		<stringvalue>blank-only</stringvalue>
+	</entry>
+</gconf>
